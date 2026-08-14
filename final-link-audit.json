@@ -1,0 +1,2551 @@
+{
+  "validation": {
+    "checkedAt": "2026-08-14T17:20:49.418Z",
+    "effectRows": 231,
+    "primaryLinks": 231,
+    "alternateLinks": 21,
+    "hyperlinksChecked": 252,
+    "http200": 252,
+    "primaryTitleMatches": 231,
+    "failures": 0,
+    "rejectedExamplePresent": false
+  },
+  "links": [
+    {
+      "effectId": "fx-001",
+      "name": "Juice Shaders Lite",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/5212",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-001",
+      "name": "Juice Shaders Lite",
+      "kind": "alternate",
+      "url": "https://github.com/janeduardo19/juice-shaders-lite",
+      "status": 200,
+      "finalUrl": "https://github.com/janeduardo19/juice-shaders-lite",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-002",
+      "name": "2D tree wind & trigger hit effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-tree-wind-trigger-hit-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-003",
+      "name": "Anime Style Fire 2D",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/anime-style-fire-2d/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-004",
+      "name": "Laser Blaster Glow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/laser-blaster-glow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-005",
+      "name": "2d Sun with Bloom filter Coronal flares",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-sun-with-bloom-filter-coronal-flares/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-006",
+      "name": "Transition with a pattern texture",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/transition-with-a-pattern-texture/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-007",
+      "name": "Vibrancy Backdrop – Blurred/Frosted Canvas Items",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vibrancy-backdrop-blurred-frosted-canvas-items/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-008",
+      "name": "VHS Scanline Glitch",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vhs-scanline-glitch/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-009",
+      "name": "ShaderV - 2D Visual Shader Node Library (Godot 3)",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/589",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-009",
+      "name": "ShaderV - 2D Visual Shader Node Library (Godot 3)",
+      "kind": "alternate",
+      "url": "https://github.com/arkology/ShaderV",
+      "status": 200,
+      "finalUrl": "https://github.com/arkology/ShaderV",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-010",
+      "name": "ShaderV - 2D Visual Shader Node Library (Godot 4)",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/1751",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-010",
+      "name": "ShaderV - 2D Visual Shader Node Library (Godot 4)",
+      "kind": "alternate",
+      "url": "https://github.com/arkology/ShaderV",
+      "status": 200,
+      "finalUrl": "https://github.com/arkology/ShaderV",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-011",
+      "name": "Transition Shader With Patterns",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/transition-shader-with-patterns/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-012",
+      "name": "Turn to dust / dissolve",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/turn-to-dust-dissolve/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-013",
+      "name": "Shock Wave Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/shock-wave-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-014",
+      "name": "ZA WARUDO shockwave effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/za-warudo-shockwave-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-015",
+      "name": "Frosted Glass Shader (Rounded Rect, Outline, Shadow)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/frosted-glass-shader-rounded-rect-outline-shadow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-016",
+      "name": "Procedural Idyllic Slash (2D)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/procedural-idyllic-slash-2d/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-017",
+      "name": "2D dashed rounded corner rect outline",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-dashed-rounded-corner-rect-outline/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-018",
+      "name": "Circular_Cresent_Slash_2D_Mask",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/circular_cresent_slash_2d_mask/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-019",
+      "name": "Transition from one texture to other using dissolve texture",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/transition-from-one-texture-to-other-using-dissolve-texture/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-020",
+      "name": "2D Candle/Torch Fire",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-fireball/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-021",
+      "name": "2D Fire Mask",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-fire-mask/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-022",
+      "name": "2D outline universal",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-outline-universal/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-023",
+      "name": "Juicee – Blur",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/juicee-blur/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-024",
+      "name": "Pixelated burn",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixelated-burn/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-025",
+      "name": "Yet Another Liquid Glass Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/yet-another-liquid-glass-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-026",
+      "name": "2D Liquid Wave",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-liquid-wave/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-027",
+      "name": "Fire Shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/840",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-027",
+      "name": "Fire Shader",
+      "kind": "alternate",
+      "url": "https://bitbucket.org/arlez80/fire",
+      "status": 200,
+      "finalUrl": "https://bitbucket.org/arlez80/fire",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-028",
+      "name": "Multi-Stage Shine (canvasitem)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/multi-stage-shine-canvasitem/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-029",
+      "name": "This is a shader for river movement within a Line2D node",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/this-is-a-shader-for-river-movement-within-a-line2d-node/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-030",
+      "name": "Super Mario World Transition",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/super-mario-world-transition/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-031",
+      "name": "2D outline shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/2829",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-031",
+      "name": "2D outline shader",
+      "kind": "alternate",
+      "url": "https://github.com/Julian-Vos/asset-library-2D-outline-shader-4",
+      "status": 200,
+      "finalUrl": "https://github.com/Julian-Vos/asset-library-2D-outline-shader-4",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-031",
+      "name": "2D outline shader",
+      "kind": "alternate",
+      "url": "https://godotengine.org/asset-library/asset/2830",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-031",
+      "name": "2D outline shader",
+      "kind": "alternate",
+      "url": "https://github.com/Julian-Vos/asset-library-2D-outline-shader-3",
+      "status": 200,
+      "finalUrl": "https://github.com/Julian-Vos/asset-library-2D-outline-shader-3",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-032",
+      "name": "3D Hover canvasitem",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/3874",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-032",
+      "name": "3D Hover canvasitem",
+      "kind": "alternate",
+      "url": "https://github.com/knowercoder/3D-Hover-Shader",
+      "status": 200,
+      "finalUrl": "https://github.com/knowercoder/3D-Hover-Shader",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-033",
+      "name": "Bordered Torus",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/bordered-torus/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-034",
+      "name": "EasyBlend",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/228",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-034",
+      "name": "EasyBlend",
+      "kind": "alternate",
+      "url": "https://github.com/nobuyukinyuu/Godot-EasyBlend",
+      "status": 200,
+      "finalUrl": "https://github.com/nobuyukinyuu/Godot-EasyBlend",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-035",
+      "name": "Eye Dropper - Palette swapper shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/3601",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-035",
+      "name": "Eye Dropper - Palette swapper shader",
+      "kind": "alternate",
+      "url": "https://github.com/nadjiel/eye-dropper/",
+      "status": 200,
+      "finalUrl": "https://github.com/nadjiel/eye-dropper/",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-036",
+      "name": "Godot Post Process Outlines",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/877",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-036",
+      "name": "Godot Post Process Outlines",
+      "kind": "alternate",
+      "url": "https://github.com/jocamar/Godot-Post-Process-Outlines",
+      "status": 200,
+      "finalUrl": "https://github.com/jocamar/Godot-Post-Process-Outlines",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-037",
+      "name": "More Advanced “Simple 2D dissolve”",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/more-advanced-simple-2d-dissolve/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-038",
+      "name": "Noise Shaders",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/84",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-038",
+      "name": "Noise Shaders",
+      "kind": "alternate",
+      "url": "https://github.com/curly-brace/Godot-3.0-Noise-Shaders",
+      "status": 200,
+      "finalUrl": "https://github.com/curly-brace/Godot-3.0-Noise-Shaders",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-039",
+      "name": "Wavy & Colorable Text Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/wavy-colorable-text-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-040",
+      "name": "Circuit",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/circuit/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-041",
+      "name": "Liquid Glass Frutiger Aero UI – Customizable",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/liquid-glass-ui-customizable/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-042",
+      "name": "Overlapping Seamless Textures with Alpha and Time-Randomized Order",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/overlapping-seamless-textures-with-alpha-and-time-randomized-order/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-043",
+      "name": "Pixel halo/radial shine",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-perfect-halo-radiant-glow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-044",
+      "name": "Pixel melting and falling",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-melting-and-falling/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-045",
+      "name": "Pixel-art noise damage texture with edge bias",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-art-noise-damage-texture-with-edge-bias/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-046",
+      "name": "Procedural Torch & Candle Shader (Fire + Smoke + Sparks)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/procedural-torch-candle-shader-fire-smoke-sparks/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-047",
+      "name": "Squigglevision",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/squigglevision/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-048",
+      "name": "text jiggle shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/text-jiggle-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-049",
+      "name": "Balatro Original Fire Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/balatro-original-flame-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-050",
+      "name": "Fire (Anime Style)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/fire-anime-style/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-051",
+      "name": "Flipping grid text",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/flipping-grid-text/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-052",
+      "name": "Fluid Glass UI",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/fluid-glass-ui/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-053",
+      "name": "Glow & Click Ripple | UI Effect V2.0",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/mouse-glow-click-ripple-ui-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-054",
+      "name": "Impact Glass Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/impact-glass-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-055",
+      "name": "Pixel Slash shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-slash-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-056",
+      "name": "Simple Pixelated Fire shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-pixelated-fireshader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-057",
+      "name": "Balatro card tilt",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/balatro-card-tilt/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-058",
+      "name": "Draws a rounded rectangle with animated, distorted edges",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/draws-a-rounded-rectangle-with-animated-distorted-edges/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-059",
+      "name": "Hex Grid Transition Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/hex-grid-transition-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-060",
+      "name": "Highlight Shader (Godot 4.5 compat)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/highlight-shader-godot-4-5-compat/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-061",
+      "name": "Laser Beam",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/laser-beam/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-062",
+      "name": "Luminance Mask Transition",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/luminance-mask-transition/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-063",
+      "name": "Pixei Transition Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixei-transition-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-064",
+      "name": "Pixel dotted silhouette",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-dotted-silhouette/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-065",
+      "name": "Screen-Sampled Black-and-White Manga Hit Impact Post-Process Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/screen-sampled-black-and-white-manga-hit-impact-post-process-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-066",
+      "name": "Stacked Pixel Art Outlines",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/stacked-pixel-art-outlines/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-067",
+      "name": "Warping shader (Inverse Bilinear Interpolation)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/warping-shader-inverse-bilinear-interpolation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-068",
+      "name": "Fractal noise scene transition",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/fractal-noise-scene-transition/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-069",
+      "name": "Gradient pixel glint",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/gradient-pixel-glint-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-070",
+      "name": "Health PCG monitor for survival and horror games",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/health-pcg-monitor-for-survival-and-horror-games/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-071",
+      "name": "Rainbow Border",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/rainbow-border/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-072",
+      "name": "Squiggle Pen – Canvas Post-process",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/squiggle-pen-canvas-post-process/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-073",
+      "name": "Universal Text Shine (Bitmap Font Compatible + 360° Angle)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/universal-text-shine-bitmap-font-compatible-360-angle/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-074",
+      "name": "Warped Rotating Liquid Stripes",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/warped-rotating-liquid-stripes/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-075",
+      "name": "Waterfall trail shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/waterfall-trail-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-076",
+      "name": "Weird glitch shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/weird-glitch-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-077",
+      "name": "Clean UI Skeleton Loader / Shimmer",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/clean-ui-skeleton-loader-shimmer/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-078",
+      "name": "Palette Swap (Textureless)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/palette-swap/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-079",
+      "name": "Radial Blur",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/radial-blur-3/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-080",
+      "name": "Scene Change Transition Effects (persona 5 inspired)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/scene-change-transition-effects-persona-5-inspired/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-081",
+      "name": "Simple frame outline box",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-frame-outline-box/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-082",
+      "name": "Slide Down & Up Text Effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/slide-down-up-text-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-083",
+      "name": "Soft Retro with Blur",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/soft-retro-with-blur/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-084",
+      "name": "Sun Pulse Glow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/sun-pulse-glow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-085",
+      "name": "Texture progress with saturation and lightness",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/desaturated-and-darkened-texture-progress/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-086",
+      "name": "2D top down oblique shadow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-top-down-oblique-shadow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-087",
+      "name": "Advanced Side Vignette",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/advanced-side-vignette/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-088",
+      "name": "Anti-alias Color Swapper",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/anti-alias-color-swapper/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-089",
+      "name": "Confetti (ColorRect) [Godot 4.5+]",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/confetti-colorrect-godot-4-5/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-090",
+      "name": "CRT + VHS",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/test-crt-vcr/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-091",
+      "name": "Dynamic Drop Shadow (CanvasItem, NO ColorRect needed!)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/dynamic-drop-shadow-canvasitem/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-092",
+      "name": "Glitch Double Vision",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/glitch-double-vision/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-093",
+      "name": "Infinite (not quite) zoom grid",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/infinite-not-quite-zoom-grid/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-094",
+      "name": "Kimi retro game(PS1) shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/retro-gameps1-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-095",
+      "name": "Pixelated, radial 2D-Clouds",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixelated-radial-2d-clouds/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-096",
+      "name": "Rainbow Flow(canvasitem)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/rainbow-flowcanvasitem/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-097",
+      "name": "simple glass broken",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-glass-broken/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-098",
+      "name": "Simple Radial Chromatic Aberration + Distortion",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-radial-chromatic-aberration-distortion/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-099",
+      "name": "Slide to unlock shine shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/slide-to-unlock-shine-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-100",
+      "name": "Texture-Clipped Pulse Glow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/texture-clipped-pulse-glow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-101",
+      "name": "Tilemap – Local Overlay + Color Mix",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/tilemap-local-overlay-color-mix/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-102",
+      "name": "Warped Fractal Noise",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/warped-fractal-noise/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-103",
+      "name": "Waving Progress Bar",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/waving-progress-bar/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-104",
+      "name": "Zoom Blur Transition",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/zoom-blur-transition/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-105",
+      "name": "2D Ball Spin/Rolling/Rotation effect (using a strip)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-ball-spin-rolling-rotation-effect-using-a-strip/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-106",
+      "name": "2D sphere projection with rotation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-sphere-projection-with-rotation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-107",
+      "name": "2D Wind Sway / Tree & Grass Motion Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-wind-sway-tree-grass-motion-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-107",
+      "name": "2D Wind Sway / Tree & Grass Motion Shader",
+      "kind": "alternate",
+      "url": "https://godotshaders.com/shader/2d-wind-sway-tree-grass-motion-shader-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-108",
+      "name": "Animated Vignette Fade Out",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/animated-vignette-fade-out/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-109",
+      "name": "Simple circle transition",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-circle-transition-3/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-110",
+      "name": "Slightly improved \"Dotted grid 2d [Improved]\" by Trastaroots",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/slightly-improved-dotted-grid-2d-improved-by-trastaroots/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-111",
+      "name": "2D Black Hole",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-black-hole/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-112",
+      "name": "Analytical Die / Dice Texture",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/analytical-die-dice-texture/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-113",
+      "name": "Animated Grassy Wind or Cloud Shadow Pixel Patches Overlay",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/animated-grassy-wind-or-cloud-shadow-pixel-patches-overlay/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-114",
+      "name": "eyelids / blinking",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/eyelids-blinking/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-115",
+      "name": "Palette Swap Shader – sampler2D",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/palette-swap-shader-sampler2d/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-116",
+      "name": "VHS Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vhs-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-116",
+      "name": "VHS Shader",
+      "kind": "alternate",
+      "url": "https://godotshaders.com/shader/vhs-5/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-116",
+      "name": "VHS Shader",
+      "kind": "alternate",
+      "url": "https://godotshaders.com/shader/vhs-4/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-117",
+      "name": "2D Pixel perfect wind & sway effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-pixel-perfect-wind-sway-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-118",
+      "name": "可以通过控制光源来自动变换的阴影",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/可以通过控制光源来自动变换的阴影/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-119",
+      "name": "Crosshair Custom Aim 2D Animated",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/crosshair-custom-aim-2d-animated/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-120",
+      "name": "VHS CRT Broadcast",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vhs-crt-broadcast/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-121",
+      "name": "2D portal shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-portal-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-122",
+      "name": "2D Retro Dithered Lighting & Fog-of-War",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-retro-dithered-lighting-fog-of-war/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-123",
+      "name": "2D Vertical Deform Shader (3 sections)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-vertical-deform-shader-3-sections/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-124",
+      "name": "2D water surface with wave and noise",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-water-surface-with-wave-and-noise/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-125",
+      "name": "Color Replacer",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/color-replacer-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-126",
+      "name": "label blur / shadow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/label-blur-shadow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-127",
+      "name": "Color Dither",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/3036",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-127",
+      "name": "Color Dither",
+      "kind": "alternate",
+      "url": "https://github.com/Donitzo/godot-color-dither",
+      "status": 200,
+      "finalUrl": "https://github.com/Donitzo/godot-color-dither",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-128",
+      "name": "Dynamic Crosshair Shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/727",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-128",
+      "name": "Dynamic Crosshair Shader",
+      "kind": "alternate",
+      "url": "https://github.com/0xspig/CrosshairShader",
+      "status": 200,
+      "finalUrl": "https://github.com/0xspig/CrosshairShader",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-129",
+      "name": "Fractal Shaders",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/93",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-129",
+      "name": "Fractal Shaders",
+      "kind": "alternate",
+      "url": "https://github.com/Chaosus/GDFractals",
+      "status": 200,
+      "finalUrl": "https://github.com/Chaosus/GDFractals",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-130",
+      "name": "Godot 3 2D CRT Shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/749",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-130",
+      "name": "Godot 3 2D CRT Shader",
+      "kind": "alternate",
+      "url": "https://github.com/hiulit/Godot-3-2D-CRT-Shader",
+      "status": 200,
+      "finalUrl": "https://github.com/hiulit/Godot-3-2D-CRT-Shader",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-131",
+      "name": "Mosaic Shader",
+      "kind": "primary",
+      "url": "https://godotengine.org/asset-library/asset/391",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "官方 Asset Library API 标题与描述核对",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-131",
+      "name": "Mosaic Shader",
+      "kind": "alternate",
+      "url": "https://bitbucket.org/arlez80/godot-mosaic-shader/",
+      "status": 200,
+      "finalUrl": "https://bitbucket.org/arlez80/godot-mosaic-shader/",
+      "titleMatches": null,
+      "evidence": "备用代码仓库或项目主页可访问",
+      "checkedFrom": "实时链接检查"
+    },
+    {
+      "effectId": "fx-132",
+      "name": "Screen HSL Adjustment",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/screen-hsl-adjustment/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-133",
+      "name": "Simple Grayscale Shader for CanvasItem",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-grayscale-shader-for-canvasitem/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-134",
+      "name": "This is a shader that generates a wave effect.",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/this-is-a-shader-that-generates-a-wave-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-135",
+      "name": "2D pixel grass shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/2d-pixel-grass-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-136",
+      "name": "Orbiting Planet with Moon",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/orbiting-planet-with-moon/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-137",
+      "name": "[UPDATED] N64 RDP Dither + VI Post-Process Effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/updated-n64-rdp-dither-vi-post-process-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-138",
+      "name": "Aetherial Flow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/aetherial-flow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-139",
+      "name": "Angular Ability Cooldown Display",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/angular-ability-cooldown-display/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-140",
+      "name": "Background Grid Scroller",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/background-grid-scroller/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-141",
+      "name": "Balatro Original Paint Background",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/balatro-original-paint-background/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-142",
+      "name": "Bit Depth / Posterize Post-Process with Optional Dithering",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/bit-depth-posterize-post-process-with-optional-dithering/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-143",
+      "name": "CRT with Luminance Preservation (no scanlines)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/crt-with-luminance-preservation-no-scanlines/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-144",
+      "name": "Dirt Cleaning Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/dirt-cleaning-shader-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-145",
+      "name": "Double Dither – Stylized Transparency, Shadows & Retro Masks",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/double-dither-stylized-transparency-shadows-retro-masks/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-146",
+      "name": "False Color Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/false-color-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-147",
+      "name": "Pixelated Warped Fractal Noise",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixelated-warped-fractal-noise/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-148",
+      "name": "Rain on Glass",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/rain-on-glass/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-149",
+      "name": "Raindrops on glass",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/raindrops-on-glass/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-150",
+      "name": "Realistic JPEG Artifacting",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/realistic-jpeg-artifacting/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-151",
+      "name": "Reflective Crystalline Voronoi",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/liquid-plasma-swirl/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-152",
+      "name": "Retro Parchment Paper(羊皮卷风格)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/retro-parchment-paper/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-153",
+      "name": "Rimlight / Drop shadow",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/rimlight-drop-shadow/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-154",
+      "name": "Scroll, Scale, and Rotate",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/scroll-scale-and-rotate/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-155",
+      "name": "Simple CRT/VHS",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-crt-vhs/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-156",
+      "name": "Stylized Screen Edge with Threshold FX",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/stylized-screen-edge-with-threshold-fx/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-157",
+      "name": "Stylized VHS & Posterization Post-Processing Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/stylized-vhs-posterization-post-processing-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-158",
+      "name": "VFX Frame Interpolator (with Gradient Tint)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vfx-frame-interpolator-with-gradient-tint/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-159",
+      "name": "Animated Cellular Grid",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/animated-cellular-grid/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-160",
+      "name": "Frostbite",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/frostbite/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-161",
+      "name": "Pixel color remap",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pixel-corruption/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-162",
+      "name": "speed shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/speed-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-163",
+      "name": "Triangular Pixelation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/triangular-pixelation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-164",
+      "name": "马赛克",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/马赛克/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-165",
+      "name": "Kuwahara",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/kuwahara-shader-godot-4/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-166",
+      "name": "Lofi Retro Camera Filter",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/lofi-retro-camera-filter/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-167",
+      "name": "PSX/CRT Retro Shader for Godot",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/psx-crt-retro-shader-for-godot/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-168",
+      "name": "Rotate Pixel Art",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/rotate-pixel-art/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-169",
+      "name": "Tiler (pseudo splatter)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/tiler-pseudo-splatter/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-170",
+      "name": "VHS / Scanline Color Fuzz",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vhs-scanline-color-fuzz/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-171",
+      "name": "Volumetric Aurora Borealis with Polar Reflection",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/volumetric-aurora-borealis-with-polar-reflection/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-172",
+      "name": "Wall Destruction / Block Break",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/wall-destruction-block-break/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-173",
+      "name": "Wobble / shake with adjustable speed and amplitude",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/wobble-shake-with-adjustable-speed-and-amplitude/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-174",
+      "name": "Wobble animation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/wobble-animation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-175",
+      "name": "Bouncing Reflective Logo",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/bouncing-reflective-logo/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-176",
+      "name": "Buckshot",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/buckshot/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-177",
+      "name": "Canvas drop shadow and inner shadow shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/canvas-drop-shadow-and-inner-shadow-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-178",
+      "name": "Canvas Godray Edge Detection",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/canvas-godray-edge-detection/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-179",
+      "name": "Cellular Triangulation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/cellular-triangulation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-180",
+      "name": "Cruelty Squad-Style Nausea Effect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/cruelty-squad-style-nausea-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-181",
+      "name": "Determination Waves (Undertale Style)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/determination-waves-undertale-style/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-182",
+      "name": "Field of View: Circular, Cone, & Rectangle Mask Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/field-of-view-circular-cone-rectangle-mask-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-183",
+      "name": "Glass broken falling V2",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/glass-broken-falling-v2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-184",
+      "name": "Glass Pixel Rect",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/glass-pixel-rect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-185",
+      "name": "Gradient Animated Stripes",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/gradient-animated-stripes/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-186",
+      "name": "Health Bar",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/health-bar/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-187",
+      "name": "Immersive screen edges shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/immersive-screen-edges-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-188",
+      "name": "Loading revolving spin",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/loading-revolving-thing/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-189",
+      "name": "post-processing monochrome shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/post-processing-monochrome-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-190",
+      "name": "Semi-Realistic CRT Emulation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/semi-realistic-crt-emulation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-191",
+      "name": "Simple Cloud Layer",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-cloud-layer/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-192",
+      "name": "Simple Film Grain",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-film-grain/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-193",
+      "name": "Simple Radial Progress Bar",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-radial-progress-bar-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-194",
+      "name": "Starburst Effect (astronomy)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/starburst-effect-astronomy/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-195",
+      "name": "Starry night",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/starry-night/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-196",
+      "name": "Stylized gradient pixel glint",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/gradient-pixel-glint/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-197",
+      "name": "Animated pattern background",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/animated-pattern-background/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-198",
+      "name": "Breakable Glass",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/breakable-glass/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-199",
+      "name": "Classic dithering shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/classic-dithering-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-200",
+      "name": "Color Adjustments",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/color-adjustments-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-201",
+      "name": "Colour Correction / Grading",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/colour-correction-grading/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-202",
+      "name": "Controlled color inversion",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/controlled-color-inversion/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-203",
+      "name": "Cool Mandlebrot Shader (Euler Julia Resonance)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/cool-mandlebrot-shader-euler-julia-resonance/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-204",
+      "name": "Counter-Strike Style Scope",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/counter-strike-style-scope/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-205",
+      "name": "Creative Cinema / Film Framing",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/creative-cinema-film-framing/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-206",
+      "name": "Fractal Study (original made by Kishimisu)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/fractal-study-original-made-by-kishimisu/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-207",
+      "name": "layered Sine Scroll",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/test-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-208",
+      "name": "Orbitals",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/orbitals/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-209",
+      "name": "Playstation Waves",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/playstation-waves/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-210",
+      "name": "RingCountdownShader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/ringcountdownshader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-211",
+      "name": "SAI-like Color Adjustments",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/sai-like-color-adjustments/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-212",
+      "name": "Screen fog with camera offset",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/screen-fog-with-camera-offset/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-213",
+      "name": "Simple CRT Bulge",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-crt-bulge/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-214",
+      "name": "Single BG Retro Parallax (Scanline Interrupt Style)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/single-bg-retro-parallax-scanline-interrupt-style/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-215",
+      "name": "Static Overlay Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/static-overlay-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-216",
+      "name": "swirly rotation",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/swirly-rotation/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-217",
+      "name": "Windows 3.1 VHS Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/windows-3-1-vhs-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-218",
+      "name": "Blend Dot Matrix",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/blend-dot-matrix/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-219",
+      "name": "Center Grow Bar (Progress Bar)",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/center-grow-bar-progress-bar/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-220",
+      "name": "Foggy Glass Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/foggy-glass-shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-221",
+      "name": "Grid Shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/grid-shader-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-222",
+      "name": "LAVA shader animated",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/lava-shader-animated/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-223",
+      "name": "Pill Slider",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/pill-slider/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-224",
+      "name": "Simple Spiral",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simple-spiral/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-225",
+      "name": "Skewed HP Meter",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/skewed-hp-meter/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-226",
+      "name": "给纯色单调的图片增加一层明暗纹理的shader",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/给纯色单调的图片增加一层明暗纹理的shader/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-227",
+      "name": "Advanced grayscale /w option to spare color",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/advanced-grayscale-w-option-to-spare-color/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-228",
+      "name": "Better Top-Down Shadow With Height-Map",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/better-top-down-shadow-with-height-map/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-229",
+      "name": "InfiniteMorphoLogGridₑ",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/logₑgrid/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-230",
+      "name": "Simplified Hand-drawn Hatch Lines",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/simplified-hand-drawn-hatch-lines/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-231",
+      "name": "VHS TAPE EFFECT",
+      "kind": "primary",
+      "url": "https://godotshaders.com/shader/vhs-tape-effect-2/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "fx-231",
+      "name": "VHS TAPE EFFECT",
+      "kind": "alternate",
+      "url": "https://godotshaders.com/shader/vhs-tape-effect/",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "原页代码类型：canvas_item",
+      "checkedFrom": "逐页源站审计"
+    }
+  ]
+}

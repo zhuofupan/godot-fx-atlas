@@ -1,0 +1,305 @@
+{
+  "auditedAt": "2026-08-14T17:00:04.903Z",
+  "generatedAt": "2026-08-14T17:20:07.151Z",
+  "policy": {
+    "godotShaders": "HTTP 200、原页标题匹配，并且代码中唯一 shader_type 为 canvas_item",
+    "assetLibrary": "HTTP 200、官方标题匹配，并且官方描述明确包含 2D、CanvasItem、Sprite2D、AnimatedSprite2D、ColorRect 或 TextureRect 使用依据",
+    "semantic": "排除 3D/空间着色器、地形和摄影机工具、用途无法确认的条目，并按标题与原页摘要重新分类"
+  },
+  "candidates": 437,
+  "godotShaders": {
+    "candidates": 273,
+    "httpOk": 273,
+    "trueCanvasItem": 255,
+    "nonCanvasOrUnknown": 18
+  },
+  "assetLibrary": {
+    "candidates": 164,
+    "httpOk": 164,
+    "selectedWithExplicit2DEvidence": 15
+  },
+  "finalUniqueEffects": 231,
+  "allIncludedPrimaryLinksAuditedHttp200": true,
+  "allIncludedTitlesMatchedSource": true,
+  "excludedOrDeduplicatedCandidateRows": 206,
+  "explicitlyRejectedRows": 53,
+  "conservativeAssetCandidatesNotSelected": 148,
+  "explicitRejections": [
+    {
+      "name": "Better Terrain Noise",
+      "url": "https://godotshaders.com/shader/better-terrain-noise/",
+      "reason": "地形生成工具，不是技能或卡牌特效"
+    },
+    {
+      "name": "domain warp",
+      "url": "https://godotshaders.com/shader/domain-warp/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Panorama Perspective (FNaF fake 3D)",
+      "url": "https://godotshaders.com/shader/panorama-perspective-fnaf-fake-3d/",
+      "reason": "伪 3D 场景投影"
+    },
+    {
+      "name": "Stylized 3D Outline shader",
+      "url": "https://godotshaders.com/shader/stylized-3d-outline-shader/",
+      "reason": "面向 3D 场景的后处理描边"
+    },
+    {
+      "name": "Fake 3D Cube Shader (6 Textures, Free Rotation & Perspective) – Godot 4.x",
+      "url": "https://godotshaders.com/shader/fake-3d-cube-shader-6-textures-free-rotation-perspective-godot-4-x/",
+      "reason": "伪 3D 物体展示"
+    },
+    {
+      "name": "3D faker cylinder spin",
+      "url": "https://godotshaders.com/shader/3d-faker-cylinder-spin/",
+      "reason": "伪 3D 物体展示"
+    },
+    {
+      "name": "SDF scalable textures",
+      "url": "https://godotshaders.com/shader/sdf-scalable-textures/",
+      "reason": "纹理技术工具"
+    },
+    {
+      "name": "Grass Patch 3D",
+      "url": "https://godotshaders.com/shader/grass-patch-3d/",
+      "reason": "3D 草地展示"
+    },
+    {
+      "name": "Grass Patch 3D",
+      "url": "https://godotshaders.com/shader/grass-patch-3d-2/",
+      "reason": "3D 草地展示"
+    },
+    {
+      "name": "Realistic Photography Camera",
+      "url": "https://godotshaders.com/shader/realistic-photography-camera/",
+      "reason": "摄影机模拟而非技能或卡牌特效"
+    },
+    {
+      "name": "WHOLESOME VIBES",
+      "url": "https://godotshaders.com/shader/wholesome-vibes/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Video Mixer",
+      "url": "https://godotshaders.com/shader/video-mixer/",
+      "reason": "视频混合工具"
+    },
+    {
+      "name": "Water Shader – Easy Setup",
+      "url": "https://godotshaders.com/shader/water-shader-easy-setup/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Testing_the_waters",
+      "url": "https://godotshaders.com/shader/testing_the_waters/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Screen",
+      "url": "https://godotshaders.com/shader/screen/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Splat Mapping (Canvas Item + PBR)",
+      "url": "https://godotshaders.com/shader/splat-mapping-canvas-item-pbr/",
+      "reason": "地形材质混合技术"
+    },
+    {
+      "name": "SUN Script",
+      "url": "https://godotshaders.com/shader/sun-script/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Accumulation Motion Blur - Compositor Pipeline",
+      "url": "https://godotshaders.com/shader/accumulation-motion-blur-compositor-pipeline/",
+      "reason": "链接状态或标题不一致"
+    },
+    {
+      "name": "Jostar Shader",
+      "url": "https://godotshaders.com/shader/jostar-shader/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Disney PBS Lighting Model – Slice",
+      "url": "https://godotshaders.com/shader/disney-pbs-light-model-slice/",
+      "reason": "光照模型切片，不是完整 2D 特效"
+    },
+    {
+      "name": "Wind Waker Water",
+      "url": "https://godotshaders.com/shader/wind-waker-water/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Gaussian Primitives – analytical filtering and antialiasing",
+      "url": "https://godotshaders.com/shader/gaussian-primitives-analytical-filtering-and-antialiasing/",
+      "reason": "原页代码类型为 无法确认"
+    },
+    {
+      "name": "2D Procedural Terrain (Can be pixelart)",
+      "url": "https://godotshaders.com/shader/2d-procedural-terrain-can-be-pixelart/",
+      "reason": "地形生成器"
+    },
+    {
+      "name": "Color",
+      "url": "https://godotshaders.com/shader/color/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Pixel-Perfect Shader for Godot 3.x!",
+      "url": "https://godotshaders.com/shader/pixel-perfect-shader-for-godot-3-x/",
+      "reason": "分辨率适配工具"
+    },
+    {
+      "name": "3D Camera Smooth Motion Blur",
+      "url": "https://godotshaders.com/shader/3d-camera-smooth-motion-blur/",
+      "reason": "3D 摄影机后处理"
+    },
+    {
+      "name": "Tiled texture “plus”",
+      "url": "https://godotshaders.com/shader/tiled-texture-plus/",
+      "reason": "纹理平铺工具"
+    },
+    {
+      "name": "Pride Flag Canvas Item Shader, Godot 4.x & 3.x",
+      "url": "https://godotshaders.com/shader/pride-flag-canvas-item-shader-godot-3-x-and-4-x/",
+      "reason": "主题旗帜材质，不属于目标用途"
+    },
+    {
+      "name": "shader UI Stylized FX - PERSONA 5 VIBES",
+      "url": "https://godotshaders.com/shader/shader-ui-stylized-fx-persona-5-vibes/",
+      "reason": "链接状态或标题不一致"
+    },
+    {
+      "name": "Glitter Material (noise/worldspace based)",
+      "url": "https://godotshaders.com/shader/glitter-material-noise-worldspace-based/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Fake 3D Interior Projection Shader Fixed & Adjustable",
+      "url": "https://godotshaders.com/shader/fake-3d-interior-projection-shader-fixed-adjustable/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Fake 3D Interior Projection Shader Fixed & Tuned",
+      "url": "https://godotshaders.com/shader/fake-3d-interior-projection-shader-fixed-tuned/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "“Hand Drawn” Depth-Based Sobel Outline for Compatibility Renderer with Directional Shadow Support",
+      "url": "https://godotshaders.com/shader/hand-drawn-depth-based-sobel-outline-for-compatibility-renderer-with-directional-shadow-support/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Fast Mirror Repeat Snippet",
+      "url": "https://godotshaders.com/shader/fast-mirror-repeat-snippet/",
+      "reason": "原页代码类型为 无法确认"
+    },
+    {
+      "name": "Chees type colorful shader like a rainbow",
+      "url": "https://godotshaders.com/shader/chees-type-colorful-shader-like-a-rainbow/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Noise Shaper",
+      "url": "https://godotshaders.com/shader/noise-shaper/",
+      "reason": "噪声生成工具"
+    },
+    {
+      "name": "sombreadar de ruido de tablero",
+      "url": "https://godotshaders.com/shader/sombreadar-de-ruido-de-tablero/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "my grass",
+      "url": "https://godotshaders.com/shader/my-grass/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Colour-Changing material depending on Camera Distance",
+      "url": "https://godotshaders.com/shader/colour-changing-material-depending-on-camera-distance/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Planet Coffee",
+      "url": "https://godotshaders.com/shader/planet-coffee/",
+      "reason": "标题和摘要无法确认具体用途"
+    },
+    {
+      "name": "Simple Water with Mesh form – Lake/Pond",
+      "url": "https://godotshaders.com/shader/simple-water-with-mesh-form-lake-pond/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Cubemap Reflective Water Surface",
+      "url": "https://godotshaders.com/shader/cubemap-reflective-water-surface/",
+      "reason": "立方体贴图环境水面"
+    },
+    {
+      "name": "Dither Gradient Shader (updated for 4.5 - original by SamBigos)",
+      "url": "https://godotshaders.com/shader/dither-gradient-shader-updated-for-4-5-original-by-sambigos/",
+      "reason": "链接状态或标题不一致"
+    },
+    {
+      "name": "Layer SplatMap",
+      "url": "https://godotshaders.com/shader/layer-splatmap/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Gentle Breathing Effect for Face & Body Animation",
+      "url": "https://godotshaders.com/shader/gentle-breathing-effect-for-face-body-animation/",
+      "reason": "角色呼吸动画，不是目标特效"
+    },
+    {
+      "name": "Atlas Region Tiled Repeat (2D)",
+      "url": "https://godotshaders.com/shader/atlas-region-tiled-repeat-2d/",
+      "reason": "图集平铺工具"
+    },
+    {
+      "name": "UV stitching and scrolling",
+      "url": "https://godotshaders.com/shader/uv-stitching-and-scrolling/",
+      "reason": "UV 工具"
+    },
+    {
+      "name": "Shader per Fra Scemo con Hatching",
+      "url": "https://godotshaders.com/shader/shader-per-fra-scemo-con-hatching/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Adobe Animate Blend Modes",
+      "url": "https://godotshaders.com/shader/adobe-animate-blend-modes/",
+      "reason": "混合模式工具集"
+    },
+    {
+      "name": "2D - Post Process - Pixelate",
+      "url": "https://godotshaders.com/shader/2d-post-process-pixelate/",
+      "reason": "链接状态或标题不一致"
+    },
+    {
+      "name": "Yoshi's Island Shimmer - Heat Haze Distortion",
+      "url": "https://godotshaders.com/shader/yoshis-island-shimmer-heat-haze-distortion/",
+      "reason": "链接状态或标题不一致"
+    },
+    {
+      "name": "Basic Self-shadowing from Heightmap",
+      "url": "https://godotshaders.com/shader/basic-self-shadowing-from-heightmap/",
+      "reason": "原页代码类型为 spatial"
+    },
+    {
+      "name": "Liquid Glass",
+      "url": "https://godotshaders.com/shader/liquid-glass/",
+      "reason": "原页代码类型为 spatial"
+    }
+  ],
+  "finalLinkValidation": {
+    "checkedAt": "2026-08-14T17:20:49.418Z",
+    "effectRows": 231,
+    "primaryLinks": 231,
+    "alternateLinks": 21,
+    "hyperlinksChecked": 252,
+    "http200": 252,
+    "primaryTitleMatches": 231,
+    "failures": 0,
+    "rejectedExamplePresent": false
+  }
+}
