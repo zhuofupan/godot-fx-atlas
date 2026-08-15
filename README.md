@@ -1,6 +1,6 @@
 # Godot FX Atlas
 
-可搜索、可筛选并可按价格排序的 2D 技能与卡牌特效参考库。当前收录 1000 个已核对的公开资源链接，来源包括 Godot Shaders、Godot Asset Library、Itch.io 与 OpenGameArt。
+可搜索、可筛选并可按价格排序的 2D 技能与卡牌特效参考库。当前收录 1100+ 个已核对的公开资源链接，来源包括 Godot Shaders、Godot Asset Library、Itch.io、OpenGameArt 与补充资源站。
 
 ## 本地运行
 

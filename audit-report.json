@@ -1,19 +1,22 @@
 {
   "auditedAt": "2026-08-15T10:21:24.9127161+08:00",
-  "generatedAt": "2026-08-15T05:43:06.936Z",
-  "target": 1000,
-  "finalUniqueEffects": 1000,
+  "generatedAt": "2026-08-15T06:50:00.702Z",
+  "minimumTarget": 1100,
+  "finalUniqueEffects": 1137,
   "sourceStats": {
-    "Godot Asset Library": 15,
+    "CodeFronts": 1,
+    "Godot Asset Library": 17,
     "Godot Shaders": 216,
-    "Itch.io": 656,
-    "OpenGameArt": 113
+    "IconsDB": 1,
+    "Itch.io": 666,
+    "OpenGameArt": 236
   },
   "sourcePolicies": {
     "godotShaders": "沿用上一轮逐页审计：HTTP 200、标题匹配、唯一 shader_type=canvas_item",
     "godotAssetLibrary": "沿用上一轮官方 API 审计：HTTP 200、标题匹配、描述明确支持 2D/CanvasItem",
     "itch": "来源列表同时带 2D 与 Effects 标签；详情页 HTTP 200、标题一致、Category=Assets，并再次包含 2D 与 Effects 标签",
-    "openGameArt": "来自 2D::Animation/Effect 精选集；详情页 HTTP 200，且 Art Type 明确为 2D Art；并通过技能/状态/法术/战斗关键词相关性门槛"
+    "openGameArt": "来自 2D::Animation/Effect 精选集；详情页 HTTP 200，且 Art Type 明确为 2D Art；并通过技能/状态/法术/战斗关键词相关性门槛",
+    "curated": "本轮逐页核对补充：HTTP 200、标题一致、原页明确提供 2D、Sprite、PNG、CanvasItem 或卡牌 UI 动画依据，并人工匹配对应标签"
   },
   "candidateProfile": {
     "verifiedBase": 231,
@@ -25,10 +28,12 @@
     "openGameArtCandidates": 445,
     "openGameArt2D": 442,
     "openGameArtSemanticEligible": 235,
-    "openGameArtAccepted": 113
+    "openGameArtAccepted": 235,
+    "curatedCandidates": 15,
+    "curatedAccepted": 15
   },
   "qualityChecks": {
-    "exactTargetMet": true,
+    "minimumTargetMet": true,
     "uniquePrimaryUrls": true,
     "requiredFieldsComplete": true,
     "allRowsHave2DEvidence": true,
@@ -40,51 +45,35 @@
   },
   "designCoverage": {
     "requirementCount": 51,
-    "coveredRequirementCount": 34,
-    "minimumReferencesPerRequirement": 0
+    "coveredRequirementCount": 51,
+    "minimumReferencesPerRequirement": 1
   },
   "priceProfile": {
-    "free": 612,
-    "paid": 388,
+    "free": 742,
+    "paid": 395,
     "highestUsd": 108
   },
   "twoDProfile": {
-    "verified": 1000,
+    "verified": 1137,
     "evidenceBySource": {
-      "Godot Asset Library": 15,
+      "CodeFronts": 1,
+      "Godot Asset Library": 17,
       "Godot Shaders": 216,
-      "Itch.io": 656,
-      "OpenGameArt": 113
+      "IconsDB": 1,
+      "Itch.io": 666,
+      "OpenGameArt": 236
     }
   },
   "classificationProfile": {
-    "preciseMechanismMatches": 609,
-    "generalReferencesWithoutForcedMechanism": 391,
-    "uncoveredMechanisms": [
-      "全场",
-      "强壮",
-      "强攻",
-      "增伤",
-      "碎甲",
-      "刃甲",
-      "先攻",
-      "清醒",
-      "暴击",
-      "无敌",
-      "晕眩",
-      "弱化",
-      "缓速",
-      "易伤",
-      "易燃",
-      "继承",
-      "阳符法阵"
-    ],
+    "preciseMechanismMatches": 714,
+    "generalReferencesWithoutForcedMechanism": 423,
+    "uncoveredMechanisms": [],
     "visualTagVocabulary": 65,
     "populatedVisualTags": 65,
-    "visualTaggedEffects": 1000,
+    "visualTaggedEffects": 1137,
     "cardTagVocabulary": 24,
-    "populatedCardTags": 20,
-    "cardTaggedEffects": 140
+    "populatedCardTags": 24,
+    "cardTaggedEffects": 195
   },
   "rejectedItchPages": [
     {
@@ -767,38 +756,42 @@
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-15T05:51:37.992Z",
-    "effectRows": 1000,
-    "primaryLinks": 1000,
+    "checkedAt": "2026-08-15T06:50:14.777Z",
+    "effectRows": 1137,
+    "primaryLinks": 1137,
     "alternateLinks": 0,
-    "hyperlinksChecked": 1000,
-    "http200": 1000,
-    "primaryTitleMatches": 1000,
+    "hyperlinksChecked": 1137,
+    "http200": 1137,
+    "primaryTitleMatches": 1137,
     "sourceBreakdown": {
-      "Godot Asset Library": 15,
+      "CodeFronts": 1,
+      "Godot Asset Library": 17,
       "Godot Shaders": 216,
-      "Itch.io": 656,
-      "OpenGameArt": 113
+      "IconsDB": 1,
+      "Itch.io": 666,
+      "OpenGameArt": 236
     },
     "failures": 0,
     "rejectedExamplePresent": false,
     "priceFieldsValid": true,
-    "twoDVerified": 1000,
+    "twoDVerified": 1137,
     "allRowsHave2DEvidence": true,
     "twoDEvidenceBySource": {
-      "Godot Asset Library": 15,
+      "CodeFronts": 1,
+      "Godot Asset Library": 17,
       "Godot Shaders": 216,
-      "Itch.io": 656,
-      "OpenGameArt": 113
+      "IconsDB": 1,
+      "Itch.io": 666,
+      "OpenGameArt": 236
     },
     "preciseMechanismLimitValid": true,
     "expandedVisualTagsComplete": true,
     "visualTagVocabulary": 65,
     "populatedVisualTags": 65,
-    "visualTaggedEffects": 1000,
+    "visualTaggedEffects": 1137,
     "cardTagVocabulary": 24,
-    "populatedCardTags": 20,
-    "cardTaggedEffects": 140,
+    "populatedCardTags": 24,
+    "cardTaggedEffects": 195,
     "cardTagsSeparatedFromMechanisms": true,
     "juiceIceRegressionFailures": 0,
     "publicPrivacyFailures": []

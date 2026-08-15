@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T05:43:06.911Z",
+  "generatedAt": "2026-08-15T06:50:00.659Z",
   "taxonomyBasis": "通用游戏卡牌与 UI 视觉表现标签，与战斗机制词条分离",
   "tagGroups": [
     "卡面材质",
@@ -8,8 +8,8 @@
     "界面反馈"
   ],
   "tagCount": 24,
-  "populatedTagCount": 20,
-  "taggedEffectCount": 140,
+  "populatedTagCount": 24,
+  "taggedEffectCount": 195,
   "requirements": [
     {
       "group": "卡面材质",
@@ -17,94 +17,98 @@
       "description": "沿卡面移动的高光带",
       "effectCount": 9,
       "sampleEffectIds": [
-        "fx-0186",
-        "fx-0248",
-        "fx-0421",
-        "fx-0586",
-        "fx-0623",
+        "fx-0201",
+        "fx-0263",
+        "fx-0436",
+        "fx-0601",
         "fx-0638",
-        "fx-0764",
-        "fx-0816"
+        "fx-0653",
+        "fx-0779",
+        "fx-0831"
       ]
     },
     {
       "group": "卡面材质",
       "term": "箔片虹彩",
       "description": "全息箔片、彩虹与棱镜变化",
-      "effectCount": 2,
+      "effectCount": 3,
       "sampleEffectIds": [
-        "fx-0608",
-        "fx-0609"
+        "fx-0623",
+        "fx-0624",
+        "fx-0963"
       ]
     },
     {
       "group": "卡面材质",
       "term": "边框辉光",
       "description": "卡框描边、外发光与稀有度边缘",
-      "effectCount": 41,
+      "effectCount": 76,
       "sampleEffectIds": [
-        "fx-0112",
-        "fx-0113",
-        "fx-0184",
-        "fx-0373",
-        "fx-0420",
-        "fx-0456",
-        "fx-0498",
-        "fx-0516"
+        "fx-0006",
+        "fx-0127",
+        "fx-0128",
+        "fx-0199",
+        "fx-0388",
+        "fx-0435",
+        "fx-0471",
+        "fx-0513"
       ]
     },
     {
       "group": "卡面材质",
       "term": "纹理漂移",
       "description": "卡面底纹、噪声与图案流动",
-      "effectCount": 20,
+      "effectCount": 21,
       "sampleEffectIds": [
-        "fx-0005",
-        "fx-0053",
-        "fx-0161",
-        "fx-0167",
-        "fx-0180",
-        "fx-0233",
+        "fx-0020",
+        "fx-0068",
+        "fx-0176",
+        "fx-0182",
+        "fx-0195",
         "fx-0248",
-        "fx-0289"
+        "fx-0263",
+        "fx-0304"
       ]
     },
     {
       "group": "卡面材质",
       "term": "稀有度闪耀",
       "description": "星芒、闪粉与高稀有度强调",
-      "effectCount": 2,
+      "effectCount": 4,
       "sampleEffectIds": [
-        "fx-0154",
-        "fx-0883"
+        "fx-0169",
+        "fx-0937",
+        "fx-1013",
+        "fx-1020"
       ]
     },
     {
       "group": "卡面材质",
       "term": "元素附着",
       "description": "火焰、冰霜、雷电等覆盖卡面",
-      "effectCount": 40,
+      "effectCount": 59,
       "sampleEffectIds": [
+        "fx-0005",
+        "fx-0006",
+        "fx-0007",
         "fx-0008",
-        "fx-0022",
-        "fx-0112",
-        "fx-0138",
-        "fx-0154",
-        "fx-0182",
-        "fx-0226",
-        "fx-0341"
+        "fx-0010",
+        "fx-0014",
+        "fx-0023",
+        "fx-0037"
       ]
     },
     {
       "group": "卡牌交互",
       "term": "悬停高亮",
       "description": "鼠标悬停时的放大、辉光与描边",
-      "effectCount": 4,
+      "effectCount": 5,
       "sampleEffectIds": [
-        "fx-0248",
-        "fx-0421",
-        "fx-0533",
-        "fx-0764"
+        "fx-0011",
+        "fx-0263",
+        "fx-0436",
+        "fx-0548",
+        "fx-0779"
       ]
     },
     {
@@ -113,71 +117,86 @@
       "description": "卡牌被选中、锁定或确认",
       "effectCount": 1,
       "sampleEffectIds": [
-        "fx-0680"
+        "fx-0695"
       ]
     },
     {
       "group": "卡牌交互",
       "term": "翻面揭示",
       "description": "正反面翻转、揭示与开包",
-      "effectCount": 2,
+      "effectCount": 3,
       "sampleEffectIds": [
-        "fx-0167",
-        "fx-0454"
+        "fx-0009",
+        "fx-0182",
+        "fx-0469"
       ]
     },
     {
       "group": "卡牌交互",
       "term": "抽牌入手",
       "description": "从牌堆飞入手牌的轨迹",
-      "effectCount": 0,
-      "sampleEffectIds": []
+      "effectCount": 3,
+      "sampleEffectIds": [
+        "fx-0009",
+        "fx-0012",
+        "fx-0013"
+      ]
     },
     {
       "group": "卡牌交互",
       "term": "出牌飞行",
       "description": "从手牌飞向目标或战场",
-      "effectCount": 0,
-      "sampleEffectIds": []
+      "effectCount": 1,
+      "sampleEffectIds": [
+        "fx-0012"
+      ]
     },
     {
       "group": "卡牌交互",
       "term": "拖拽吸附",
       "description": "拖拽、跟手与放置吸附",
-      "effectCount": 3,
+      "effectCount": 5,
       "sampleEffectIds": [
-        "fx-0008",
-        "fx-0248",
-        "fx-0883"
+        "fx-0012",
+        "fx-0013",
+        "fx-0023",
+        "fx-0263",
+        "fx-1020"
       ]
     },
     {
       "group": "卡牌交互",
       "term": "洗牌堆叠",
       "description": "洗牌、堆叠、展开与整理",
-      "effectCount": 0,
-      "sampleEffectIds": []
+      "effectCount": 2,
+      "sampleEffectIds": [
+        "fx-0011",
+        "fx-0013"
+      ]
     },
     {
       "group": "卡牌状态",
       "term": "禁用锁定",
       "description": "不可用、锁定和灰化状态",
-      "effectCount": 3,
+      "effectCount": 4,
       "sampleEffectIds": [
-        "fx-0154",
-        "fx-0618",
-        "fx-0764"
+        "fx-0169",
+        "fx-0633",
+        "fx-0779",
+        "fx-1013"
       ]
     },
     {
       "group": "卡牌状态",
       "term": "可用提示",
       "description": "可打出、可点击或可响应提示",
-      "effectCount": 3,
+      "effectCount": 5,
       "sampleEffectIds": [
-        "fx-0112",
-        "fx-0113",
-        "fx-0649"
+        "fx-0015",
+        "fx-0016",
+        "fx-0127",
+        "fx-0128",
+        "fx-0664"
       ]
     },
     {
@@ -186,27 +205,29 @@
       "description": "倒计时、径向遮罩与恢复进度",
       "effectCount": 7,
       "sampleEffectIds": [
-        "fx-0590",
-        "fx-0691",
-        "fx-0775",
-        "fx-0908",
-        "fx-0962",
-        "fx-0988",
-        "fx-0992"
+        "fx-0605",
+        "fx-0706",
+        "fx-0790",
+        "fx-1045",
+        "fx-1099",
+        "fx-1125",
+        "fx-1129"
       ]
     },
     {
       "group": "卡牌状态",
       "term": "费用变化",
       "description": "费用数字跳动、增减与换色",
-      "effectCount": 6,
+      "effectCount": 8,
       "sampleEffectIds": [
-        "fx-0241",
-        "fx-0528",
-        "fx-0569",
-        "fx-0580",
-        "fx-0813",
-        "fx-0845"
+        "fx-0256",
+        "fx-0543",
+        "fx-0584",
+        "fx-0595",
+        "fx-0828",
+        "fx-0860",
+        "fx-0927",
+        "fx-0929"
       ]
     },
     {
@@ -215,7 +236,7 @@
       "description": "升级、进阶与卡面变体切换",
       "effectCount": 1,
       "sampleEffectIds": [
-        "fx-0957"
+        "fx-1094"
       ]
     },
     {
@@ -224,47 +245,51 @@
       "description": "卡牌燃烧、破碎和消散",
       "effectCount": 1,
       "sampleEffectIds": [
-        "fx-0712"
+        "fx-0727"
       ]
     },
     {
       "group": "界面反馈",
       "term": "按钮反馈",
       "description": "按钮按下、悬停与激活反馈",
-      "effectCount": 11,
+      "effectCount": 13,
       "sampleEffectIds": [
-        "fx-0248",
-        "fx-0456",
-        "fx-0461",
-        "fx-0569",
-        "fx-0643",
-        "fx-0712",
-        "fx-0737",
-        "fx-0784"
+        "fx-0263",
+        "fx-0471",
+        "fx-0476",
+        "fx-0584",
+        "fx-0658",
+        "fx-0727",
+        "fx-0752",
+        "fx-0799"
       ]
     },
     {
       "group": "界面反馈",
       "term": "图标动效",
       "description": "状态图标与技能图标动画",
-      "effectCount": 56,
+      "effectCount": 71,
       "sampleEffectIds": [
-        "fx-0022",
-        "fx-0053",
-        "fx-0081",
-        "fx-0138",
-        "fx-0181",
-        "fx-0182",
-        "fx-0203",
-        "fx-0217"
+        "fx-0001",
+        "fx-0004",
+        "fx-0005",
+        "fx-0007",
+        "fx-0008",
+        "fx-0010",
+        "fx-0014",
+        "fx-0015"
       ]
     },
     {
       "group": "界面反馈",
       "term": "数值跳动",
       "description": "伤害、治疗与计数数字动画",
-      "effectCount": 0,
-      "sampleEffectIds": []
+      "effectCount": 3,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0002",
+        "fx-0004"
+      ]
     },
     {
       "group": "界面反馈",
@@ -272,23 +297,25 @@
       "description": "生命、法力和进度条反馈",
       "effectCount": 11,
       "sampleEffectIds": [
-        "fx-0053",
-        "fx-0076",
-        "fx-0403",
-        "fx-0524",
-        "fx-0590",
-        "fx-0775",
-        "fx-0955",
-        "fx-0962"
+        "fx-0068",
+        "fx-0091",
+        "fx-0418",
+        "fx-0539",
+        "fx-0605",
+        "fx-0790",
+        "fx-1092",
+        "fx-1099"
       ]
     },
     {
       "group": "界面反馈",
       "term": "提示弹出",
       "description": "提示、通知、气泡和弹窗出现",
-      "effectCount": 1,
+      "effectCount": 3,
       "sampleEffectIds": [
-        "fx-0500"
+        "fx-0002",
+        "fx-0515",
+        "fx-0937"
       ]
     }
   ]
