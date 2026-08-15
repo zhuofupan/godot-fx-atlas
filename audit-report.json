@@ -1,6 +1,6 @@
 {
-  "auditedAt": "2026-08-15T02:21:24.9127161+00:00",
-  "generatedAt": "2026-08-15T02:39:52.441Z",
+  "auditedAt": "2026-08-15T10:21:24.9127161+08:00",
+  "generatedAt": "2026-08-15T04:44:20.741Z",
   "target": 1000,
   "finalUniqueEffects": 1000,
   "sourceStats": {
@@ -24,7 +24,7 @@
     "itchRejected": 113,
     "openGameArtCandidates": 445,
     "openGameArt2D": 442,
-    "openGameArtSemanticEligible": 247,
+    "openGameArtSemanticEligible": 235,
     "openGameArtAccepted": 113
   },
   "qualityChecks": {
@@ -32,12 +32,45 @@
     "uniquePrimaryUrls": true,
     "requiredFieldsComplete": true,
     "rejectedSpatialSobelAbsent": true,
-    "allDesignTermsCovered": true
+    "preciseMechanismMappingOnly": true,
+    "juiceIceRegressionPassed": true
   },
   "designCoverage": {
     "requirementCount": 59,
-    "coveredRequirementCount": 59,
-    "minimumReferencesPerRequirement": 7
+    "coveredRequirementCount": 38,
+    "minimumReferencesPerRequirement": 0
+  },
+  "priceProfile": {
+    "free": 612,
+    "paid": 388,
+    "highestUsd": 108
+  },
+  "classificationProfile": {
+    "preciseMechanismMatches": 618,
+    "generalReferencesWithoutForcedMechanism": 382,
+    "uncoveredMechanisms": [
+      "全场",
+      "强壮",
+      "强攻",
+      "增伤",
+      "碎甲",
+      "刃甲",
+      "先攻",
+      "清醒",
+      "暴击",
+      "无敌",
+      "晕眩",
+      "弱化",
+      "缓速",
+      "易伤",
+      "易燃",
+      "继承",
+      "阳符法阵",
+      "阴煞法阵",
+      "移除",
+      "永久",
+      "便携"
+    ]
   },
   "rejectedItchPages": [
     {
@@ -720,7 +753,7 @@
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-15T02:39:52.641Z",
+    "checkedAt": "2026-08-15T04:51:30.543Z",
     "effectRows": 1000,
     "primaryLinks": 1000,
     "alternateLinks": 0,
@@ -734,6 +767,10 @@
       "OpenGameArt": 113
     },
     "failures": 0,
-    "rejectedExamplePresent": false
+    "rejectedExamplePresent": false,
+    "priceFieldsValid": true,
+    "preciseMechanismLimitValid": true,
+    "juiceIceRegressionFailures": 0,
+    "publicPrivacyFailures": []
   }
 }

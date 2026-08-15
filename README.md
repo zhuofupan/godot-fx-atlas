@@ -1,11 +1,22 @@
 # Godot FX Atlas
 
-1000 个经过逐页核对、适合 Godot 2D 技能与卡牌表现的特效参考，并按《志怪牌》59 个策划词条建立映射。支持搜索、分类、策划词条筛选、实现提示复制和原始资源跳转。
+可搜索、可筛选并可按价格排序的 2D 技能与卡牌特效参考库。当前收录 1000 个已核对的公开资源链接，来源包括 Godot Shaders、Godot Asset Library、Itch.io 与 OpenGameArt。
 
-公开站点：<https://zhuofupan.github.io/godot-fx-atlas/>
+## 本地运行
 
-数据审计：<https://zhuofupan.github.io/godot-fx-atlas/audit-report.json>
+```bash
+npm install
+npm run dev
+npm run build
+npm test
+```
 
-策划覆盖：<https://zhuofupan.github.io/godot-fx-atlas/design-coverage.json>
+## 数据原则
 
-链接复验：<https://zhuofupan.github.io/godot-fx-atlas/final-link-audit.json>
+- 主链接必须通过 HTTP 状态与页面标题核对。
+- Godot Shader 只接收 `canvas_item`；外部素材需有 2D Effects 或 2D Art 依据。
+- 战斗机制只根据资源标题或原站标签精确匹配，不以弱关键词凑数。
+- 通用卡牌、UI 与视觉反馈资源允许不绑定具体机制。
+- Itch.io 固定价格取自同一资源列表页；其他资源站条目按免费资源记录，采用前仍需查看原页许可和当前价格。
+
+公开审计结果位于 `public/audit-report.json`、`public/mechanism-index.json` 与 `public/final-link-audit.json`。
