@@ -1,0 +1,981 @@
+{
+  "generatedAt": "2026-08-15T05:43:06.906Z",
+  "taxonomyBasis": "开放式 2D 视觉语言、形态、材质、节奏与用途标签",
+  "tagGroups": [
+    "元素与能量",
+    "形态与结构",
+    "材质与屏幕",
+    "动态与节奏",
+    "演出用途"
+  ],
+  "tagCount": 65,
+  "populatedTagCount": 65,
+  "taggedEffectCount": 1000,
+  "requirements": [
+    {
+      "group": "元素与能量",
+      "term": "火焰",
+      "description": "火舌、余烬、熔岩与燃烧",
+      "effectCount": 117,
+      "sampleEffectIds": [
+        "fx-0003",
+        "fx-0010",
+        "fx-0011",
+        "fx-0016",
+        "fx-0017",
+        "fx-0022",
+        "fx-0036",
+        "fx-0043"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "冰霜",
+      "description": "冰晶、冻结、雪与寒气",
+      "effectCount": 36,
+      "sampleEffectIds": [
+        "fx-0008",
+        "fx-0011",
+        "fx-0024",
+        "fx-0036",
+        "fx-0044",
+        "fx-0045",
+        "fx-0050",
+        "fx-0061"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "水流",
+      "description": "水波、飞溅、气泡与雨",
+      "effectCount": 52,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0002",
+        "fx-0010",
+        "fx-0021",
+        "fx-0022",
+        "fx-0041",
+        "fx-0072",
+        "fx-0109"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "雷电",
+      "description": "闪电、电弧、雷暴与电火花",
+      "effectCount": 54,
+      "sampleEffectIds": [
+        "fx-0010",
+        "fx-0013",
+        "fx-0017",
+        "fx-0035",
+        "fx-0036",
+        "fx-0042",
+        "fx-0045",
+        "fx-0049"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "风暴",
+      "description": "风、龙卷、旋风与气流",
+      "effectCount": 21,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0002",
+        "fx-0022",
+        "fx-0066",
+        "fx-0110",
+        "fx-0147",
+        "fx-0160",
+        "fx-0164"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "毒素",
+      "description": "毒液、酸液、瘟疫与黏液",
+      "effectCount": 17,
+      "sampleEffectIds": [
+        "fx-0036",
+        "fx-0045",
+        "fx-0109",
+        "fx-0181",
+        "fx-0298",
+        "fx-0302",
+        "fx-0364",
+        "fx-0489"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "自然",
+      "description": "叶片、藤蔓、植物与生命能量",
+      "effectCount": 17,
+      "sampleEffectIds": [
+        "fx-0161",
+        "fx-0191",
+        "fx-0199",
+        "fx-0232",
+        "fx-0531",
+        "fx-0607",
+        "fx-0608",
+        "fx-0621"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "岩土",
+      "description": "岩石、沙尘、大地与晶体",
+      "effectCount": 41,
+      "sampleEffectIds": [
+        "fx-0010",
+        "fx-0022",
+        "fx-0032",
+        "fx-0054",
+        "fx-0066",
+        "fx-0092",
+        "fx-0188",
+        "fx-0225"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "圣光",
+      "description": "神圣、祝福、日光与放射光",
+      "effectCount": 5,
+      "sampleEffectIds": [
+        "fx-0011",
+        "fx-0029",
+        "fx-0046",
+        "fx-0405",
+        "fx-0567"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "暗影",
+      "description": "阴影、虚空、诅咒与黑洞",
+      "effectCount": 44,
+      "sampleEffectIds": [
+        "fx-0010",
+        "fx-0011",
+        "fx-0012",
+        "fx-0016",
+        "fx-0017",
+        "fx-0052",
+        "fx-0061",
+        "fx-0093"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "血液",
+      "description": "血迹、流血、伤口与飞溅",
+      "effectCount": 26,
+      "sampleEffectIds": [
+        "fx-0021",
+        "fx-0041",
+        "fx-0069",
+        "fx-0077",
+        "fx-0080",
+        "fx-0103",
+        "fx-0109",
+        "fx-0118"
+      ]
+    },
+    {
+      "group": "元素与能量",
+      "term": "星尘",
+      "description": "星空、宇宙、星云与天体",
+      "effectCount": 34,
+      "sampleEffectIds": [
+        "fx-0049",
+        "fx-0095",
+        "fx-0102",
+        "fx-0124",
+        "fx-0154",
+        "fx-0195",
+        "fx-0272",
+        "fx-0299"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "爆炸",
+      "description": "中心爆点、火球与径向炸裂",
+      "effectCount": 127,
+      "sampleEffectIds": [
+        "fx-0004",
+        "fx-0013",
+        "fx-0016",
+        "fx-0018",
+        "fx-0022",
+        "fx-0023",
+        "fx-0024",
+        "fx-0032"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "冲击波",
+      "description": "向外扩散的圆环与空气波",
+      "effectCount": 5,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0037",
+        "fx-0038",
+        "fx-0039",
+        "fx-0439"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "光束",
+      "description": "激光、射线与持续束流",
+      "effectCount": 19,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0004",
+        "fx-0063",
+        "fx-0102",
+        "fx-0184",
+        "fx-0246",
+        "fx-0260",
+        "fx-0536"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "弹道",
+      "description": "子弹、箭矢、火球与飞行物",
+      "effectCount": 68,
+      "sampleEffectIds": [
+        "fx-0005",
+        "fx-0014",
+        "fx-0015",
+        "fx-0023",
+        "fx-0027",
+        "fx-0030",
+        "fx-0037",
+        "fx-0047"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "斩击",
+      "description": "刀光、剑弧与切割轨迹",
+      "effectCount": 32,
+      "sampleEffectIds": [
+        "fx-0016",
+        "fx-0018",
+        "fx-0025",
+        "fx-0026",
+        "fx-0044",
+        "fx-0050",
+        "fx-0054",
+        "fx-0062"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "拖尾",
+      "description": "运动尾迹、丝带与速度线",
+      "effectCount": 2,
+      "sampleEffectIds": [
+        "fx-0625",
+        "fx-0814"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "粒子喷射",
+      "description": "火花、碎屑与方向性喷发",
+      "effectCount": 64,
+      "sampleEffectIds": [
+        "fx-0025",
+        "fx-0026",
+        "fx-0030",
+        "fx-0032",
+        "fx-0034",
+        "fx-0040",
+        "fx-0049",
+        "fx-0074"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "烟雾云团",
+      "description": "烟、雾、云与蒸汽体积",
+      "effectCount": 62,
+      "sampleEffectIds": [
+        "fx-0037",
+        "fx-0092",
+        "fx-0110",
+        "fx-0119",
+        "fx-0131",
+        "fx-0160",
+        "fx-0161",
+        "fx-0188"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "法阵符文",
+      "description": "魔法阵、符文、字形与五芒星",
+      "effectCount": 6,
+      "sampleEffectIds": [
+        "fx-0012",
+        "fx-0218",
+        "fx-0235",
+        "fx-0293",
+        "fx-0726",
+        "fx-0834"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "光环",
+      "description": "角色周围的环状持续效果",
+      "effectCount": 10,
+      "sampleEffectIds": [
+        "fx-0012",
+        "fx-0060",
+        "fx-0165",
+        "fx-0255",
+        "fx-0256",
+        "fx-0421",
+        "fx-0556",
+        "fx-0657"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "护盾",
+      "description": "屏障、力场与防护罩",
+      "effectCount": 11,
+      "sampleEffectIds": [
+        "fx-0033",
+        "fx-0036",
+        "fx-0087",
+        "fx-0123",
+        "fx-0124",
+        "fx-0576",
+        "fx-0611",
+        "fx-0634"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "漩涡",
+      "description": "旋涡、传送涡流与吸积盘",
+      "effectCount": 4,
+      "sampleEffectIds": [
+        "fx-0471",
+        "fx-0556",
+        "fx-0985",
+        "fx-0993"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "液体",
+      "description": "流体、波纹与黏液形变",
+      "effectCount": 43,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0010",
+        "fx-0022",
+        "fx-0072",
+        "fx-0089",
+        "fx-0109",
+        "fx-0155",
+        "fx-0159"
+      ]
+    },
+    {
+      "group": "形态与结构",
+      "term": "裂纹碎片",
+      "description": "裂纹、碎片、破裂与瓦解",
+      "effectCount": 8,
+      "sampleEffectIds": [
+        "fx-0019",
+        "fx-0133",
+        "fx-0161",
+        "fx-0467",
+        "fx-0676",
+        "fx-0761",
+        "fx-0941",
+        "fx-0967"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "描边",
+      "description": "轮廓线、边缘检测与选中描边",
+      "effectCount": 11,
+      "sampleEffectIds": [
+        "fx-0001",
+        "fx-0061",
+        "fx-0073",
+        "fx-0108",
+        "fx-0247",
+        "fx-0278",
+        "fx-0544",
+        "fx-0550"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "外发光",
+      "description": "辉光、泛光、边缘光与自发光",
+      "effectCount": 15,
+      "sampleEffectIds": [
+        "fx-0004",
+        "fx-0006",
+        "fx-0080",
+        "fx-0461",
+        "fx-0488",
+        "fx-0490",
+        "fx-0523",
+        "fx-0590"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "溶解",
+      "description": "噪声裁切、烧蚀与消散",
+      "effectCount": 7,
+      "sampleEffectIds": [
+        "fx-0032",
+        "fx-0101",
+        "fx-0145",
+        "fx-0287",
+        "fx-0522",
+        "fx-0716",
+        "fx-0729"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "像素化",
+      "description": "像素块、降采样与复古分辨率",
+      "effectCount": 510,
+      "sampleEffectIds": [
+        "fx-0005",
+        "fx-0011",
+        "fx-0013",
+        "fx-0014",
+        "fx-0015",
+        "fx-0016",
+        "fx-0017",
+        "fx-0018"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "故障",
+      "description": "数字错位、VHS 与数据损坏",
+      "effectCount": 17,
+      "sampleEffectIds": [
+        "fx-0009",
+        "fx-0128",
+        "fx-0551",
+        "fx-0626",
+        "fx-0676",
+        "fx-0711",
+        "fx-0731",
+        "fx-0850"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "模糊",
+      "description": "高斯、径向、运动与景深模糊",
+      "effectCount": 10,
+      "sampleEffectIds": [
+        "fx-0008",
+        "fx-0019",
+        "fx-0020",
+        "fx-0134",
+        "fx-0561",
+        "fx-0584",
+        "fx-0675",
+        "fx-0683"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "扭曲",
+      "description": "折射、热浪、鱼眼与空间弯曲",
+      "effectCount": 14,
+      "sampleEffectIds": [
+        "fx-0038",
+        "fx-0039",
+        "fx-0187",
+        "fx-0237",
+        "fx-0524",
+        "fx-0562",
+        "fx-0582",
+        "fx-0624"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "色差",
+      "description": "RGB 分离与镜头色散",
+      "effectCount": 1,
+      "sampleEffectIds": [
+        "fx-0762"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "扫描线",
+      "description": "CRT、扫描线与模拟屏幕纹理",
+      "effectCount": 12,
+      "sampleEffectIds": [
+        "fx-0009",
+        "fx-0676",
+        "fx-0711",
+        "fx-0884",
+        "fx-0899",
+        "fx-0912",
+        "fx-0924",
+        "fx-0936"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "调色",
+      "description": "色相、饱和度、渐变与调色板",
+      "effectCount": 85,
+      "sampleEffectIds": [
+        "fx-0007",
+        "fx-0012",
+        "fx-0031",
+        "fx-0049",
+        "fx-0054",
+        "fx-0061",
+        "fx-0090",
+        "fx-0091"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "玻璃折射",
+      "description": "玻璃、反射、折射与磨砂层",
+      "effectCount": 15,
+      "sampleEffectIds": [
+        "fx-0008",
+        "fx-0061",
+        "fx-0155",
+        "fx-0402",
+        "fx-0411",
+        "fx-0455",
+        "fx-0467",
+        "fx-0761"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "全息虹彩",
+      "description": "全息、箔片、虹彩与棱镜色",
+      "effectCount": 3,
+      "sampleEffectIds": [
+        "fx-0608",
+        "fx-0609",
+        "fx-0756"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "卡通渲染",
+      "description": "卡通、漫画、半调与分层着色",
+      "effectCount": 8,
+      "sampleEffectIds": [
+        "fx-0024",
+        "fx-0030",
+        "fx-0309",
+        "fx-0544",
+        "fx-0554",
+        "fx-0583",
+        "fx-0851",
+        "fx-0987"
+      ]
+    },
+    {
+      "group": "材质与屏幕",
+      "term": "遮罩揭示",
+      "description": "遮罩、擦除、裁切与局部揭示",
+      "effectCount": 6,
+      "sampleEffectIds": [
+        "fx-0078",
+        "fx-0107",
+        "fx-0539",
+        "fx-0766",
+        "fx-0914",
+        "fx-0951"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "脉冲",
+      "description": "周期缩放、亮度或环形脉冲",
+      "effectCount": 5,
+      "sampleEffectIds": [
+        "fx-0154",
+        "fx-0280",
+        "fx-0689",
+        "fx-0766",
+        "fx-0909"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "闪烁",
+      "description": "闪光、频闪与短促亮灭",
+      "effectCount": 6,
+      "sampleEffectIds": [
+        "fx-0002",
+        "fx-0535",
+        "fx-0586",
+        "fx-0854",
+        "fx-0858",
+        "fx-0965"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "循环",
+      "description": "无缝循环、待机和持续动画",
+      "effectCount": 12,
+      "sampleEffectIds": [
+        "fx-0185",
+        "fx-0410",
+        "fx-0415",
+        "fx-0588",
+        "fx-0649",
+        "fx-0658",
+        "fx-0659",
+        "fx-0684"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "蓄力",
+      "description": "聚能、充电和施法准备",
+      "effectCount": 4,
+      "sampleEffectIds": [
+        "fx-0763",
+        "fx-0773",
+        "fx-0801",
+        "fx-0813"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "瞬间爆发",
+      "description": "单次爆点与短促强反馈",
+      "effectCount": 47,
+      "sampleEffectIds": [
+        "fx-0004",
+        "fx-0011",
+        "fx-0013",
+        "fx-0016",
+        "fx-0024",
+        "fx-0034",
+        "fx-0040",
+        "fx-0047"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "渐隐渐现",
+      "description": "淡入、淡出与透明度过渡",
+      "effectCount": 3,
+      "sampleEffectIds": [
+        "fx-0141",
+        "fx-0787",
+        "fx-0872"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "漂浮",
+      "description": "上下漂移、悬浮与游动",
+      "effectCount": 4,
+      "sampleEffectIds": [
+        "fx-0248",
+        "fx-0269",
+        "fx-0742",
+        "fx-0955"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "旋转",
+      "description": "环绕、自转与轨道运动",
+      "effectCount": 16,
+      "sampleEffectIds": [
+        "fx-0067",
+        "fx-0605",
+        "fx-0608",
+        "fx-0687",
+        "fx-0713",
+        "fx-0739",
+        "fx-0778",
+        "fx-0781"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "波动",
+      "description": "正弦波、摇摆和软体波纹",
+      "effectCount": 16,
+      "sampleEffectIds": [
+        "fx-0037",
+        "fx-0038",
+        "fx-0039",
+        "fx-0142",
+        "fx-0159",
+        "fx-0461",
+        "fx-0531",
+        "fx-0782"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "弹性形变",
+      "description": "弹跳、挤压与拉伸",
+      "effectCount": 2,
+      "sampleEffectIds": [
+        "fx-0196",
+        "fx-0433"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "扩散",
+      "description": "由中心向外扩张",
+      "effectCount": 10,
+      "sampleEffectIds": [
+        "fx-0421",
+        "fx-0490",
+        "fx-0492",
+        "fx-0675",
+        "fx-0689",
+        "fx-0754",
+        "fx-0762",
+        "fx-0776"
+      ]
+    },
+    {
+      "group": "动态与节奏",
+      "term": "收束",
+      "description": "向中心聚拢与吸收",
+      "effectCount": 2,
+      "sampleEffectIds": [
+        "fx-0354",
+        "fx-0718"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "命中反馈",
+      "description": "受击、命中点与伤害确认",
+      "effectCount": 51,
+      "sampleEffectIds": [
+        "fx-0002",
+        "fx-0013",
+        "fx-0017",
+        "fx-0024",
+        "fx-0026",
+        "fx-0034",
+        "fx-0040",
+        "fx-0042"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "施法前摇",
+      "description": "施法准备、聚能与瞄准",
+      "effectCount": 11,
+      "sampleEffectIds": [
+        "fx-0139",
+        "fx-0293",
+        "fx-0773",
+        "fx-0801",
+        "fx-0813",
+        "fx-0854",
+        "fx-0861",
+        "fx-0875"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "传送召唤",
+      "description": "传送门、出现与召唤落位",
+      "effectCount": 13,
+      "sampleEffectIds": [
+        "fx-0012",
+        "fx-0128",
+        "fx-0187",
+        "fx-0237",
+        "fx-0305",
+        "fx-0306",
+        "fx-0307",
+        "fx-0366"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "范围提示",
+      "description": "技能范围、危险区与落点圈",
+      "effectCount": 3,
+      "sampleEffectIds": [
+        "fx-0260",
+        "fx-0524",
+        "fx-0872"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "状态附着",
+      "description": "角色身上的增益、减益与元素状态",
+      "effectCount": 31,
+      "sampleEffectIds": [
+        "fx-0012",
+        "fx-0028",
+        "fx-0033",
+        "fx-0045",
+        "fx-0060",
+        "fx-0109",
+        "fx-0145",
+        "fx-0165"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "死亡消散",
+      "description": "死亡、灵魂逸散与回收",
+      "effectCount": 65,
+      "sampleEffectIds": [
+        "fx-0031",
+        "fx-0032",
+        "fx-0042",
+        "fx-0067",
+        "fx-0086",
+        "fx-0101",
+        "fx-0145",
+        "fx-0165"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "治疗恢复",
+      "description": "治疗、生命恢复与净化",
+      "effectCount": 9,
+      "sampleEffectIds": [
+        "fx-0028",
+        "fx-0053",
+        "fx-0076",
+        "fx-0567",
+        "fx-0587",
+        "fx-0590",
+        "fx-0733",
+        "fx-0734"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "奖励庆祝",
+      "description": "胜利、奖励、升级与彩纸",
+      "effectCount": 1,
+      "sampleEffectIds": [
+        "fx-0709"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "天气氛围",
+      "description": "雨雪、雾、云与环境天气",
+      "effectCount": 32,
+      "sampleEffectIds": [
+        "fx-0002",
+        "fx-0161",
+        "fx-0191",
+        "fx-0263",
+        "fx-0337",
+        "fx-0367",
+        "fx-0384",
+        "fx-0502"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "背景循环",
+      "description": "可循环的动态背景与图案",
+      "effectCount": 20,
+      "sampleEffectIds": [
+        "fx-0007",
+        "fx-0031",
+        "fx-0247",
+        "fx-0271",
+        "fx-0415",
+        "fx-0588",
+        "fx-0590",
+        "fx-0656"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "屏幕转场",
+      "description": "场景切换、擦除与全屏过渡",
+      "effectCount": 14,
+      "sampleEffectIds": [
+        "fx-0007",
+        "fx-0031",
+        "fx-0101",
+        "fx-0243",
+        "fx-0338",
+        "fx-0532",
+        "fx-0539",
+        "fx-0545"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "界面反馈",
+      "description": "按钮、图标、HUD 与数值反馈",
+      "effectCount": 79,
+      "sampleEffectIds": [
+        "fx-0008",
+        "fx-0009",
+        "fx-0053",
+        "fx-0076",
+        "fx-0081",
+        "fx-0138",
+        "fx-0181",
+        "fx-0182"
+      ]
+    },
+    {
+      "group": "演出用途",
+      "term": "通用合成",
+      "description": "通用 2D Shader、材质与视觉合成",
+      "effectCount": 882,
+      "sampleEffectIds": [
+        "fx-0002",
+        "fx-0003",
+        "fx-0004",
+        "fx-0005",
+        "fx-0006",
+        "fx-0007",
+        "fx-0008",
+        "fx-0009"
+      ]
+    }
+  ]
+}

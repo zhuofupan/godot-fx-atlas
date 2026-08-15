@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T05:19:35.931Z",
-  "taxonomyBasis": "通用 2D 战斗机制与卡牌系统分类",
+  "generatedAt": "2026-08-15T05:43:06.936Z",
+  "taxonomyBasis": "通用 2D 战斗机制分类；卡牌表现标签另行维护",
   "requirementGroups": [
     "攻击方式",
     "触发时机",
@@ -8,13 +8,12 @@
     "正面状态",
     "负面状态",
     "固有效果",
-    "地块法阵",
-    "卡牌与系统"
+    "地块法阵"
   ],
-  "requirementCount": 59,
-  "coveredRequirementCount": 38,
+  "requirementCount": 51,
+  "coveredRequirementCount": 34,
   "minimumReferencesPerRequirement": 0,
-  "maximumReferencesPerRequirement": 211,
+  "maximumReferencesPerRequirement": 210,
   "requirements": [
     {
       "group": "攻击方式",
@@ -26,42 +25,42 @@
         "fx-0016",
         "fx-0018",
         "fx-0021",
+        "fx-0023",
         "fx-0024",
-        "fx-0025",
-        "fx-0036",
-        "fx-0037"
+        "fx-0033",
+        "fx-0034"
       ]
     },
     {
       "group": "攻击方式",
       "term": "闪击",
       "description": "高速多目标或连续攻击",
-      "effectCount": 28,
+      "effectCount": 31,
       "sampleEffectIds": [
         "fx-0017",
+        "fx-0035",
         "fx-0040",
-        "fx-0045",
-        "fx-0047",
-        "fx-0146",
-        "fx-0147",
-        "fx-0148",
-        "fx-0149"
+        "fx-0042",
+        "fx-0135",
+        "fx-0136",
+        "fx-0137",
+        "fx-0138"
       ]
     },
     {
       "group": "攻击方式",
       "term": "远程",
       "description": "跨格弹道、飞行物或射线",
-      "effectCount": 61,
+      "effectCount": 63,
       "sampleEffectIds": [
         "fx-0004",
         "fx-0005",
         "fx-0014",
         "fx-0015",
-        "fx-0028",
-        "fx-0032",
-        "fx-0041",
-        "fx-0043"
+        "fx-0027",
+        "fx-0030",
+        "fx-0037",
+        "fx-0047"
       ]
     },
     {
@@ -71,13 +70,13 @@
       "effectCount": 23,
       "sampleEffectIds": [
         "fx-0016",
+        "fx-0025",
         "fx-0026",
-        "fx-0027",
+        "fx-0044",
         "fx-0050",
-        "fx-0055",
-        "fx-0067",
-        "fx-0071",
-        "fx-0074"
+        "fx-0062",
+        "fx-0065",
+        "fx-0067"
       ]
     },
     {
@@ -87,13 +86,13 @@
       "effectCount": 84,
       "sampleEffectIds": [
         "fx-0002",
-        "fx-0012",
+        "fx-0011",
         "fx-0013",
         "fx-0016",
         "fx-0017",
+        "fx-0024",
         "fx-0025",
-        "fx-0026",
-        "fx-0027"
+        "fx-0026"
       ]
     },
     {
@@ -109,41 +108,41 @@
       "description": "单位进入战场前后的落位演出",
       "effectCount": 3,
       "sampleEffectIds": [
-        "fx-0251",
-        "fx-0449",
-        "fx-0578"
+        "fx-0237",
+        "fx-0442",
+        "fx-0569"
       ]
     },
     {
       "group": "触发时机",
       "term": "召唤",
       "description": "召唤单位、传送门与法阵",
-      "effectCount": 17,
+      "effectCount": 19,
       "sampleEffectIds": [
-        "fx-0138",
-        "fx-0199",
-        "fx-0232",
-        "fx-0249",
-        "fx-0251",
-        "fx-0319",
-        "fx-0320",
-        "fx-0321"
+        "fx-0128",
+        "fx-0187",
+        "fx-0218",
+        "fx-0235",
+        "fx-0237",
+        "fx-0305",
+        "fx-0306",
+        "fx-0307"
       ]
     },
     {
       "group": "触发时机",
       "term": "结算",
       "description": "回合结算、周期跳字与层数衰减",
-      "effectCount": 23,
+      "effectCount": 21,
       "sampleEffectIds": [
-        "fx-0034",
-        "fx-0039",
-        "fx-0086",
-        "fx-0100",
-        "fx-0172",
-        "fx-0175",
-        "fx-0176",
-        "fx-0334"
+        "fx-0032",
+        "fx-0060",
+        "fx-0090",
+        "fx-0162",
+        "fx-0165",
+        "fx-0255",
+        "fx-0256",
+        "fx-0323"
       ]
     },
     {
@@ -152,14 +151,14 @@
       "description": "击杀、处决与终结反馈",
       "effectCount": 54,
       "sampleEffectIds": [
-        "fx-0011",
+        "fx-0010",
         "fx-0021",
-        "fx-0040",
-        "fx-0046",
-        "fx-0076",
-        "fx-0086",
-        "fx-0087",
-        "fx-0113"
+        "fx-0035",
+        "fx-0041",
+        "fx-0069",
+        "fx-0077",
+        "fx-0103",
+        "fx-0109"
       ]
     },
     {
@@ -168,14 +167,14 @@
       "description": "死亡、灵魂逸散和消失",
       "effectCount": 21,
       "sampleEffectIds": [
-        "fx-0034",
-        "fx-0111",
-        "fx-0192",
-        "fx-0231",
-        "fx-0300",
-        "fx-0359",
-        "fx-0406",
-        "fx-0528"
+        "fx-0032",
+        "fx-0101",
+        "fx-0217",
+        "fx-0287",
+        "fx-0349",
+        "fx-0403",
+        "fx-0521",
+        "fx-0522"
       ]
     },
     {
@@ -198,14 +197,14 @@
       "description": "即时恢复生命",
       "effectCount": 15,
       "sampleEffectIds": [
+        "fx-0028",
         "fx-0029",
-        "fx-0030",
-        "fx-0035",
-        "fx-0052",
-        "fx-0085",
-        "fx-0412",
-        "fx-0476",
-        "fx-0596"
+        "fx-0046",
+        "fx-0053",
+        "fx-0076",
+        "fx-0405",
+        "fx-0587",
+        "fx-0590"
       ]
     },
     {
@@ -214,14 +213,14 @@
       "description": "护甲、护盾和防御增加",
       "effectCount": 14,
       "sampleEffectIds": [
-        "fx-0062",
-        "fx-0075",
-        "fx-0098",
-        "fx-0106",
-        "fx-0107",
-        "fx-0133",
-        "fx-0134",
-        "fx-0507"
+        "fx-0056",
+        "fx-0068",
+        "fx-0087",
+        "fx-0096",
+        "fx-0097",
+        "fx-0123",
+        "fx-0124",
+        "fx-0500"
       ]
     },
     {
@@ -230,9 +229,9 @@
       "description": "净化负面状态或获得强化",
       "effectCount": 3,
       "sampleEffectIds": [
-        "fx-0030",
-        "fx-0052",
-        "fx-0412"
+        "fx-0029",
+        "fx-0046",
+        "fx-0405"
       ]
     },
     {
@@ -242,23 +241,23 @@
       "effectCount": 65,
       "sampleEffectIds": [
         "fx-0005",
-        "fx-0012",
+        "fx-0011",
         "fx-0013",
         "fx-0014",
         "fx-0015",
+        "fx-0024",
         "fx-0025",
-        "fx-0026",
-        "fx-0027"
+        "fx-0026"
       ]
     },
     {
       "group": "瞬发效果",
       "term": "法伤",
       "description": "法术和元素伤害",
-      "effectCount": 211,
+      "effectCount": 210,
       "sampleEffectIds": [
         "fx-0005",
-        "fx-0007",
+        "fx-0010",
         "fx-0011",
         "fx-0012",
         "fx-0014",
@@ -285,32 +284,32 @@
       "group": "正面状态",
       "term": "愈合",
       "description": "周期治疗与再生",
-      "effectCount": 19,
+      "effectCount": 20,
       "sampleEffectIds": [
-        "fx-0029",
-        "fx-0035",
-        "fx-0085",
-        "fx-0171",
-        "fx-0203",
-        "fx-0211",
-        "fx-0246",
-        "fx-0476"
+        "fx-0028",
+        "fx-0053",
+        "fx-0076",
+        "fx-0161",
+        "fx-0191",
+        "fx-0199",
+        "fx-0232",
+        "fx-0587"
       ]
     },
     {
       "group": "正面状态",
       "term": "强化",
       "description": "下一次攻击强化或蓄力",
-      "effectCount": 24,
+      "effectCount": 23,
       "sampleEffectIds": [
         "fx-0004",
-        "fx-0036",
-        "fx-0039",
-        "fx-0086",
-        "fx-0090",
-        "fx-0175",
-        "fx-0176",
-        "fx-0314"
+        "fx-0033",
+        "fx-0060",
+        "fx-0165",
+        "fx-0173",
+        "fx-0255",
+        "fx-0256",
+        "fx-0301"
       ]
     },
     {
@@ -319,14 +318,14 @@
       "description": "减伤和防护层",
       "effectCount": 11,
       "sampleEffectIds": [
-        "fx-0062",
-        "fx-0075",
-        "fx-0098",
-        "fx-0106",
-        "fx-0107",
-        "fx-0133",
-        "fx-0134",
-        "fx-0561"
+        "fx-0056",
+        "fx-0068",
+        "fx-0087",
+        "fx-0096",
+        "fx-0097",
+        "fx-0123",
+        "fx-0124",
+        "fx-0576"
       ]
     },
     {
@@ -335,7 +334,7 @@
       "description": "濒死存活、复活与重生",
       "effectCount": 1,
       "sampleEffectIds": [
-        "fx-0691"
+        "fx-0845"
       ]
     },
     {
@@ -349,16 +348,16 @@
       "group": "正面状态",
       "term": "隐匿",
       "description": "无法被选中的隐身状态",
-      "effectCount": 42,
+      "effectCount": 41,
       "sampleEffectIds": [
-        "fx-0102",
-        "fx-0121",
-        "fx-0128",
-        "fx-0142",
-        "fx-0170",
-        "fx-0200",
-        "fx-0202",
-        "fx-0206"
+        "fx-0092",
+        "fx-0110",
+        "fx-0119",
+        "fx-0131",
+        "fx-0160",
+        "fx-0188",
+        "fx-0190",
+        "fx-0194"
       ]
     },
     {
@@ -381,12 +380,12 @@
       "description": "受伤后的生命恢复",
       "effectCount": 7,
       "sampleEffectIds": [
-        "fx-0035",
-        "fx-0085",
-        "fx-0596",
-        "fx-0656",
-        "fx-0751",
-        "fx-0752",
+        "fx-0053",
+        "fx-0076",
+        "fx-0587",
+        "fx-0718",
+        "fx-0733",
+        "fx-0734",
         "fx-0955"
       ]
     },
@@ -408,16 +407,16 @@
       "group": "正面状态",
       "term": "提速",
       "description": "速度提升、风和运动拖尾",
-      "effectCount": 22,
+      "effectCount": 21,
       "sampleEffectIds": [
         "fx-0002",
-        "fx-0082",
-        "fx-0115",
-        "fx-0121",
-        "fx-0158",
-        "fx-0170",
-        "fx-0174",
-        "fx-0211"
+        "fx-0073",
+        "fx-0105",
+        "fx-0110",
+        "fx-0147",
+        "fx-0160",
+        "fx-0164",
+        "fx-0199"
       ]
     },
     {
@@ -426,13 +425,13 @@
       "description": "禁止攻击、武器封印或束缚",
       "effectCount": 10,
       "sampleEffectIds": [
-        "fx-0092",
-        "fx-0103",
-        "fx-0155",
-        "fx-0504",
-        "fx-0510",
-        "fx-0555",
-        "fx-0723",
+        "fx-0081",
+        "fx-0093",
+        "fx-0144",
+        "fx-0497",
+        "fx-0503",
+        "fx-0549",
+        "fx-0706",
         "fx-0764"
       ]
     },
@@ -442,14 +441,14 @@
       "description": "造成伤害减半的虚弱感",
       "effectCount": 13,
       "sampleEffectIds": [
-        "fx-0059",
-        "fx-0066",
-        "fx-0141",
-        "fx-0316",
-        "fx-0652",
+        "fx-0052",
+        "fx-0061",
+        "fx-0225",
+        "fx-0429",
+        "fx-0698",
+        "fx-0712",
         "fx-0714",
-        "fx-0730",
-        "fx-0758"
+        "fx-0820"
       ]
     },
     {
@@ -486,28 +485,29 @@
       "group": "负面状态",
       "term": "灼烧",
       "description": "持续火焰伤害",
-      "effectCount": 98,
+      "effectCount": 100,
       "sampleEffectIds": [
         "fx-0003",
-        "fx-0028",
-        "fx-0039",
-        "fx-0049",
-        "fx-0061",
-        "fx-0063",
-        "fx-0065",
-        "fx-0080"
+        "fx-0027",
+        "fx-0043",
+        "fx-0055",
+        "fx-0057",
+        "fx-0059",
+        "fx-0060",
+        "fx-0074"
       ]
     },
     {
       "group": "负面状态",
       "term": "瘟疫",
       "description": "感染、瘟疫与传播",
-      "effectCount": 4,
+      "effectCount": 5,
       "sampleEffectIds": [
-        "fx-0758",
-        "fx-0817",
-        "fx-0837",
-        "fx-0838"
+        "fx-0797",
+        "fx-0820",
+        "fx-0821",
+        "fx-0822",
+        "fx-0823"
       ]
     },
     {
@@ -516,14 +516,14 @@
       "description": "无视护甲的毒素伤害",
       "effectCount": 8,
       "sampleEffectIds": [
-        "fx-0193",
-        "fx-0311",
-        "fx-0315",
-        "fx-0374",
-        "fx-0497",
-        "fx-0559",
-        "fx-0666",
-        "fx-0689"
+        "fx-0181",
+        "fx-0298",
+        "fx-0302",
+        "fx-0364",
+        "fx-0489",
+        "fx-0553",
+        "fx-0674",
+        "fx-0728"
       ]
     },
     {
@@ -537,16 +537,16 @@
       "group": "负面状态",
       "term": "麻痹",
       "description": "雷电导致的麻痹或晕眩",
-      "effectCount": 35,
+      "effectCount": 37,
       "sampleEffectIds": [
         "fx-0038",
+        "fx-0039",
         "fx-0042",
-        "fx-0044",
-        "fx-0047",
-        "fx-0063",
-        "fx-0077",
-        "fx-0078",
-        "fx-0125"
+        "fx-0057",
+        "fx-0070",
+        "fx-0071",
+        "fx-0116",
+        "fx-0122"
       ]
     },
     {
@@ -555,14 +555,14 @@
       "description": "攻击触发的流血伤害",
       "effectCount": 16,
       "sampleEffectIds": [
-        "fx-0046",
-        "fx-0076",
-        "fx-0087",
-        "fx-0120",
-        "fx-0127",
-        "fx-0154",
-        "fx-0200",
-        "fx-0220"
+        "fx-0041",
+        "fx-0069",
+        "fx-0077",
+        "fx-0109",
+        "fx-0118",
+        "fx-0143",
+        "fx-0188",
+        "fx-0207"
       ]
     },
     {
@@ -571,14 +571,14 @@
       "description": "冰霜、冻结与冰晶",
       "effectCount": 22,
       "sampleEffectIds": [
-        "fx-0009",
-        "fx-0057",
-        "fx-0066",
-        "fx-0124",
-        "fx-0144",
-        "fx-0157",
-        "fx-0195",
-        "fx-0254"
+        "fx-0008",
+        "fx-0061",
+        "fx-0112",
+        "fx-0115",
+        "fx-0133",
+        "fx-0146",
+        "fx-0183",
+        "fx-0240"
       ]
     },
     {
@@ -599,16 +599,16 @@
       "group": "固有效果",
       "term": "穿透",
       "description": "无视护甲直接伤害生命",
-      "effectCount": 14,
+      "effectCount": 15,
       "sampleEffectIds": [
         "fx-0004",
-        "fx-0064",
-        "fx-0068",
-        "fx-0081",
-        "fx-0112",
-        "fx-0196",
-        "fx-0281",
-        "fx-0542"
+        "fx-0058",
+        "fx-0063",
+        "fx-0102",
+        "fx-0184",
+        "fx-0246",
+        "fx-0269",
+        "fx-0536"
       ]
     },
     {
@@ -617,14 +617,14 @@
       "description": "控制、魅惑、锁链和黑暗契约",
       "effectCount": 15,
       "sampleEffectIds": [
-        "fx-0058",
-        "fx-0059",
-        "fx-0103",
-        "fx-0155",
-        "fx-0173",
-        "fx-0201",
-        "fx-0206",
-        "fx-0252"
+        "fx-0052",
+        "fx-0093",
+        "fx-0113",
+        "fx-0144",
+        "fx-0163",
+        "fx-0189",
+        "fx-0194",
+        "fx-0238"
       ]
     },
     {
@@ -638,98 +638,9 @@
       "group": "地块法阵",
       "term": "阴煞法阵",
       "description": "敌方弱化与易伤的暗色法阵",
-      "effectCount": 0,
-      "sampleEffectIds": []
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "充能",
-      "description": "恢复次数、法力与充能进度",
-      "effectCount": 18,
+      "effectCount": 1,
       "sampleEffectIds": [
-        "fx-0072",
-        "fx-0116",
-        "fx-0131",
-        "fx-0132",
-        "fx-0184",
-        "fx-0192",
-        "fx-0295",
-        "fx-0337"
-      ]
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "消耗",
-      "description": "打出后燃尽或离场",
-      "effectCount": 2,
-      "sampleEffectIds": [
-        "fx-0316",
-        "fx-0758"
-      ]
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "移除",
-      "description": "从卡组永久删除",
-      "effectCount": 0,
-      "sampleEffectIds": []
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "转瞬",
-      "description": "本回合限定的短促效果",
-      "effectCount": 14,
-      "sampleEffectIds": [
-        "fx-0038",
-        "fx-0259",
-        "fx-0277",
-        "fx-0336",
-        "fx-0434",
-        "fx-0647",
-        "fx-0659",
-        "fx-0711"
-      ]
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "持久",
-      "description": "战场内持续存在的状态",
-      "effectCount": 4,
-      "sampleEffectIds": [
-        "fx-0474",
-        "fx-0563",
-        "fx-0795",
-        "fx-0831"
-      ]
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "永久",
-      "description": "永久成长、升级和进化",
-      "effectCount": 0,
-      "sampleEffectIds": []
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "便携",
-      "description": "回合结束保留的卡牌或物品提示",
-      "effectCount": 0,
-      "sampleEffectIds": []
-    },
-    {
-      "group": "卡牌与系统",
-      "term": "精力",
-      "description": "打牌资源、法力和能量条",
-      "effectCount": 20,
-      "sampleEffectIds": [
-        "fx-0038",
-        "fx-0072",
-        "fx-0090",
-        "fx-0116",
-        "fx-0192",
-        "fx-0212",
-        "fx-0239",
-        "fx-0337"
+        "fx-0834"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "auditedAt": "2026-08-15T10:21:24.9127161+08:00",
-  "generatedAt": "2026-08-15T05:19:35.932Z",
+  "generatedAt": "2026-08-15T05:43:06.936Z",
   "target": 1000,
   "finalUniqueEffects": 1000,
   "sourceStats": {
@@ -32,13 +32,15 @@
     "uniquePrimaryUrls": true,
     "requiredFieldsComplete": true,
     "allRowsHave2DEvidence": true,
+    "expandedVisualTagsComplete": true,
+    "cardTagsSeparatedFromMechanisms": true,
     "rejectedSpatialSobelAbsent": true,
     "preciseMechanismMappingOnly": true,
     "juiceIceRegressionPassed": true
   },
   "designCoverage": {
-    "requirementCount": 59,
-    "coveredRequirementCount": 38,
+    "requirementCount": 51,
+    "coveredRequirementCount": 34,
     "minimumReferencesPerRequirement": 0
   },
   "priceProfile": {
@@ -56,8 +58,8 @@
     }
   },
   "classificationProfile": {
-    "preciseMechanismMatches": 618,
-    "generalReferencesWithoutForcedMechanism": 382,
+    "preciseMechanismMatches": 609,
+    "generalReferencesWithoutForcedMechanism": 391,
     "uncoveredMechanisms": [
       "全场",
       "强壮",
@@ -75,12 +77,14 @@
       "易伤",
       "易燃",
       "继承",
-      "阳符法阵",
-      "阴煞法阵",
-      "移除",
-      "永久",
-      "便携"
-    ]
+      "阳符法阵"
+    ],
+    "visualTagVocabulary": 65,
+    "populatedVisualTags": 65,
+    "visualTaggedEffects": 1000,
+    "cardTagVocabulary": 24,
+    "populatedCardTags": 20,
+    "cardTaggedEffects": 140
   },
   "rejectedItchPages": [
     {
@@ -763,7 +767,7 @@
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-15T05:20:12.698Z",
+    "checkedAt": "2026-08-15T05:51:37.992Z",
     "effectRows": 1000,
     "primaryLinks": 1000,
     "alternateLinks": 0,
@@ -788,6 +792,14 @@
       "OpenGameArt": 113
     },
     "preciseMechanismLimitValid": true,
+    "expandedVisualTagsComplete": true,
+    "visualTagVocabulary": 65,
+    "populatedVisualTags": 65,
+    "visualTaggedEffects": 1000,
+    "cardTagVocabulary": 24,
+    "populatedCardTags": 20,
+    "cardTaggedEffects": 140,
+    "cardTagsSeparatedFromMechanisms": true,
     "juiceIceRegressionFailures": 0,
     "publicPrivacyFailures": []
   }
