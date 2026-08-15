@@ -1,304 +1,738 @@
 {
-  "auditedAt": "2026-08-14T17:00:04.903Z",
-  "generatedAt": "2026-08-14T17:20:07.151Z",
-  "policy": {
-    "godotShaders": "HTTP 200、原页标题匹配，并且代码中唯一 shader_type 为 canvas_item",
-    "assetLibrary": "HTTP 200、官方标题匹配，并且官方描述明确包含 2D、CanvasItem、Sprite2D、AnimatedSprite2D、ColorRect 或 TextureRect 使用依据",
-    "semantic": "排除 3D/空间着色器、地形和摄影机工具、用途无法确认的条目，并按标题与原页摘要重新分类"
+  "auditedAt": "2026-08-15T02:21:24.9127161+00:00",
+  "generatedAt": "2026-08-15T02:39:52.441Z",
+  "target": 1000,
+  "finalUniqueEffects": 1000,
+  "sourceStats": {
+    "Godot Asset Library": 15,
+    "Godot Shaders": 216,
+    "Itch.io": 656,
+    "OpenGameArt": 113
   },
-  "candidates": 437,
-  "godotShaders": {
-    "candidates": 273,
-    "httpOk": 273,
-    "trueCanvasItem": 255,
-    "nonCanvasOrUnknown": 18
+  "sourcePolicies": {
+    "godotShaders": "沿用上一轮逐页审计：HTTP 200、标题匹配、唯一 shader_type=canvas_item",
+    "godotAssetLibrary": "沿用上一轮官方 API 审计：HTTP 200、标题匹配、描述明确支持 2D/CanvasItem",
+    "itch": "来源列表同时带 2D 与 Effects 标签；详情页 HTTP 200、标题一致、Category=Assets，并再次包含 2D 与 Effects 标签",
+    "openGameArt": "来自 2D::Animation/Effect 精选集；详情页 HTTP 200，且 Art Type 明确为 2D Art；并通过技能/状态/法术/战斗关键词相关性门槛"
   },
-  "assetLibrary": {
-    "candidates": 164,
-    "httpOk": 164,
-    "selectedWithExplicit2DEvidence": 15
+  "candidateProfile": {
+    "verifiedBase": 231,
+    "itchListingPages": 22,
+    "itchCandidates": 769,
+    "itchHttp200": 667,
+    "itchAccepted": 656,
+    "itchRejected": 113,
+    "openGameArtCandidates": 445,
+    "openGameArt2D": 442,
+    "openGameArtSemanticEligible": 247,
+    "openGameArtAccepted": 113
   },
-  "finalUniqueEffects": 231,
-  "allIncludedPrimaryLinksAuditedHttp200": true,
-  "allIncludedTitlesMatchedSource": true,
-  "excludedOrDeduplicatedCandidateRows": 206,
-  "explicitlyRejectedRows": 53,
-  "conservativeAssetCandidatesNotSelected": 148,
-  "explicitRejections": [
+  "qualityChecks": {
+    "exactTargetMet": true,
+    "uniquePrimaryUrls": true,
+    "requiredFieldsComplete": true,
+    "rejectedSpatialSobelAbsent": true,
+    "allDesignTermsCovered": true
+  },
+  "designCoverage": {
+    "requirementCount": 59,
+    "coveredRequirementCount": 59,
+    "minimumReferencesPerRequirement": 7
+  },
+  "rejectedItchPages": [
     {
-      "name": "Better Terrain Noise",
-      "url": "https://godotshaders.com/shader/better-terrain-noise/",
-      "reason": "地形生成工具，不是技能或卡牌特效"
+      "name": "(FREE)  DAILY UPDATES| PIXEL ATLAS | VISUAL EFFECTS PACK",
+      "url": "https://sangoro.itch.io/vfx-starter-pack",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "domain warp",
-      "url": "https://godotshaders.com/shader/domain-warp/",
-      "reason": "原页代码类型为 spatial"
+      "name": "GIF Free Pixel Effects Pack #5 - Blood Effects",
+      "url": "https://xyezawr.itch.io/gif-free-pixel-effects-pack-5-blood-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Panorama Perspective (FNaF fake 3D)",
-      "url": "https://godotshaders.com/shader/panorama-perspective-fnaf-fake-3d/",
-      "reason": "伪 3D 场景投影"
+      "name": "Pixel Art Effect - FX084 (+15 Effects)",
+      "url": "https://nyknck.itch.io/fx084",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Stylized 3D Outline shader",
-      "url": "https://godotshaders.com/shader/stylized-3d-outline-shader/",
-      "reason": "面向 3D 场景的后处理描边"
+      "name": "8bit Retro Graphic Materials All-in-One Pack",
+      "url": "https://koji-marumugi.itch.io/8bit-retro-graphic-materials-all-in-one-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Fake 3D Cube Shader (6 Textures, Free Rotation & Perspective) – Godot 4.x",
-      "url": "https://godotshaders.com/shader/fake-3d-cube-shader-6-textures-free-rotation-perspective-godot-4-x/",
-      "reason": "伪 3D 物体展示"
+      "name": "NovelMix  - Asset Pack",
+      "url": "https://pixel-boy.itch.io/novel-mix",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "3D faker cylinder spin",
-      "url": "https://godotshaders.com/shader/3d-faker-cylinder-spin/",
-      "reason": "伪 3D 物体展示"
+      "name": "Combat Effects  5– 2D Pixel Art VFX Pack",
+      "url": "https://pozac.itch.io/combat-effects-5-2d-pixel-art-vfx-pack",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "SDF scalable textures",
-      "url": "https://godotshaders.com/shader/sdf-scalable-textures/",
-      "reason": "纹理技术工具"
+      "name": "Retro Impact Effect  Pack 1",
+      "url": "https://bdragon1727.itch.io/retro-impact-effect-pack-1",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "Grass Patch 3D",
-      "url": "https://godotshaders.com/shader/grass-patch-3d/",
-      "reason": "3D 草地展示"
+      "name": "Bubble - Pixel Art Effect",
+      "url": "https://sanctumpixel.itch.io/bubble-pixel-art-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Grass Patch 3D",
-      "url": "https://godotshaders.com/shader/grass-patch-3d-2/",
-      "reason": "3D 草地展示"
+      "name": "EVFX Archmage",
+      "url": "https://dreams-circle.itch.io/evfx-archmage",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Realistic Photography Camera",
-      "url": "https://godotshaders.com/shader/realistic-photography-camera/",
-      "reason": "摄影机模拟而非技能或卡牌特效"
+      "name": "Pixel Art Blood Effect - FX020",
+      "url": "https://nyknck.itch.io/bloodfx",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "WHOLESOME VIBES",
-      "url": "https://godotshaders.com/shader/wholesome-vibes/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "10 Magic Sprite Effects Pixel Art",
+      "url": "https://free-game-assets.itch.io/10-magic-sprite-effects-pixel-art",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Video Mixer",
-      "url": "https://godotshaders.com/shader/video-mixer/",
-      "reason": "视频混合工具"
+      "name": "Fire Magic Effects",
+      "url": "https://free-game-assets.itch.io/fire-magic-effects-pixel-art",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Water Shader – Easy Setup",
-      "url": "https://godotshaders.com/shader/water-shader-easy-setup/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Combat Effects  6– 2D Pixel Art VFX Pack",
+      "url": "https://pozac.itch.io/combat-effects-6-2d-pixel-art-vfx-pack",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "Testing_the_waters",
-      "url": "https://godotshaders.com/shader/testing_the_waters/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "Vfx & Effects",
+      "url": "https://jz-pixels.itch.io/vfx-and-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Screen",
-      "url": "https://godotshaders.com/shader/screen/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "EVFX Gamemaster",
+      "url": "https://dreams-circle.itch.io/evfx-gamemaster",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Splat Mapping (Canvas Item + PBR)",
-      "url": "https://godotshaders.com/shader/splat-mapping-canvas-item-pbr/",
-      "reason": "地形材质混合技术"
+      "name": "Explosion Pack 11",
+      "url": "https://ansimuz.itch.io/warped-explosion-pack-11",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "SUN Script",
-      "url": "https://godotshaders.com/shader/sun-script/",
-      "reason": "原页代码类型为 spatial"
+      "name": "General Weather Complete Pack - 2D Weather VFX + Bonus SFX-Godot-Ready",
+      "url": "https://obssidian-art.itch.io/general-weather-complete-pack-godot-ready",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Accumulation Motion Blur - Compositor Pipeline",
-      "url": "https://godotshaders.com/shader/accumulation-motion-blur-compositor-pipeline/",
-      "reason": "链接状态或标题不一致"
+      "name": "Dämmerlicht BFX (32bit)",
+      "url": "https://kotatsuakira.itch.io/daemmerlichtbfx-32bit",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Jostar Shader",
-      "url": "https://godotshaders.com/shader/jostar-shader/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "HDR Renderer for GameMaker",
+      "url": "https://foxyofjungle.itch.io/hdr-renderer",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Disney PBS Lighting Model – Slice",
-      "url": "https://godotshaders.com/shader/disney-pbs-light-model-slice/",
-      "reason": "光照模型切片，不是完整 2D 特效"
+      "name": "Combat Effects  7– 2D Pixel Art VFX Pack",
+      "url": "https://pozac.itch.io/combat-effects-7-2d-pixel-art-vfx-pack",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "Wind Waker Water",
-      "url": "https://godotshaders.com/shader/wind-waker-water/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Basic Lense Flares",
+      "url": "https://sleeper-games.itch.io/basic-optical-flares",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Gaussian Primitives – analytical filtering and antialiasing",
-      "url": "https://godotshaders.com/shader/gaussian-primitives-analytical-filtering-and-antialiasing/",
-      "reason": "原页代码类型为 无法确认"
+      "name": "EVFX Cursebringer",
+      "url": "https://dreams-circle.itch.io/evfx-cursebringer",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "2D Procedural Terrain (Can be pixelart)",
-      "url": "https://godotshaders.com/shader/2d-procedural-terrain-can-be-pixelart/",
-      "reason": "地形生成器"
+      "name": "Lightning 2 - Pixel Art Effect",
+      "url": "https://sanctumpixel.itch.io/lightning-2-pixel-art-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Color",
-      "url": "https://godotshaders.com/shader/color/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "EVFX Forge ELEMENTS",
+      "url": "https://dreams-circle.itch.io/evfx-forge-elements",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Pixel-Perfect Shader for Godot 3.x!",
-      "url": "https://godotshaders.com/shader/pixel-perfect-shader-for-godot-3-x/",
-      "reason": "分辨率适配工具"
+      "name": "Smoke effect 2",
+      "url": "https://sheriffobo.itch.io/smoke-effect-2",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "3D Camera Smooth Motion Blur",
-      "url": "https://godotshaders.com/shader/3d-camera-smooth-motion-blur/",
-      "reason": "3D 摄影机后处理"
+      "name": "Blood Splat Effect",
+      "url": "https://nyknck.itch.io/blood-splat-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Tiled texture “plus”",
-      "url": "https://godotshaders.com/shader/tiled-texture-plus/",
-      "reason": "纹理平铺工具"
+      "name": "EVFX Vanguard",
+      "url": "https://dreams-circle.itch.io/evfx-vanguard",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Pride Flag Canvas Item Shader, Godot 4.x & 3.x",
-      "url": "https://godotshaders.com/shader/pride-flag-canvas-item-shader-godot-3-x-and-4-x/",
-      "reason": "主题旗帜材质，不属于目标用途"
+      "name": "Smoke whisp",
+      "url": "https://gamedeveloperstudio.itch.io/smoke-whisp",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "shader UI Stylized FX - PERSONA 5 VIBES",
-      "url": "https://godotshaders.com/shader/shader-ui-stylized-fx-persona-5-vibes/",
-      "reason": "链接状态或标题不一致"
+      "name": "Top-Down Fantasy Dungeon",
+      "url": "https://goblinportal.itch.io/top-down-fantasy-dungeon-game-kit",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Glitter Material (noise/worldspace based)",
-      "url": "https://godotshaders.com/shader/glitter-material-noise-worldspace-based/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Gizmo Pixel Art - Effect pack",
+      "url": "https://lht-hhh.itch.io/gizmo-pixel-art-effet",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Fake 3D Interior Projection Shader Fixed & Adjustable",
-      "url": "https://godotshaders.com/shader/fake-3d-interior-projection-shader-fixed-adjustable/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Fx Effects Pixel Art - 256x256 | 128x128 | 64x64 | 32x32 ----- #95",
+      "url": "https://fx-express.itch.io/fx-effects-pixel-art-256x256-128x128-64x64-32x32-95",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Fake 3D Interior Projection Shader Fixed & Tuned",
-      "url": "https://godotshaders.com/shader/fake-3d-interior-projection-shader-fixed-tuned/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Combat Effects 8 – 2D Pixel Art VFX Pack",
+      "url": "https://pozac.itch.io/combat-effects-8-2d-pixel-art-vfx-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "“Hand Drawn” Depth-Based Sobel Outline for Compatibility Renderer with Directional Shadow Support",
-      "url": "https://godotshaders.com/shader/hand-drawn-depth-based-sobel-outline-for-compatibility-renderer-with-directional-shadow-support/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Fx Effects Pixel Art - 256x256 | 128x128 | 64x64 | 32x32 ----- #97",
+      "url": "https://fx-express.itch.io/fx-effects-pixel-art-256x256-128x128-64x64-32x32-97",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Fast Mirror Repeat Snippet",
-      "url": "https://godotshaders.com/shader/fast-mirror-repeat-snippet/",
-      "reason": "原页代码类型为 无法确认"
+      "name": "Pixel Art Effect - FX021",
+      "url": "https://nyknck.itch.io/pixeleffectfx021",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Chees type colorful shader like a rainbow",
-      "url": "https://godotshaders.com/shader/chees-type-colorful-shader-like-a-rainbow/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "Top-Down Pyramid Dungeon",
+      "url": "https://goblinportal.itch.io/top-down-pyramid-dungeon",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Noise Shaper",
-      "url": "https://godotshaders.com/shader/noise-shaper/",
-      "reason": "噪声生成工具"
+      "name": "[FREE] Blood spatter hit effect 128x128",
+      "url": "https://gungodx.itch.io/free-blood-spatter-hit-effect-128x128",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "sombreadar de ruido de tablero",
-      "url": "https://godotshaders.com/shader/sombreadar-de-ruido-de-tablero/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "64x64 Pixel Effect RPG Part 1",
+      "url": "https://bdragon1727.itch.io/64x64-pixel-effect-rpg-part-1",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "my grass",
-      "url": "https://godotshaders.com/shader/my-grass/",
-      "reason": "原页代码类型为 spatial"
+      "name": "SummonFX Baihu LITE",
+      "url": "https://dreams-circle.itch.io/summonfx-baihu-lite",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Colour-Changing material depending on Camera Distance",
-      "url": "https://godotshaders.com/shader/colour-changing-material-depending-on-camera-distance/",
-      "reason": "原页代码类型为 spatial"
+      "name": "[FREE] 16x16 Pixel Art FX",
+      "url": "https://midnitepixelated.itch.io/free-16x16-pixel-art-fx",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Planet Coffee",
-      "url": "https://godotshaders.com/shader/planet-coffee/",
-      "reason": "标题和摘要无法确认具体用途"
+      "name": "Pixel Art Effect - FX027",
+      "url": "https://nyknck.itch.io/pixelarteffectfx027",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Simple Water with Mesh form – Lake/Pond",
-      "url": "https://godotshaders.com/shader/simple-water-with-mesh-form-lake-pond/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Pixel Art Effect - FX049",
+      "url": "https://nyknck.itch.io/fx049",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Cubemap Reflective Water Surface",
-      "url": "https://godotshaders.com/shader/cubemap-reflective-water-surface/",
-      "reason": "立方体贴图环境水面"
+      "name": "A red paper bag effect animation bones",
+      "url": "https://karlote.itch.io/a-red-paper-bag-effect-animation-bones",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Dither Gradient Shader (updated for 4.5 - original by SamBigos)",
-      "url": "https://godotshaders.com/shader/dither-gradient-shader-updated-for-4-5-original-by-sambigos/",
-      "reason": "链接状态或标题不一致"
+      "name": "Effect and FX Pixel Part 4",
+      "url": "https://bdragon1727.itch.io/effect-and-fx-pixel-part-4",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Layer SplatMap",
-      "url": "https://godotshaders.com/shader/layer-splatmap/",
-      "reason": "原页代码类型为 spatial"
+      "name": "64x64 Pixel Effect RPG Part 8",
+      "url": "https://bdragon1727.itch.io/64x64-pixel-effect-rpg-part-8",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Gentle Breathing Effect for Face & Body Animation",
-      "url": "https://godotshaders.com/shader/gentle-breathing-effect-for-face-body-animation/",
-      "reason": "角色呼吸动画，不是目标特效"
+      "name": "Pixel Fire Effect!_Pack 1",
+      "url": "https://regenstudio.itch.io/pixel-fire-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Atlas Region Tiled Repeat (2D)",
-      "url": "https://godotshaders.com/shader/atlas-region-tiled-repeat-2d/",
-      "reason": "图集平铺工具"
+      "name": "Cartoon Effects Explosions Fire Water Smoke Flashes Stylized",
+      "url": "https://sprite-sheet.itch.io/cartoon-effects-explosions-fire-water-smoke-flashes-stylized",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "UV stitching and scrolling",
-      "url": "https://godotshaders.com/shader/uv-stitching-and-scrolling/",
-      "reason": "UV 工具"
+      "name": "Starter Pixel Art  VFX Pack",
+      "url": "https://dont-peek.itch.io/pixel-art-vfx-asset-pack",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "Shader per Fra Scemo con Hatching",
-      "url": "https://godotshaders.com/shader/shader-per-fra-scemo-con-hatching/",
-      "reason": "原页代码类型为 spatial"
+      "name": "VFX Pack  2d - power - 60x60",
+      "url": "https://parasaito.itch.io/vfx-pack-power-60px",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
     },
     {
-      "name": "Adobe Animate Blend Modes",
-      "url": "https://godotshaders.com/shader/adobe-animate-blend-modes/",
-      "reason": "混合模式工具集"
+      "name": "64x64 Pixel Effect RPG Part 19",
+      "url": "https://bdragon1727.itch.io/64x64-pixel-effect-rpg-part-19",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "2D - Post Process - Pixelate",
-      "url": "https://godotshaders.com/shader/2d-post-process-pixelate/",
-      "reason": "链接状态或标题不一致"
+      "name": "AURA FX VOL.01",
+      "url": "https://ashishlko11.itch.io/aura-fx-vol01",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Yoshi's Island Shimmer - Heat Haze Distortion",
-      "url": "https://godotshaders.com/shader/yoshis-island-shimmer-heat-haze-distortion/",
-      "reason": "链接状态或标题不一致"
+      "name": "Ice Magic VFX Pack – Pixel Art Spells",
+      "url": "https://pinogames.itch.io/ice-magic-vfx-pack-pixel-art-spells",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Basic Self-shadowing from Heightmap",
-      "url": "https://godotshaders.com/shader/basic-self-shadowing-from-heightmap/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Pixel-Art Poison Effect Pack #1",
+      "url": "https://cyberek.itch.io/poison-pack-1",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     },
     {
-      "name": "Liquid Glass",
-      "url": "https://godotshaders.com/shader/liquid-glass/",
-      "reason": "原页代码类型为 spatial"
+      "name": "Pixel Art Effect - FX035",
+      "url": "https://nyknck.itch.io/pixelarteffectfx035",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Spell Effect 2  - FX013",
+      "url": "https://nyknck.itch.io/spelleffect2",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
+    },
+    {
+      "name": "Pixel Art Effect - FX079",
+      "url": "https://nyknck.itch.io/fx079",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "101 GAME EFFECTS",
+      "url": "https://ashishlko11.itch.io/101-game-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Cyberpunk Font Effects",
+      "url": "https://free-game-assets.itch.io/cyberpunk-pixel-art-font-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Light reflection animation",
+      "url": "https://itreza2.itch.io/light-reflection-animation",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "FX Package - VFX101",
+      "url": "https://nyknck.itch.io/fx-package-vfx101",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Fire Magick FX Pack",
+      "url": "https://xyezawr.itch.io/magick",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX085",
+      "url": "https://nyknck.itch.io/fx085",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Animation-32x32 Explosion",
+      "url": "https://virusystem.itch.io/animation-explosion",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "High Fantasy - Air Magic Pack",
+      "url": "https://warsvault.itch.io/high-fantasy-air-magic-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Fire Effects - Hand-Drawn Pixel Art - Pack 01",
+      "url": "https://dkproductions.itch.io/pixelart-fireeffects-pack01",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Premium Pixel-Art Effects Pack",
+      "url": "https://xyezawr.itch.io/premium-pixel-art-effects-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX073",
+      "url": "https://nyknck.itch.io/fx073",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX065",
+      "url": "https://nyknck.itch.io/fx065",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "High Fantasy - Earth Magic Pack 1",
+      "url": "https://warsvault.itch.io/high-fantasy-earth-magic-pack-1",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Energy Sword Shader Graph",
+      "url": "https://fox-jump.itch.io/energy-sword-shader-graph",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Explosion - Pixel Art Effect",
+      "url": "https://sanctumpixel.itch.io/explosion-pixel-art-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Smoke 2 - Pixel Art Effect",
+      "url": "https://sanctumpixel.itch.io/smoke-2-pixel-art-effect",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Status effect icons",
+      "url": "https://novasypher.itch.io/status-effect-icon",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX003",
+      "url": "https://nyknck.itch.io/pixel-art-effect-fx003",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX022",
+      "url": "https://nyknck.itch.io/pixelarteffectfx022",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Unity UI Pack",
+      "url": "https://pixel-x-games.itch.io/unity-ui-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Kasaya's Mobs II Pixel Asset Pack",
+      "url": "https://kasayaa.itch.io/kasayas-mobs-ii",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Snowflake_01_32x32.gif",
+      "url": "https://phdev2024.itch.io/snowflake-01-32x32gif",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel FX - Fire Particles",
+      "url": "https://terry-caster.itch.io/pixel-fx-fire",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Blood FX Pixel Art Asset Pack",
+      "url": "https://aklingon.itch.io/blood-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Explosions VFX Pixel Art Asset Pack",
+      "url": "https://aklingon.itch.io/explosions-vfx",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Water FX Pack Vol.1",
+      "url": "https://mochilab-studio.itch.io/water-fx-pack-vol1",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX008",
+      "url": "https://nyknck.itch.io/pixel-art-effect-fx008",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX015",
+      "url": "https://nyknck.itch.io/effectfx015",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX029",
+      "url": "https://nyknck.itch.io/pixelarteffectfx029",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Blood effects",
+      "url": "https://gamedeveloperstudio.itch.io/blood-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX031",
+      "url": "https://nyknck.itch.io/pixelarteffectfx031",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "2D VFX Essentials - Unity Package",
+      "url": "https://luminary-labs-official.itch.io/2d-vfx-toolkit",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "KAPOZ Pixel Magic Effect Pack",
+      "url": "https://kapoz.itch.io/pixel-magic-effect-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "2D platformer pixel art in medieval losted world",
+      "url": "https://overguizo.itch.io/2d-platformer-pixel-art-in-medieval-world",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "ZODIAC FX",
+      "url": "https://ashishlko11.itch.io/zodiac-fx",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Camera FX Shaders (By Mylan.T) - unity assets store",
+      "url": "https://mylant-assets.itch.io/shader-pack-by-mylant-unity-assets-store",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "100+ 16x Icons - Status Effects, Objects, Menu UI",
+      "url": "https://darkcitrus.itch.io/100-pixel-art-icons-status-effects-objects-menu-ui",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Retro Texture Baker - WebGL",
+      "url": "https://caliberuk.itch.io/retro-texture-baker-webgl",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Art Effect - FX043",
+      "url": "https://nyknck.itch.io/pixel-art-effectfx043",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Unity Shaders Collection 2022",
+      "url": "https://void1gaming.itch.io/unity-shaders-collection-2022",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Fire Spells Effects Looping",
+      "url": "https://basicterra.itch.io/fire-effects",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "2D Elemental Circles Pixel VFX Pack",
+      "url": "https://lumixyy.itch.io/2d-elemental-circles-vfx",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Space Mining Resource",
+      "url": "https://vtrixdev.itch.io/space-mining-resource",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel VFX Variety Pack 1",
+      "url": "https://nebula-game-dev.itch.io/pixel-vfx-vairety-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Special  Effects Vol.09",
+      "url": "https://ashishlko11.itch.io/special-effects-vol09",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
+    },
+    {
+      "name": "Lava Procedural - Construct 3",
+      "url": "https://everade.itch.io/lava-procedural",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Hit Effects - Lighting, Fire, and Ice",
+      "url": "https://goopy-games-plus.itch.io/hit-effects-lighting-fire-and-ice",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Ability Icons Asset Pack - Cold",
+      "url": "https://aklingon.itch.io/ability-icons-asset-pack-cold",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Special Effects Vol.13",
+      "url": "https://ashishlko11.itch.io/special-effects-vol13",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Weapons and Effects Pack",
+      "url": "https://nations-olympus.itch.io/weapons-and-effects-pack",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel art smoke fx pack 3 (5 styles)",
+      "url": "https://virtualgodgames.itch.io/pixel-art-smoke-fx-pack-3-5-styles",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Warning Signs Pack",
+      "url": "https://nations-olympus.itch.io/pack-de-seales-de-advertencia",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Pixel Platformer Toolkit",
+      "url": "https://nerdypixel.itch.io/pixel-platformer-toolkit",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Game VFX - Small Explosion",
+      "url": "https://gualiang2021gmailcom.itch.io/game-vfx-explosion",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "2d platformer particles  for GODOT",
+      "url": "https://kururu280-cloud.itch.io/2d-platformer-particles",
+      "status": 200,
+      "reason": "详情页标题与列表标题不一致"
+    },
+    {
+      "name": "Motion Blur",
+      "url": "https://skyhallstudios.itch.io/motion-blur",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "Balloons Vol.1 — 20 Hi-Res Balloon Animations × 5 Themes = 100 Sprites",
+      "url": "https://mochilab-studio.itch.io/procedural-balloons-vol1",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
+    },
+    {
+      "name": "PlayTex AI",
+      "url": "https://gdjusthim.itch.io/playtex-ai",
+      "status": 0,
+      "reason": "Response status code does not indicate success: 429 (Too Many Requests)."
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-14T17:20:49.418Z",
-    "effectRows": 231,
-    "primaryLinks": 231,
-    "alternateLinks": 21,
-    "hyperlinksChecked": 252,
-    "http200": 252,
-    "primaryTitleMatches": 231,
+    "checkedAt": "2026-08-15T02:39:52.641Z",
+    "effectRows": 1000,
+    "primaryLinks": 1000,
+    "alternateLinks": 0,
+    "hyperlinksChecked": 1000,
+    "http200": 1000,
+    "primaryTitleMatches": 1000,
+    "sourceBreakdown": {
+      "Godot Asset Library": 15,
+      "Godot Shaders": 216,
+      "Itch.io": 656,
+      "OpenGameArt": 113
+    },
     "failures": 0,
     "rejectedExamplePresent": false
   }
