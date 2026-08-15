@@ -1,6 +1,6 @@
 {
   "validation": {
-    "checkedAt": "2026-08-15T04:51:30.543Z",
+    "checkedAt": "2026-08-15T05:20:12.698Z",
     "effectRows": 1000,
     "primaryLinks": 1000,
     "alternateLinks": 0,
@@ -16,6 +16,14 @@
     "failures": 0,
     "rejectedExamplePresent": false,
     "priceFieldsValid": true,
+    "twoDVerified": 1000,
+    "allRowsHave2DEvidence": true,
+    "twoDEvidenceBySource": {
+      "Godot Asset Library": 15,
+      "Godot Shaders": 216,
+      "Itch.io": 656,
+      "OpenGameArt": 113
+    },
     "preciseMechanismLimitValid": true,
     "juiceIceRegressionFailures": 0,
     "publicPrivacyFailures": []

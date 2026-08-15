@@ -1,6 +1,6 @@
 {
   "auditedAt": "2026-08-15T10:21:24.9127161+08:00",
-  "generatedAt": "2026-08-15T04:44:20.741Z",
+  "generatedAt": "2026-08-15T05:19:35.932Z",
   "target": 1000,
   "finalUniqueEffects": 1000,
   "sourceStats": {
@@ -31,6 +31,7 @@
     "exactTargetMet": true,
     "uniquePrimaryUrls": true,
     "requiredFieldsComplete": true,
+    "allRowsHave2DEvidence": true,
     "rejectedSpatialSobelAbsent": true,
     "preciseMechanismMappingOnly": true,
     "juiceIceRegressionPassed": true
@@ -44,6 +45,15 @@
     "free": 612,
     "paid": 388,
     "highestUsd": 108
+  },
+  "twoDProfile": {
+    "verified": 1000,
+    "evidenceBySource": {
+      "Godot Asset Library": 15,
+      "Godot Shaders": 216,
+      "Itch.io": 656,
+      "OpenGameArt": 113
+    }
   },
   "classificationProfile": {
     "preciseMechanismMatches": 618,
@@ -753,7 +763,7 @@
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-15T04:51:30.543Z",
+    "checkedAt": "2026-08-15T05:20:12.698Z",
     "effectRows": 1000,
     "primaryLinks": 1000,
     "alternateLinks": 0,
@@ -769,6 +779,14 @@
     "failures": 0,
     "rejectedExamplePresent": false,
     "priceFieldsValid": true,
+    "twoDVerified": 1000,
+    "allRowsHave2DEvidence": true,
+    "twoDEvidenceBySource": {
+      "Godot Asset Library": 15,
+      "Godot Shaders": 216,
+      "Itch.io": 656,
+      "OpenGameArt": 113
+    },
     "preciseMechanismLimitValid": true,
     "juiceIceRegressionFailures": 0,
     "publicPrivacyFailures": []
