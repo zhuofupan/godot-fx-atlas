@@ -1,15 +1,16 @@
 {
   "auditedAt": "2026-08-15T10:21:24.9127161+08:00",
-  "generatedAt": "2026-08-15T06:50:00.702Z",
+  "generatedAt": "2026-08-15T08:24:03.118Z",
   "minimumTarget": 1100,
-  "finalUniqueEffects": 1137,
+  "finalUniqueEffects": 1150,
   "sourceStats": {
     "CodeFronts": 1,
+    "Game-icons.net": 2,
     "Godot Asset Library": 17,
     "Godot Shaders": 216,
     "IconsDB": 1,
-    "Itch.io": 666,
-    "OpenGameArt": 236
+    "Itch.io": 678,
+    "OpenGameArt": 235
   },
   "sourcePolicies": {
     "godotShaders": "沿用上一轮逐页审计：HTTP 200、标题匹配、唯一 shader_type=canvas_item",
@@ -27,10 +28,10 @@
     "itchRejected": 113,
     "openGameArtCandidates": 445,
     "openGameArt2D": 442,
-    "openGameArtSemanticEligible": 235,
-    "openGameArtAccepted": 235,
-    "curatedCandidates": 15,
-    "curatedAccepted": 15
+    "openGameArtSemanticEligible": 234,
+    "openGameArtAccepted": 234,
+    "curatedCandidates": 29,
+    "curatedAccepted": 29
   },
   "qualityChecks": {
     "minimumTargetMet": true,
@@ -41,7 +42,9 @@
     "cardTagsSeparatedFromMechanisms": true,
     "rejectedSpatialSobelAbsent": true,
     "preciseMechanismMappingOnly": true,
-    "juiceIceRegressionPassed": true
+    "juiceIceRegressionPassed": true,
+    "allSemanticMappingsSupported": true,
+    "megaPackNotMisclassifiedAsFire": true
   },
   "designCoverage": {
     "requirementCount": 51,
@@ -49,31 +52,32 @@
     "minimumReferencesPerRequirement": 1
   },
   "priceProfile": {
-    "free": 742,
-    "paid": 395,
+    "free": 745,
+    "paid": 405,
     "highestUsd": 108
   },
   "twoDProfile": {
-    "verified": 1137,
+    "verified": 1150,
     "evidenceBySource": {
       "CodeFronts": 1,
+      "Game-icons.net": 2,
       "Godot Asset Library": 17,
       "Godot Shaders": 216,
       "IconsDB": 1,
-      "Itch.io": 666,
-      "OpenGameArt": 236
+      "Itch.io": 678,
+      "OpenGameArt": 235
     }
   },
   "classificationProfile": {
-    "preciseMechanismMatches": 714,
-    "generalReferencesWithoutForcedMechanism": 423,
+    "preciseMechanismMatches": 641,
+    "generalReferencesWithoutForcedMechanism": 509,
     "uncoveredMechanisms": [],
     "visualTagVocabulary": 65,
     "populatedVisualTags": 65,
-    "visualTaggedEffects": 1137,
+    "visualTaggedEffects": 1150,
     "cardTagVocabulary": 24,
     "populatedCardTags": 24,
-    "cardTaggedEffects": 195
+    "cardTaggedEffects": 127
   },
   "rejectedItchPages": [
     {
@@ -756,44 +760,50 @@
     }
   ],
   "finalLinkValidation": {
-    "checkedAt": "2026-08-15T06:50:14.777Z",
-    "effectRows": 1137,
-    "primaryLinks": 1137,
+    "checkedAt": "2026-08-15T08:24:59.173Z",
+    "effectRows": 1150,
+    "primaryLinks": 1150,
     "alternateLinks": 0,
-    "hyperlinksChecked": 1137,
-    "http200": 1137,
-    "primaryTitleMatches": 1137,
+    "hyperlinksChecked": 1150,
+    "http200": 1150,
+    "primaryTitleMatches": 1150,
     "sourceBreakdown": {
       "CodeFronts": 1,
+      "Game-icons.net": 2,
       "Godot Asset Library": 17,
       "Godot Shaders": 216,
       "IconsDB": 1,
-      "Itch.io": 666,
-      "OpenGameArt": 236
+      "Itch.io": 678,
+      "OpenGameArt": 235
     },
     "failures": 0,
     "rejectedExamplePresent": false,
     "priceFieldsValid": true,
-    "twoDVerified": 1137,
+    "twoDVerified": 1150,
     "allRowsHave2DEvidence": true,
     "twoDEvidenceBySource": {
       "CodeFronts": 1,
+      "Game-icons.net": 2,
       "Godot Asset Library": 17,
       "Godot Shaders": 216,
       "IconsDB": 1,
-      "Itch.io": 666,
-      "OpenGameArt": 236
+      "Itch.io": 678,
+      "OpenGameArt": 235
     },
     "preciseMechanismLimitValid": true,
     "expandedVisualTagsComplete": true,
     "visualTagVocabulary": 65,
     "populatedVisualTags": 65,
-    "visualTaggedEffects": 1137,
+    "visualTaggedEffects": 1150,
     "cardTagVocabulary": 24,
     "populatedCardTags": 24,
-    "cardTaggedEffects": 195,
+    "cardTaggedEffects": 127,
     "cardTagsSeparatedFromMechanisms": true,
     "juiceIceRegressionFailures": 0,
-    "publicPrivacyFailures": []
+    "publicPrivacyFailures": [],
+    "semanticRowsChecked": 1150,
+    "semanticMappingFailures": 0,
+    "megaPackRegressionPassed": true,
+    "directFirePagesPresent": true
   }
 }

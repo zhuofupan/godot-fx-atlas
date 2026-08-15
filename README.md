@@ -19,4 +19,4 @@ npm test
 - 通用卡牌、UI 与视觉反馈资源允许不绑定具体机制。
 - Itch.io 固定价格取自同一资源列表页；其他资源站条目按免费资源记录，采用前仍需查看原页许可和当前价格。
 
-公开审计结果位于 `public/audit-report.json`、`public/mechanism-index.json` 与 `public/final-link-audit.json`。
+公开审计结果位于 `audit-report.json`、`semantic-audit.json`、`mechanism-index.json` 与 `final-link-audit.json`。多元素合集只作为通用合集收录，单一元素分类优先链接到对应的独立子包页面。
