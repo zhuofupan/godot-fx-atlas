@@ -1,0 +1,28 @@
+.material-library-entry {
+  position: fixed;
+  z-index: 100;
+  right: 22px;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid rgba(93, 228, 199, .48);
+  border-radius: 999px;
+  background: rgba(6, 20, 17, .9);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, .35);
+  color: #e9faf4;
+  font: 700 13px/1 Inter, "Noto Sans SC", sans-serif;
+  text-decoration: none;
+  backdrop-filter: blur(14px);
+}
+.material-library-entry span {
+  min-width: 24px;
+  padding: 4px 6px;
+  border-radius: 999px;
+  background: #5de4c7;
+  color: #06211b;
+  text-align: center;
+  font-size: 11px;
+}
+.material-library-entry:hover { transform: translateY(-2px); }

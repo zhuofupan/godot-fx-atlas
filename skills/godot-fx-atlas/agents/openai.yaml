@@ -1,0 +1,5 @@
+interface:
+  display_name: "Godot FX Atlas"
+  short_description: "检索并安全选用已审计的 Godot 2D VFX 素材"
+  brand_color: "#5DE4C7"
+  default_prompt: "Use $godot-fx-atlas to research real VFX references, extract an implementation approach, and select licensed texture materials."

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07110f" />
+    <title>生产贴图库 — Godot FX Atlas</title>
+    <meta name="description" content="带许可、来源、哈希和用途索引的 Godot 2D VFX 生产贴图库。" />
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./assets/material-library.css" />
+    <script type="module" src="./assets/material-library.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>Godot FX Atlas</a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="./index.html">参考案例库</a>
+        <a href="./materials.html" aria-current="page">生产贴图库</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <div class="kicker">Audited production materials</div>
+          <h1>不是素材堆积，<br />是可追溯的形状语言。</h1>
+          <p class="hero-copy">下载进仓库的每张贴图都带着许可、来源版本、文件哈希和建议用途。先按效果原型选形，再由 Godot 的材质、粒子和时序把它变成项目自己的视觉语言。</p>
+        </div>
+        <div class="stats" aria-label="贴图库统计">
+          <div class="stat"><strong id="source-count">—</strong><span>已审计素材源</span></div>
+          <div class="stat"><strong id="material-count">—</strong><span>逻辑贴图</span></div>
+          <div class="stat"><strong id="raster-count">—</strong><span>可分发文件</span></div>
+        </div>
+      </section>
+
+      <section class="library-layout">
+        <aside class="filters" aria-label="贴图筛选器">
+          <h2>定位合适的素材</h2>
+          <div class="field"><label for="material-search">搜索</label><input id="material-search" type="search" placeholder="用途、标签或名称" /></div>
+          <div class="field"><label for="family-filter">贴图族</label><select id="family-filter"></select></div>
+          <div class="field"><label for="archetype-filter">效果原型</label><select id="archetype-filter"></select></div>
+          <div class="field"><label for="role-filter">合成层级</label><select id="role-filter"></select></div>
+          <div class="field"><label for="source-filter">素材源</label><select id="source-filter"></select></div>
+          <div class="field">
+            <label for="variant-filter">文件版本</label>
+            <select id="variant-filter"><option value="transparent">透明底（推荐）</option><option value="black">黑底预览</option></select>
+          </div>
+          <div class="field">
+            <label for="background-filter">预览背景</label>
+            <select id="background-filter"><option value="checker">棋盘格</option><option value="dark">深色</option><option value="light">浅色</option></select>
+          </div>
+          <p class="filter-note">这里只收录允许直接分发、并通过安全清洗的位图。Shader、脚本和插件代码不会混入生产贴图库。</p>
+        </aside>
+
+        <div class="results">
+          <div class="results-head"><h2>素材索引</h2><span id="result-count">加载中…</span></div>
+          <div id="material-grid" class="material-grid"></div>
+          <div id="empty-state" class="empty-state" hidden>没有匹配项。试试减少筛选条件。</div>
+        </div>
+      </section>
+    </main>
+
+    <div id="selection-tray" class="selection-tray" aria-live="polite">
+      <span>已选 <strong id="selected-count">0</strong> 项</span>
+      <button id="clear-selection" class="button ghost" type="button">清空</button>
+      <button id="export-selection" class="button primary" type="button">导出选材清单</button>
+    </div>
+
+    <dialog id="material-dialog">
+      <button id="close-dialog" class="dialog-close" type="button" aria-label="关闭">×</button>
+      <div id="dialog-content" class="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

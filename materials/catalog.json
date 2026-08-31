@@ -1,0 +1,4465 @@
+{
+  "schema_version": 1,
+  "catalog_type": "production_material_library",
+  "entry_count": 96,
+  "sources": [
+    "kenney-particle-pack"
+  ],
+  "entries": [
+    {
+      "material_id": "kenney-particle-pack/rotated/flame_05_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated flame 05 rotated",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/flame_05_rotated.png",
+          "sha256": "08afb8deef9edbfb47571805a2f5b1316c5c99d5056f23b13d060eece3a752de",
+          "bytes": 12155,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/flame_05_rotated.png",
+          "sha256": "78041de912b217f6e469dbb1bec7b821bfee782603d0398f36e8a97f759a2100",
+          "bytes": 10589,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/flame_06_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated flame 06 rotated",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/flame_06_rotated.png",
+          "sha256": "c72289cfe6e25d2763eef9db9b55a38f04d027ba0ca7fe6d4830b2ebd9b63dce",
+          "bytes": 14979,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/flame_06_rotated.png",
+          "sha256": "04e14241aad849fe084df36e74fe85bc2c5f96138fbbff0245f616f6bf33be79",
+          "bytes": 13447,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/muzzle_01_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated muzzle 01 rotated",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/muzzle_01_rotated.png",
+          "sha256": "6b0bae33c25ef54702f40272d121412131e8f089ae03c958533f4887288d8f59",
+          "bytes": 75703,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/muzzle_01_rotated.png",
+          "sha256": "0191539cec7b244fcd90698c884a3ba4bde6c19613adbe9dd743f8a47efb0549",
+          "bytes": 85709,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/muzzle_02_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated muzzle 02 rotated",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/muzzle_02_rotated.png",
+          "sha256": "6bca0de7b38b9bc7ea7ad38940720ebfe138363155848cfb7bf15e56681defe9",
+          "bytes": 49401,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/muzzle_02_rotated.png",
+          "sha256": "c814178e21f530013586e8b3c20f7f82b430ac2c51d5a85a8605671e0006012e",
+          "bytes": 65767,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/muzzle_03_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated muzzle 03 rotated",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/muzzle_03_rotated.png",
+          "sha256": "3a625935b4b2a89beb0f2aefb3db3a50c062f2bd3a99cf2a8aaf3f53cef437bb",
+          "bytes": 48054,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/muzzle_03_rotated.png",
+          "sha256": "fd0099a2b8f48d8e5ea92c4995cfa17da7e0dfb3295ec6b1376b11ad95af5cda",
+          "bytes": 64602,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/muzzle_04_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated muzzle 04 rotated",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/muzzle_04_rotated.png",
+          "sha256": "76a51de75e489e5007d4e0140824120c7eda19877127d78e6531cfb0166df279",
+          "bytes": 51171,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/muzzle_04_rotated.png",
+          "sha256": "70b66e9638ee2d4694f3feb87c3612d74fc282d007c0d01ab0b878af760cd2b0",
+          "bytes": 42701,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/muzzle_05_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated muzzle 05 rotated",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/muzzle_05_rotated.png",
+          "sha256": "c86c85323f6a2ad0e0d1349f17bc88b3951b8ac653c4b0bc133fb0baa28eaae9",
+          "bytes": 44504,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/muzzle_05_rotated.png",
+          "sha256": "8b7f4b75842578319a02becef5b63c3139730a85c15ea4833f51ef5d3c533923",
+          "bytes": 62527,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/spark_05_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated spark 05 rotated",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "rotated",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/spark_05_rotated.png",
+          "sha256": "9bceb2b1a8a46d9eaffb4c77d5c4114ff7af8fcd36e586feb1f91bfe2af0e671",
+          "bytes": 56533,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/spark_05_rotated.png",
+          "sha256": "798550b7ae007f4a6554c316611d4d33a02512a46404f7fffe71377ee49ed8eb",
+          "bytes": 40995,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/spark_06_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated spark 06 rotated",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "rotated",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/spark_06_rotated.png",
+          "sha256": "1c47a5d892ac1816c8eb18ebddb1ecf7769a35bbdd5a6671677b565006623936",
+          "bytes": 41431,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/spark_06_rotated.png",
+          "sha256": "6a0386a1e0a539619d445cf5a9145dcf297a5196f5fe2e971f2b487f7c253695",
+          "bytes": 38886,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_01_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 01 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_01_rotated.png",
+          "sha256": "6832399b81f21dfb9379159e25ea2efab85258f24a03a2eb7a3f9285829f98d4",
+          "bytes": 28417,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_01_rotated.png",
+          "sha256": "69ce491f37b39f30c37624b6b26d3e1f3d1aca8f151e19f8af45b391dd95083f",
+          "bytes": 24462,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_02_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 02 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_02_rotated.png",
+          "sha256": "81c30ba255eacd9ff29b5c0b8028b2714a375d6dc7cd11133f515bc37123f0e3",
+          "bytes": 31249,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_02_rotated.png",
+          "sha256": "cc567959227740493c7684eb86157bf71ecdbfe3079662ef4ee35a4d43242ffe",
+          "bytes": 29626,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_03_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 03 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_03_rotated.png",
+          "sha256": "0037f0c659d2a546b0de452b9ea2d910626c3994154395fb84bf28b9c249c2e1",
+          "bytes": 34894,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_03_rotated.png",
+          "sha256": "004bfe05aee43567dfc09c282d6ba4674daad36946a80a86a00b72e88620eaf1",
+          "bytes": 33115,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_04_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 04 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_04_rotated.png",
+          "sha256": "857d9fe44e1af7123c1d1006caac5a3707588412997bc8f16591f01a2f73f6e9",
+          "bytes": 36918,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_04_rotated.png",
+          "sha256": "55802b7eddd3ee42d36d558ec3f24ef001414de5d51e16af82cc50d11b2b90ee",
+          "bytes": 34091,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_05_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 05 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_05_rotated.png",
+          "sha256": "513aca6608ab2c3a677aacc99ad1055a200cd9a703b247c69fabce9695cce2e0",
+          "bytes": 36725,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_05_rotated.png",
+          "sha256": "a287604657664c3143d991727cffd909eb6f58884bf1c57cba6a33971a82bc40",
+          "bytes": 32863,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_06_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 06 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_06_rotated.png",
+          "sha256": "098bd782fbbac098e30357acdef764184e601ccdf05d109f3dcfb698e5a7ea60",
+          "bytes": 30533,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_06_rotated.png",
+          "sha256": "78897a32080c608f4f37fea77500e3866d0ac3f7958eb744a3853ed2502983a7",
+          "bytes": 17003,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/rotated/trace_07_rotated",
+      "source_id": "kenney-particle-pack",
+      "title": "Rotated trace 07 rotated",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "rotated",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/rotated/trace_07_rotated.png",
+          "sha256": "fdfcc20aa9a194f8eee4081bf0f8de21fef48abcba4f073c183a406cdeb45f86",
+          "bytes": 27368,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/rotated/trace_07_rotated.png",
+          "sha256": "5d369cb6dd89b2f93913e308437213e78350de23b77f46e77b6eec08734360ce",
+          "bytes": 12758,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/circle_01",
+      "source_id": "kenney-particle-pack",
+      "title": "circle 01",
+      "family": "circle",
+      "family_label": "圆环 / 波纹",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura",
+        "shield",
+        "impact_burst"
+      ],
+      "tags": [
+        "圆环",
+        "扩散",
+        "护盾",
+        "区域预警"
+      ],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/circle_01.png",
+          "sha256": "4b2d03683bf0fe4a946567adc3bd86b8ba045da84cee58dc2cf8aef63bbfaa06",
+          "bytes": 69755,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/circle_01.png",
+          "sha256": "06f7db17cccbe850f22c937669fd4dc262e066f8cdbd2ae44fc54891c83062a4",
+          "bytes": 35915,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/circle_02",
+      "source_id": "kenney-particle-pack",
+      "title": "circle 02",
+      "family": "circle",
+      "family_label": "圆环 / 波纹",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura",
+        "shield",
+        "impact_burst"
+      ],
+      "tags": [
+        "圆环",
+        "扩散",
+        "护盾",
+        "区域预警"
+      ],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/circle_02.png",
+          "sha256": "8a2112a6a5610c7cdcbfe8af0a5162b42dfb3431c63f494743945337b7981e51",
+          "bytes": 43380,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/circle_02.png",
+          "sha256": "697e6fa5948cc35cc779ae0b22995f5b17f0e02746406d05ec8548921e82ad1b",
+          "bytes": 30403,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/circle_03",
+      "source_id": "kenney-particle-pack",
+      "title": "circle 03",
+      "family": "circle",
+      "family_label": "圆环 / 波纹",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura",
+        "shield",
+        "impact_burst"
+      ],
+      "tags": [
+        "圆环",
+        "扩散",
+        "护盾",
+        "区域预警"
+      ],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/circle_03.png",
+          "sha256": "ed6c6f082e666c16bcaca89f15aefb55df9bf69450090518bcae1d3d61f82936",
+          "bytes": 72952,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/circle_03.png",
+          "sha256": "ecd5e1328a591878c9ad6055e551ff76a390ed5ca1a5bebee28dd850f875c00e",
+          "bytes": 47065,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/circle_04",
+      "source_id": "kenney-particle-pack",
+      "title": "circle 04",
+      "family": "circle",
+      "family_label": "圆环 / 波纹",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura",
+        "shield",
+        "impact_burst"
+      ],
+      "tags": [
+        "圆环",
+        "扩散",
+        "护盾",
+        "区域预警"
+      ],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/circle_04.png",
+          "sha256": "742da1a1b96b93ae446700f6085385d1f62844352da870c89427307b7b7cf03b",
+          "bytes": 59557,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/circle_04.png",
+          "sha256": "bc666371666459a513bedf2824c9fe9b420f2ca05fd1936d318ad2672373e274",
+          "bytes": 30231,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/circle_05",
+      "source_id": "kenney-particle-pack",
+      "title": "circle 05",
+      "family": "circle",
+      "family_label": "圆环 / 波纹",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura",
+        "shield",
+        "impact_burst"
+      ],
+      "tags": [
+        "圆环",
+        "扩散",
+        "护盾",
+        "区域预警"
+      ],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/circle_05.png",
+          "sha256": "925b8ac284436f74f9cadf0ecd058da1c08fba65c098e4e34fd220603022f02e",
+          "bytes": 65336,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/circle_05.png",
+          "sha256": "05e87b80ad4e65ddc0904f91f8520bb22059ca05c053ec7f5c780118e1294012",
+          "bytes": 27583,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/dirt_01",
+      "source_id": "kenney-particle-pack",
+      "title": "dirt 01",
+      "family": "dirt",
+      "family_label": "尘土 / 碎屑",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death"
+      ],
+      "tags": [
+        "尘土",
+        "地面",
+        "物理命中",
+        "碎屑"
+      ],
+      "recommended_use": "物理落地、重击、移动扬尘与地形破坏的次级层。",
+      "caution": "容易遮挡主体和交互信息，只适合低透明度、短时长使用。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/dirt_01.png",
+          "sha256": "6827a0a32a293ec9570fb98d63963b8dd6e6aaba9e1096afad932e93a378bea9",
+          "bytes": 47313,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/dirt_01.png",
+          "sha256": "2bfbb14d4f99982db4712d224bcef3157e7035d09d3b76cb09b64e19946be6d7",
+          "bytes": 46644,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/dirt_02",
+      "source_id": "kenney-particle-pack",
+      "title": "dirt 02",
+      "family": "dirt",
+      "family_label": "尘土 / 碎屑",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death"
+      ],
+      "tags": [
+        "尘土",
+        "地面",
+        "物理命中",
+        "碎屑"
+      ],
+      "recommended_use": "物理落地、重击、移动扬尘与地形破坏的次级层。",
+      "caution": "容易遮挡主体和交互信息，只适合低透明度、短时长使用。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/dirt_02.png",
+          "sha256": "fcecc70b561f80568b3391c3dc1180126d86ce4fbd4d1b01518e6045203e10a3",
+          "bytes": 54060,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/dirt_02.png",
+          "sha256": "64c4d7d7f529e9ce78929ebf5b312b664ac177cfb63b943f5f2fa2b9bffe9452",
+          "bytes": 53980,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/dirt_03",
+      "source_id": "kenney-particle-pack",
+      "title": "dirt 03",
+      "family": "dirt",
+      "family_label": "尘土 / 碎屑",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death"
+      ],
+      "tags": [
+        "尘土",
+        "地面",
+        "物理命中",
+        "碎屑"
+      ],
+      "recommended_use": "物理落地、重击、移动扬尘与地形破坏的次级层。",
+      "caution": "容易遮挡主体和交互信息，只适合低透明度、短时长使用。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/dirt_03.png",
+          "sha256": "427d6dcad5a8d16b8143d412a5a48ce859716150a074ea5bb36eca577c0ae541",
+          "bytes": 114937,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/dirt_03.png",
+          "sha256": "48d4d27e804be46f6031652820987d92567eaa66da924260cd0cc9aa179f4e2f",
+          "bytes": 113946,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/fire_01",
+      "source_id": "kenney-particle-pack",
+      "title": "fire 01",
+      "family": "fire",
+      "family_label": "火焰主体",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "impact_burst",
+        "status_aura"
+      ],
+      "tags": [
+        "火焰",
+        "灼烧",
+        "热浪"
+      ],
+      "recommended_use": "灼烧主体、爆燃命中和火焰材质遮罩。",
+      "caution": "建议去色作为遮罩，由项目 Shader 重建色阶与边缘。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/fire_01.png",
+          "sha256": "9727a9743ac6ab8dd4dd79f5fc5b0266290efae45f4d4452279eb5e4bcf3a978",
+          "bytes": 99891,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/fire_01.png",
+          "sha256": "35fc73c16895d11e6782aba8d4a9b374cd09fad914429cef12d1f6612a38851b",
+          "bytes": 96339,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/fire_02",
+      "source_id": "kenney-particle-pack",
+      "title": "fire 02",
+      "family": "fire",
+      "family_label": "火焰主体",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "impact_burst",
+        "status_aura"
+      ],
+      "tags": [
+        "火焰",
+        "灼烧",
+        "热浪"
+      ],
+      "recommended_use": "灼烧主体、爆燃命中和火焰材质遮罩。",
+      "caution": "建议去色作为遮罩，由项目 Shader 重建色阶与边缘。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/fire_02.png",
+          "sha256": "e2677330b0668033b0744276da74de605164aa5d58203bf251a8ec84e62c2108",
+          "bytes": 88453,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/fire_02.png",
+          "sha256": "79e656b11d3a0ac9caee1c5961295f1590b9281c53b7ed624d8fff3b888d5681",
+          "bytes": 86394,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_01",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 01",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_01.png",
+          "sha256": "92a70bcb90b1e21c57b2dae42843135703b2e988abee97433f84c3119723d144",
+          "bytes": 54099,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_01.png",
+          "sha256": "dc6b5decd0e7e99900b0493fa1496f80e34d272f5603081634d0e99235ea9d2b",
+          "bytes": 35189,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_02",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 02",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_02.png",
+          "sha256": "7afff66979a5a30319d4fa491b13a9027223ebbdadfa38fae4ae76e31d05d9c5",
+          "bytes": 68498,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_02.png",
+          "sha256": "ba416e354fb714a45dc665640b8df00d3f5458f45474eeb0db223a78fce0fda9",
+          "bytes": 45366,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_03",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 03",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_03.png",
+          "sha256": "366678a08a7d22ebb87baa7b42005aaaeb0fd51ab751f2d4e7c9edfa61a33e38",
+          "bytes": 49857,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_03.png",
+          "sha256": "195f614a39a40b3e03961887e2d817f19bf4ec47f7091a42977c9923b55d8ccf",
+          "bytes": 34261,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_04",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 04",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_04.png",
+          "sha256": "71deb274feea6ae5e6bb82c802a6e4d22f168397aa36b7a9e89de863948f3cf5",
+          "bytes": 70731,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_04.png",
+          "sha256": "abc25d707440796489d42e53315b89aa3da54b1b72338e0a0b708ccde78fc0a7",
+          "bytes": 43388,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_05",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 05",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_05.png",
+          "sha256": "4c5cc587260010e4bb58b03cc2561ca0e96409e7db25ea4183cd3fb1d0237dc8",
+          "bytes": 13395,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_05.png",
+          "sha256": "3c3dcda87c882027e268cc7dbae9aa121eb6af6ef24a51b140a794a7212d183a",
+          "bytes": 11404,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flame_06",
+      "source_id": "kenney-particle-pack",
+      "title": "flame 06",
+      "family": "flame",
+      "family_label": "火舌 / 火苗",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "material_loop",
+        "projectile_trail",
+        "status_aura"
+      ],
+      "tags": [
+        "火舌",
+        "火苗",
+        "拖尾",
+        "灼烧"
+      ],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flame_06.png",
+          "sha256": "fc95ac4d0e61b22d079aeb5feabf2914d380858ad95852e5b1638ad820526948",
+          "bytes": 15971,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flame_06.png",
+          "sha256": "174a44ab516a969b1b4bf4dfa75d9bb370de5b567bf8fb64966bf89862d6a45f",
+          "bytes": 13722,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/flare_01",
+      "source_id": "kenney-particle-pack",
+      "title": "flare 01",
+      "family": "flare",
+      "family_label": "闪光核心",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "screen_feedback",
+        "beam_chain"
+      ],
+      "tags": [
+        "闪光",
+        "核心",
+        "命中峰值"
+      ],
+      "recommended_use": "命中峰值、光束核心和关闭 Glow 时的确定性软光。",
+      "caution": "检查 additive 混合与黑边，峰值应短暂。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/flare_01.png",
+          "sha256": "254f5bd4f0548612bf29305d27899efdee8cb8d8306292761ebbddebd3e57935",
+          "bytes": 42886,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/flare_01.png",
+          "sha256": "439a58c4e3486031996af880a841067961218cb7f7cc513ded25dc480f50f840",
+          "bytes": 17953,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/light_01",
+      "source_id": "kenney-particle-pack",
+      "title": "light 01",
+      "family": "light",
+      "family_label": "柔光 / 光晕",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "shield",
+        "status_aura",
+        "screen_feedback",
+        "material_loop"
+      ],
+      "tags": [
+        "柔光",
+        "光晕",
+        "核心",
+        "fallback"
+      ],
+      "recommended_use": "光晕、护盾内光、状态核心和 Glow fallback。",
+      "caution": "透明底版本优先；亮度不能替代可读轮廓。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/light_01.png",
+          "sha256": "caedcc5df5bcac4470244d2520d6a64b45b20c1ccf4d918da516c55e3fa365a6",
+          "bytes": 93470,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/light_01.png",
+          "sha256": "c9e0e947892b87cb71e110e60d85798810142b11aed154542c50b17dc93033b0",
+          "bytes": 60764,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/light_02",
+      "source_id": "kenney-particle-pack",
+      "title": "light 02",
+      "family": "light",
+      "family_label": "柔光 / 光晕",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "shield",
+        "status_aura",
+        "screen_feedback",
+        "material_loop"
+      ],
+      "tags": [
+        "柔光",
+        "光晕",
+        "核心",
+        "fallback"
+      ],
+      "recommended_use": "光晕、护盾内光、状态核心和 Glow fallback。",
+      "caution": "透明底版本优先；亮度不能替代可读轮廓。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/light_02.png",
+          "sha256": "f1bdb57478703fec539f7b8eeceb494c4a23664652b296389f310104be80cfe0",
+          "bytes": 93415,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/light_02.png",
+          "sha256": "9ec3befd7a9fa4ef78d503fbb90a633a52a504eee1d57c5859a93226e09e9ddc",
+          "bytes": 60327,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/light_03",
+      "source_id": "kenney-particle-pack",
+      "title": "light 03",
+      "family": "light",
+      "family_label": "柔光 / 光晕",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "shield",
+        "status_aura",
+        "screen_feedback",
+        "material_loop"
+      ],
+      "tags": [
+        "柔光",
+        "光晕",
+        "核心",
+        "fallback"
+      ],
+      "recommended_use": "光晕、护盾内光、状态核心和 Glow fallback。",
+      "caution": "透明底版本优先；亮度不能替代可读轮廓。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/light_03.png",
+          "sha256": "b68627734d08aab3eaf3f94718521553628c75aace1de6c74de28501c1a4c147",
+          "bytes": 100114,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/light_03.png",
+          "sha256": "adbef8446fe55f8a5ad1fe8423e2683f8102bca792164c95f276ab77abefeb5f",
+          "bytes": 62268,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/magic_01",
+      "source_id": "kenney-particle-pack",
+      "title": "magic 01",
+      "family": "magic",
+      "family_label": "通用魔法",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death",
+        "telegraph"
+      ],
+      "tags": [
+        "魔法",
+        "爆发",
+        "召唤"
+      ],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/magic_01.png",
+          "sha256": "398479ea280c8161d0b6d509ca97eefb27e989c7832b404abcb65faae3e922ff",
+          "bytes": 81687,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/magic_01.png",
+          "sha256": "ba25d57c52ba4bfe83953acac9ef697135ecdf75aa27b75811380f9771070c36",
+          "bytes": 60113,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/magic_02",
+      "source_id": "kenney-particle-pack",
+      "title": "magic 02",
+      "family": "magic",
+      "family_label": "通用魔法",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death",
+        "telegraph"
+      ],
+      "tags": [
+        "魔法",
+        "爆发",
+        "召唤"
+      ],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/magic_02.png",
+          "sha256": "6443e90834abcae4c3848d7ebca99ff0d9fcad19a07f49f77ad64710a3e39b36",
+          "bytes": 86500,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/magic_02.png",
+          "sha256": "5aa9465da6c2ca15620e4f1f8f94cf141feb02b8274689d6ae36796484339ae5",
+          "bytes": 68717,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/magic_03",
+      "source_id": "kenney-particle-pack",
+      "title": "magic 03",
+      "family": "magic",
+      "family_label": "通用魔法",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death",
+        "telegraph"
+      ],
+      "tags": [
+        "魔法",
+        "爆发",
+        "召唤"
+      ],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/magic_03.png",
+          "sha256": "c2ef5fe86cd2fd08e5b9768389ab6580b346c391db3c7c09fc9b0a63e00ec4ce",
+          "bytes": 58093,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/magic_03.png",
+          "sha256": "d6d41342a586c223c057d0f4000725e639787d31d8ec9ec72c58948b58177c75",
+          "bytes": 43622,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/magic_04",
+      "source_id": "kenney-particle-pack",
+      "title": "magic 04",
+      "family": "magic",
+      "family_label": "通用魔法",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death",
+        "telegraph"
+      ],
+      "tags": [
+        "魔法",
+        "爆发",
+        "召唤"
+      ],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/magic_04.png",
+          "sha256": "8255a4a3bd9209a0d3a45f0636524ff0d2953adc7d6819041703107379ab63ba",
+          "bytes": 50082,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/magic_04.png",
+          "sha256": "db52cb9014be1bb580eaca82ae17e7e01fa28ee29c7325d68274d98152f02baa",
+          "bytes": 31286,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/magic_05",
+      "source_id": "kenney-particle-pack",
+      "title": "magic 05",
+      "family": "magic",
+      "family_label": "通用魔法",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "spawn_death",
+        "telegraph"
+      ],
+      "tags": [
+        "魔法",
+        "爆发",
+        "召唤"
+      ],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/magic_05.png",
+          "sha256": "92fb8c7a1d9bc14e052526c0505502c3e5b37d27502fa3d36d2c80b4565b62ef",
+          "bytes": 74794,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/magic_05.png",
+          "sha256": "1342389b347925ebbc395e0e7c1ef7fef030d2303ff020c6b9ffa07d2a206b63",
+          "bytes": 48663,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/muzzle_01",
+      "source_id": "kenney-particle-pack",
+      "title": "muzzle 01",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/muzzle_01.png",
+          "sha256": "08f650f6a615b65024b48d8da32178158d74307d7c235f214f0c075b7aa688b9",
+          "bytes": 81811,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/muzzle_01.png",
+          "sha256": "93bc6bad029daf7a67f4933f3ece8c306a0ab62cafc454cad25bcf512bd0a7a4",
+          "bytes": 80802,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/muzzle_02",
+      "source_id": "kenney-particle-pack",
+      "title": "muzzle 02",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/muzzle_02.png",
+          "sha256": "96164063353cc0386b3d3ad0d64b9be6c369e1d5d8510f84fcf33604b4729084",
+          "bytes": 58365,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/muzzle_02.png",
+          "sha256": "1ecabf57a7f1a2ddfe51c778b3cbdea1da6806b4f8e630816b06ee82a73e8993",
+          "bytes": 59278,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/muzzle_03",
+      "source_id": "kenney-particle-pack",
+      "title": "muzzle 03",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/muzzle_03.png",
+          "sha256": "579983452d263ebeca78080714b6dd55a0f95fca7452f309e91a9d466de6c058",
+          "bytes": 57240,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/muzzle_03.png",
+          "sha256": "8ba49dd9cf63449496fcaecf8d552f15e7704c243714bf80309c9a6512fcd9f6",
+          "bytes": 58467,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/muzzle_04",
+      "source_id": "kenney-particle-pack",
+      "title": "muzzle 04",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/muzzle_04.png",
+          "sha256": "2acbc729b7bf38330b7e829cb0b13dcf922fec4b163f7eb2965b7b2932f89aeb",
+          "bytes": 62593,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/muzzle_04.png",
+          "sha256": "19bd7d025ff03bf5ab026bc8bbbabdddf564392abb9fc37ce37c918bb3642c4b",
+          "bytes": 56666,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/muzzle_05",
+      "source_id": "kenney-particle-pack",
+      "title": "muzzle 05",
+      "family": "muzzle",
+      "family_label": "方向爆闪",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "方向",
+        "爆闪",
+        "发射"
+      ],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/muzzle_05.png",
+          "sha256": "bc2d012c3bee75e668cc7800f965692b47af6edd6d3584081089a70abbe30a47",
+          "bytes": 54088,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/muzzle_05.png",
+          "sha256": "4573dfd3e030dfd3257455b26fd4be8483cdf374df0c4aecff0e8176f607dfe9",
+          "bytes": 56402,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/scorch_01",
+      "source_id": "kenney-particle-pack",
+      "title": "scorch 01",
+      "family": "scorch",
+      "family_label": "焦痕 / 地面残留",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "焦痕",
+        "地面",
+        "残留",
+        "灼烧"
+      ],
+      "recommended_use": "灼烧地块、爆炸残留和短时地面反馈。",
+      "caution": "残留必须有明确生命周期，不能持续污染主要场景。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/scorch_01.png",
+          "sha256": "ea72697696638786ccd4795a346d177b1b6a904331b5536a7e85a7ed927b93a5",
+          "bytes": 60598,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/scorch_01.png",
+          "sha256": "bae15192478d1db2cf6da8bccc3e7fad43a87d4354725d66e7d8d33987b8802c",
+          "bytes": 59486,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/scorch_02",
+      "source_id": "kenney-particle-pack",
+      "title": "scorch 02",
+      "family": "scorch",
+      "family_label": "焦痕 / 地面残留",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "焦痕",
+        "地面",
+        "残留",
+        "灼烧"
+      ],
+      "recommended_use": "灼烧地块、爆炸残留和短时地面反馈。",
+      "caution": "残留必须有明确生命周期，不能持续污染主要场景。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/scorch_02.png",
+          "sha256": "b36daaabbe0480b74e1e8d6b0b2e9a2d01974109b42b8a39c430af7739a953a1",
+          "bytes": 74485,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/scorch_02.png",
+          "sha256": "7c2422ab6a6e2ea940b8feec702058ee6500d8fb881461323d20677700c42ab0",
+          "bytes": 71227,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/scorch_03",
+      "source_id": "kenney-particle-pack",
+      "title": "scorch 03",
+      "family": "scorch",
+      "family_label": "焦痕 / 地面残留",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "焦痕",
+        "地面",
+        "残留",
+        "灼烧"
+      ],
+      "recommended_use": "灼烧地块、爆炸残留和短时地面反馈。",
+      "caution": "残留必须有明确生命周期，不能持续污染主要场景。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/scorch_03.png",
+          "sha256": "531956355c8adcf6fbe0111788e68630c4b16209f9d7a6136978361a308202ec",
+          "bytes": 91921,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/scorch_03.png",
+          "sha256": "38898576e04201b6cd211fa87616e4a0f73596a37958b5ef24b541ad208b1fdc",
+          "bytes": 88181,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/scratch_01",
+      "source_id": "kenney-particle-pack",
+      "title": "scratch 01",
+      "family": "scratch",
+      "family_label": "抓痕",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst"
+      ],
+      "tags": [
+        "抓痕",
+        "兽击",
+        "切割"
+      ],
+      "recommended_use": "兽类爪击和短促物理命中的低频轮廓。",
+      "caution": "方向应与攻击路径一致，不能随机旋转。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/scratch_01.png",
+          "sha256": "7dc0b16a5240738273684bfdf423eefd8a135356af1fee759217cdd560a4a935",
+          "bytes": 65462,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/scratch_01.png",
+          "sha256": "967678017abda8e0e55e320a268e166e293efa231f71ff774b523b282556caa0",
+          "bytes": 48136,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/slash_01",
+      "source_id": "kenney-particle-pack",
+      "title": "slash 01",
+      "family": "slash",
+      "family_label": "斩击",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "斩击",
+        "剑气",
+        "切割",
+        "方向"
+      ],
+      "recommended_use": "爪击、剑气、切割型命中和短距离投射主体。",
+      "caution": "保持单一主方向，避免多层同形斩击堆叠。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/slash_01.png",
+          "sha256": "cb4787978122bb863866a1681af22a7dec39a4566f08c400f233740eb1d3730c",
+          "bytes": 25465,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/slash_01.png",
+          "sha256": "09d9e92bafef8d20d08f58b181bc3daebbe0396afd90cee3e5c7b1a4dff23e49",
+          "bytes": 16775,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/slash_02",
+      "source_id": "kenney-particle-pack",
+      "title": "slash 02",
+      "family": "slash",
+      "family_label": "斩击",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "斩击",
+        "剑气",
+        "切割",
+        "方向"
+      ],
+      "recommended_use": "爪击、剑气、切割型命中和短距离投射主体。",
+      "caution": "保持单一主方向，避免多层同形斩击堆叠。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/slash_02.png",
+          "sha256": "a79a9e297790e6126b78d41015a3045cda3f1863b421c88321d2442ed6f9032e",
+          "bytes": 38224,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/slash_02.png",
+          "sha256": "4c226fe5bcc428ad8859f49832c1a933e31450dc0bafca8ab33610d15d3ea876",
+          "bytes": 28122,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/slash_03",
+      "source_id": "kenney-particle-pack",
+      "title": "slash 03",
+      "family": "slash",
+      "family_label": "斩击",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "斩击",
+        "剑气",
+        "切割",
+        "方向"
+      ],
+      "recommended_use": "爪击、剑气、切割型命中和短距离投射主体。",
+      "caution": "保持单一主方向，避免多层同形斩击堆叠。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/slash_03.png",
+          "sha256": "c77e40ef75084e880f2ea69acf70af4419518f489acda00d29b668a64805608e",
+          "bytes": 16634,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/slash_03.png",
+          "sha256": "4769866a5afc40b61835c4b9f8ee910b2560893a506802a57d35286a03b66a9f",
+          "bytes": 14700,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/slash_04",
+      "source_id": "kenney-particle-pack",
+      "title": "slash 04",
+      "family": "slash",
+      "family_label": "斩击",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail"
+      ],
+      "tags": [
+        "斩击",
+        "剑气",
+        "切割",
+        "方向"
+      ],
+      "recommended_use": "爪击、剑气、切割型命中和短距离投射主体。",
+      "caution": "保持单一主方向，避免多层同形斩击堆叠。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/slash_04.png",
+          "sha256": "1beed6d30b8b3fc0874cca12f57de073360f0b11fc6f4cd99a24b7e033784c47",
+          "bytes": 17889,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/slash_04.png",
+          "sha256": "74a2c6f8c91a237287ceca611d6710c88f226ed1a6784bae7aaa34eddcee721b",
+          "bytes": 13373,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_01",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 01",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_01.png",
+          "sha256": "e8724c219e8d35859167fc0a7e207e13c72ccf0c29704909b9bb3d3dc71c6cf7",
+          "bytes": 97452,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_01.png",
+          "sha256": "288b7a29b659030fe7da333159c641e2325e41e704c05b8c6db1531b59c09897",
+          "bytes": 86344,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_02",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 02",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_02.png",
+          "sha256": "c405cc0ceb31a239dfd873fffdfdfe3ff2056eebd5fcc77dfba1d9fdfed585c7",
+          "bytes": 96825,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_02.png",
+          "sha256": "34e8306ddf2ab493e58ea36b0e83db2b621a6296fe6ee72aa7ebb4f4554e099e",
+          "bytes": 86644,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_03",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 03",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_03.png",
+          "sha256": "a71f8abcac64f8d73a94625cc9a10033dbeafa7eaea750560cba0daa73fe8752",
+          "bytes": 39737,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_03.png",
+          "sha256": "588255cfa015d2fd44488cf9a03d15edd73b2f5777dbf0301f431835b49eacc4",
+          "bytes": 33642,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_04",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 04",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_04.png",
+          "sha256": "2db2f69874cdb1e5203f2f86803d5debde30402590cf50a810afaba882184616",
+          "bytes": 97568,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_04.png",
+          "sha256": "5a529ca033f2ea99f49cead4cb6618acf534d19d4472ca34e879776bd18c9cd3",
+          "bytes": 77863,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_05",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 05",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_05.png",
+          "sha256": "e88c8416bd8da1b3f9f19e615dcebdf42f71045799cb4c41f545cb16dd835e35",
+          "bytes": 83445,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_05.png",
+          "sha256": "d45c9fb99de978e0558492e0a3517ca5f3d8fb4530724c22b1ede6c2f85b16b2",
+          "bytes": 67943,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_06",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 06",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_06.png",
+          "sha256": "d988b03bb46797be913333f06b26ff2aad55ec082cfb7d3d18ce86ccb71559b5",
+          "bytes": 62156,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_06.png",
+          "sha256": "ec06cf39f6fa8b22d9e1cb5e5612c14405e49b0cf38fa9c1aa72f26bd8d287e5",
+          "bytes": 50927,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_07",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 07",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_07.png",
+          "sha256": "f7419fa4f11e346d0fb36a17ecbf616083c6962633c7847d92119c994ed9b4e4",
+          "bytes": 77838,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_07.png",
+          "sha256": "86016557bd1de779f1b31871fbcdb82630b913956ad8ac10fbe053a9a5ca5872",
+          "bytes": 64564,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_08",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 08",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_08.png",
+          "sha256": "eae1d92c205a2654254281d470ee70cce86cf4e8e849db29e4d5edff0f67c695",
+          "bytes": 90424,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_08.png",
+          "sha256": "92626d94181ca1cc46cf14530367d1795c75a2b147cdd2ef640c6724c4eb6319",
+          "bytes": 81734,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_09",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 09",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_09.png",
+          "sha256": "7c66cf05c52aefb1f3e37c54917289a11d9268a995dbc4effc8ca80242a4122b",
+          "bytes": 87963,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_09.png",
+          "sha256": "fa5ab12d6bbc90eea4a2d003ff340bfadbe7225708a855874586146ef3687108",
+          "bytes": 79871,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/smoke_10",
+      "source_id": "kenney-particle-pack",
+      "title": "smoke 10",
+      "family": "smoke",
+      "family_label": "烟雾 / 云气",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "spawn_death",
+        "status_aura",
+        "impact_burst"
+      ],
+      "tags": [
+        "烟雾",
+        "云气",
+        "消散",
+        "环境"
+      ],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/smoke_10.png",
+          "sha256": "35d1082a87de7558aeeab210fecb43997c958e162ede896587d1930f66e6ae67",
+          "bytes": 90497,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/smoke_10.png",
+          "sha256": "4fb5b971673011934150c5aa8342918ef0f764ad178daaf996d5eed408384d40",
+          "bytes": 84879,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_01",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 01",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_01.png",
+          "sha256": "5902da3a324cad0a4b5a88ce1e3c9cc18fee50922c358ce93d8c9f1ad7708f0a",
+          "bytes": 95070,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_01.png",
+          "sha256": "d74634d80aed77812c69e071c92f6ea7e81e54b86e8d4310407a15fcc8a0afb7",
+          "bytes": 82487,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_02",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 02",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_02.png",
+          "sha256": "f7c5f1f849657eed79fd7b663be5a57829450a1e4fdc4a062049a05b9a406e89",
+          "bytes": 101613,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_02.png",
+          "sha256": "13950760bbc53b24d70226c55b9dd658278806f0cc0a03370af1af6b54466998",
+          "bytes": 100419,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_03",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 03",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_03.png",
+          "sha256": "90f322bebe5facea2f60afe88d98dd80a21479ed3212e605d61e88a896f3e1db",
+          "bytes": 79574,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_03.png",
+          "sha256": "89c6159f0a532c3d2409e20e36f9885435ceaa42817da40f5f37112527ffd869",
+          "bytes": 72740,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_04",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 04",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_04.png",
+          "sha256": "3cba35b80a97c12283a8ecd41780a0412194de14562cbffc7f04e9157183f772",
+          "bytes": 83811,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_04.png",
+          "sha256": "542198dcb07aab51469cdb6211c87583ebc2516e6b03238fafbf92c6c8966707",
+          "bytes": 77451,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_05",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 05",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_05.png",
+          "sha256": "9624ea2017b8b2767a9d3b82e978b7fdf5154d83e6756cd919da51447bb97138",
+          "bytes": 64808,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_05.png",
+          "sha256": "173bcf3e75969a08d8db3e64ec4f5e78ffe11fee156186e30076baea649f673d",
+          "bytes": 44785,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_06",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 06",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_06.png",
+          "sha256": "fe6d473393d3b9350c7a654b7cb5fbd343766b5b5b11d3e4aba476832d4a6d3f",
+          "bytes": 46347,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_06.png",
+          "sha256": "b615e988e12bbff49ad061c59d8d08f976fab9f72ceac0224b67b4558e336857",
+          "bytes": 42423,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/spark_07",
+      "source_id": "kenney-particle-pack",
+      "title": "spark 07",
+      "family": "spark",
+      "family_label": "火星 / 光点",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "projectile_trail",
+        "spawn_death"
+      ],
+      "tags": [
+        "火星",
+        "光点",
+        "余韵",
+        "高频"
+      ],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/spark_07.png",
+          "sha256": "216101e7b54c627b4aa780649a21f0ef9146d2566f52699284d091ef00825a26",
+          "bytes": 40968,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/spark_07.png",
+          "sha256": "1f1f798a6f969349da9cdbc87738ab8bc26542149f3a421cf9b64726491e01e1",
+          "bytes": 27522,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_01",
+      "source_id": "kenney-particle-pack",
+      "title": "star 01",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_01.png",
+          "sha256": "3ba3999c944a0767677449412d306c1f230daa1743b31f929533cf77a22ecf5d",
+          "bytes": 42118,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_01.png",
+          "sha256": "fa4440aefefcf5eea5cb816194a216d865e241fc1c8794ed526dc006ac9bd397",
+          "bytes": 29258,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_02",
+      "source_id": "kenney-particle-pack",
+      "title": "star 02",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_02.png",
+          "sha256": "a0b7624a2e6f6825a3e93ddec685728c4d3de03b77bbf2a2e425b7a6d3d0215b",
+          "bytes": 49897,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_02.png",
+          "sha256": "48b61d81a78523361d51a0c190ead189851501ef752e441c2c63c8a0335ec33c",
+          "bytes": 37858,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_03",
+      "source_id": "kenney-particle-pack",
+      "title": "star 03",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_03.png",
+          "sha256": "dac75aa35e5191de1917ec076d47f3b43a47b80d9aae6eefffb920c5ceba3601",
+          "bytes": 56622,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_03.png",
+          "sha256": "28b6321aa328c31d7aed18d866e9adaa35965cd168e32b66b3b10d6bbe94d620",
+          "bytes": 32321,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_04",
+      "source_id": "kenney-particle-pack",
+      "title": "star 04",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_04.png",
+          "sha256": "6485ac16c773663bd39346f3bedae04465ac14c661eb47cc5cfa935cdbf6c2ec",
+          "bytes": 30613,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_04.png",
+          "sha256": "4c8429d19fb97165a3702ac7ff7e7b41d292c8fb9956d674db7028243d86c8f3",
+          "bytes": 21740,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_05",
+      "source_id": "kenney-particle-pack",
+      "title": "star 05",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_05.png",
+          "sha256": "1e8ab968178e507824ab28353c0ffffa918ae3adbcf89513d3db50a17b7bc8a2",
+          "bytes": 62216,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_05.png",
+          "sha256": "3c017dd5e0d6f81b6a18ca5541de30216398aaaec1929cbfbf235497a5eb91aa",
+          "bytes": 39630,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_06",
+      "source_id": "kenney-particle-pack",
+      "title": "star 06",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_06.png",
+          "sha256": "65d3ff5aa87ec0770c11fe1293fdc70cdc5ccf0eabc2e2fd6a1ead922051035e",
+          "bytes": 35453,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_06.png",
+          "sha256": "4b55a5f4e03ab541b3d6b81a1b0f41c1e30f700144e1fcf204e4bec31fa1ae73",
+          "bytes": 25156,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_07",
+      "source_id": "kenney-particle-pack",
+      "title": "star 07",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_07.png",
+          "sha256": "d3bc9b8f1960baab452e8a5e816b9edeee4420dbed5ddd7ebe174519860a451a",
+          "bytes": 32369,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_07.png",
+          "sha256": "ae3e59099231a3daf031a56b5e0c841aad60ec2fb7549df79412da4c75bb3bcf",
+          "bytes": 25846,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_08",
+      "source_id": "kenney-particle-pack",
+      "title": "star 08",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_08.png",
+          "sha256": "05f24d1ee76c1464074cbca58155e4be517fefd34a7001bb012561647cc3dec3",
+          "bytes": 26479,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_08.png",
+          "sha256": "83e451b6a931f968216196f39e00949c26bfeccea5257f859a944d735266d48d",
+          "bytes": 22840,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/star_09",
+      "source_id": "kenney-particle-pack",
+      "title": "star 09",
+      "family": "star",
+      "family_label": "星芒",
+      "variant_group": "standard",
+      "roles": [
+        "finish"
+      ],
+      "archetypes": [
+        "impact_burst",
+        "status_aura",
+        "screen_feedback"
+      ],
+      "tags": [
+        "星芒",
+        "闪烁",
+        "高频"
+      ],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/star_09.png",
+          "sha256": "4255985e312a0058dc0c4f8b5befc902da17e6be5e5252007f3c7b02bb150157",
+          "bytes": 50142,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/star_09.png",
+          "sha256": "e7536e5457e7b45f6c8e45201c0de4c9109fbc747a9666e99db11e975383c580",
+          "bytes": 32629,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/symbol_01",
+      "source_id": "kenney-particle-pack",
+      "title": "symbol 01",
+      "family": "symbol",
+      "family_label": "通用符号",
+      "variant_group": "standard",
+      "roles": [
+        "shape"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura"
+      ],
+      "tags": [
+        "符号",
+        "标记",
+        "预警"
+      ],
+      "recommended_use": "只作为结构参考或待重绘符号遮罩。",
+      "caution": "不得替代产品自己的图标语法、世界观符号和阵营视觉身份。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/symbol_01.png",
+          "sha256": "3eb3988f3e80acf3fda9df07733f49c3585eafa7d6a7ce5b31765fe180dd6d9c",
+          "bytes": 9088,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/symbol_01.png",
+          "sha256": "97c8874aba170cd014c8a58067c4f49bbb941151180e20c1dbcd2c889b3e2e13",
+          "bytes": 3849,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/symbol_02",
+      "source_id": "kenney-particle-pack",
+      "title": "symbol 02",
+      "family": "symbol",
+      "family_label": "通用符号",
+      "variant_group": "standard",
+      "roles": [
+        "shape"
+      ],
+      "archetypes": [
+        "telegraph",
+        "status_aura"
+      ],
+      "tags": [
+        "符号",
+        "标记",
+        "预警"
+      ],
+      "recommended_use": "只作为结构参考或待重绘符号遮罩。",
+      "caution": "不得替代产品自己的图标语法、世界观符号和阵营视觉身份。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/symbol_02.png",
+          "sha256": "1582e947d6793ec74fafabe587750af1b2655d1cd4ffe65bce1967c85b362ba8",
+          "bytes": 7608,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/symbol_02.png",
+          "sha256": "1775280fa2bb713e08f528d6460a9708c39e821fd5ec8c89f22c694f4ce93fbe",
+          "bytes": 3546,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_01",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 01",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_01.png",
+          "sha256": "34de69bc3f665b23fe9bed15f388efd8e8e4dc1a99f2fc5db9ba8715c525711f",
+          "bytes": 38406,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_01.png",
+          "sha256": "fb5857094cacdfaed6886ab48f545a13a64d6fe646030b124b2e334705d7f408",
+          "bytes": 17369,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_02",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 02",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_02.png",
+          "sha256": "8c224d6d4544d8437bce5ee51452957b31f5479e337c5f432dc1b55b1e2f9685",
+          "bytes": 39395,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_02.png",
+          "sha256": "590bf09870a76e840068cd84333d14cde0666d1816e5636efac6201440dc66c7",
+          "bytes": 20280,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_03",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 03",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_03.png",
+          "sha256": "a8c05800698cd502c3416a1f2335292544d52b3c8624c3c829a534c52b364860",
+          "bytes": 42254,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_03.png",
+          "sha256": "1226d3973ec9c785a40e89bedc5abc282edc2bb403f756c1a60ef3c694687cf5",
+          "bytes": 24429,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_04",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 04",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_04.png",
+          "sha256": "ca69d82709295663ef1d9fcd90d346319fef5389a15dd63e3b71b4527e620cd8",
+          "bytes": 47104,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_04.png",
+          "sha256": "a7c0e60352eebe0cdbb7a02e98b14c4558097bda5c86a7a2ae58eede56798143",
+          "bytes": 24865,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_05",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 05",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_05.png",
+          "sha256": "3f3d687bd2c70b10add33bdbd4616deda28f0138f757d358f9f0b78fb38bde6e",
+          "bytes": 42174,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_05.png",
+          "sha256": "89ec5d9a02676f5fe83f398a1b869c15e91dc65bef01d2c5f7c67b59bd2a9d8b",
+          "bytes": 22660,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_06",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 06",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_06.png",
+          "sha256": "22c61c0e280db28b6cb6033c015dde4360a124b3488302ea708566b7f36fd900",
+          "bytes": 36247,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_06.png",
+          "sha256": "b65687a581ee9f8f653378da7c98b97647fc5186661f6be69e6b1eee130e1705",
+          "bytes": 21552,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/trace_07",
+      "source_id": "kenney-particle-pack",
+      "title": "trace 07",
+      "family": "trace",
+      "family_label": "轨迹 / 气流",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "resource_transfer",
+        "projectile_trail",
+        "beam_chain"
+      ],
+      "tags": [
+        "轨迹",
+        "气流",
+        "拖尾",
+        "传递"
+      ],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/trace_07.png",
+          "sha256": "4e5f177b7717d291464f01538756eb2f471961b09b39ea82ea72447210af7110",
+          "bytes": 33145,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/trace_07.png",
+          "sha256": "f7c49230d65b38613493a9eea60950a76e7378e7a42ca34f60288ae18a837cc7",
+          "bytes": 18802,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/twirl_01",
+      "source_id": "kenney-particle-pack",
+      "title": "twirl 01",
+      "family": "twirl",
+      "family_label": "旋流 / 涡旋",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "material_loop",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "旋流",
+        "涡旋",
+        "聚气",
+        "召唤"
+      ],
+      "recommended_use": "云气、水流、阴阳旋转、聚气和召唤前摇。",
+      "caution": "循环时必须检查首尾接缝，旋转不能掩盖目标锚点。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/twirl_01.png",
+          "sha256": "ba3f4996a5a91ea3cba6817a9b4770a385a82ef0b9350cbda5c0f140d182af7e",
+          "bytes": 51060,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/twirl_01.png",
+          "sha256": "18137131f93a9f97dbe9ba6f405a6c89236759875635c97be8c4859617a6a5f7",
+          "bytes": 31267,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/twirl_02",
+      "source_id": "kenney-particle-pack",
+      "title": "twirl 02",
+      "family": "twirl",
+      "family_label": "旋流 / 涡旋",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "material_loop",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "旋流",
+        "涡旋",
+        "聚气",
+        "召唤"
+      ],
+      "recommended_use": "云气、水流、阴阳旋转、聚气和召唤前摇。",
+      "caution": "循环时必须检查首尾接缝，旋转不能掩盖目标锚点。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/twirl_02.png",
+          "sha256": "3963633f6b2395a3fa95b9f4f65f22a4d38a2c561d9312dfff4646b71c7aa6e2",
+          "bytes": 76886,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/twirl_02.png",
+          "sha256": "e74be64a75891e88188f4f8e3726835d796837972ab0571d7de88086d7df8ac0",
+          "bytes": 45770,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/twirl_03",
+      "source_id": "kenney-particle-pack",
+      "title": "twirl 03",
+      "family": "twirl",
+      "family_label": "旋流 / 涡旋",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "material_loop",
+        "telegraph",
+        "spawn_death"
+      ],
+      "tags": [
+        "旋流",
+        "涡旋",
+        "聚气",
+        "召唤"
+      ],
+      "recommended_use": "云气、水流、阴阳旋转、聚气和召唤前摇。",
+      "caution": "循环时必须检查首尾接缝，旋转不能掩盖目标锚点。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/twirl_03.png",
+          "sha256": "69baaab4bc68473e9f926dc249a1d1b58f759c88906e10ac859bf43ac3cfbc8b",
+          "bytes": 81463,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/twirl_03.png",
+          "sha256": "15ebed5f15d88caf66a199b05a378f8d2b89a1852d26cb09be5941a545562965",
+          "bytes": 53410,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/window_01",
+      "source_id": "kenney-particle-pack",
+      "title": "window 01",
+      "family": "window",
+      "family_label": "光窗 / Light Cookie",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "screen_feedback",
+        "telegraph"
+      ],
+      "tags": [
+        "光窗",
+        "投影",
+        "环境",
+        "Light Cookie"
+      ],
+      "recommended_use": "环境投影、局部光窗和大型预警的辅助遮罩。",
+      "caution": "避免成为持续高亮背景；需要战场 1× 对比度检查。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/window_01.png",
+          "sha256": "373747a996fcfc320c76d093bde08252db2adde8d29672aca98430e521e702fa",
+          "bytes": 33759,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/window_01.png",
+          "sha256": "e6da81a1fc24e12574ca44c5f55d9e2543cd3aae5732825ed031dd10c01f387f",
+          "bytes": 13573,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/window_02",
+      "source_id": "kenney-particle-pack",
+      "title": "window 02",
+      "family": "window",
+      "family_label": "光窗 / Light Cookie",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "screen_feedback",
+        "telegraph"
+      ],
+      "tags": [
+        "光窗",
+        "投影",
+        "环境",
+        "Light Cookie"
+      ],
+      "recommended_use": "环境投影、局部光窗和大型预警的辅助遮罩。",
+      "caution": "避免成为持续高亮背景；需要战场 1× 对比度检查。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/window_02.png",
+          "sha256": "2b430446f1527409d00b418370975f7b08572282aea732503f9a22837055d54d",
+          "bytes": 39286,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/window_02.png",
+          "sha256": "79e979150edad3cbbe5bd40086b1cad04992a04584ad5d06900143e2bf4466e0",
+          "bytes": 14062,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": true,
+          "has_transparency": true
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/window_03",
+      "source_id": "kenney-particle-pack",
+      "title": "window 03",
+      "family": "window",
+      "family_label": "光窗 / Light Cookie",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "screen_feedback",
+        "telegraph"
+      ],
+      "tags": [
+        "光窗",
+        "投影",
+        "环境",
+        "Light Cookie"
+      ],
+      "recommended_use": "环境投影、局部光窗和大型预警的辅助遮罩。",
+      "caution": "避免成为持续高亮背景；需要战场 1× 对比度检查。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/window_03.png",
+          "sha256": "452680cff9e62da90a4b3bff96dd7634d05624ee2d58fd5db7d89f48a60cdf8c",
+          "bytes": 16860,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/window_03.png",
+          "sha256": "a450384ec385498922162a794f02035bc1c6c998d90d30f3aaf7690778ef8291",
+          "bytes": 6760,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    },
+    {
+      "material_id": "kenney-particle-pack/window_04",
+      "source_id": "kenney-particle-pack",
+      "title": "window 04",
+      "family": "window",
+      "family_label": "光窗 / Light Cookie",
+      "variant_group": "standard",
+      "roles": [
+        "shape",
+        "finish"
+      ],
+      "archetypes": [
+        "ambient_loop",
+        "screen_feedback",
+        "telegraph"
+      ],
+      "tags": [
+        "光窗",
+        "投影",
+        "环境",
+        "Light Cookie"
+      ],
+      "recommended_use": "环境投影、局部光窗和大型预警的辅助遮罩。",
+      "caution": "避免成为持续高亮背景；需要战场 1× 对比度检查。",
+      "license": "CC0-1.0",
+      "distribution_policy": "direct_use",
+      "files": {
+        "transparent": {
+          "path": "./materials/library/kenney-particle-pack/transparent/window_04.png",
+          "sha256": "096be5e6f21547f16f302747a607020b2f1214842618de7a078587f6b8f1956e",
+          "bytes": 52143,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": true
+        },
+        "black": {
+          "path": "./materials/library/kenney-particle-pack/black/window_04.png",
+          "sha256": "6f7d53b5cfa732b1e73ccf5e0c7de8c11f6574564b5826a4fd78e5bec1310ffd",
+          "bytes": 30772,
+          "width": 512,
+          "height": 512,
+          "has_alpha_channel": false,
+          "has_transparency": false
+        }
+      }
+    }
+  ]
+}

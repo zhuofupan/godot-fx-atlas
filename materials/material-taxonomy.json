@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "fallback": {
+    "label": "未分类",
+    "roles": ["shape"],
+    "archetypes": ["impact_burst"],
+    "tags": ["待人工复核"],
+    "recommended_use": "保留为候选遮罩，使用前人工确认轮廓、Alpha 与语义。",
+    "caution": "没有可靠用途分类时不得自动接入生产效果。"
+  },
+  "families": {
+    "circle": {
+      "label": "圆环 / 波纹",
+      "roles": ["shape", "finish"],
+      "archetypes": ["telegraph", "status_aura", "shield", "impact_burst"],
+      "tags": ["圆环", "扩散", "护盾", "区域预警"],
+      "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
+      "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。"
+    },
+    "dirt": {
+      "label": "尘土 / 碎屑",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "spawn_death"],
+      "tags": ["尘土", "地面", "物理命中", "碎屑"],
+      "recommended_use": "物理落地、重击、移动扬尘与地形破坏的次级层。",
+      "caution": "容易遮挡主体和交互信息，只适合低透明度、短时长使用。"
+    },
+    "fire": {
+      "label": "火焰主体",
+      "roles": ["shape", "finish"],
+      "archetypes": ["material_loop", "impact_burst", "status_aura"],
+      "tags": ["火焰", "灼烧", "热浪"],
+      "recommended_use": "灼烧主体、爆燃命中和火焰材质遮罩。",
+      "caution": "建议去色作为遮罩，由项目 Shader 重建色阶与边缘。"
+    },
+    "flame": {
+      "label": "火舌 / 火苗",
+      "roles": ["shape", "finish"],
+      "archetypes": ["material_loop", "projectile_trail", "status_aura"],
+      "tags": ["火舌", "火苗", "拖尾", "灼烧"],
+      "recommended_use": "火焰拖尾、持续燃烧和高频火苗点缀。",
+      "caution": "不要把单张火苗放大为完整技能主体。"
+    },
+    "flare": {
+      "label": "闪光核心",
+      "roles": ["finish"],
+      "archetypes": ["impact_burst", "screen_feedback", "beam_chain"],
+      "tags": ["闪光", "核心", "命中峰值"],
+      "recommended_use": "命中峰值、光束核心和关闭 Glow 时的确定性软光。",
+      "caution": "检查 additive 混合与黑边，峰值应短暂。"
+    },
+    "light": {
+      "label": "柔光 / 光晕",
+      "roles": ["finish"],
+      "archetypes": ["shield", "status_aura", "screen_feedback", "material_loop"],
+      "tags": ["柔光", "光晕", "核心", "fallback"],
+      "recommended_use": "光晕、护盾内光、状态核心和 Glow fallback。",
+      "caution": "透明底版本优先；亮度不能替代可读轮廓。"
+    },
+    "magic": {
+      "label": "通用魔法",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "spawn_death", "telegraph"],
+      "tags": ["魔法", "爆发", "召唤"],
+      "recommended_use": "作为爆发或召唤的次级遮罩，先做项目风格重绘。",
+      "caution": "通用奇幻身份较强，不建议原样成为技能主体。"
+    },
+    "muzzle": {
+      "label": "方向爆闪",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "projectile_trail"],
+      "tags": ["方向", "爆闪", "发射"],
+      "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
+      "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。"
+    },
+    "scorch": {
+      "label": "焦痕 / 地面残留",
+      "roles": ["finish"],
+      "archetypes": ["impact_burst", "telegraph", "spawn_death"],
+      "tags": ["焦痕", "地面", "残留", "灼烧"],
+      "recommended_use": "灼烧地块、爆炸残留和短时地面反馈。",
+      "caution": "残留必须有明确生命周期，不能持续污染主要场景。"
+    },
+    "scratch": {
+      "label": "抓痕",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst"],
+      "tags": ["抓痕", "兽击", "切割"],
+      "recommended_use": "兽类爪击和短促物理命中的低频轮廓。",
+      "caution": "方向应与攻击路径一致，不能随机旋转。"
+    },
+    "slash": {
+      "label": "斩击",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "projectile_trail"],
+      "tags": ["斩击", "剑气", "切割", "方向"],
+      "recommended_use": "爪击、剑气、切割型命中和短距离投射主体。",
+      "caution": "保持单一主方向，避免多层同形斩击堆叠。"
+    },
+    "smoke": {
+      "label": "烟雾 / 云气",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "spawn_death", "status_aura", "impact_burst"],
+      "tags": ["烟雾", "云气", "消散", "环境"],
+      "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
+      "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。"
+    },
+    "spark": {
+      "label": "火星 / 光点",
+      "roles": ["finish"],
+      "archetypes": ["impact_burst", "projectile_trail", "spawn_death"],
+      "tags": ["火星", "光点", "余韵", "高频"],
+      "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
+      "caution": "只承担高频细节，数量和亮度必须克制。"
+    },
+    "star": {
+      "label": "星芒",
+      "roles": ["finish"],
+      "archetypes": ["impact_burst", "status_aura", "screen_feedback"],
+      "tags": ["星芒", "闪烁", "高频"],
+      "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
+      "caution": "容易形成通用手游闪粉，不得无意义铺满画面。"
+    },
+    "symbol": {
+      "label": "通用符号",
+      "roles": ["shape"],
+      "archetypes": ["telegraph", "status_aura"],
+      "tags": ["符号", "标记", "预警"],
+      "recommended_use": "只作为结构参考或待重绘符号遮罩。",
+      "caution": "不得替代产品自己的图标语法、世界观符号和阵营视觉身份。"
+    },
+    "trace": {
+      "label": "轨迹 / 气流",
+      "roles": ["shape", "finish"],
+      "archetypes": ["resource_transfer", "projectile_trail", "beam_chain"],
+      "tags": ["轨迹", "气流", "拖尾", "传递"],
+      "recommended_use": "气、元素、治疗和资源传递的带状拖尾。",
+      "caution": "由路径内核控制方向，贴图本身不决定运动。"
+    },
+    "twirl": {
+      "label": "旋流 / 涡旋",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "material_loop", "telegraph", "spawn_death"],
+      "tags": ["旋流", "涡旋", "聚气", "召唤"],
+      "recommended_use": "云气、水流、阴阳旋转、聚气和召唤前摇。",
+      "caution": "循环时必须检查首尾接缝，旋转不能掩盖目标锚点。"
+    },
+    "window": {
+      "label": "光窗 / Light Cookie",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "screen_feedback", "telegraph"],
+      "tags": ["光窗", "投影", "环境", "Light Cookie"],
+      "recommended_use": "环境投影、局部光窗和大型预警的辅助遮罩。",
+      "caution": "避免成为持续高亮背景；需要战场 1× 对比度检查。"
+    }
+  }
+}
