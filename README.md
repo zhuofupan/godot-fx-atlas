@@ -20,3 +20,7 @@ npm test
 - Itch.io 固定价格取自同一资源列表页；其他资源站条目按免费资源记录，采用前仍需查看原页许可和当前价格。
 
 公开审计结果位于 `audit-report.json`、`semantic-audit.json`、`mechanism-index.json` 与 `final-link-audit.json`。多元素合集只作为通用合集收录，单一元素分类优先链接到对应的独立子包页面。
+
+## 创作与实现
+
+从检索参考到离线生图、序列帧 + Shader/程序层、透明素材门禁和专用 Gallery 验收，统一遵循 [2D 技能特效创作工作流](./docs/vfx-authoring-workflow.md)。Atlas 只保存跨项目通用方法，不保存任何消费项目的角色、编号、策划文本、私有素材或接入状态。
