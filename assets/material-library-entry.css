@@ -26,3 +26,17 @@
   font-size: 11px;
 }
 .material-library-entry:hover { transform: translateY(-2px); }
+
+#root footer > div:last-child {
+  max-width: 640px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 10px;
+}
+
+@media (max-width: 760px) {
+  #root footer > div:last-child {
+    max-width: none;
+    justify-content: flex-start;
+  }
+}
