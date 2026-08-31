@@ -6,7 +6,8 @@ const sourceFiles = [
   ["src/material-core.js", "assets/material-core.js"],
   ["src/material-library.js", "assets/material-library.js"],
   ["src/material-library.css", "assets/material-library.css"],
-  ["src/material-library-entry.css", "assets/material-library-entry.css"]
+  ["src/material-library-entry.css", "assets/material-library-entry.css"],
+  ["src/site-credits.css", "assets/site-credits.css"]
 ];
 
 for (const [sourceRelative, targetRelative] of sourceFiles) {

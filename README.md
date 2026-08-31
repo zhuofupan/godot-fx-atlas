@@ -35,6 +35,12 @@ npm test
 
 仓库内的 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md) 可让 AI 串联原站检索、实现思路提取、贴图选择、来源收据和 Godot 接入计划；它不会把某个消费项目的私有信息写回公开 Atlas。
 
+## 鸣谢
+
+感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/assets/particle-pack) 以 CC0 发布首批生产贴图。
+
+Atlas 的收录和鸣谢不改变任何原作品的版权、许可、价格或使用条件，采用前仍应核对对应原页。
+
 ## 创作与实现
 
 从检索参考到离线生图、序列帧 + Shader/程序层、透明素材门禁和专用 Gallery 验收，统一遵循 [2D 技能特效创作工作流](./docs/vfx-authoring-workflow.md)。Atlas 只保存跨项目通用方法，不保存任何消费项目的角色、编号、策划文本、私有素材或接入状态。
