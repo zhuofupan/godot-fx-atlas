@@ -42,6 +42,14 @@ npm run build
 npm test
 ```
 
+显式联网刷新来源页远程预览 URL：
+
+```bash
+npm run refresh:previews
+```
+
+该命令只更新 `reference-previews.json` 中的 HTTPS 图片链接，不下载图片；普通构建和网站检索不会自动访问来源页。
+
 ## 数据原则
 
 - 主链接必须通过 HTTP 状态与页面标题核对。
@@ -52,6 +60,7 @@ npm test
 - 只有 `distribution_policy: direct_use` 且经过安全清洗的位图可以进入 `materials/library/`。
 - 资产贴图库只接收清洗后的位图；公开插件代码和 Shader 可以在许可允许时进入参考索引与实现方案，但不会被误装成贴图资产。
 - 公开 Atlas 不接收任何消费项目的私有信息、策划内容、角色数据、私有素材或接入状态。
+- 展示卡预览只保存来源页公开元数据提供的远程图片 URL，不下载、不缓存、不重新分发原图；卡片进入视口附近时才动态加载，远程图片不可用时回退到内置抽象预览。
 - 文件级索引记录 SHA-256；完整素材包留在 Atlas，游戏项目只复制实际选择的子集。
 
 公开审计结果位于 `audit-report.json`、`semantic-audit.json`、`mechanism-index.json` 与 `final-link-audit.json`。多元素合集只作为通用合集收录，单一元素分类优先链接到对应的独立子包页面。
@@ -59,12 +68,6 @@ npm test
 资产贴图库的数据合同与新来源导入流程见 [资产贴图库维护说明](./docs/material-library.md)。
 
 仓库内的 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md) 可让 AI 串联原站检索、实现思路提取、贴图选择、来源收据和 Godot 接入计划；它不会把某个消费项目的私有信息写回公开 Atlas。
-
-## 鸣谢
-
-感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/)、[RPicster](https://github.com/RPicster/Godot-particle-and-vfx-textures) 与 OpenGameArt 作者 [para](https://opengameart.org/users/para) 以 CC0 发布可直接分发的特效贴图与序列帧。
-
-Atlas 的收录和鸣谢不改变任何原作品的版权、许可、价格或使用条件，采用前仍应核对对应原页。
 
 ## 技能视觉导演与制作流程
 
@@ -82,3 +85,9 @@ Atlas 不只是贴图下载页，也可以作为 AI 制作 Godot 2D/伪 3D 技�
 如果任务只要求方案或选材，流程可以在对应阶段停止；如果要求可交付特效，则应继续完成项目接入、真实场景验证与结果记录。更细的制作、序列帧和验收门禁见 [2D 技能特效创作工作流](./docs/vfx-authoring-workflow.md)，AI 检索接口见 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md)。
 
 Atlas 只保存跨项目通用的方法、公开来源与审计信息，不保存任何消费项目的角色、编号、策划文本、私有素材或接入状态。
+
+## 鸣谢
+
+感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引和展示卡远程预览提供公开资料；感谢 [Kenney](https://kenney.nl/)、[RPicster](https://github.com/RPicster/Godot-particle-and-vfx-textures) 与 OpenGameArt 作者 [para](https://opengameart.org/users/para) 以 CC0 发布可直接分发的特效贴图与序列帧。
+
+Atlas 的收录、远程预览和鸣谢不改变任何原作品的版权、许可、价格或使用条件，采用前仍应核对对应原页。

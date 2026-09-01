@@ -1,0 +1,50 @@
+.effect-preview-image {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 180ms ease, transform 260ms ease;
+}
+
+.effect-card:hover .effect-preview-image {
+  transform: scale(1.025);
+}
+
+.effect-preview-source {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 4;
+  color: #edf5ff;
+  background: #050913cc;
+  border: 1px solid #ffffff2e;
+  border-radius: 999px;
+  padding: 4px 7px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.effect-visual.has-reference-preview::before,
+.effect-visual.has-reference-preview::after,
+.effect-visual.has-reference-preview > .visual-ring,
+.effect-visual.has-reference-preview > .visual-core,
+.effect-visual.has-reference-preview > i,
+.effect-visual.has-reference-preview > .visual-content {
+  opacity: 0;
+}
+
+.effect-visual.has-reference-preview .effect-preview-image,
+.effect-visual.has-reference-preview .effect-preview-source {
+  opacity: 1;
+}
+
+.effect-visual.has-reference-preview {
+  background: #050913;
+}

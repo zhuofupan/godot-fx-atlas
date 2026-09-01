@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
+    "refresh:previews": "node scripts/refresh-reference-previews.mjs --confirm-network --concurrency 2 --delay-ms 250",
     "test": "node --test tests/*.test.mjs"
   }
 }
