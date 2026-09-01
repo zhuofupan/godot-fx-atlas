@@ -16,6 +16,17 @@ Use the Atlas as two connected but distinct layers:
 
 Do not treat a reference-index result as permission to copy its files. Only material records whose source is `direct_use` may be packaged from the local library.
 
+## Context and output budget
+
+Atlas research often touches large indexes and many images. Keep those payloads out of the model stream so a useful research result does not become an unrecoverable oversized task.
+
+- Keep each shell or MCP result below 256 KiB and 200 lines. Parse large JSON locally, save the complete result as a temporary/project artifact when it is genuinely needed, and return only the selected IDs, evidence fields, licenses, cautions, and errors.
+- Never print an entire catalog, index, lock file, or unfiltered query result. Use focused queries and field selection; read only the records needed for the current decision.
+- Do not attach many original images to one model turn. For a batch, first make one deterministic contact sheet no larger than 1200 px on its longest side. Inspect at most one original-resolution image in a later turn when the contact sheet cannot answer a material question.
+- GPU captures and test runs must write verbose logs to files; surface only the exit status, error lines, bounded tail, and paths to the retained evidence.
+- Record a compact project-local checkpoint after research, selection, implementation, and GPU QA. Later phases consume that checkpoint instead of replaying raw Atlas output.
+- If a task has already failed with `stream disconnected before completion` after a large payload, do not resume or fork that history. Preserve the disk checkpoint and require a fresh task with only the goal, paths, and checkpoint summary.
+
 ## Research the effect
 
 1. Read `<atlas-root>/docs/vfx-authoring-workflow.md` for the production and validation workflow.
