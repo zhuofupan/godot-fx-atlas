@@ -12,7 +12,8 @@ const taxonomy = JSON.parse(await readFile(path.join(repoRoot, "materials", "mat
 test("catalog has one indexed record per logical material", () => {
   assert.equal(catalog.schema_version, 1);
   assert.equal(catalog.catalog_type, "production_material_library");
-  assert.equal(catalog.entry_count, 96);
+  assert.equal(catalog.entry_count, 185);
+  assert.equal(catalog.sources.length, 3);
   assert.equal(catalog.entries.length, catalog.entry_count);
   assert.equal(new Set(catalog.entries.map((entry) => entry.material_id)).size, catalog.entry_count);
 });
@@ -33,10 +34,10 @@ test("every material is classified and comes from an approved source", () => {
   }
 });
 
-test("all 192 raster variants exist and match the generated receipt", async () => {
+test("all indexed raster variants exist and match the generated receipt", async () => {
   let rasterCount = 0;
   for (const entry of catalog.entries) {
-    assert.deepEqual(Object.keys(entry.files).sort(), ["black", "transparent"]);
+    assert.ok(entry.files.transparent, `${entry.material_id} has no production transparent variant`);
     assert.equal(entry.files.transparent.has_transparency, true, `${entry.material_id} transparent variant has no transparency`);
     for (const record of Object.values(entry.files)) {
       assert.ok(record.path.startsWith("./materials/library/"));
@@ -50,7 +51,7 @@ test("all 192 raster variants exist and match the generated receipt", async () =
       rasterCount += 1;
     }
   }
-  assert.equal(rasterCount, 192);
+  assert.equal(rasterCount, 293);
 });
 
 test("license evidence and both web entry points are present", async () => {
@@ -61,6 +62,7 @@ test("license evidence and both web entry points are present", async () => {
   const indexHtml = await readFile(path.join(repoRoot, "index.html"), "utf8");
   const materialsHtml = await readFile(path.join(repoRoot, "materials.html"), "utf8");
   assert.match(indexHtml, /href="\.\/materials\.html"/);
+  assert.match(indexHtml, />资产贴图库 <span>185<\/span>/);
   assert.match(materialsHtml, /src="\.\/assets\/material-library\.js"/);
   assert.match(materialsHtml, /href="\.\/assets\/material-library\.css"/);
 });

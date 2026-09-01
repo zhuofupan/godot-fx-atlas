@@ -29,6 +29,73 @@
           "black": "PNG (Black background)"
         }
       }
+    },
+    {
+      "source_id": "kenney-smoke-particles",
+      "title": "Kenney Smoke Particles",
+      "author": "Kenney",
+      "version": "1.0 (2014 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/smoke-particles",
+      "download_url": "https://kenney.nl/media/pages/assets/smoke-particles/23249a0d35-1677695171/kenney_smoke-particles.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/smoke-particles",
+      "attribution": "Kenney Smoke Particles, released under CC0 1.0.",
+      "archive_sha256": "97a1d09c66e4fd6c247c8ea87f84c0cc59caaeceae19414c995afb1616a1e1c9",
+      "archive_bytes": 6019666,
+      "archive_asset_count": 77,
+      "source_page_file_count": 70,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 78,
+        "rejected_files": 2,
+        "manifest_sha256": "5fda38344b063692901a06f6b107ad35e637031b7ee206dcd03a664bc2009f19"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "license.txt",
+        "variants": {
+          "transparent": "transparent"
+        },
+        "family_by_parent": {
+          "Black smoke": "smoke",
+          "Explosion": "explosion",
+          "Fart": "gas",
+          "Flash": "flash",
+          "White puff": "smoke"
+        }
+      }
+    },
+    {
+      "source_id": "rpicster-godot-vfx-textures",
+      "title": "Godot Particle and VFX Textures",
+      "author": "Raffaele Picca (RPicster)",
+      "version": "9bb6fe7cc50534e171d2093630f3288773c8c865",
+      "source_type": "github_archive",
+      "browse_url": "https://github.com/RPicster/Godot-particle-and-vfx-textures",
+      "download_url": "https://codeload.github.com/RPicster/Godot-particle-and-vfx-textures/zip/9bb6fe7cc50534e171d2093630f3288773c8c865",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://github.com/RPicster/Godot-particle-and-vfx-textures/blob/9bb6fe7cc50534e171d2093630f3288773c8c865/LICENSE",
+      "attribution": "Godot Particle and VFX Textures by Raffaele Picca (RPicster), released under CC0 1.0.",
+      "archive_sha256": "a416c6463f12db9105dc10f3a5047734d825c8ad8459570df3062ab3b8415bd5",
+      "archive_bytes": 11282094,
+      "selected_asset_count": 24,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 25,
+        "rejected_files": 136,
+        "manifest_sha256": "7b64adb7c4a3d0caf5aaab2e4f47e96c0ad0637e59d7a99ad88bc41b2656fd2e"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "LICENSE",
+        "variants": {
+          "transparent": "transparent",
+          "black": "black"
+        }
+      }
     }
   ]
 }

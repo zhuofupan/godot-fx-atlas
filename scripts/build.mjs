@@ -31,7 +31,11 @@ if (!materialPage.includes("./assets/material-library.js")) throw new Error("mat
 if (catalog.entry_count !== catalog.entries.length) throw new Error("Material catalog entry_count is stale.");
 
 const indexHtmlPath = path.join(repoRoot, "index.html");
-const indexHtml = await readFile(indexHtmlPath, "utf8");
+const indexHtml = (await readFile(indexHtmlPath, "utf8")).replace(
+  /(<a class="material-library-entry" href="\.\/materials\.html">资产贴图库 <span>)\d+(<\/span><\/a>)/,
+  `$1${catalog.entry_count}$2`
+);
+await writeFile(indexHtmlPath, indexHtml, "utf8");
 const bundleMatch = indexHtml.match(/src="\.\/assets\/(index-[^"]+\.js)"/);
 if (!bundleMatch) throw new Error("Could not resolve the published Atlas bundle from index.html.");
 

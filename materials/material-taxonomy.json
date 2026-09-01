@@ -25,6 +25,22 @@
       "recommended_use": "物理落地、重击、移动扬尘与地形破坏的次级层。",
       "caution": "容易遮挡主体和交互信息，只适合低透明度、短时长使用。"
     },
+    "effect": {
+      "label": "放射爆发 / 旋流",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "spawn_death", "telegraph"],
+      "tags": ["放射", "爆发", "旋流", "冲击"],
+      "recommended_use": "命中放射线、召唤爆发、旋流核心和短促冲击层。",
+      "caution": "中心空洞和放射方向很醒目，应匹配动作锚点并控制旋转速度。"
+    },
+    "explosion": {
+      "label": "爆炸烟团",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "spawn_death"],
+      "tags": ["爆炸", "火团", "冲击", "烟雾"],
+      "recommended_use": "爆炸命中的主体帧、生成/死亡爆发和火焰冲击的中频层。",
+      "caution": "成品色彩较强，跨风格使用时应通过色阶、溶解和时序重新统一。"
+    },
     "fire": {
       "label": "火焰主体",
       "roles": ["shape", "finish"],
@@ -48,6 +64,22 @@
       "tags": ["闪光", "核心", "命中峰值"],
       "recommended_use": "命中峰值、光束核心和关闭 Glow 时的确定性软光。",
       "caution": "检查 additive 混合与黑边，峰值应短暂。"
+    },
+    "flash": {
+      "label": "爆闪 / 冲击核心",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "screen_feedback", "spawn_death"],
+      "tags": ["爆闪", "冲击", "核心", "峰值"],
+      "recommended_use": "命中峰值、爆炸核心、生成闪现和短时屏幕反馈。",
+      "caution": "白色核心覆盖率高，持续时间应短，并避免连续闪烁造成视觉疲劳。"
+    },
+    "gas": {
+      "label": "气团 / 毒雾",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "status_aura", "impact_burst"],
+      "tags": ["气团", "毒雾", "云气", "状态"],
+      "recommended_use": "毒雾、孢子、气体命中和持续状态的主体或消散层。",
+      "caution": "成品颜色只适合预览，生产中应去色并按项目元素色重新着色。"
     },
     "light": {
       "label": "柔光 / 光晕",
@@ -112,6 +144,14 @@
       "tags": ["火星", "光点", "余韵", "高频"],
       "recommended_use": "少量方向性火星、命中余韵和轨迹点缀。",
       "caution": "只承担高频细节，数量和亮度必须克制。"
+    },
+    "spotlight": {
+      "label": "聚光 / 星芒",
+      "roles": ["finish"],
+      "archetypes": ["impact_burst", "beam_chain", "screen_feedback", "status_aura"],
+      "tags": ["聚光", "星芒", "光核", "Light Cookie"],
+      "recommended_use": "光束端点、命中亮点、护盾高光、星芒和确定性柔光核心。",
+      "caution": "适合加法混合的小面积峰值，不应替代技能主体轮廓。"
     },
     "star": {
       "label": "星芒",

@@ -21,6 +21,7 @@ test("existing homepage footer covers every indexed reference source", () => {
     assert.ok(footer.includes(label) || additionalSources.includes(label), `missing footer credit: ${sourceName}`);
   }
   assert.match(additionalSources, /Kenney/);
+  assert.match(additionalSources, /RPicster VFX Textures/);
   assert.match(footer, /#overview/);
   assert.match(indexHtml, /site-footer-sources\.js/);
   assert.doesNotMatch(indexHtml, /site-credits/);
@@ -29,6 +30,7 @@ test("existing homepage footer covers every indexed reference source", () => {
 
 test("README states attribution and license boundaries", () => {
   assert.match(readme, /Kenney/);
+  assert.match(readme, /RPicster/);
   assert.match(readme, /Godot Shaders/);
   assert.match(readme, /OpenGameArt/);
   assert.match(readme, /ShaderV/);

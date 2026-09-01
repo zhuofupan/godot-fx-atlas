@@ -50,7 +50,8 @@ npm test
 - 通用卡牌、UI 与视觉反馈资源允许不绑定具体机制。
 - Itch.io 固定价格取自同一资源列表页；其他资源站条目按免费资源记录，采用前仍需查看原页许可和当前价格。
 - 只有 `distribution_policy: direct_use` 且经过安全清洗的位图可以进入 `materials/library/`。
-- 外部插件的脚本、二进制、工程文件和 Shader 不会混入资产贴图库；公开源码可在其许可证允许的范围内被索引、验证和复用。
+- 资产贴图库只接收清洗后的位图；公开插件代码和 Shader 可以在许可允许时进入参考索引与实现方案，但不会被误装成贴图资产。
+- 公开 Atlas 不接收任何消费项目的私有信息、策划内容、角色数据、私有素材或接入状态。
 - 文件级索引记录 SHA-256；完整素材包留在 Atlas，游戏项目只复制实际选择的子集。
 
 公开审计结果位于 `audit-report.json`、`semantic-audit.json`、`mechanism-index.json` 与 `final-link-audit.json`。多元素合集只作为通用合集收录，单一元素分类优先链接到对应的独立子包页面。
@@ -61,7 +62,7 @@ npm test
 
 ## 鸣谢
 
-感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/assets/particle-pack) 以 CC0 发布首批资产贴图。
+感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/) 与 [RPicster](https://github.com/RPicster/Godot-particle-and-vfx-textures) 以 CC0 发布可直接分发的特效贴图。
 
 Atlas 的收录和鸣谢不改变任何原作品的版权、许可、价格或使用条件，采用前仍应核对对应原页。
 

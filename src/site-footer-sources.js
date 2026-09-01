@@ -4,7 +4,8 @@
     ["Game-icons.net", "https://game-icons.net/"],
     ["IconsDB", "https://www.iconsdb.com/"],
     ["ShaderV", "https://github.com/arkology/ShaderV"],
-    ["Kenney", "https://kenney.nl/"]
+    ["Kenney", "https://kenney.nl/"],
+    ["RPicster VFX Textures", "https://github.com/RPicster/Godot-particle-and-vfx-textures"]
   ];
 
   const attachSources = () => {

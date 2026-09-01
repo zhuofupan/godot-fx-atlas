@@ -59,7 +59,6 @@ for (const [variant, relativeDirectory] of Object.entries(source.import.variants
 const allRelativePaths = [...new Set([...variantFiles.values()].flatMap(({ files }) => files.map(toPosix)))].sort();
 if (allRelativePaths.length === 0) throw new Error(`No supported raster files found for ${sourceId}.`);
 
-const outputRoot = path.join(repoRoot, "materials", "library", sourceId);
 const catalogEntries = [];
 
 for (const relativePath of allRelativePaths) {
@@ -86,13 +85,13 @@ for (const relativePath of allRelativePaths) {
   }
 
   const baseName = path.posix.basename(relativePath, path.posix.extname(relativePath));
-  const family = baseName.split("_")[0].toLowerCase();
+  const family = inferFamily(relativePath, baseName, source.import.family_by_parent);
   const profile = taxonomy.families[family] ?? taxonomy.fallback;
   const isRotated = relativePath.toLowerCase().startsWith("rotated/");
   catalogEntries.push({
     material_id: `${sourceId}/${isRotated ? "rotated/" : ""}${baseName}`,
     source_id: sourceId,
-    title: `${isRotated ? "Rotated " : ""}${baseName.replaceAll("_", " ")}`,
+    title: `${isRotated ? "Rotated " : ""}${humanizeBaseName(baseName)}`,
     family,
     family_label: profile.label,
     variant_group: isRotated ? "rotated" : "standard",
@@ -115,14 +114,22 @@ const licenseText = await readFile(licenseSourcePath, "utf8");
 const normalizedLicenseText = `${licenseText.replace(/\r\n?/g, "\n").split("\n").map((line) => line.trimEnd()).join("\n").trim()}\n`;
 await writeFile(licenseTargetPath, normalizedLicenseText, "utf8");
 
+const catalogPath = path.join(repoRoot, "materials", "catalog.json");
+const existingCatalog = JSON.parse(await readFile(catalogPath, "utf8"));
+const retainedEntries = existingCatalog.entries.filter((entry) => entry.source_id !== sourceId);
+const mergedEntries = [...retainedEntries, ...catalogEntries].sort((left, right) => left.material_id.localeCompare(right.material_id, "en"));
+if (new Set(mergedEntries.map((entry) => entry.material_id)).size !== mergedEntries.length) {
+  throw new Error(`Duplicate material_id detected while importing ${sourceId}.`);
+}
+
 const catalog = {
   schema_version: 1,
   catalog_type: "production_material_library",
-  entry_count: catalogEntries.length,
-  sources: [sourceId],
-  entries: catalogEntries
+  entry_count: mergedEntries.length,
+  sources: [...new Set(mergedEntries.map((entry) => entry.source_id))].sort((left, right) => left.localeCompare(right, "en")),
+  entries: mergedEntries
 };
-await writeFile(path.join(repoRoot, "materials", "catalog.json"), `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
+await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
 
 console.log(JSON.stringify({
   source_id: sourceId,
@@ -133,6 +140,21 @@ console.log(JSON.stringify({
 
 function toPosix(value) {
   return value.split(path.sep).join("/");
+}
+
+function inferFamily(relativePath, baseName, familyByParent = {}) {
+  const parents = path.posix.dirname(relativePath).split("/").map((part) => part.toLocaleLowerCase("en"));
+  for (const [parent, family] of Object.entries(familyByParent)) {
+    if (parents.includes(parent.toLocaleLowerCase("en"))) return family;
+  }
+  return baseName.split("_")[0].toLowerCase();
+}
+
+function humanizeBaseName(value) {
+  return value
+    .replaceAll("_", " ")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/([A-Za-z])(\d+)/g, "$1 $2");
 }
 
 function readRasterDimensions(bytes, extension) {

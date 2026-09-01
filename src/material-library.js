@@ -89,7 +89,7 @@ function render() {
 }
 
 function materialCard(entry) {
-  const preview = entry.files[state.variant] ?? entry.files.transparent ?? Object.values(entry.files)[0];
+  const { record: preview } = resolveVariant(entry, state.variant);
   const selected = state.selected.has(entry.material_id);
   const checkbox = element("input", { type: "checkbox", checked: selected, ariaLabel: `选择 ${entry.title}` });
   checkbox.addEventListener("change", () => {
@@ -128,8 +128,8 @@ function renderSelection() {
 
 function openDetails(entry) {
   const source = sourceById(entry.source_id);
-  const preview = entry.files[state.variant] ?? entry.files.transparent ?? Object.values(entry.files)[0];
-  const download = element("a", { className: "button primary", href: preview.path, download: "" }, `下载 ${state.variant === "transparent" ? "透明底" : "黑底"} PNG`);
+  const { variant, record: preview } = resolveVariant(entry, state.variant);
+  const download = element("a", { className: "button primary", href: preview.path, download: "" }, `下载 ${variant === "transparent" ? "透明底" : "黑底"} PNG`);
   const sourceLink = element("a", { className: "button", href: source.browse_url, target: "_blank", rel: "noreferrer" }, "查看原始来源");
   ui.dialog_content.replaceChildren(
     element("div", { className: `dialog-preview bg-${state.background}` }, element("img", { src: preview.path, alt: entry.title })),
@@ -176,6 +176,14 @@ function fillSelect(select, values, emptyLabel, labelFor) {
 
 function sourceById(sourceId) {
   return sources.find((source) => source.source_id === sourceId);
+}
+
+function resolveVariant(entry, preferredVariant) {
+  for (const variant of [preferredVariant, "transparent", "black"]) {
+    if (entry.files[variant]) return { variant, record: entry.files[variant] };
+  }
+  const [variant, record] = Object.entries(entry.files)[0];
+  return { variant, record };
 }
 
 function syncQueryString() {
