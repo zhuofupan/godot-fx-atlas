@@ -31,5 +31,6 @@ test("README states attribution and license boundaries", () => {
   assert.match(readme, /Kenney/);
   assert.match(readme, /Godot Shaders/);
   assert.match(readme, /OpenGameArt/);
+  assert.match(readme, /ShaderV/);
   assert.match(readme, /许可/);
 });

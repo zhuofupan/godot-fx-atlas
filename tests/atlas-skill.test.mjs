@@ -13,6 +13,8 @@ test("Atlas skill connects the existing search engine to the material library", 
   assert.match(skillText, /semantic-audit\.json/);
   assert.match(skillText, /materials\/catalog\.json/);
   assert.match(skillText, /direct_use/);
+  assert.match(skillText, /公开源码|public open-source/i);
+  assert.match(skillText, /Never write a consuming project's name/);
   assert.doesNotMatch(skillText, /\[TODO/);
 });
 

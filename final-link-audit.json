@@ -1,12 +1,12 @@
 {
   "validation": {
-    "checkedAt": "2026-08-15T08:24:59.173Z",
-    "effectRows": 1150,
-    "primaryLinks": 1150,
+    "checkedAt": "2026-09-01T00:00:00+08:00",
+    "effectRows": 1243,
+    "primaryLinks": 1243,
     "alternateLinks": 0,
-    "hyperlinksChecked": 1150,
-    "http200": 1150,
-    "primaryTitleMatches": 1150,
+    "hyperlinksChecked": 1243,
+    "http200": 1243,
+    "primaryTitleMatches": 1243,
     "sourceBreakdown": {
       "CodeFronts": 1,
       "Game-icons.net": 2,
@@ -14,12 +14,13 @@
       "Godot Shaders": 216,
       "IconsDB": 1,
       "Itch.io": 678,
-      "OpenGameArt": 235
+      "OpenGameArt": 235,
+      "ShaderV": 93
     },
     "failures": 0,
     "rejectedExamplePresent": false,
     "priceFieldsValid": true,
-    "twoDVerified": 1150,
+    "twoDVerified": 1243,
     "allRowsHave2DEvidence": true,
     "twoDEvidenceBySource": {
       "CodeFronts": 1,
@@ -28,20 +29,21 @@
       "Godot Shaders": 216,
       "IconsDB": 1,
       "Itch.io": 678,
-      "OpenGameArt": 235
+      "OpenGameArt": 235,
+      "ShaderV": 93
     },
     "preciseMechanismLimitValid": true,
     "expandedVisualTagsComplete": true,
     "visualTagVocabulary": 65,
     "populatedVisualTags": 65,
-    "visualTaggedEffects": 1150,
+    "visualTaggedEffects": 1243,
     "cardTagVocabulary": 24,
     "populatedCardTags": 24,
     "cardTaggedEffects": 127,
     "cardTagsSeparatedFromMechanisms": true,
     "juiceIceRegressionFailures": 0,
     "publicPrivacyFailures": [],
-    "semanticRowsChecked": 1150,
+    "semanticRowsChecked": 1243,
     "semanticMappingFailures": 0,
     "megaPackRegressionPassed": true,
     "directFirePagesPresent": true
@@ -12465,6 +12467,936 @@
       "titleMatches": true,
       "evidence": "原页代码类型：canvas_item",
       "checkedFrom": "逐页源站审计"
+    },
+    {
+      "effectId": "shaderv4-rgba-bcsadjustment",
+      "name": "ShaderV 4 · BCSAdjustment",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/BCSAdjustment.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-black-nwhite",
+      "name": "ShaderV 4 · BlackAndWhite",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blackNwhite.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-blend-awith-b",
+      "name": "ShaderV 4 · BlendAwithB",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blendAwithB.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-bloom",
+      "name": "ShaderV 4 · Bloom",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/bloom.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-blur9sample",
+      "name": "ShaderV 4 · BlurBasic",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/blur9sample.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-blur-custom",
+      "name": "ShaderV 4 · BlurCustom",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/blurCustom.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-zoom-blur",
+      "name": "ShaderV 4 · ZoomBlur",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/zoomBlur.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-chromatic-aberration",
+      "name": "ShaderV 4 · ChromaticAberration",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/chromaticAberration.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-clamp",
+      "name": "ShaderV 4 · ClampAlphaBorder",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/clamp.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-color-correction-adjustment",
+      "name": "ShaderV 4 · ColorCorrectionAdjustment",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/colorCorrectionAdjustment.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-emboss",
+      "name": "ShaderV 4 · Emboss",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/emboss.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-fire-fx",
+      "name": "ShaderV 4 · FireFX",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/fireFX.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-chekerboard-pattern",
+      "name": "ShaderV 4 · CheckerboardShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/chekerboardPattern.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-circle",
+      "name": "ShaderV 4 · CircleShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateCircle.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-circle2",
+      "name": "ShaderV 4 · CircleShape2",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateCircle2.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-regular-ngon",
+      "name": "ShaderV 4 · RegularPolygonShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateRegularNgon.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-spiral",
+      "name": "ShaderV 4 · SpiralShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateSpiral.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-grid-shape",
+      "name": "ShaderV 4 · GridShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/gridShape.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-scan-lines-sharp",
+      "name": "ShaderV 4 · ScanLinesSharpShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/scanLinesSharp.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-stripes-random",
+      "name": "ShaderV 4 · RandomStripesShape",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/stripesRandom.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-glow-empty",
+      "name": "ShaderV 4 · GlowEmpty",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/glowEmpty.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-inner-glow",
+      "name": "ShaderV 4 · InnerGlow",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/innerGlow.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-inner-glow-empty",
+      "name": "ShaderV 4 · InnerGlowEmpty",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/innerGlowEmpty.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-outer-glow",
+      "name": "ShaderV 4 · OuterGlow",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/outerGlow.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-outer-glow-empty",
+      "name": "ShaderV 4 · OuterGlowEmpty",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/outerGlowEmpty.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-gradient4corners",
+      "name": "ShaderV 4 · Gradient4Corners",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/gradient4corners.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-gradient-mapping",
+      "name": "ShaderV 4 · GradientMapping",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/gradientMapping.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-grayscale",
+      "name": "ShaderV 4 · GrayscalePlus",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/grayscale.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-hue",
+      "name": "ShaderV 4 · Hue",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/hue.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-inverse-color",
+      "name": "ShaderV 4 · InverseColor",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/inverseColor.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-mask-alpha",
+      "name": "ShaderV 4 · MaskAlpha",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/maskAlpha.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-generic2d_fractal",
+      "name": "ShaderV 4 · FractalGenericNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/generic2d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin2d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin2d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin3d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin3d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin4d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise4D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin4d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex2d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex2d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex3d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex3d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex4d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise4D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex4d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-worley2d_fractal",
+      "name": "ShaderV 4 · FractalWorleyNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/worley2d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-worley3d_fractal",
+      "name": "ShaderV 4 · FractalWorleyNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/worley3d_fractal.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-generic2d",
+      "name": "ShaderV 4 · GenericNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/generic2d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin2d",
+      "name": "ShaderV 4 · PerlinNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin2d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin3d",
+      "name": "ShaderV 4 · PerlinNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin3d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin4d",
+      "name": "ShaderV 4 · PerlinNoise4D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin4d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin-periodic3d",
+      "name": "ShaderV 4 · PerlinPeriodicNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlinPeriodic3d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex2d",
+      "name": "ShaderV 4 · SimplexNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex2d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex3d",
+      "name": "ShaderV 4 · SimplexNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex3d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex4d",
+      "name": "ShaderV 4 · SimplexNoise4D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex4d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2d",
+      "name": "ShaderV 4 · WorleyNoise2D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2x2",
+      "name": "ShaderV 4 · WorleyNoise2x2",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2x2.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2x2x2",
+      "name": "ShaderV 4 · WorleyNoise2x2x2",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2x2x2.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley3d",
+      "name": "ShaderV 4 · WorleyNoise3D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley3d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-normal-from-heightmap",
+      "name": "ShaderV 4 · NormalFromHeightmap",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/normalFromHeightmap.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-posterize",
+      "name": "ShaderV 4 · Posterize",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/posterize.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-shift-hsv",
+      "name": "ShaderV 4 · ShiftHSV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/shiftHSV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-shine-fx",
+      "name": "ShaderV 4 · ShineFX",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/shineFX.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-sobel-edge",
+      "name": "ShaderV 4 · SobelEdge",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/sobelEdge.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-tint-rgba",
+      "name": "ShaderV 4 · TintRGBA",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/tintRGBA.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-tonemap",
+      "name": "ShaderV 4 · Tonemap",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/tonemap.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-turn-cga4-palette",
+      "name": "ShaderV 4 · TurnCGA4Palette",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/turnCGA4Palette.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-rgba-turn-gbpalette",
+      "name": "ShaderV 4 · TurnGameBoyPalette",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/turnGBPalette.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash1d",
+      "name": "ShaderV 4 · HashRandom1d",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash1d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash2d",
+      "name": "ShaderV 4 · HashRandom2d",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash2d.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash2dvector",
+      "name": "ShaderV 4 · HashRandom2dVec",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash2dvector.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float",
+      "name": "ShaderV 4 · RandomFloat",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloat.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float4-d",
+      "name": "ShaderV 4 · RandomFloat4D",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloat4D.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float-improved",
+      "name": "ShaderV 4 · RandomFloatImproved",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloatImproved.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-gold-noise-float",
+      "name": "ShaderV 4 · RandomGoldRatio",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomGoldNoiseFloat.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-relay",
+      "name": "ShaderV 4 · Relay",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/relay.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-remap",
+      "name": "ShaderV 4 · Remap",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/remap.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-sin-time",
+      "name": "ShaderV 4 · SinTIME",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/sinTime.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-time-scaled",
+      "name": "ShaderV 4 · ScaledTIME",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/TimeScaled.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-cartesian-to-polar",
+      "name": "ShaderV 4 · CartesianToPolar",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/cartesianToPolar.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-cartesian-to-spherical",
+      "name": "ShaderV 4 · CartesianToSpherical",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/cartesianToSpherical.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-polar-to-cartesian",
+      "name": "ShaderV 4 · PolarToCartesian",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/polarToCartesian.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-spherical-to-cartesian",
+      "name": "ShaderV 4 · SphericalToCartesian",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/sphericalToCartesian.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-tools-vec2-compose",
+      "name": "ShaderV 4 · vec2Compose",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/vec2Compose.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-animated-distortion-uvanimated",
+      "name": "ShaderV 4 · DistortionUVAnimated",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/distortionUVAnimated.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-animated-doodle-uv",
+      "name": "ShaderV 4 · DoodleUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/doodleUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-animated-rotate-animated",
+      "name": "ShaderV 4 · RotateUVAnimated",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/rotateAnimated.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-animated-swirl-uv",
+      "name": "ShaderV 4 · SwirlUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/swirlUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-animated-tiling-noffset-animated",
+      "name": "ShaderV 4 · TilingAndOffsetUVAnimated",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/tilingNoffsetAnimated.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-distortion-uv",
+      "name": "ShaderV 4 · DistortionUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/distortionUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-flip-uv",
+      "name": "ShaderV 4 · FlipUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/flipUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-lens-distortion",
+      "name": "ShaderV 4 · LensDistortionUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/lensDistortion.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-pixelate",
+      "name": "ShaderV 4 · PixelateUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/pixelate.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-rotate",
+      "name": "ShaderV 4 · RotateUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/rotate.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-scale-uv",
+      "name": "ShaderV 4 · ScaleUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/scaleUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-spherical-uv",
+      "name": "ShaderV 4 · SphericalUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/sphericalUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-tile-uv",
+      "name": "ShaderV 4 · TileUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/tileUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-tiling-noffset",
+      "name": "ShaderV 4 · TilingAndOffsetUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/tilingNoffset.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-transform-uv",
+      "name": "ShaderV 4 · TransformUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/transformUV.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
+    },
+    {
+      "effectId": "shaderv4-uv-twirl",
+      "name": "ShaderV 4 · TwirlUV",
+      "kind": "primary",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/twirl.gd",
+      "status": 200,
+      "titleMatches": true,
+      "evidence": "GitHub tree API 已核对锁定提交中的 VisualShader 节点定义路径",
+      "checkedFrom": "ShaderV 4.x 显式来源维护"
     }
   ]
 }

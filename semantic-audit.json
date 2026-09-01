@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-15T08:24:03.076Z",
+  "generatedAt": "2026-09-01T00:00:00+08:00",
   "policy": "逐条使用资源标题、原站标签与原页摘要核对分类；标题为合集且摘要包含多个元素时，不将整包强制归入单一元素。机制标签只允许标题或原站标签直接支持，人工精选条目保留逐条证据。",
-  "totalEffects": 1150,
-  "passedEffects": 1150,
+  "totalEffects": 1243,
+  "passedEffects": 1243,
   "failedEffects": 0,
   "directTitleOrTagClassifications": 1009,
   "summaryClassifications": 39,
-  "curatedClassifications": 29,
+  "curatedClassifications": 122,
   "genericOrBundleClassifications": 73,
   "megaPackRegressionPassed": true,
   "records": [
@@ -27794,6 +27794,2049 @@
       "visualTags": [
         "故障",
         "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-bcsadjustment",
+      "name": "ShaderV 4 · BCSAdjustment",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/BCSAdjustment.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-black-nwhite",
+      "name": "ShaderV 4 · BlackAndWhite",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blackNwhite.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-blend-awith-b",
+      "name": "ShaderV 4 · BlendAwithB",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blendAwithB.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-bloom",
+      "name": "ShaderV 4 · Bloom",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/bloom.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "模糊",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-blur9sample",
+      "name": "ShaderV 4 · BlurBasic",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/blur9sample.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "模糊",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-blur-custom",
+      "name": "ShaderV 4 · BlurCustom",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/blurCustom.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "模糊",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-blur-zoom-blur",
+      "name": "ShaderV 4 · ZoomBlur",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/blur/zoomBlur.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "模糊",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-chromatic-aberration",
+      "name": "ShaderV 4 · ChromaticAberration",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/chromaticAberration.gd",
+      "category": "故障复古与屏幕滤镜",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "色差",
+        "故障",
+        "屏幕反馈"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-clamp",
+      "name": "ShaderV 4 · ClampAlphaBorder",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/clamp.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-color-correction-adjustment",
+      "name": "ShaderV 4 · ColorCorrectionAdjustment",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/colorCorrectionAdjustment.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-emboss",
+      "name": "ShaderV 4 · Emboss",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/emboss.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-fire-fx",
+      "name": "ShaderV 4 · FireFX",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/fireFX.gd",
+      "category": "火焰灼烧与爆炸",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "火焰",
+        "波动",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-chekerboard-pattern",
+      "name": "ShaderV 4 · CheckerboardShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/chekerboardPattern.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-circle",
+      "name": "ShaderV 4 · CircleShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateCircle.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-circle2",
+      "name": "ShaderV 4 · CircleShape2",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateCircle2.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-regular-ngon",
+      "name": "ShaderV 4 · RegularPolygonShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateRegularNgon.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-generate-spiral",
+      "name": "ShaderV 4 · SpiralShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/generateSpiral.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "漩涡",
+        "旋转",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-grid-shape",
+      "name": "ShaderV 4 · GridShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/gridShape.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-scan-lines-sharp",
+      "name": "ShaderV 4 · ScanLinesSharpShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/scanLinesSharp.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扫描线",
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-generate_shapes-stripes-random",
+      "name": "ShaderV 4 · RandomStripesShape",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/generate_shapes/stripesRandom.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-glow-empty",
+      "name": "ShaderV 4 · GlowEmpty",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/glowEmpty.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-inner-glow",
+      "name": "ShaderV 4 · InnerGlow",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/innerGlow.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-inner-glow-empty",
+      "name": "ShaderV 4 · InnerGlowEmpty",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/innerGlowEmpty.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-outer-glow",
+      "name": "ShaderV 4 · OuterGlow",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/outerGlow.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-glow-outer-glow-empty",
+      "name": "ShaderV 4 · OuterGlowEmpty",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/glow/outerGlowEmpty.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-gradient4corners",
+      "name": "ShaderV 4 · Gradient4Corners",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/gradient4corners.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-gradient-mapping",
+      "name": "ShaderV 4 · GradientMapping",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/gradientMapping.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-grayscale",
+      "name": "ShaderV 4 · GrayscalePlus",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/grayscale.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-hue",
+      "name": "ShaderV 4 · Hue",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/hue.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-inverse-color",
+      "name": "ShaderV 4 · InverseColor",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/inverseColor.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-mask-alpha",
+      "name": "ShaderV 4 · MaskAlpha",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/maskAlpha.gd",
+      "category": "转场揭示与遮罩",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-generic2d_fractal",
+      "name": "ShaderV 4 · FractalGenericNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/generic2d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin2d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin2d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin3d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin3d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-perlin4d_fractal",
+      "name": "ShaderV 4 · FractalPerlinNoise4D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/perlin4d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex2d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex2d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex3d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex3d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-simplex4d_fractal",
+      "name": "ShaderV 4 · FractalSimplexNoise4D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/simplex4d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-worley2d_fractal",
+      "name": "ShaderV 4 · FractalWorleyNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/worley2d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-fractal-worley3d_fractal",
+      "name": "ShaderV 4 · FractalWorleyNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/fractal/worley3d_fractal.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-generic2d",
+      "name": "ShaderV 4 · GenericNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/generic2d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin2d",
+      "name": "ShaderV 4 · PerlinNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin2d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin3d",
+      "name": "ShaderV 4 · PerlinNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin3d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin4d",
+      "name": "ShaderV 4 · PerlinNoise4D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlin4d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-perlin-periodic3d",
+      "name": "ShaderV 4 · PerlinPeriodicNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/perlinPeriodic3d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex2d",
+      "name": "ShaderV 4 · SimplexNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex2d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex3d",
+      "name": "ShaderV 4 · SimplexNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex3d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-simplex4d",
+      "name": "ShaderV 4 · SimplexNoise4D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/simplex4d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2d",
+      "name": "ShaderV 4 · WorleyNoise2D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2x2",
+      "name": "ShaderV 4 · WorleyNoise2x2",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2x2.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley2x2x2",
+      "name": "ShaderV 4 · WorleyNoise2x2x2",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley2x2x2.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-noise-worley3d",
+      "name": "ShaderV 4 · WorleyNoise3D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/noise/worley3d.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-normal-from-heightmap",
+      "name": "ShaderV 4 · NormalFromHeightmap",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/normalFromHeightmap.gd",
+      "category": "光照阴影玻璃与模糊",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-posterize",
+      "name": "ShaderV 4 · Posterize",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/posterize.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-shift-hsv",
+      "name": "ShaderV 4 · ShiftHSV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/shiftHSV.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-shine-fx",
+      "name": "ShaderV 4 · ShineFX",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/shineFX.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "外发光",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-sobel-edge",
+      "name": "ShaderV 4 · SobelEdge",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/sobelEdge.gd",
+      "category": "描边发光与选择反馈",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "描边",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-tint-rgba",
+      "name": "ShaderV 4 · TintRGBA",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/tintRGBA.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-tonemap",
+      "name": "ShaderV 4 · Tonemap",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/tonemap.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-turn-cga4-palette",
+      "name": "ShaderV 4 · TurnCGA4Palette",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/turnCGA4Palette.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-rgba-turn-gbpalette",
+      "name": "ShaderV 4 · TurnGameBoyPalette",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/rgba/turnGBPalette.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "调色",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash1d",
+      "name": "ShaderV 4 · HashRandom1d",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash1d.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash2d",
+      "name": "ShaderV 4 · HashRandom2d",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash2d.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-hash2dvector",
+      "name": "ShaderV 4 · HashRandom2dVec",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/hash2dvector.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float",
+      "name": "ShaderV 4 · RandomFloat",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloat.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float4-d",
+      "name": "ShaderV 4 · RandomFloat4D",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloat4D.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-float-improved",
+      "name": "ShaderV 4 · RandomFloatImproved",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomFloatImproved.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-random-random-gold-noise-float",
+      "name": "ShaderV 4 · RandomGoldRatio",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/random/randomGoldNoiseFloat.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-relay",
+      "name": "ShaderV 4 · Relay",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/relay.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-remap",
+      "name": "ShaderV 4 · Remap",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/remap.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-sin-time",
+      "name": "ShaderV 4 · SinTIME",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/sinTime.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-time-scaled",
+      "name": "ShaderV 4 · ScaledTIME",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/TimeScaled.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-cartesian-to-polar",
+      "name": "ShaderV 4 · CartesianToPolar",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/cartesianToPolar.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-cartesian-to-spherical",
+      "name": "ShaderV 4 · CartesianToSpherical",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/cartesianToSpherical.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-polar-to-cartesian",
+      "name": "ShaderV 4 · PolarToCartesian",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/polarToCartesian.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-transform-coordinates-spherical-to-cartesian",
+      "name": "ShaderV 4 · SphericalToCartesian",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/transformCoordinates/sphericalToCartesian.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-tools-vec2-compose",
+      "name": "ShaderV 4 · vec2Compose",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/tools/vec2Compose.gd",
+      "category": "通用 2D 材质与合成",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-animated-distortion-uvanimated",
+      "name": "ShaderV 4 · DistortionUVAnimated",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/distortionUVAnimated.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "波动",
+        "循环"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-animated-doodle-uv",
+      "name": "ShaderV 4 · DoodleUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/doodleUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "波动",
+        "循环"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-animated-rotate-animated",
+      "name": "ShaderV 4 · RotateUVAnimated",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/rotateAnimated.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "旋转",
+        "循环"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-animated-swirl-uv",
+      "name": "ShaderV 4 · SwirlUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/swirlUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "漩涡",
+        "扭曲",
+        "旋转"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-animated-tiling-noffset-animated",
+      "name": "ShaderV 4 · TilingAndOffsetUVAnimated",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/animated/tilingNoffsetAnimated.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-distortion-uv",
+      "name": "ShaderV 4 · DistortionUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/distortionUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "波动",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-flip-uv",
+      "name": "ShaderV 4 · FlipUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/flipUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-lens-distortion",
+      "name": "ShaderV 4 · LensDistortionUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/lensDistortion.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "波动",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-pixelate",
+      "name": "ShaderV 4 · PixelateUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/pixelate.gd",
+      "category": "调色像素与材质变化",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "像素化",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-rotate",
+      "name": "ShaderV 4 · RotateUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/rotate.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "旋转",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-scale-uv",
+      "name": "ShaderV 4 · ScaleUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/scaleUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-spherical-uv",
+      "name": "ShaderV 4 · SphericalUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/sphericalUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "波动",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-tile-uv",
+      "name": "ShaderV 4 · TileUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/tileUV.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-tiling-noffset",
+      "name": "ShaderV 4 · TilingAndOffsetUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/tilingNoffset.gd",
+      "category": "动态图案与氛围背景",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "背景循环",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-transform-uv",
+      "name": "ShaderV 4 · TransformUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/transformUV.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "扭曲",
+        "通用合成"
+      ],
+      "cardTags": [],
+      "checks": {
+        "categorySupported": true,
+        "mechanismSupported": true,
+        "visualTagsSupported": true,
+        "cardTagsSupported": true,
+        "bundleRegressionPassed": true
+      },
+      "semanticPassed": true
+    },
+    {
+      "effectId": "shaderv4-uv-twirl",
+      "name": "ShaderV 4 · TwirlUV",
+      "url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/addons/shaderV/uv/twirl.gd",
+      "category": "变形波动与运动",
+      "categoryEvidence": "按 ShaderV 4.x 节点目录、节点名称与官方节点说明逐项归类",
+      "semanticBasis": "curated",
+      "designTerms": [],
+      "visualTags": [
+        "漩涡",
+        "扭曲",
+        "旋转"
       ],
       "cardTags": [],
       "checks": {

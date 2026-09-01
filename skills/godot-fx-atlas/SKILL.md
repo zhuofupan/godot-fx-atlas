@@ -18,7 +18,8 @@ Do not treat a reference-index result as permission to copy its files. Only mate
 2. Translate the request into mechanism terms and visual-language terms.
 3. Use `../../mechanism-index.json` to find candidate effect IDs by gameplay behavior, and `../../visual-tag-index.json` to find candidates by shape, material, motion, rhythm, and presentation use.
 4. Cross-check candidates in `../../semantic-audit.json`, then inspect them in the Atlas website to read the complete record, source evidence, and implementation approach.
-5. Extract reusable behavior: silhouette, motion, phases, layer roles, finishing, and Godot technique. Do not copy protected artwork or code merely because it appears in the reference search.
+   For ShaderV results, `../../reference-sources/shaderv-godot4.json` is the locked Godot 4.x node manifest and source-license authority; each node record links to its exact file at the audited commit.
+5. Extract reusable behavior: silhouette, motion, phases, layer roles, finishing, and Godot technique. Public open-source code may be inspected, tested, and reused when its recorded license permits it; preserve the required license and attribution. Do not copy protected, private, or license-unknown artwork or code merely because it appears in the reference search.
 6. Adapt naming, color, symbols, event hooks, paths, and gameplay timing to the consuming project. Never write consuming-project details back into Atlas.
 
 ## Select materials
@@ -46,6 +47,8 @@ For a project modification request, additionally:
 2. Preserve file names or maintain a deterministic mapping.
 3. Create a selection manifest beside the copied assets or in the project's audit/docs area.
 4. Verify every copied file against its catalog SHA-256.
-5. Do not execute or copy code, plugins, binaries, project files, or unknown content from source archives.
+5. Reuse public code or plugins only when the recorded license permits it and preserve the required license and attribution. Never copy private, protected, license-unknown, binary, or unrelated project content.
+
+Never write a consuming project's name, characters, skills, card IDs, design text, file paths, private screenshots, or integration state back into the public Atlas repository.
 
 Do not download or refresh external sources during normal selection. Source refresh is a separate maintenance task that requires explicit network authorization, license review, sanitization, and source-lock updates.

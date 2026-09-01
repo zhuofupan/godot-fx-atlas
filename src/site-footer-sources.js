@@ -3,6 +3,7 @@
     ["CodeFronts", "https://codefronts.com/"],
     ["Game-icons.net", "https://game-icons.net/"],
     ["IconsDB", "https://www.iconsdb.com/"],
+    ["ShaderV", "https://github.com/arkology/ShaderV"],
     ["Kenney", "https://kenney.nl/"]
   ];
 

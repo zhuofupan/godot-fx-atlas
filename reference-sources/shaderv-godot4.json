@@ -1,0 +1,857 @@
+{
+  "schema_version": 1,
+  "source_id": "shaderv-godot4",
+  "source_title": "ShaderV",
+  "repository": "https://github.com/arkology/ShaderV",
+  "commit": "b99ad61d4ab8b6b7e4ed90243990afb150015f97",
+  "commit_date": "2026-07-18T10:18:30Z",
+  "audited_at": "2026-09-01T00:00:00+08:00",
+  "version": "Godot 4.x",
+  "license": "MIT",
+  "archived": true,
+  "license_url": "https://github.com/arkology/ShaderV/blob/b99ad61d4ab8b6b7e4ed90243990afb150015f97/LICENSE",
+  "distribution_policy": "mit_source_reuse",
+  "acquisition": "GitHub tree and GDScript metadata audited at a locked commit; source reuse is permitted under the recorded MIT license.",
+  "node_count": 93,
+  "effect_node_count": 77,
+  "tool_node_count": 16,
+  "nodes": [
+    {
+      "node_id": "rgba-bcsadjustment",
+      "name": "BCSAdjustment",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Full analog of BCS adjustment of environment in Godot",
+      "gd_path": "addons/shaderV/rgba/BCSAdjustment.gd",
+      "shader_include_path": "addons/shaderV/rgba/BCSAdjustment.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-black-nwhite",
+      "name": "BlackAndWhite",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Turns color to black and white",
+      "gd_path": "addons/shaderV/rgba/blackNwhite.gd",
+      "shader_include_path": "addons/shaderV/rgba/blackNwhite.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-blend-awith-b",
+      "name": "BlendAwithB",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Blends colors basing on fade",
+      "gd_path": "addons/shaderV/rgba/blendAwithB.gd",
+      "shader_include_path": "addons/shaderV/rgba/blendAwithB.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-bloom",
+      "name": "Bloom",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": null,
+      "gd_path": "addons/shaderV/rgba/bloom.gd",
+      "shader_include_path": "addons/shaderV/rgba/bloom.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-blur-blur9sample",
+      "name": "BlurBasic",
+      "category": "RGBA",
+      "subcategory": "Blur",
+      "description": "Basic 8-directional blur with 9 samples\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/blur/blur9sample.gd",
+      "shader_include_path": "addons/shaderV/rgba/blur/blur9sample.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-blur-blur-custom",
+      "name": "BlurCustom",
+      "category": "RGBA",
+      "subcategory": "Blur",
+      "description": "Custom 8-directional blur with ([amount]*2+1)^2 samples\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/blur/blurCustom.gd",
+      "shader_include_path": "addons/shaderV/rgba/blur/blurCustom.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-blur-zoom-blur",
+      "name": "ZoomBlur",
+      "category": "RGBA",
+      "subcategory": "Blur",
+      "description": "Zoom blur using [amount] samples\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/blur/zoomBlur.gd",
+      "shader_include_path": "addons/shaderV/rgba/blur/zoomBlur.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-chromatic-aberration",
+      "name": "ChromaticAberration",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Basic Chromatic Aberration with red and blue channels offset\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/chromaticAberration.gd",
+      "shader_include_path": "addons/shaderV/rgba/chromaticAberration.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-clamp",
+      "name": "ClampAlphaBorder",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Clamp alpha to border vec4(0, 0, 1, 1)",
+      "gd_path": "addons/shaderV/rgba/clamp.gd",
+      "shader_include_path": "addons/shaderV/rgba/clamp.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-color-correction-adjustment",
+      "name": "ColorCorrectionAdjustment",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Full analog of color correction adjustment of environment in Godot",
+      "gd_path": "addons/shaderV/rgba/colorCorrectionAdjustment.gd",
+      "shader_include_path": "addons/shaderV/rgba/colorCorrectionAdjustment.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-emboss",
+      "name": "Emboss",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Emboss filter.\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/emboss.gd",
+      "shader_include_path": "addons/shaderV/rgba/emboss.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-fire-fx",
+      "name": "FireFX",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "3-step fire based on perling noise",
+      "gd_path": "addons/shaderV/rgba/fireFX.gd",
+      "shader_include_path": "addons/shaderV/rgba/fireFX.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-chekerboard-pattern",
+      "name": "CheckerboardShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Creates checkerboard pattern",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/chekerboardPattern.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/chekerboardPattern.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-generate-circle",
+      "name": "CircleShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Circle creation with adjusted position, scale, inner/outer radius, hardness and color",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/generateCircle.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/generateCircle.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-generate-circle2",
+      "name": "CircleShape2",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Circle creation with adjusted position, scale, radius inner/outer width, and color",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/generateCircle2.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/generateCircle2.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-generate-regular-ngon",
+      "name": "RegularPolygonShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Regular N-gon with 3+ sides",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/generateRegularNgon.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/generateRegularNgon.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-generate-spiral",
+      "name": "SpiralShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Spiral creation with adjusted position, size, linesAmount, softness, speed and color",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/generateSpiral.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/generateSpiral.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-grid-shape",
+      "name": "GridShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Creates 2D grid.",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/gridShape.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/gridShape.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-scan-lines-sharp",
+      "name": "ScanLinesSharpShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Sharp moving scanlines",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/scanLinesSharp.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/scanLinesSharp.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-generate_shapes-stripes-random",
+      "name": "RandomStripesShape",
+      "category": "RGBA",
+      "subcategory": "Shapes",
+      "description": "Random horizontal lines creation",
+      "gd_path": "addons/shaderV/rgba/generate_shapes/stripesRandom.gd",
+      "shader_include_path": "addons/shaderV/rgba/generate_shapes/stripesRandom.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-glow-glow-empty",
+      "name": "GlowEmpty",
+      "category": "RGBA",
+      "subcategory": "Glow",
+      "description": "Combination of InnerGlowEmpty and OuterGlowEmpty",
+      "gd_path": "addons/shaderV/rgba/glow/glowEmpty.gd",
+      "shader_include_path": "addons/shaderV/rgba/glow/glowEmpty.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-glow-inner-glow",
+      "name": "InnerGlow",
+      "category": "RGBA",
+      "subcategory": "Glow",
+      "description": "Adds inner glow to color. Color should have alpha < 1.0 to find contours",
+      "gd_path": "addons/shaderV/rgba/glow/innerGlow.gd",
+      "shader_include_path": "addons/shaderV/rgba/glow/innerGlow.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-glow-inner-glow-empty",
+      "name": "InnerGlowEmpty",
+      "category": "RGBA",
+      "subcategory": "Glow",
+      "description": "Same as InnerGlow but without original texture (only contours)",
+      "gd_path": "addons/shaderV/rgba/glow/innerGlowEmpty.gd",
+      "shader_include_path": "addons/shaderV/rgba/glow/innerGlowEmpty.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-glow-outer-glow",
+      "name": "OuterGlow",
+      "category": "RGBA",
+      "subcategory": "Glow",
+      "description": "Adds outer glow to color. Color should have alpha < 1.0 to find contours",
+      "gd_path": "addons/shaderV/rgba/glow/outerGlow.gd",
+      "shader_include_path": "addons/shaderV/rgba/glow/outerGlow.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-glow-outer-glow-empty",
+      "name": "OuterGlowEmpty",
+      "category": "RGBA",
+      "subcategory": "Glow",
+      "description": "Same as OuterGlow but without original texture (only contours)",
+      "gd_path": "addons/shaderV/rgba/glow/outerGlowEmpty.gd",
+      "shader_include_path": "addons/shaderV/rgba/glow/outerGlowEmpty.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-gradient4corners",
+      "name": "Gradient4Corners",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Generates gradient based on corners colors",
+      "gd_path": "addons/shaderV/rgba/gradient4corners.gd",
+      "shader_include_path": "addons/shaderV/rgba/gradient4corners.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-gradient-mapping",
+      "name": "GradientMapping",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Remaps colors based on average color value using [gradient].\n[gradientOffset] allows to do color cycling if set TIME to [gradientOffset] and 'true' to [cycleColor]",
+      "gd_path": "addons/shaderV/rgba/gradientMapping.gd",
+      "shader_include_path": "addons/shaderV/rgba/gradientMapping.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-grayscale",
+      "name": "GrayscalePlus",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Improved grayscale with gray factor",
+      "gd_path": "addons/shaderV/rgba/grayscale.gd",
+      "shader_include_path": "addons/shaderV/rgba/grayscale.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-hue",
+      "name": "Hue",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Outputs an RGB color given a HUE",
+      "gd_path": "addons/shaderV/rgba/hue.gd",
+      "shader_include_path": "addons/shaderV/rgba/hue.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-inverse-color",
+      "name": "InverseColor",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Inverse color basing on intensity",
+      "gd_path": "addons/shaderV/rgba/inverseColor.gd",
+      "shader_include_path": "addons/shaderV/rgba/inverseColor.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-mask-alpha",
+      "name": "MaskAlpha",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Color masking based on mask alpha",
+      "gd_path": "addons/shaderV/rgba/maskAlpha.gd",
+      "shader_include_path": "addons/shaderV/rgba/maskAlpha.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-generic2d_fractal",
+      "name": "FractalGenericNoise2D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal GenericNoise using hash random function",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/generic2d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/generic2d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-perlin2d_fractal",
+      "name": "FractalPerlinNoise2D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 2D Perlin Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/perlin2d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/perlin2d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-perlin3d_fractal",
+      "name": "FractalPerlinNoise3D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 3D Perlin Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/perlin3d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/perlin3d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-perlin4d_fractal",
+      "name": "FractalPerlinNoise4D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 4D Perlin Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/perlin4d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/perlin4d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-simplex2d_fractal",
+      "name": "FractalSimplexNoise2D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 2D Simplex Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/simplex2d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/simplex2d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-simplex3d_fractal",
+      "name": "FractalSimplexNoise3D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 3D Simplex Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/simplex3d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/simplex3d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-simplex4d_fractal",
+      "name": "FractalSimplexNoise4D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal 4D Simplex Noise",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/simplex4d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/simplex4d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-worley2d_fractal",
+      "name": "FractalWorleyNoise2D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal WorleyNoise2D",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/worley2d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/worley2d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-fractal-worley3d_fractal",
+      "name": "FractalWorleyNoise3D",
+      "category": "RGBA",
+      "subcategory": "NoiseFractal",
+      "description": "Fractal WorleyNoise3D",
+      "gd_path": "addons/shaderV/rgba/noise/fractal/worley3d_fractal.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/fractal/worley3d_fractal.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-generic2d",
+      "name": "GenericNoise2D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "GenericNoise using hash random function",
+      "gd_path": "addons/shaderV/rgba/noise/generic2d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/generic2d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-perlin2d",
+      "name": "PerlinNoise2D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "Classic 2d perlin noise with ability to set period.\nIf you dont want any peroid - set it to zero",
+      "gd_path": "addons/shaderV/rgba/noise/perlin2d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/perlin2d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-perlin3d",
+      "name": "PerlinNoise3D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "Classic 3d perlin noise",
+      "gd_path": "addons/shaderV/rgba/noise/perlin3d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/perlin3d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-perlin4d",
+      "name": "PerlinNoise4D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "Classic 4d perlin noise",
+      "gd_path": "addons/shaderV/rgba/noise/perlin4d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/perlin4d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-perlin-periodic3d",
+      "name": "PerlinPeriodicNoise3D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "Classic 3d perlin noise with ability to set period",
+      "gd_path": "addons/shaderV/rgba/noise/perlinPeriodic3d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/perlinPeriodic3d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-simplex2d",
+      "name": "SimplexNoise2D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "2d simplex noise",
+      "gd_path": "addons/shaderV/rgba/noise/simplex2d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/simplex2d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-simplex3d",
+      "name": "SimplexNoise3D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "3d simplex noise",
+      "gd_path": "addons/shaderV/rgba/noise/simplex3d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/simplex3d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-simplex4d",
+      "name": "SimplexNoise4D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "4d simplex noise",
+      "gd_path": "addons/shaderV/rgba/noise/simplex4d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/simplex4d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-worley2d",
+      "name": "WorleyNoise2D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "2d worley noise",
+      "gd_path": "addons/shaderV/rgba/noise/worley2d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/worley2d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-worley2x2",
+      "name": "WorleyNoise2x2",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "2x2 worley noise",
+      "gd_path": "addons/shaderV/rgba/noise/worley2x2.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/worley2x2.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-worley2x2x2",
+      "name": "WorleyNoise2x2x2",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "2x2x2 worley noise",
+      "gd_path": "addons/shaderV/rgba/noise/worley2x2x2.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/worley2x2x2.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-noise-worley3d",
+      "name": "WorleyNoise3D",
+      "category": "RGBA",
+      "subcategory": "Noise",
+      "description": "3d worley noise",
+      "gd_path": "addons/shaderV/rgba/noise/worley3d.gd",
+      "shader_include_path": "addons/shaderV/rgba/noise/worley3d.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-normal-from-heightmap",
+      "name": "NormalFromHeightmap",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Create normal map from heightmap texture. You should provide actual size of heightmap (in pixels).\nIt always uses 0 lod of heightmap texture to create normalmap.\nIt's possible to invert X and Y of normalmap if needed.\nIf you provide texture with different colors (not actual heightmap) to 'heightmapSampler', you can set 'preconvertToGray' to 'true'.",
+      "gd_path": "addons/shaderV/rgba/normalFromHeightmap.gd",
+      "shader_include_path": "addons/shaderV/rgba/normalFromHeightmap.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-posterize",
+      "name": "Posterize",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Rounds values based on the value coming through [steps]",
+      "gd_path": "addons/shaderV/rgba/posterize.gd",
+      "shader_include_path": "addons/shaderV/rgba/posterize.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-shift-hsv",
+      "name": "ShiftHSV",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Changes hue, saturation and value of input color.\n[hue] will be added to [color] hue, so [col].hue = [color].hue + [hue].\n[color] saturation and value will be multiplied by [sat] and [value], so [col].saturation(OR)value = [color].saturation(OR)value +* [sat](OR)[value]",
+      "gd_path": "addons/shaderV/rgba/shiftHSV.gd",
+      "shader_include_path": "addons/shaderV/rgba/shiftHSV.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-shine-fx",
+      "name": "ShineFX",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Adds shine effect in form of line",
+      "gd_path": "addons/shaderV/rgba/shineFX.gd",
+      "shader_include_path": "addons/shaderV/rgba/shineFX.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-sobel-edge",
+      "name": "SobelEdge",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Sobel edge filter. Returns detected edges as scalar.\n'scharr' controls if Scharr or Sobel operator is used.\nNote: negative lod => detect lod automatically",
+      "gd_path": "addons/shaderV/rgba/sobelEdge.gd",
+      "shader_include_path": "addons/shaderV/rgba/sobelEdge.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-tint-rgba",
+      "name": "TintRGBA",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Tints RGBA with tint color (same as modulate property in editor)",
+      "gd_path": "addons/shaderV/rgba/tintRGBA.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "rgba-tonemap",
+      "name": "Tonemap",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": null,
+      "gd_path": "addons/shaderV/rgba/tonemap.gd",
+      "shader_include_path": "addons/shaderV/rgba/tonemap.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-turn-cga4-palette",
+      "name": "TurnCGA4Palette",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Swaps color to CGA 4-color palette",
+      "gd_path": "addons/shaderV/rgba/turnCGA4Palette.gd",
+      "shader_include_path": "addons/shaderV/rgba/turnCGA4Palette.gdshaderinc"
+    },
+    {
+      "node_id": "rgba-turn-gbpalette",
+      "name": "TurnGameBoyPalette",
+      "category": "RGBA",
+      "subcategory": null,
+      "description": "Swaps color to GameBoy palette",
+      "gd_path": "addons/shaderV/rgba/turnGBPalette.gd",
+      "shader_include_path": "addons/shaderV/rgba/turnGBPalette.gdshaderinc"
+    },
+    {
+      "node_id": "tools-random-hash1d",
+      "name": "HashRandom1d",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Hash func with scalar input and scalar output",
+      "gd_path": "addons/shaderV/tools/random/hash1d.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-random-hash2d",
+      "name": "HashRandom2d",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Hash func with vector input and scalar output",
+      "gd_path": "addons/shaderV/tools/random/hash2d.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-random-hash2dvector",
+      "name": "HashRandom2dVec",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Hash func with vector input and vector output",
+      "gd_path": "addons/shaderV/tools/random/hash2dvector.gd",
+      "shader_include_path": "addons/shaderV/tools/random/hash2dvector.gdshaderinc"
+    },
+    {
+      "node_id": "tools-random-random-float",
+      "name": "RandomFloat",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Returns random float based on input value. UV is default input value.",
+      "gd_path": "addons/shaderV/tools/random/randomFloat.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-random-random-float4-d",
+      "name": "RandomFloat4D",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Returns random float value based on 4D input vector",
+      "gd_path": "addons/shaderV/tools/random/randomFloat4D.gd",
+      "shader_include_path": "addons/shaderV/tools/random/randomFloat4D.gdshaderinc"
+    },
+    {
+      "node_id": "tools-random-random-float-improved",
+      "name": "RandomFloatImproved",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Improved version of classic random function. Classic random can produce artifacts. This one - doesn't.",
+      "gd_path": "addons/shaderV/tools/random/randomFloatImproved.gd",
+      "shader_include_path": "addons/shaderV/tools/random/randomFloatImproved.gdshaderinc"
+    },
+    {
+      "node_id": "tools-random-random-gold-noise-float",
+      "name": "RandomGoldRatio",
+      "category": "Tools",
+      "subcategory": "Random",
+      "description": "Random float based on golden ratio",
+      "gd_path": "addons/shaderV/tools/random/randomGoldNoiseFloat.gd",
+      "shader_include_path": "addons/shaderV/tools/random/randomGoldNoiseFloat.gdshaderinc"
+    },
+    {
+      "node_id": "tools-relay",
+      "name": "Relay",
+      "category": "Tools",
+      "subcategory": null,
+      "description": "Outputs its input, may be useful for organizing node connections. Works with booleans, vectors and scalars. Also can be used as preview node",
+      "gd_path": "addons/shaderV/tools/relay.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-remap",
+      "name": "Remap",
+      "category": "Tools",
+      "subcategory": null,
+      "description": "Remaps input value from ( [inMin], [inMax] ) range to ( [outMin], [outMax] ). UV is default input value.",
+      "gd_path": "addons/shaderV/tools/remap.gd",
+      "shader_include_path": "addons/shaderV/tools/remap.gdshaderinc"
+    },
+    {
+      "node_id": "tools-sin-time",
+      "name": "SinTIME",
+      "category": "Tools",
+      "subcategory": null,
+      "description": "Returns [amplitude] * sin([speed] * TIME)",
+      "gd_path": "addons/shaderV/tools/sinTime.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-time-scaled",
+      "name": "ScaledTIME",
+      "category": "Tools",
+      "subcategory": null,
+      "description": "Returns [scale] * TIME",
+      "gd_path": "addons/shaderV/tools/TimeScaled.gd",
+      "shader_include_path": null
+    },
+    {
+      "node_id": "tools-transform-coordinates-cartesian-to-polar",
+      "name": "CartesianToPolar",
+      "category": "Tools",
+      "subcategory": "TransformCoordinates",
+      "description": "Cartesian (x, y) -> Polar (r, theta). By default (x, y) is UV.",
+      "gd_path": "addons/shaderV/tools/transformCoordinates/cartesianToPolar.gd",
+      "shader_include_path": "addons/shaderV/tools/transformCoordinates/cartesianToPolar.gdshaderinc"
+    },
+    {
+      "node_id": "tools-transform-coordinates-cartesian-to-spherical",
+      "name": "CartesianToSpherical",
+      "category": "Tools",
+      "subcategory": "TransformCoordinates",
+      "description": "Cartesian (x, y, z) -> Spherical (r, theta, phi). By default (x, y, z) is UV.",
+      "gd_path": "addons/shaderV/tools/transformCoordinates/cartesianToSpherical.gd",
+      "shader_include_path": "addons/shaderV/tools/transformCoordinates/cartesianToSpherical.gdshaderinc"
+    },
+    {
+      "node_id": "tools-transform-coordinates-polar-to-cartesian",
+      "name": "PolarToCartesian",
+      "category": "Tools",
+      "subcategory": "TransformCoordinates",
+      "description": "Polar (r, theta) -> Cartesian (x, y)",
+      "gd_path": "addons/shaderV/tools/transformCoordinates/polarToCartesian.gd",
+      "shader_include_path": "addons/shaderV/tools/transformCoordinates/polarToCartesian.gdshaderinc"
+    },
+    {
+      "node_id": "tools-transform-coordinates-spherical-to-cartesian",
+      "name": "SphericalToCartesian",
+      "category": "Tools",
+      "subcategory": "TransformCoordinates",
+      "description": "Spherical (r, theta, phi) -> Cartesian (x, y, z)",
+      "gd_path": "addons/shaderV/tools/transformCoordinates/sphericalToCartesian.gd",
+      "shader_include_path": "addons/shaderV/tools/transformCoordinates/sphericalToCartesian.gdshaderinc"
+    },
+    {
+      "node_id": "tools-vec2-compose",
+      "name": "vec2Compose",
+      "category": "Tools",
+      "subcategory": null,
+      "description": "Makes 2d vector from length and angle (in radians)",
+      "gd_path": "addons/shaderV/tools/vec2Compose.gd",
+      "shader_include_path": "addons/shaderV/tools/vec2Compose.gdshaderinc"
+    },
+    {
+      "node_id": "uv-animated-distortion-uvanimated",
+      "name": "DistortionUVAnimated",
+      "category": "UV",
+      "subcategory": "Animated",
+      "description": "Animated wave-like UV distortion",
+      "gd_path": "addons/shaderV/uv/animated/distortionUVAnimated.gd",
+      "shader_include_path": "addons/shaderV/uv/animated/distortionUVAnimated.gdshaderinc"
+    },
+    {
+      "node_id": "uv-animated-doodle-uv",
+      "name": "DoodleUV",
+      "category": "UV",
+      "subcategory": "Animated",
+      "description": "Doodle UV effect",
+      "gd_path": "addons/shaderV/uv/animated/doodleUV.gd",
+      "shader_include_path": "addons/shaderV/uv/animated/doodleUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-animated-rotate-animated",
+      "name": "RotateUVAnimated",
+      "category": "UV",
+      "subcategory": "Animated",
+      "description": "Animated UV rotation by angle in radians relative to pivot point",
+      "gd_path": "addons/shaderV/uv/animated/rotateAnimated.gd",
+      "shader_include_path": "addons/shaderV/uv/animated/rotateAnimated.gdshaderinc"
+    },
+    {
+      "node_id": "uv-animated-swirl-uv",
+      "name": "SwirlUV",
+      "category": "UV",
+      "subcategory": "Animated",
+      "description": "Swirl UV effect",
+      "gd_path": "addons/shaderV/uv/animated/swirlUV.gd",
+      "shader_include_path": "addons/shaderV/uv/animated/swirlUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-animated-tiling-noffset-animated",
+      "name": "TilingAndOffsetUVAnimated",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Animated UV tiling with given [offset] speed",
+      "gd_path": "addons/shaderV/uv/animated/tilingNoffsetAnimated.gd",
+      "shader_include_path": "addons/shaderV/uv/animated/tilingNoffsetAnimated.gdshaderinc"
+    },
+    {
+      "node_id": "uv-distortion-uv",
+      "name": "DistortionUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Wave-like UV distortion",
+      "gd_path": "addons/shaderV/uv/distortionUV.gd",
+      "shader_include_path": "addons/shaderV/uv/distortionUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-flip-uv",
+      "name": "FlipUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Flip UV horizontal or vertical",
+      "gd_path": "addons/shaderV/uv/flipUV.gd",
+      "shader_include_path": "addons/shaderV/uv/flipUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-lens-distortion",
+      "name": "LensDistortionUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Lens distortion effect.\n[factor] > 0 - fisheye / barrel;\n[factor] < 0 - antifisheye / pincushion",
+      "gd_path": "addons/shaderV/uv/lensDistortion.gd",
+      "shader_include_path": "addons/shaderV/uv/lensDistortion.gdshaderinc"
+    },
+    {
+      "node_id": "uv-pixelate",
+      "name": "PixelateUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Pixelate UV by size factor\nNote: may produce artifacts if applied to texture with mipmaps enabled",
+      "gd_path": "addons/shaderV/uv/pixelate.gd",
+      "shader_include_path": "addons/shaderV/uv/pixelate.gdshaderinc"
+    },
+    {
+      "node_id": "uv-rotate",
+      "name": "RotateUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Rotate UV by angle in radians relative to pivot vector",
+      "gd_path": "addons/shaderV/uv/rotate.gd",
+      "shader_include_path": "addons/shaderV/uv/rotate.gdshaderinc"
+    },
+    {
+      "node_id": "uv-scale-uv",
+      "name": "ScaleUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Scale UV relative to pivot point",
+      "gd_path": "addons/shaderV/uv/scaleUV.gd",
+      "shader_include_path": "addons/shaderV/uv/scaleUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-spherical-uv",
+      "name": "SphericalUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Makes UV look like a sphere. Can be used to make 2d planets",
+      "gd_path": "addons/shaderV/uv/sphericalUV.gd",
+      "shader_include_path": "addons/shaderV/uv/sphericalUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-tile-uv",
+      "name": "TileUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Tile UV can be used to get UV position of tile within a tilemap.\n[uv] - uv of tileset;\n[Vframes] - the number of rows;\n[Hframes] - the number of columns;\n[frame] - current frame;",
+      "gd_path": "addons/shaderV/uv/tileUV.gd",
+      "shader_include_path": "addons/shaderV/uv/tileUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-tiling-noffset",
+      "name": "TilingAndOffsetUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Tiles UV with given offset",
+      "gd_path": "addons/shaderV/uv/tilingNoffset.gd",
+      "shader_include_path": "addons/shaderV/uv/tilingNoffset.gdshaderinc"
+    },
+    {
+      "node_id": "uv-transform-uv",
+      "name": "TransformUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Performs offset, scale and rotation of UV with custom pivots. Rotation is set in radians.",
+      "gd_path": "addons/shaderV/uv/transformUV.gd",
+      "shader_include_path": "addons/shaderV/uv/transformUV.gdshaderinc"
+    },
+    {
+      "node_id": "uv-twirl",
+      "name": "TwirlUV",
+      "category": "UV",
+      "subcategory": null,
+      "description": "Twirl UV by value relative to pivot point",
+      "gd_path": "addons/shaderV/uv/twirl.gd",
+      "shader_include_path": "addons/shaderV/uv/twirl.gdshaderinc"
+    }
+  ]
+}

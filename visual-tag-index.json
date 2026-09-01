@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T08:24:03.065Z",
+  "generatedAt": "2026-09-01T00:00:00+08:00",
   "taxonomyBasis": "开放式 2D 视觉语言、形态、材质、节奏与用途标签",
   "tagGroups": [
     "元素与能量",
@@ -10,13 +10,13 @@
   ],
   "tagCount": 65,
   "populatedTagCount": 65,
-  "taggedEffectCount": 1150,
+  "taggedEffectCount": 1243,
   "requirements": [
     {
       "group": "元素与能量",
       "term": "火焰",
       "description": "火舌、余烬、熔岩与燃烧",
-      "effectCount": 136,
+      "effectCount": 137,
       "sampleEffectIds": [
         "fx-0003",
         "fx-0004",
@@ -374,13 +374,16 @@
       "group": "形态与结构",
       "term": "漩涡",
       "description": "旋涡、传送涡流与吸积盘",
-      "effectCount": 5,
+      "effectCount": 8,
       "sampleEffectIds": [
         "fx-0471",
         "fx-0757",
         "fx-0860",
         "fx-1135",
-        "fx-1143"
+        "fx-1143",
+        "shaderv4-rgba-generate_shapes-generate-spiral",
+        "shaderv4-uv-animated-swirl-uv",
+        "shaderv4-uv-twirl"
       ]
     },
     {
@@ -419,7 +422,7 @@
       "group": "材质与屏幕",
       "term": "描边",
       "description": "轮廓线、边缘检测与选中描边",
-      "effectCount": 11,
+      "effectCount": 12,
       "sampleEffectIds": [
         "fx-0008",
         "fx-0073",
@@ -435,7 +438,7 @@
       "group": "材质与屏幕",
       "term": "外发光",
       "description": "辉光、泛光、边缘光与自发光",
-      "effectCount": 19,
+      "effectCount": 26,
       "sampleEffectIds": [
         "fx-0002",
         "fx-0021",
@@ -466,7 +469,7 @@
       "group": "材质与屏幕",
       "term": "像素化",
       "description": "像素块、降采样与复古分辨率",
-      "effectCount": 23,
+      "effectCount": 24,
       "sampleEffectIds": [
         "fx-0010",
         "fx-0019",
@@ -482,7 +485,7 @@
       "group": "材质与屏幕",
       "term": "故障",
       "description": "数字错位、VHS 与数据损坏",
-      "effectCount": 18,
+      "effectCount": 19,
       "sampleEffectIds": [
         "fx-0037",
         "fx-0123",
@@ -498,7 +501,7 @@
       "group": "材质与屏幕",
       "term": "模糊",
       "description": "高斯、径向、运动与景深模糊",
-      "effectCount": 11,
+      "effectCount": 15,
       "sampleEffectIds": [
         "fx-0036",
         "fx-0040",
@@ -514,7 +517,7 @@
       "group": "材质与屏幕",
       "term": "扭曲",
       "description": "折射、热浪、鱼眼与空间弯曲",
-      "effectCount": 15,
+      "effectCount": 29,
       "sampleEffectIds": [
         "fx-0053",
         "fx-0057",
@@ -530,16 +533,17 @@
       "group": "材质与屏幕",
       "term": "色差",
       "description": "RGB 分离与镜头色散",
-      "effectCount": 1,
+      "effectCount": 2,
       "sampleEffectIds": [
-        "fx-0753"
+        "fx-0753",
+        "shaderv4-rgba-chromatic-aberration"
       ]
     },
     {
       "group": "材质与屏幕",
       "term": "扫描线",
       "description": "CRT、扫描线与模拟屏幕纹理",
-      "effectCount": 12,
+      "effectCount": 13,
       "sampleEffectIds": [
         "fx-0037",
         "fx-0669",
@@ -555,7 +559,7 @@
       "group": "材质与屏幕",
       "term": "调色",
       "description": "色相、饱和度、渐变与调色板",
-      "effectCount": 104,
+      "effectCount": 118,
       "sampleEffectIds": [
         "fx-0035",
         "fx-0046",
@@ -661,7 +665,7 @@
       "group": "动态与节奏",
       "term": "循环",
       "description": "无缝循环、待机和持续动画",
-      "effectCount": 23,
+      "effectCount": 28,
       "sampleEffectIds": [
         "fx-0001",
         "fx-0019",
@@ -734,7 +738,7 @@
       "group": "动态与节奏",
       "term": "旋转",
       "description": "环绕、自转与轨道运动",
-      "effectCount": 21,
+      "effectCount": 26,
       "sampleEffectIds": [
         "fx-0023",
         "fx-0025",
@@ -750,7 +754,7 @@
       "group": "动态与节奏",
       "term": "波动",
       "description": "正弦波、摇摆和软体波纹",
-      "effectCount": 16,
+      "effectCount": 22,
       "sampleEffectIds": [
         "fx-0053",
         "fx-0057",
@@ -939,7 +943,7 @@
       "group": "演出用途",
       "term": "背景循环",
       "description": "可循环的动态背景与图案",
-      "effectCount": 28,
+      "effectCount": 59,
       "sampleEffectIds": [
         "fx-0035",
         "fx-0046",
@@ -987,7 +991,7 @@
       "group": "演出用途",
       "term": "通用合成",
       "description": "通用 2D Shader、材质与视觉合成",
-      "effectCount": 908,
+      "effectCount": 995,
       "sampleEffectIds": [
         "fx-0031",
         "fx-0032",
