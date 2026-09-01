@@ -4,11 +4,12 @@ Use this reference only when exporting a selection or copying materials into ano
 
 ## Authority
 
-- `../../materials/sources.lock.json` is authoritative for source identity, license, version, archive hash, sanitization receipt, and distribution policy.
-- `../../materials/catalog.json` is authoritative for logical material IDs, semantic classification, relative files, file dimensions, transparency metadata, and file hashes.
-- `../../mechanism-index.json`, `../../visual-tag-index.json`, and `../../semantic-audit.json` are discovery and evidence indexes for the existing website's reference entries.
+- Run `node scripts/resolve-atlas-root.mjs` from the Skill directory and use its output as `<atlas-root>`.
+- `<atlas-root>/materials/sources.lock.json` is authoritative for source identity, license, version, archive hash, sanitization receipt, and distribution policy.
+- `<atlas-root>/materials/catalog.json` is authoritative for logical material IDs, semantic classification, relative files, file dimensions, transparency metadata, and file hashes.
+- `<atlas-root>/mechanism-index.json`, `<atlas-root>/visual-tag-index.json`, and `<atlas-root>/semantic-audit.json` are discovery and evidence indexes for the existing website's reference entries.
 
-All paths above are relative to the `skills/godot-fx-atlas/` directory.
+Do not infer the Atlas root from the installed Skill path: user-level installations may be junctions or symlinks.
 
 ## Selection manifest
 
