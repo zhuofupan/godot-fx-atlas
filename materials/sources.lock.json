@@ -96,6 +96,327 @@
           "black": "black"
         }
       }
+    },
+    {
+      "source_id": "kenney-light-masks",
+      "title": "Kenney Light Masks",
+      "author": "Kenney",
+      "version": "1.0 (2026 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/light-masks",
+      "download_url": "https://kenney.nl/media/pages/assets/light-masks/6530e254f9-1775631687/kenney_light-masks-1.0.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/light-masks",
+      "attribution": "Kenney Light Masks, released under CC0 1.0.",
+      "archive_sha256": "e1238694d7e49046e42d67f2975be0217861c7cc9bc358383a8e5e583645004f",
+      "archive_bytes": 15017378,
+      "archive_asset_count": 152,
+      "source_page_file_count": 150,
+      "selected_asset_count": 456,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 457,
+        "rejected_files": 3,
+        "manifest_sha256": "4f6029c8e6622d2f9afdafb4bf249f6e19957ec6ef4baa51dd5f054873ac993c"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "static_texture",
+        "variants": {
+          "transparent": "transparent",
+          "black": "black",
+          "inverted": "inverted"
+        },
+        "family_by_prefix": {
+          "circle_": "circle",
+          "cone_": "cone",
+          "fan_": "fan",
+          "foliage_": "foliage",
+          "ring_": "circle",
+          "shape_": "shape",
+          "streaks_": "streak",
+          "water_": "caustics",
+          "window_": "window"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-splat-pack",
+      "title": "Kenney Splat Pack",
+      "author": "Kenney",
+      "version": "1.0 (2022 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/splat-pack",
+      "download_url": "https://kenney.nl/media/pages/assets/splat-pack/1070534984-1677495350/kenney_splat-pack.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/splat-pack",
+      "attribution": "Kenney Splat Pack, released under CC0 1.0.",
+      "archive_sha256": "cf50b2671c48fd5b957e249447c9b0dff63c878a538c8e38af282b51f1571925",
+      "archive_bytes": 351719,
+      "archive_asset_count": 36,
+      "source_page_file_count": 30,
+      "selected_asset_count": 72,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 73,
+        "rejected_files": 40,
+        "manifest_sha256": "094e455826426a1dd6eafa044a761ce75a0cdbd31af5701b131c0a01860bd5ae"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "static_texture",
+        "family_override": "splat",
+        "variants": {
+          "standard": "standard",
+          "high_resolution": "high_resolution"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-foliage-sprites",
+      "title": "Kenney Foliage Sprites",
+      "author": "Kenney",
+      "version": "1.0 (2020 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/foliage-sprites",
+      "download_url": "https://kenney.nl/media/pages/assets/foliage-sprites/b65bd70c69-1677495980/kenney_foliage-sprites.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/foliage-sprites",
+      "attribution": "Kenney Foliage Sprites, released under CC0 1.0.",
+      "archive_sha256": "8e3e944acaa731a90e0b004846d2ce99ee8a65d5479b4c2f421cab7cdde128e5",
+      "archive_bytes": 2432412,
+      "archive_asset_count": 50,
+      "source_page_file_count": 50,
+      "selected_asset_count": 100,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 101,
+        "rejected_files": 6,
+        "manifest_sha256": "9a1c38af446467ea8c76fc61759bd17bdd24ebda64701d2c9f5d4c238c11b5b2"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "static_texture",
+        "family_override": "foliage",
+        "variants": {
+          "flat": "flat",
+          "shaded": "shaded"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-pattern-pack",
+      "title": "Kenney Pattern Pack",
+      "author": "Kenney",
+      "version": "1.0 (2021 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/pattern-pack",
+      "download_url": "https://kenney.nl/media/pages/assets/pattern-pack/e787377a73-1721940715/kenney_pattern-pack.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/pattern-pack",
+      "attribution": "Kenney Pattern Pack, released under CC0 1.0.",
+      "archive_sha256": "903051a40a0d9a62de5e87b03992a7084305453806102d1e7b9d13c210be93ac",
+      "archive_bytes": 1224706,
+      "archive_asset_count": 84,
+      "source_page_file_count": 80,
+      "selected_asset_count": 168,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 169,
+        "rejected_files": 87,
+        "manifest_sha256": "02cc7bee530229277fb06ddd1f567c83e075c8a1df36d7f5d0fcc3db48b8e30a"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "tile_pattern",
+        "family_override": "pattern",
+        "variants": {
+          "standard": "standard",
+          "high_resolution": "high_resolution"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-pattern-pack-extra",
+      "title": "Kenney Pattern Pack Extra",
+      "author": "Kenney",
+      "version": "1.0 (2026 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/pattern-pack-extra",
+      "download_url": "https://kenney.nl/media/pages/assets/pattern-pack-extra/270736c7fd-1786626805/kenney_pattern-pack-extra.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/pattern-pack-extra",
+      "attribution": "Kenney Pattern Pack Extra, released under CC0 1.0.",
+      "archive_sha256": "44279c01068326caf74faa41090717dc613cd1dd285cdae7a4444658d99b2bed",
+      "archive_bytes": 1586053,
+      "archive_asset_count": 84,
+      "source_page_file_count": 80,
+      "selected_asset_count": 168,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 169,
+        "rejected_files": 89,
+        "manifest_sha256": "1b5b9b5a911040465cc5ac14c79971d7a7db621d4bb3d71a7a79d17d8bde85db"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "tile_pattern",
+        "family_override": "pattern",
+        "variants": {
+          "standard": "standard",
+          "high_resolution": "high_resolution"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-pattern-pack-pixel",
+      "title": "Kenney Pattern Pack Pixel",
+      "author": "Kenney",
+      "version": "1.0 (2022 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/pattern-pack-pixel",
+      "download_url": "https://kenney.nl/media/pages/assets/pattern-pack-pixel/65c3f0f0a1-1721640064/kenney_pattern-pack-pixel.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/pattern-pack-pixel",
+      "attribution": "Kenney Pattern Pack Pixel, released under CC0 1.0.",
+      "archive_sha256": "73fb47d01bc6db1f94ddddb6528f2f8b5bd8780a5b572e8bafe8e8ce8400b96f",
+      "archive_bytes": 58769,
+      "archive_asset_count": 64,
+      "source_page_file_count": 60,
+      "selected_asset_count": 128,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 129,
+        "rejected_files": 8,
+        "manifest_sha256": "51958b99adff99427bc00144b0fb0eb3649804e31058ef9b4953c0089cdcbbab"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "tile_pattern",
+        "family_override": "pattern_pixel",
+        "variants": {
+          "color": "color",
+          "grayscale": "grayscale"
+        }
+      }
+    },
+    {
+      "source_id": "kenney-pattern-pack-lines",
+      "title": "Kenney Pattern Pack Lines",
+      "author": "Kenney",
+      "version": "1.0 (2022 archive)",
+      "source_type": "direct_zip",
+      "browse_url": "https://kenney.nl/assets/pattern-pack-lines",
+      "download_url": "https://kenney.nl/media/pages/assets/pattern-pack-lines/6211bda939-1774771397/kenney_pattern-pack-lines.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://kenney.nl/assets/pattern-pack-lines",
+      "attribution": "Kenney Pattern Pack Lines, released under CC0 1.0.",
+      "archive_sha256": "934c8945d3fb956b12723b4bf83b3856156b313233edab3f42509d79abb451c9",
+      "archive_bytes": 774269,
+      "archive_asset_count": 30,
+      "source_page_file_count": 60,
+      "selected_asset_count": 60,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 61,
+        "rejected_files": 131,
+        "manifest_sha256": "d66f14840b495cfd24d2e8b7764e8527a09a57b29b5c46ff7904f387a4ab37ee"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "License.txt",
+        "asset_kind": "tile_pattern",
+        "family_override": "pattern_lines",
+        "variants": {
+          "thin": "thin",
+          "thick": "thick"
+        }
+      }
+    },
+    {
+      "source_id": "oga-para-particlefx-1",
+      "title": "Animated Particle Effects #1",
+      "author": "para",
+      "version": "2014-03-29 archive",
+      "source_type": "direct_zip",
+      "browse_url": "https://opengameart.org/content/animated-particle-effects-1",
+      "download_url": "https://opengameart.org/sites/default/files/para_CC0_particlefx-1.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://opengameart.org/content/animated-particle-effects-1",
+      "attribution": "Animated Particle Effects #1 by para, released under CC0 1.0 on OpenGameArt.",
+      "archive_sha256": "5c0be385e907d3c0db99b82be0fae43174b3cfe3a8b45d7734585c685dd1187f",
+      "archive_bytes": 15548010,
+      "archive_asset_count": 14,
+      "selected_asset_count": 14,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 15,
+        "rejected_files": 0,
+        "manifest_sha256": "8c920c0d83e4082770fc7a43ca098c43abdce26bdd70a1d67d51b3ecff5c8480"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "LICENSE.txt",
+        "asset_kind": "sprite_sheet",
+        "frame_cell_size": 128,
+        "family_override": "animated_fx",
+        "variants": {
+          "sprite_sheet": "sprite_sheet"
+        }
+      }
+    },
+    {
+      "source_id": "oga-para-particlefx-2",
+      "title": "Animated Particle Effects #2",
+      "author": "para",
+      "version": "2014-04-06 archive",
+      "source_type": "direct_zip",
+      "browse_url": "https://opengameart.org/content/animated-particle-effects-2",
+      "download_url": "https://opengameart.org/sites/default/files/para_CC0_particlefx-2.zip",
+      "license": "CC0-1.0",
+      "license_evidence_url": "https://opengameart.org/content/animated-particle-effects-2",
+      "attribution": "Animated Particle Effects #2 by para, released under CC0 1.0 on OpenGameArt.",
+      "archive_sha256": "469676f3fc08509e4ec824147d179a51a9a71c380a3d0fd142cf8e30355f50f8",
+      "archive_bytes": 5927098,
+      "archive_asset_count": 16,
+      "selected_asset_count": 16,
+      "sanitization": {
+        "status": "sanitized",
+        "accepted_files": 17,
+        "rejected_files": 0,
+        "manifest_sha256": "1144fbcb008638887b7e7cdf5c3554047680ba254d1b3bb11f38d088835e0e7e"
+      },
+      "distribution_policy": "direct_use",
+      "code_policy": "excluded",
+      "import": {
+        "license_file": "LICENSE.txt",
+        "asset_kind": "sprite_sheet",
+        "frame_cell_size": 128,
+        "family_by_prefix": {
+          "air_bubbles": "bubble",
+          "blood_hit": "blood",
+          "fire_": "fire",
+          "lighter_flame": "flame",
+          "teleporter": "magic"
+        },
+        "variants": {
+          "sprite_sheet": "sprite_sheet"
+        }
+      }
     }
   ]
 }

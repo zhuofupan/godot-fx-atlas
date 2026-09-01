@@ -85,13 +85,17 @@ for (const relativePath of allRelativePaths) {
   }
 
   const baseName = path.posix.basename(relativePath, path.posix.extname(relativePath));
-  const family = inferFamily(relativePath, baseName, source.import.family_by_parent);
+  const family = inferFamily(relativePath, baseName, source.import);
   const profile = taxonomy.families[family] ?? taxonomy.fallback;
   const isRotated = relativePath.toLowerCase().startsWith("rotated/");
-  catalogEntries.push({
+  const representativeFile = Object.values(fileRecords)[0];
+  const assetKind = source.import.asset_kind ?? "static_texture";
+  const frameCellSize = source.import.frame_cell_size;
+  const entry = {
     material_id: `${sourceId}/${isRotated ? "rotated/" : ""}${baseName}`,
     source_id: sourceId,
     title: `${isRotated ? "Rotated " : ""}${humanizeBaseName(baseName)}`,
+    asset_kind: assetKind,
     family,
     family_label: profile.label,
     variant_group: isRotated ? "rotated" : "standard",
@@ -103,7 +107,16 @@ for (const relativePath of allRelativePaths) {
     license: source.license,
     distribution_policy: source.distribution_policy,
     files: fileRecords
-  });
+  };
+  if (assetKind === "sprite_sheet" && frameCellSize && representativeFile.width % frameCellSize === 0 && representativeFile.height % frameCellSize === 0) {
+    entry.frame_grid = {
+      columns: representativeFile.width / frameCellSize,
+      rows: representativeFile.height / frameCellSize,
+      frame_width: frameCellSize,
+      frame_height: frameCellSize
+    };
+  }
+  catalogEntries.push(entry);
 }
 
 const licenseSourcePath = path.join(normalizedInputRoot, source.import.license_file);
@@ -116,7 +129,9 @@ await writeFile(licenseTargetPath, normalizedLicenseText, "utf8");
 
 const catalogPath = path.join(repoRoot, "materials", "catalog.json");
 const existingCatalog = JSON.parse(await readFile(catalogPath, "utf8"));
-const retainedEntries = existingCatalog.entries.filter((entry) => entry.source_id !== sourceId);
+const retainedEntries = existingCatalog.entries
+  .filter((entry) => entry.source_id !== sourceId)
+  .map((entry) => ({ asset_kind: "static_texture", ...entry }));
 const mergedEntries = [...retainedEntries, ...catalogEntries].sort((left, right) => left.material_id.localeCompare(right.material_id, "en"));
 if (new Set(mergedEntries.map((entry) => entry.material_id)).size !== mergedEntries.length) {
   throw new Error(`Duplicate material_id detected while importing ${sourceId}.`);
@@ -142,10 +157,15 @@ function toPosix(value) {
   return value.split(path.sep).join("/");
 }
 
-function inferFamily(relativePath, baseName, familyByParent = {}) {
+function inferFamily(relativePath, baseName, importConfig = {}) {
+  if (importConfig.family_override) return importConfig.family_override;
   const parents = path.posix.dirname(relativePath).split("/").map((part) => part.toLocaleLowerCase("en"));
-  for (const [parent, family] of Object.entries(familyByParent)) {
+  for (const [parent, family] of Object.entries(importConfig.family_by_parent ?? {})) {
     if (parents.includes(parent.toLocaleLowerCase("en"))) return family;
+  }
+  const normalizedBaseName = baseName.toLocaleLowerCase("en");
+  for (const [prefix, family] of Object.entries(importConfig.family_by_prefix ?? {}).sort((left, right) => right[0].length - left[0].length)) {
+    if (normalizedBaseName.startsWith(prefix.toLocaleLowerCase("en"))) return family;
   }
   return baseName.split("_")[0].toLowerCase();
 }

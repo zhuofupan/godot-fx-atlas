@@ -9,6 +9,38 @@
     "caution": "没有可靠用途分类时不得自动接入生产效果。"
   },
   "families": {
+    "animated_fx": {
+      "label": "动画特效图集",
+      "roles": ["shape", "motion", "finish"],
+      "archetypes": ["impact_burst", "spawn_death", "status_aura"],
+      "tags": ["序列帧", "动画", "爆发", "循环"],
+      "recommended_use": "按图集网格切分为序列帧，用于魔法环、烟尘、火焰和元素爆发。",
+      "caution": "图集必须按记录的 frame_grid 切分，不应把整张图直接作为单粒子纹理。"
+    },
+    "blood": {
+      "label": "液体飞溅动画",
+      "roles": ["shape", "motion", "finish"],
+      "archetypes": ["impact_burst", "spawn_death"],
+      "tags": ["液体", "飞溅", "序列帧", "命中"],
+      "recommended_use": "液体、墨迹、腐蚀或伤害命中的序列帧轮廓。",
+      "caution": "跨题材使用时应重新着色并弱化写实血液语义。"
+    },
+    "bubble": {
+      "label": "气泡动画",
+      "roles": ["shape", "motion", "finish"],
+      "archetypes": ["ambient_loop", "status_aura", "spawn_death"],
+      "tags": ["气泡", "水下", "序列帧", "上升"],
+      "recommended_use": "水下环境、气泡状态、液体释放和轻量生成动画。",
+      "caution": "需要配合上升路径与尺寸差异，避免整齐重复。"
+    },
+    "caustics": {
+      "label": "水纹焦散",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "material_loop", "shield"],
+      "tags": ["水纹", "焦散", "环境", "循环"],
+      "recommended_use": "水面焦散、护盾流光和低频环境投影。",
+      "caution": "需要慢速双层扰动或错相滚动，单张静止会暴露重复。"
+    },
     "circle": {
       "label": "圆环 / 波纹",
       "roles": ["shape", "finish"],
@@ -16,6 +48,14 @@
       "tags": ["圆环", "扩散", "护盾", "区域预警"],
       "recommended_use": "治疗波纹、护盾边缘、区域预警、状态光环与命中扩散。",
       "caution": "通用圆环不能独自承担技能身份，应叠加项目符号或材质语言。"
+    },
+    "cone": {
+      "label": "锥形光束 / 方向遮罩",
+      "roles": ["shape", "finish"],
+      "archetypes": ["beam_chain", "telegraph", "screen_feedback"],
+      "tags": ["锥形", "方向", "光束", "聚光"],
+      "recommended_use": "聚光灯、扇形预警、方向光束和视野遮罩。",
+      "caution": "锥体根部必须与发射锚点对齐，不能漂离施法者。"
     },
     "dirt": {
       "label": "尘土 / 碎屑",
@@ -65,6 +105,14 @@
       "recommended_use": "命中峰值、光束核心和关闭 Glow 时的确定性软光。",
       "caution": "检查 additive 混合与黑边，峰值应短暂。"
     },
+    "fan": {
+      "label": "扇形光幕",
+      "roles": ["shape", "finish"],
+      "archetypes": ["telegraph", "beam_chain", "screen_feedback"],
+      "tags": ["扇形", "光幕", "范围", "方向"],
+      "recommended_use": "扇形攻击预警、方向范围光幕和舞台式光束。",
+      "caution": "范围边缘要与真实命中区域一致，模糊版本不能改变判定观感。"
+    },
     "flash": {
       "label": "爆闪 / 冲击核心",
       "roles": ["shape", "finish"],
@@ -72,6 +120,14 @@
       "tags": ["爆闪", "冲击", "核心", "峰值"],
       "recommended_use": "命中峰值、爆炸核心、生成闪现和短时屏幕反馈。",
       "caution": "白色核心覆盖率高，持续时间应短，并避免连续闪烁造成视觉疲劳。"
+    },
+    "foliage": {
+      "label": "植被 / 自然轮廓",
+      "roles": ["shape", "finish"],
+      "archetypes": ["ambient_loop", "status_aura", "spawn_death"],
+      "tags": ["植被", "自然", "叶片", "环境粒子"],
+      "recommended_use": "自然系状态、叶片粒子、草木生成和风场环境层。",
+      "caution": "通用植被只能做次级轮廓，主体仍应使用项目自己的植物语言。"
     },
     "gas": {
       "label": "气团 / 毒雾",
@@ -105,6 +161,30 @@
       "recommended_use": "提取为带方向的瞬时发射或命中遮罩。",
       "caution": "枪口语义很强，跨题材使用时必须重新调形并匹配产品视觉语言。"
     },
+    "pattern": {
+      "label": "无缝图案 / 材质遮罩",
+      "roles": ["shape", "finish"],
+      "archetypes": ["material_loop", "shield", "telegraph", "status_aura"],
+      "tags": ["无缝", "图案", "遮罩", "溶解"],
+      "recommended_use": "材质平铺、溶解阈值、护盾纹理和区域预警的内部细节。",
+      "caution": "高对比图案必须降低尺度与对比度，避免抢过主体轮廓。"
+    },
+    "pattern_lines": {
+      "label": "线框图案",
+      "roles": ["shape", "finish"],
+      "archetypes": ["material_loop", "shield", "telegraph"],
+      "tags": ["线框", "网格", "几何", "无缝"],
+      "recommended_use": "科技护盾、结界网格、方向场和几何材质流动。",
+      "caution": "细线在缩放后容易闪烁，需检查 mipmap、过滤与战场实际尺寸。"
+    },
+    "pattern_pixel": {
+      "label": "像素图案",
+      "roles": ["shape", "finish"],
+      "archetypes": ["material_loop", "telegraph", "screen_feedback"],
+      "tags": ["像素", "无缝", "图案", "低分辨率"],
+      "recommended_use": "像素风材质、低分辨率溶解、UI 反馈和复古预警。",
+      "caution": "仅适合像素或刻意低清语境，默认使用 nearest 过滤。"
+    },
     "scorch": {
       "label": "焦痕 / 地面残留",
       "roles": ["finish"],
@@ -121,6 +201,14 @@
       "recommended_use": "兽类爪击和短促物理命中的低频轮廓。",
       "caution": "方向应与攻击路径一致，不能随机旋转。"
     },
+    "shape": {
+      "label": "通用形状遮罩",
+      "roles": ["shape"],
+      "archetypes": ["telegraph", "shield", "impact_burst"],
+      "tags": ["形状", "遮罩", "区域", "组合"],
+      "recommended_use": "作为预警、护盾或组合材质的基础几何遮罩。",
+      "caution": "基础形状不能单独承担技能身份，需要与运动和项目符号组合。"
+    },
     "slash": {
       "label": "斩击",
       "roles": ["shape", "finish"],
@@ -136,6 +224,14 @@
       "tags": ["烟雾", "云气", "消散", "环境"],
       "recommended_use": "云气、尘烟、死亡消散和低频环境层。",
       "caution": "最容易产生脏画面，应限制覆盖率、噪声和持续时间。"
+    },
+    "splat": {
+      "label": "飞溅 / 污渍轮廓",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "telegraph", "spawn_death"],
+      "tags": ["飞溅", "污渍", "液体", "命中"],
+      "recommended_use": "液体命中、墨迹、腐蚀区域和短时地面残留。",
+      "caution": "硬边形状需要按题材重绘或柔化，残留必须有明确生命周期。"
     },
     "spark": {
       "label": "火星 / 光点",
@@ -160,6 +256,14 @@
       "tags": ["星芒", "闪烁", "高频"],
       "recommended_use": "治疗、祝福或稀有反馈中的少量高频亮点。",
       "caution": "容易形成通用手游闪粉，不得无意义铺满画面。"
+    },
+    "streak": {
+      "label": "光线 / 放射条纹",
+      "roles": ["shape", "finish"],
+      "archetypes": ["impact_burst", "beam_chain", "screen_feedback"],
+      "tags": ["光线", "条纹", "放射", "速度线"],
+      "recommended_use": "命中放射、速度线、光束收尾和屏幕冲击的方向细节。",
+      "caution": "方向线必须服务主运动，数量过多会造成视觉噪声。"
     },
     "symbol": {
       "label": "通用符号",

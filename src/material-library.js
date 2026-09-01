@@ -24,7 +24,7 @@ const state = {
   archetype: initialQuery.get("archetype") ?? "",
   role: initialQuery.get("role") ?? "",
   source: initialQuery.get("source") ?? "",
-  variant: "transparent",
+  variant: initialQuery.get("variant") ?? "transparent",
   background: "checker",
   selected: new Set()
 };
@@ -44,6 +44,7 @@ fillSelect(ui.family_filter, uniqueValues(entries, "family"), "全部贴图族",
 fillSelect(ui.archetype_filter, uniqueValues(entries, "archetypes"), "全部效果原型", humanize);
 fillSelect(ui.role_filter, uniqueValues(entries, "roles"), "全部层级角色", roleLabel);
 fillSelect(ui.source_filter, uniqueValues(entries, "source_id"), "全部素材源", (value) => sourceById(value).title);
+fillVariantSelect(ui.variant_filter, entries);
 
 ui.family_filter.value = state.family;
 ui.archetype_filter.value = state.archetype;
@@ -144,6 +145,8 @@ function openDetails(entry) {
       element("dl", { className: "receipt" },
         receiptRow("素材源", `${source.title} ${source.version}`),
         receiptRow("许可", `${source.license} · ${source.distribution_policy}`),
+        receiptRow("资产类型", assetKindLabel(entry.asset_kind)),
+        ...(entry.frame_grid ? [receiptRow("序列帧", `${entry.frame_grid.columns}×${entry.frame_grid.rows} · 单帧 ${entry.frame_grid.frame_width}×${entry.frame_grid.frame_height}`)] : []),
         receiptRow("文件", `${preview.width}×${preview.height} · ${formatBytes(preview.bytes)}`),
         receiptRow("SHA-256", preview.sha256)
       ),
@@ -174,6 +177,17 @@ function fillSelect(select, values, emptyLabel, labelFor) {
   select.replaceChildren(element("option", { value: "" }, emptyLabel), ...values.map((value) => element("option", { value }, labelFor(value))));
 }
 
+function fillVariantSelect(select, materialEntries) {
+  const preferredOrder = ["transparent", "black", "inverted", "standard", "high_resolution", "flat", "shaded", "color", "grayscale", "thin", "thick", "sprite_sheet"];
+  const variants = [...new Set(materialEntries.flatMap((entry) => Object.keys(entry.files)))].sort((left, right) => {
+    const leftIndex = preferredOrder.indexOf(left);
+    const rightIndex = preferredOrder.indexOf(right);
+    return (leftIndex < 0 ? preferredOrder.length : leftIndex) - (rightIndex < 0 ? preferredOrder.length : rightIndex) || left.localeCompare(right, "zh-CN");
+  });
+  select.replaceChildren(...variants.map((variant) => element("option", { value: variant }, variantLabel(variant))));
+  if (!variants.includes(state.variant)) state.variant = variants.includes("transparent") ? "transparent" : variants[0];
+}
+
 function sourceById(sourceId) {
   return sources.find((source) => source.source_id === sourceId);
 }
@@ -188,7 +202,7 @@ function resolveVariant(entry, preferredVariant) {
 
 function syncQueryString() {
   const query = new URLSearchParams();
-  for (const key of ["query", "family", "archetype", "role", "source"]) {
+  for (const key of ["query", "family", "archetype", "role", "source", "variant"]) {
     if (state[key]) query.set(key === "query" ? "q" : key, state[key]);
   }
   history.replaceState(null, "", `${location.pathname}${query.size ? `?${query}` : ""}`);
@@ -209,6 +223,19 @@ function element(tag, attributes = {}, ...children) {
 
 function roleLabel(value) {
   return ({ shape: "主体形状", finish: "修饰收尾" })[value] ?? humanize(value);
+}
+
+function variantLabel(value) {
+  return ({
+    transparent: "透明底（推荐）", black: "黑底 / 灰度", inverted: "反相",
+    standard: "标准分辨率", high_resolution: "高分辨率", flat: "扁平",
+    shaded: "带明暗", color: "彩色", grayscale: "灰度",
+    thin: "细线", thick: "粗线", sprite_sheet: "序列帧图集"
+  })[value] ?? humanize(value);
+}
+
+function assetKindLabel(value) {
+  return ({ static_texture: "静态贴图", tile_pattern: "平铺纹理", sprite_sheet: "序列帧图集" })[value] ?? humanize(value);
 }
 
 function humanize(value) {

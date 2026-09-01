@@ -52,6 +52,8 @@ export function buildSelectionManifest(entries, selectedIds, sources, preferredV
       material_id: entry.material_id,
       title: entry.title,
       family: entry.family,
+      asset_kind: entry.asset_kind,
+      frame_grid: entry.frame_grid,
       roles: entry.roles,
       archetypes: entry.archetypes,
       recommended_use: entry.recommended_use,

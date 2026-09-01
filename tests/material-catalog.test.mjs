@@ -12,8 +12,9 @@ const taxonomy = JSON.parse(await readFile(path.join(repoRoot, "materials", "mat
 test("catalog has one indexed record per logical material", () => {
   assert.equal(catalog.schema_version, 1);
   assert.equal(catalog.catalog_type, "production_material_library");
-  assert.equal(catalog.entry_count, 185);
-  assert.equal(catalog.sources.length, 3);
+  assert.equal(catalog.entry_count, 715);
+  assert.equal(catalog.sources.length, 12);
+  assert.deepEqual(catalog.sources, sourceLock.sources.map((source) => source.source_id).sort((left, right) => left.localeCompare(right, "en")));
   assert.equal(catalog.entries.length, catalog.entry_count);
   assert.equal(new Set(catalog.entries.map((entry) => entry.material_id)).size, catalog.entry_count);
 });
@@ -28,6 +29,7 @@ test("every material is classified and comes from an approved source", () => {
     assert.equal(entry.license, source.license);
     assert.ok(taxonomy.families[entry.family], `unclassified family: ${entry.family}`);
     assert.ok(entry.roles.length > 0);
+    assert.ok(["static_texture", "tile_pattern", "sprite_sheet"].includes(entry.asset_kind));
     assert.ok(entry.archetypes.length > 0);
     assert.ok(entry.recommended_use.length > 0);
     assert.ok(entry.caution.length > 0);
@@ -37,8 +39,8 @@ test("every material is classified and comes from an approved source", () => {
 test("all indexed raster variants exist and match the generated receipt", async () => {
   let rasterCount = 0;
   for (const entry of catalog.entries) {
-    assert.ok(entry.files.transparent, `${entry.material_id} has no production transparent variant`);
-    assert.equal(entry.files.transparent.has_transparency, true, `${entry.material_id} transparent variant has no transparency`);
+    assert.ok(Object.keys(entry.files).length > 0, `${entry.material_id} has no raster file`);
+    if (entry.files.transparent) assert.equal(entry.files.transparent.has_transparency, true, `${entry.material_id} transparent variant has no transparency`);
     for (const record of Object.values(entry.files)) {
       assert.ok(record.path.startsWith("./materials/library/"));
       assert.equal(record.path.includes(".."), false);
@@ -51,7 +53,19 @@ test("all indexed raster variants exist and match the generated receipt", async 
       rasterCount += 1;
     }
   }
-  assert.equal(rasterCount, 293);
+  assert.equal(rasterCount, 1475);
+});
+
+test("animated OpenGameArt sheets include an explicit frame grid", () => {
+  const animatedEntries = catalog.entries.filter((entry) => entry.source_id.startsWith("oga-para-particlefx-"));
+  assert.equal(animatedEntries.length, 30);
+  for (const entry of animatedEntries) {
+    assert.equal(entry.asset_kind, "sprite_sheet");
+    assert.ok(entry.frame_grid.columns === 4 || entry.frame_grid.columns === 8);
+    assert.equal(entry.frame_grid.columns, entry.frame_grid.rows);
+    assert.equal(entry.frame_grid.frame_width, 128);
+    assert.equal(entry.frame_grid.frame_height, 128);
+  }
 });
 
 test("license evidence and both web entry points are present", async () => {
@@ -62,7 +76,7 @@ test("license evidence and both web entry points are present", async () => {
   const indexHtml = await readFile(path.join(repoRoot, "index.html"), "utf8");
   const materialsHtml = await readFile(path.join(repoRoot, "materials.html"), "utf8");
   assert.match(indexHtml, /href="\.\/materials\.html"/);
-  assert.match(indexHtml, />资产贴图库 <span>185<\/span>/);
+  assert.match(indexHtml, />资产贴图库 <span>715<\/span>/);
   assert.match(materialsHtml, /src="\.\/assets\/material-library\.js"/);
   assert.match(materialsHtml, /href="\.\/assets\/material-library\.css"/);
 });

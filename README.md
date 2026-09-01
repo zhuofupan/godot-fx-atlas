@@ -9,8 +9,8 @@
 - 按战斗机制、视觉标签、卡牌表现、来源、场景与价格检索真实特效资源。
 - 展开每条资源的核对证据、许可信息和 Godot 实现参考。
 - 将 ShaderV 的 93 个 Godot 4.x VisualShader 节点拆成独立搜索条目，并直达锁定提交中的源码定义。
-- 在资产贴图库中按效果原型、贴图族和合成层级筛选成熟位图。
-- 下载透明底或黑底 PNG，并导出带来源收据和 SHA-256 的选材清单。
+- 在资产贴图库中按效果原型、贴图族和合成层级筛选 12 个已审计来源的 715 项素材。
+- 下载透明、黑底、反相、分辨率、粗细线、彩色/灰度或序列帧版本，并导出带来源收据和 SHA-256 的选材清单。
 - 通过仓库内 Skill 帮助 AI 串联参考检索、实现规划、贴图选择与项目接入。
 
 项目现在有两层互补内容：
@@ -62,7 +62,7 @@ npm test
 
 ## 鸣谢
 
-感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/) 与 [RPicster](https://github.com/RPicster/Godot-particle-and-vfx-textures) 以 CC0 发布可直接分发的特效贴图。
+感谢 [Godot Shaders](https://godotshaders.com/)、[Godot Asset Library](https://godotengine.org/asset-library/asset)、[Itch.io](https://itch.io/game-assets/tag-2d/tag-effects)、[OpenGameArt](https://opengameart.org/content/2danimationeffect)、[CodeFronts](https://codefronts.com/)、[Game-icons.net](https://game-icons.net/)、[IconsDB](https://www.iconsdb.com/) 与 [ShaderV](https://github.com/arkology/ShaderV) 及其中的原作者和维护者为参考索引提供公开资料；感谢 [Kenney](https://kenney.nl/)、[RPicster](https://github.com/RPicster/Godot-particle-and-vfx-textures) 与 OpenGameArt 作者 [para](https://opengameart.org/users/para) 以 CC0 发布可直接分发的特效贴图与序列帧。
 
 Atlas 的收录和鸣谢不改变任何原作品的版权、许可、价格或使用条件，采用前仍应核对对应原页。
 

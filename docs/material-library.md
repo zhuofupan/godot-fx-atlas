@@ -32,7 +32,9 @@ materials/
 
 即使来源允许直接使用，`materials/library/` 也只导入清洗后的位图。脚本、二进制、编辑器插件、Shader 和项目文件不会跟随素材包误入贴图库；其中许可合格且有实现价值的公开代码，可以另行逐项收录到参考与实现索引。原始压缩包与隔离缓存保存在仓库之外。
 
-当前直接分发来源包括 Kenney Particle Pack、Kenney Smoke Particles，以及 RPicster 仓库中人工选取的 256px Alpha/灰度 VFX 贴图。来源页统计和锁定归档不一致时，以实际归档清单、归档哈希和 `archive_asset_count` 为准，不为凑官网旧数字而丢弃合格文件。
+当前直接分发来源包括 Kenney 的 Particle、Smoke、Light Masks、Splat、Foliage 与四组 Pattern 包，RPicster 仓库中人工选取的 256px Alpha/灰度 VFX 贴图，以及 OpenGameArt 作者 para 的两组 CC0 动画图集。来源页统计和锁定归档不一致时，以实际归档清单、归档哈希和 `archive_asset_count` 为准，不为凑官网旧数字而丢弃合格文件。
+
+`files` 的键不是固定枚举。除 `transparent`、`black` 外，还可以出现 `inverted`、`standard`、`high_resolution`、`flat`、`shaded`、`color`、`grayscale`、`thin`、`thick` 和 `sprite_sheet`；网页从索引动态生成版本选择器。`asset_kind: sprite_sheet` 的条目必须同时记录 `frame_grid`，以便 Godot 按列数、行数和单帧尺寸建立 `AtlasTexture` 或序列帧动画。
 
 ## 导入新素材源
 

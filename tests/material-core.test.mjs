@@ -35,3 +35,11 @@ test("selection manifest includes only selected materials and their source recei
   assert.equal(manifest.source_receipts[0].source_id, selectedEntry.source_id);
   assert.equal(manifest.source_receipts[0].distribution_policy, "direct_use");
 });
+
+test("selection manifest preserves sprite-sheet slicing metadata", () => {
+  const selectedEntry = catalog.entries.find((entry) => entry.source_id === "oga-para-particlefx-1");
+  const manifest = buildSelectionManifest(catalog.entries, new Set([selectedEntry.material_id]), sourceLock.sources, "sprite_sheet");
+  assert.equal(manifest.materials[0].asset_kind, "sprite_sheet");
+  assert.deepEqual(manifest.materials[0].frame_grid, selectedEntry.frame_grid);
+  assert.equal(manifest.preferred_variant, "sprite_sheet");
+});
