@@ -10,6 +10,16 @@
   transition: opacity 180ms ease, transform 260ms ease;
 }
 
+.effect-preview-image[data-fit="contain"] {
+  object-fit: contain;
+  padding: 18px;
+  background: #f5f7fb;
+}
+
+.effect-preview-image[data-fit="contain"][data-theme="dark"] {
+  background: radial-gradient(circle at center, #18243b, #050913 72%);
+}
+
 .effect-card:hover .effect-preview-image {
   transform: scale(1.025);
 }
@@ -31,12 +41,12 @@
   pointer-events: none;
 }
 
-.effect-visual.has-reference-preview::before,
-.effect-visual.has-reference-preview::after,
-.effect-visual.has-reference-preview > .visual-ring,
-.effect-visual.has-reference-preview > .visual-core,
-.effect-visual.has-reference-preview > i,
-.effect-visual.has-reference-preview > .visual-content {
+.effect-visual.uses-reference-preview::before,
+.effect-visual.uses-reference-preview::after,
+.effect-visual.uses-reference-preview > .visual-ring,
+.effect-visual.uses-reference-preview > .visual-core,
+.effect-visual.uses-reference-preview > i,
+.effect-visual.uses-reference-preview > .visual-content {
   opacity: 0;
 }
 
@@ -45,6 +55,28 @@
   opacity: 1;
 }
 
-.effect-visual.has-reference-preview {
+.effect-visual.uses-reference-preview {
   background: #050913;
+}
+
+.effect-visual.uses-reference-preview:not(.has-reference-preview):not(.has-preview-text-fallback) {
+  background: linear-gradient(105deg, #0a1020 34%, #18243b 46%, #0a1020 58%);
+  background-size: 220% 100%;
+  animation: previewLoading 1.8s ease-in-out infinite;
+}
+
+.effect-preview-text-fallback {
+  z-index: 2;
+  color: #dce8ff;
+  border: 1px solid #ffffff2e;
+  background: #0d1728;
+  border-radius: 12px;
+  padding: 13px 18px;
+  font-size: 14px;
+  font-weight: 850;
+  letter-spacing: .03em;
+}
+
+@keyframes previewLoading {
+  to { background-position: -120% 0; }
 }

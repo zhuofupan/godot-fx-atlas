@@ -42,16 +42,24 @@ test("preview manifest stores only remote URLs and covers most indexed effects",
   }
 });
 
-test("homepage loads remote previews lazily and keeps the abstract fallback", () => {
+test("homepage progressively loads every rendered card without waiting for scroll", () => {
   assert.match(indexHtml, /reference-card-previews\.js/);
   assert.match(indexHtml, /reference-card-previews\.css/);
-  assert.match(previewClient, /loading = "lazy"/);
-  assert.match(previewClient, /IntersectionObserver/);
-  assert.match(previewClient, /previewObserver\.observe\(visual\)/);
-  assert.match(previewClient, /rootMargin: "240px 0px"/);
+  assert.match(previewClient, /maxConcurrentLoads = 3/);
+  assert.match(previewClient, /launchIntervalMs = 180/);
+  assert.match(previewClient, /pendingVisuals\.push\(visual\)/);
+  assert.match(previewClient, /loading = "eager"/);
+  assert.doesNotMatch(previewClient, /IntersectionObserver/);
   assert.match(previewClient, /referrerPolicy = "no-referrer"/);
-  assert.match(previewClient, /addEventListener\("error"/);
-  assert.match(previewClient, /fallback/);
+  assert.match(previewClient, /fetchPriority = "low"/);
+});
+
+test("missing or failed previews use source brand images instead of abstract effects", () => {
+  assert.match(previewClient, /opengraph\.githubassets\.com\/1\/arkology\/ShaderV/);
+  assert.match(previewClient, /godotshaders\.com\/wp-content\/uploads\/2021\/01\/favicon\.png/);
+  assert.match(previewClient, /godotengine\.org\/assets\/press\/icon_color\.svg/);
+  assert.match(previewClient, /image\.onerror = tryNextCandidate/);
+  assert.match(previewClient, /uses-reference-preview/);
 });
 
 test("README puts the production workflow before the final credits section", () => {

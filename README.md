@@ -60,7 +60,7 @@ npm run refresh:previews
 - 只有 `distribution_policy: direct_use` 且经过安全清洗的位图可以进入 `materials/library/`。
 - 资产贴图库只接收清洗后的位图；公开插件代码和 Shader 可以在许可允许时进入参考索引与实现方案，但不会被误装成贴图资产。
 - 公开 Atlas 不接收任何消费项目的私有信息、策划内容、角色数据、私有素材或接入状态。
-- 展示卡预览只保存来源页公开元数据提供的远程图片 URL，不下载、不缓存、不重新分发原图；卡片进入视口附近时才动态加载，远程图片不可用时回退到内置抽象预览。
+- 展示卡预览只保存来源页公开元数据提供的远程图片 URL，不下载、不缓存、不重新分发原图；当前已经渲染的卡片会自动进入低并发渐进加载队列，不必滚动到卡片附近，也不会在刷新时同时发起全部请求。来源页无图或远程图片失效时，改用 ShaderV、Godot Shaders、Godot Asset Library 等对应来源站点的远程品牌图，不再回退到抽象效果图标。
 - 文件级索引记录 SHA-256；完整素材包留在 Atlas，游戏项目只复制实际选择的子集。
 
 公开审计结果位于 `audit-report.json`、`semantic-audit.json`、`mechanism-index.json` 与 `final-link-audit.json`。多元素合集只作为通用合集收录，单一元素分类优先链接到对应的独立子包页面。
