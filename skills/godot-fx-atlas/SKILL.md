@@ -30,6 +30,7 @@ Atlas research often touches large indexes and many images. Keep those payloads 
 ## Research the effect
 
 1. Read `<atlas-root>/docs/vfx-authoring-workflow.md` for the production and validation workflow.
+   For animated effects, apply its director/beat-sheet and temporal-coherence/exposure-sheet guidance: small adjacent deformation steps, authored frame durations, layered handoffs, and local alpha/dissolve instead of relying on whole-sprite fades.
 2. Translate the request into mechanism terms and visual-language terms.
 3. Run `node scripts/query-atlas.mjs --query "<mechanism and visual terms>" --archetype <optional> --role <optional> --limit 12` to rank both reference effects and local materials. Treat the result as candidate discovery, not final artistic judgment.
 4. Cross-check candidates in `<atlas-root>/mechanism-index.json`, `<atlas-root>/visual-tag-index.json`, and `<atlas-root>/semantic-audit.json`, then inspect them in the Atlas website to read the complete record, source evidence, and implementation approach.
