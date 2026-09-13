@@ -70,8 +70,14 @@
       td .warn { color: var(--danger); font-weight: 700; }
       .num { font-family: Georgia, serif; color: var(--gold); }
 
-      .strip { margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; height: 52px; }
+      .strip { position: relative; margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; height: 52px; }
       .strip > div { display: grid; place-items: center; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-align: center; line-height: 1.35; padding: 4px; }
+      .strip .strip-curve { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+      .ease-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+      .ease-card { padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: rgba(8, 22, 19, .72); }
+      .ease-card svg { width: 100%; height: 64px; display: block; background: #050d0b; border-radius: 8px; border: 1px solid var(--line); }
+      .ease-card b { display: block; margin-top: 8px; color: var(--jade); font-size: 13px; }
+      .ease-card span { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.55; }
       .s-ant { flex: 0 0 32%; background: rgba(93, 228, 199, .16); color: #9defdb; }
       .s-cast { flex: 0 0 8%; background: rgba(93, 228, 199, .3); color: #d9fff5; }
       .s-imp { flex: 0 0 6%; background: var(--gold); color: #241a05; }
@@ -162,7 +168,7 @@
 
       <section class="block">
         <h2>② 六阶段时间轴：配比是起点，不是法律</h2>
-        <p class="lead">打击类技能的节拍从这套配比起步，再按手感微调。两个硬规则：<b style="color:var(--gold)">IMPACT 必须对齐游戏逻辑的命中帧</b>（伤害判定生效的那一帧，允许 ±2 帧内微调）；telegraph 预警类把 ANTICIPATE 反转拉到 50–60%，给玩家留反应窗口。</p>
+        <p class="lead">打击类技能的节拍从这套配比起步，再按手感微调。两个硬规则（各段区间独立取值，<b>合计必须 = 100%</b>，以 ANTICIPATE 与 IMPACT 为锚微调）：<b style="color:var(--gold)">IMPACT 必须对齐游戏逻辑的命中帧</b>（伤害判定生效的那一帧，允许 ±2 帧内微调）；telegraph 预警类把 ANTICIPATE 反转拉到 50–60%，给玩家留反应窗口。</p>
         <div class="panel">
           <div class="strip" role="img" aria-label="打击技能时间轴：预备 32%，释放 8%，命中 6%，余韵 38%，回收 16%">
             <div class="s-ant">ANTICIPATE<br />预备 32%</div>
@@ -170,8 +176,13 @@
             <div class="s-imp">IMPACT<br />6%</div>
             <div class="s-rec">RECOVER<br />余韵 38%</div>
             <div class="s-cln">CLEANUP<br />16%</div>
+            <svg class="strip-curve" viewBox="0 0 100 52" preserveAspectRatio="none" aria-hidden="true">
+              <polyline points="0,46 18,42 32,36 40,14 46,5 52,22 72,30 90,38 100,46"
+                fill="none" stroke="#eec982" stroke-width="1.6" stroke-linejoin="round" opacity="0.95" />
+              <circle cx="46" cy="5" r="1.8" fill="#eec982" />
+            </svg>
           </div>
-          <p class="strip-label">以总时长 0.35s 为例：预备 <b>0.112s</b> · 释放 <b>0.028s</b> · 命中 <b>0.021s</b>（帧对齐窗口）· 余韵 <b>0.133s</b> · 回收 <b>0.056s</b></p>
+          <p class="strip-label">以总时长 0.35s 为例：预备 <b>0.112s</b> · 释放 <b>0.028s</b> · 命中 <b>0.021s</b>（帧对齐窗口）· 余韵 <b>0.133s</b> · 回收 <b>0.056s</b>　·　金色曲线 = <b>视觉强度包络</b>（亮度 × 信息量）：预备期低幅蓄势，命中一帧冲顶，余韵指数回落</p>
           <table style="margin-top:16px">
             <tr><th>阶段</th><th>占比</th><th>要点</th></tr>
             <tr><td><b>ANTICIPATE</b> 预备</td><td><span class="num">25–40%</span></td><td>回拉/蓄势/收光；低频剪影先动，唯一的加速曲线从这里起</td></tr>
@@ -186,7 +197,7 @@
       </section>
 
       <section class="block">
-        <h2>③ 三类视觉层 × 性能预算</h2>
+        <h2>④ 三类视觉层 × 性能预算</h2>
         <p class="lead">每层只管一件事；预算按最坏叠加情形计数。形状层缺失时不要用发光层硬凑——发光没有剪影可发。</p>
         <div class="panel">
           <table>
@@ -199,7 +210,37 @@
       </section>
 
       <section class="block">
-        <h2>④ Godot 渲染器兼容矩阵</h2>
+        <h2>③ 动效曲线速查：spacing 才是质感</h2>
+        <p class="lead">同一张贴图，换一条缓动曲线就是两个价位的东西。四条曲线覆盖 90% 的技能特效编排——<b style="color:var(--danger)">匀速（LINEAR）是廉价感第一来源</b>，只允许出现在激光扫动等机械语义里。</p>
+        <div class="panel">
+          <div class="ease-grid">
+            <div class="ease-card">
+              <svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0,55 L100,55 M0,5 L100,5" stroke="rgba(184,224,207,.12)" stroke-width="1"/><path d="M0,55 C 18,8 26,6 100,5" fill="none" stroke="#5de4c7" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <b>EXPO OUT — 命中 / 冲刺出峰</b>
+              <span>CAST 出峰、刃光扫掠、冲击波扩张。极速到位后长尾滑行，能量感全靠它。</span>
+            </div>
+            <div class="ease-card">
+              <svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0,55 L100,55 M0,5 L100,5" stroke="rgba(184,224,207,.12)" stroke-width="1"/><path d="M0,55 C 25,55 34,2 55,10 C 75,17 88,6 100,5" fill="none" stroke="#eec982" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <b>BACK OUT — 出现 / 弹入</b>
+              <span>图标出场、闪光核炸亮、蓄力释放的过冲回弹。过冲 8–15% 即可，过了就闹。</span>
+            </div>
+            <div class="ease-card">
+              <svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0,30 L100,30" stroke="rgba(184,224,207,.12)" stroke-width="1"/><path d="M0,30 C 12,8 25,8 37,30 S 62,52 75,30 S 92,10 100,30" fill="none" stroke="#5de4c7" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <b>SINE — 循环 / 呼吸</b>
+              <span>柔光呼吸、状态附着、悬浮浮动。sin() 驱动，幅度 ≤ ±10%，快了像报警器。</span>
+            </div>
+            <div class="ease-card">
+              <svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0,55 L100,55 M0,5 L100,5" stroke="rgba(184,224,207,.12)" stroke-width="1"/><path d="M0,8 C 55,10 80,30 100,55" fill="none" stroke="#ffac84" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <b>QUAD IN — 消散 / 渐隐</b>
+              <span>RECOVER 淡出、溶解尾段、烟尘沉降。前段留变化量给溶解边界，后段利落收掉。</span>
+            </div>
+          </div>
+          <div class="note">先写 spacing 再写 timing：把「哪里加速、哪里停顿」标进节拍表，再套曲线。曲线选错看不出错，匀速一定看得出。</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>⑤ 渲染器兼容矩阵</h2>
         <p class="lead">技术路线先看这张表再动手。C = Compatibility（兼容/GLES3，覆盖最广），M = Mobile，F+ = Forward+。</p>
         <div class="panel">
           <table>
@@ -217,7 +258,25 @@
       </section>
 
       <section class="block">
-        <h2>⑤ 质量与合规门禁</h2>
+        <h2>⑥ 廉价感红旗清单（对照自查，一条中招就打回）</h2>
+        <p class="lead">素材质量救不了演出问题；这九条是评审时一眼定性"廉价"的来源。做完对照扫一遍，比任何滤镜都提价。</p>
+        <div class="panel">
+          <ul class="check danger">
+            <li><b>匀速运动</b>：所有阶段同一速度——spacing 缺失，UI 感的最大来源</li>
+            <li><b>整体 alpha 包络当主层</b>：只有淡入淡出、没有局部溶解边界与遮罩流动，特效会读成 UI 动画</li>
+            <li><b>几何圆环当默认命中补丁</b>：圆环只在玩法或美术语言需要时出现</li>
+            <li><b>加法叠层发灰发白</b>：ADD 层数超标互相冲淡，亮度上去了信息量没了</li>
+            <li><b>关键姿态硬拼</b>：缺中间帧、用重影掩盖轮廓跳变</li>
+            <li><b>过饱和霓虹 / 塑料高光 / 伪 3D / 模板化爆炸</b>：通用素材包的"出厂味"</li>
+            <li><b>颗粒噪点、脏烟、随机闪粉、无意义碎屑</b>：用密度代替设计</li>
+            <li><b>硬白边、彩色毛边、棋盘格画进 RGB</b>：alpha 管线没跑通</li>
+            <li><b>文字、水印、角色、卡框混入特效主体</b>：素材边界失守</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>⑦ 质量与合规门禁</h2>
         <p class="lead">Gallery 全绿只是入场券。接入项目前把两组清单过完，任何一项不过就打回。</p>
         <div class="grid2">
           <div class="panel">
@@ -244,7 +303,7 @@
       </section>
 
       <section class="block">
-        <h2>⑥ 生命周期骨架 v2：命中帧对齐 + 可打断 + 对象池</h2>
+        <h2>⑧ 生命周期骨架 v2：命中帧对齐 + 可打断 + 对象池</h2>
         <p class="lead">把上面所有约束折进一个可直接抄的控制器。与站点首页旧骨架的区别：阶段配比参数化、支持 cancel-to-recover、池化复位、命中帧窗口断言。</p>
         <div class="panel" style="padding:14px">
 <pre><span class="kw">extends</span> Node2D

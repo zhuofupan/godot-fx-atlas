@@ -105,8 +105,9 @@ function fxStepsFor(e) {
     steps.push("兼容验证：Forward+ 通过后在 Compatibility 渲染器复测一次（本站实测 C 下自定义粒子 shader 编译异常，VisualShader 节点本身可用但需复核）");
   }
 
-  // 共同收尾：编排 + 打断 + 质检（专业把控的核心三步）
+  // 共同收尾：编排 + 美术纪律 + 打断 + 质检（专业把控的核心四步）
   steps.push("阶段编排：ANTICIPATE 25–40%（预备收势）→ IMPACT 对齐伤害判定帧（±2 帧）→ RECOVER 25–38% 淡出；总时长参考 " + dur + "；全部 Tween 登记在册，任意阶段可 cancel-to-recover（直接跳淡出，无残留）");
+  steps.push("美术纪律：第一轮只做低频剪影 + 锚点 + 主运动，验收通过后再叠中高频细节；缓动避开匀速（命中 EXPO OUT / 出现 BACK OUT / 循环 SINE / 消散 QUAD IN）；调色核对——色相不超出项目色板，光效 tint 从主体或图标取色");
   steps.push("工程化：one_shot + finished 信号归还对象池（0 运行时 instantiate/free，池化复位后与首次画面一致）");
   steps.push("质检门禁：0.25× 慢放查层次出入；关 Glow 后剪影仍可读；循环类核对首尾接缝；全屏亮闪 ≤ 3 次/秒且单次 < 0.3s（光敏合规）");
   return steps;
