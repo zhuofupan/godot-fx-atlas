@@ -8,6 +8,9 @@ import {
   updateSemanticAudit,
   updateVisualTagIndex
 } from "../src/reference-supplement.js";
+import { getInjectedImplementationSource, fxSelfTestResult } from "../src/reference-implementation.js";
+
+if (!fxSelfTestResult) throw new Error("Implementation engine self-test failed.");
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const sourceFiles = [
@@ -48,8 +51,26 @@ if (!bundleMatch) throw new Error("Could not resolve the published Atlas bundle 
 const manifest = JSON.parse(await readFile(path.join(repoRoot, "reference-sources", "shaderv-godot4.json"), "utf8"));
 const shaderVEntries = buildShaderVEntries(manifest);
 const bundlePath = path.join(repoRoot, "assets", bundleMatch[1]);
-const bundle = await readFile(bundlePath, "utf8");
-await writeFile(bundlePath, injectReferenceSupplement(bundle, shaderVEntries), "utf8");
+let bundle = await readFile(bundlePath, "utf8");
+bundle = injectReferenceSupplement(bundle, shaderVEntries);
+
+// 具体实现方式引擎：替换 bundle 内旧的通用 fe/pe（类型分流 + 阶段配比 + 渲染器警告）
+// 幂等：已注入过（v2 引擎存在）则整段替换到稳定的 function O(){ 边界
+const implSource = getInjectedImplementationSource();
+const engineStart = bundle.indexOf("// fx implementation engine");
+const nextAnchor = bundle.indexOf("function O(){");
+if (engineStart >= 0 && nextAnchor > engineStart) {
+  bundle = bundle.slice(0, engineStart) + implSource + "\n\n" + bundle.slice(nextAnchor);
+} else {
+  const fePeRe = /function fe\(e\)\{return\[[\s\S]*?参考链接：\$\{e\.url\}`\}/;
+  if (!fePeRe.test(bundle)) throw new Error("Could not locate the legacy fe/pe implementation generator in the bundle.");
+  bundle = bundle.replace(fePeRe, `${implSource}\n\n`);
+}
+if (!bundle.includes("function fxClassify(")) {
+  throw new Error("Implementation engine injection did not replace the legacy generator.");
+}
+
+await writeFile(bundlePath, bundle, "utf8");
 
 const generatedAt = manifest.audited_at;
 const semanticPath = path.join(repoRoot, "semantic-audit.json");
