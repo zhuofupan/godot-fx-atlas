@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07110f" />
+    <title>制作流程 — Godot FX Atlas</title>
+    <meta name="description" content="从参考到上线的 2D 技能特效制作流程：效果合同量化基准、六阶段时间轴配比、性能与渲染器兼容矩阵、质量与光敏合规门禁。" />
+    <link rel="icon" href="./favicon.svg" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #eef8f2;
+        --muted: #92aaa7;
+        --paper: #07110f;
+        --panel: rgba(15, 31, 28, 0.88);
+        --line: rgba(184, 224, 207, 0.15);
+        --jade: #5de4c7;
+        --gold: #eec982;
+        --danger: #ffac84;
+        font-family: Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 12% -10%, rgba(30, 130, 109, 0.34), transparent 34rem),
+          radial-gradient(circle at 90% 18%, rgba(194, 135, 64, 0.16), transparent 28rem),
+          #07110f;
+      }
+      a { color: inherit; }
+      .site-header, .shell { width: min(1200px, calc(100% - 40px)); margin-inline: auto; }
+      .site-header {
+        min-height: 72px;
+        display: flex; align-items: center; justify-content: space-between;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; text-decoration: none; letter-spacing: .02em; }
+      .brand-mark { width: 28px; height: 28px; border: 1px solid var(--jade); transform: rotate(45deg); border-radius: 7px; box-shadow: inset 0 0 18px rgba(93, 228, 199, .28); }
+      .top-nav { display: flex; gap: 20px; color: var(--muted); font-size: 14px; }
+      .top-nav a { text-decoration: none; }
+      .top-nav a[aria-current="page"] { color: var(--jade); }
+
+      .hero { padding: 64px 0 36px; }
+      .kicker { color: var(--jade); font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 12px 0 16px; max-width: 900px; font-family: "Noto Serif SC", SimSun, serif; font-size: clamp(34px, 5vw, 60px); line-height: 1.06; font-weight: 600; letter-spacing: -.03em; }
+      .hero-copy { max-width: 820px; color: #b3c6c0; font-size: clamp(15px, 1.8vw, 18px); line-height: 1.8; }
+
+      .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; padding: 26px 0 8px; }
+      .step { padding: 16px 14px; border: 1px solid var(--line); border-radius: 13px; background: rgba(8, 22, 19, .72); }
+      .step b { display: block; color: var(--jade); font-size: 12px; letter-spacing: .1em; }
+      .step span { display: block; margin-top: 6px; font-size: 14px; font-weight: 700; }
+      .step i { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-style: normal; line-height: 1.55; }
+
+      section.block { padding: 34px 0 10px; }
+      section.block > h2 { margin: 0 0 8px; font: 500 26px/1.25 Georgia, "Noto Serif SC", serif; }
+      section.block > p.lead { margin: 0 0 18px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+      .panel { padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); backdrop-filter: blur(14px); }
+      .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+
+      table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+      caption { text-align: left; color: var(--muted); font-size: 12px; padding: 0 0 10px; }
+      th, td { padding: 10px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; line-height: 1.6; }
+      th { color: var(--jade); font-size: 12px; letter-spacing: .06em; background: rgba(8, 22, 19, .8); }
+      td b { color: var(--gold); font-weight: 700; }
+      td .warn { color: var(--danger); font-weight: 700; }
+      .num { font-family: Georgia, serif; color: var(--gold); }
+
+      .strip { margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; height: 52px; }
+      .strip > div { display: grid; place-items: center; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-align: center; line-height: 1.35; padding: 4px; }
+      .s-ant { flex: 0 0 32%; background: rgba(93, 228, 199, .16); color: #9defdb; }
+      .s-cast { flex: 0 0 8%; background: rgba(93, 228, 199, .3); color: #d9fff5; }
+      .s-imp { flex: 0 0 6%; background: var(--gold); color: #241a05; }
+      .s-rec { flex: 0 0 38%; background: rgba(238, 201, 130, .12); color: #ecd7a8; }
+      .s-cln { flex: 0 0 16%; background: rgba(146, 170, 167, .12); color: #b8ccc7; }
+      .strip-label { color: var(--muted); font-size: 12px; }
+      .strip-label b { color: var(--gold); }
+
+      ul.check { margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; }
+      ul.check li { position: relative; padding-left: 30px; font-size: 14px; line-height: 1.65; }
+      ul.check li::before {
+        content: ""; position: absolute; left: 0; top: 3px; width: 16px; height: 16px;
+        border: 1px solid var(--jade); border-radius: 5px; background: rgba(93, 228, 199, .08);
+      }
+      ul.check li b { color: var(--ink); }
+      ul.check.danger li::before { border-color: var(--danger); background: rgba(255, 172, 132, .08); }
+      .note { margin-top: 14px; padding: 12px 14px; border-left: 3px solid var(--gold); border-radius: 8px; background: rgba(238, 201, 130, .07); color: #d8c9a4; font-size: 13px; line-height: 1.7; }
+      .note.red { border-left-color: var(--danger); background: rgba(255, 172, 132, .07); color: #e8c4b2; }
+
+      pre {
+        margin: 0; padding: 20px; border: 1px solid var(--line); border-radius: 14px;
+        background: #050d0b; overflow-x: auto; font-size: 12.5px; line-height: 1.7;
+        font-family: "Cascadia Code", Consolas, "JetBrains Mono", monospace; color: #cfe8df;
+      }
+      pre .cm { color: #6f8a83; } pre .kw { color: #5de4c7; } pre .un { color: #eec982; }
+
+      .backtop { display: inline-flex; margin: 30px 0 60px; }
+      footer.site-footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 13px; }
+      footer.site-footer a { color: var(--jade); }
+      .wf-entry {
+        position: fixed; z-index: 100; right: 22px; bottom: 22px;
+        display: inline-flex; align-items: center; gap: 10px; padding: 12px 14px;
+        border: 1px solid rgba(93, 228, 199, .48); border-radius: 999px;
+        background: rgba(6, 20, 17, .9); box-shadow: 0 12px 36px rgba(0, 0, 0, .35);
+        color: #e9faf4; font: 700 13px/1 Inter, "Noto Sans SC", sans-serif; text-decoration: none;
+        backdrop-filter: blur(14px);
+      }
+      .wf-entry:hover { transform: translateY(-2px); }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>Godot FX Atlas</a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="./index.html">参考案例库</a>
+        <a href="./materials.html">资产贴图库</a>
+        <a href="./workflow.html" aria-current="page">制作流程</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <div class="hero">
+        <div class="kicker">Authoring Workflow</div>
+        <h1>从参考到上线，<br />一条可验收的制作闭环。</h1>
+        <p class="hero-copy">
+          参考库是字典，不是菜谱。先用效果合同立约束，再检索参考取结构证据；
+          用量化配比排节拍，用分层预算控成本，最后过一遍慢放、剪影与合规门禁再接入项目。
+          本页是 <code>docs/vfx-authoring-workflow.md</code> 的网页版摘要，补齐了量化基准、渲染器兼容矩阵与光敏合规。
+        </p>
+      </div>
+
+      <div class="steps" aria-label="流程总览">
+        <div class="step"><b>01</b><span>效果合同</span><i>触发/锚点/语义/预算先立约束</i></div>
+        <div class="step"><b>02</b><span>检索参考</span><i>2–4 个分工明确的参考取结构证据</i></div>
+        <div class="step"><b>03</b><span>节拍表</span><i>先写导演视角的配比与关键帧</i></div>
+        <div class="step"><b>04</b><span>分层实现</span><i>序列帧/Shader/Tween/粒子各司其职</i></div>
+        <div class="step"><b>05</b><span>Gallery 验证</span><i>组合播放/取消/接缝/压力测试</i></div>
+        <div class="step"><b>06</b><span>门禁合规</span><i>慢放·剪影·光敏·渲染器矩阵</i></div>
+        <div class="step"><b>07</b><span>交付接入</span><i>合同+许可+预算随包交付</i></div>
+      </div>
+
+      <section class="block">
+        <h2>① 效果合同 = 风格契约</h2>
+        <p class="lead">在检索或生成前写清，缺合同就先补合同——不用「更多粒子、更亮、更炫」代替设计。以下是可直接抄进项目文档的量化基准起点（按项目调校后冻结）：</p>
+        <div class="panel">
+          <table>
+            <caption>量化基准（打击类技能示例；环境/引导类按行内备注调整）</caption>
+            <tr><th>维度</th><th>基准</th><th>备注</th></tr>
+            <tr><td>色板</td><td><span class="num">≤ 5</span> 色（主色 + 邻近色 + 1 个高对比点缀）</td><td>光效颜色从主体贴图/图标派生，不另起色相</td></tr>
+            <tr><td>打击时长</td><td><span class="num">0.20 – 0.45 s</span></td><td>telegraph 预警类 <span class="num">0.5 – 1.2 s</span>；引导/环境循环 <span class="num">0.8 – 2 s+</span> 无缝</td></tr>
+            <tr><td>ADD 发光层数</td><td>移动端 <span class="num">≤ 3</span> / PC <span class="num">≤ 6</span></td><td>同屏按最坏情形叠加计数，overdraw 是隐形杀手</td></tr>
+            <tr><td>同屏粒子</td><td>移动端 <span class="num">≤ 300</span> / PC <span class="num">≤ 1500</span></td><td>最坏情形（多目标同时命中）下统计</td></tr>
+            <tr><td>粒子纹理</td><td><span class="num">≤ 256×256</span>（移动端），入共享图集</td><td>小贴图散用是 draw call 预算的漏斗</td></tr>
+            <tr><td>池化</td><td>高频特效必须对象池；<span class="num">0</span> 运行时 instantiate/free</td><td>CLEANUP 拆「视觉回收」与「资源回收」两层</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>② 六阶段时间轴：配比是起点，不是法律</h2>
+        <p class="lead">打击类技能的节拍从这套配比起步，再按手感微调。两个硬规则：<b style="color:var(--gold)">IMPACT 必须对齐游戏逻辑的命中帧</b>（伤害判定生效的那一帧，允许 ±2 帧内微调）；telegraph 预警类把 ANTICIPATE 反转拉到 50–60%，给玩家留反应窗口。</p>
+        <div class="panel">
+          <div class="strip" role="img" aria-label="打击技能时间轴：预备 32%，释放 8%，命中 6%，余韵 38%，回收 16%">
+            <div class="s-ant">ANTICIPATE<br />预备 32%</div>
+            <div class="s-cast">CAST<br />8%</div>
+            <div class="s-imp">IMPACT<br />6%</div>
+            <div class="s-rec">RECOVER<br />余韵 38%</div>
+            <div class="s-cln">CLEANUP<br />16%</div>
+          </div>
+          <p class="strip-label">以总时长 0.35s 为例：预备 <b>0.112s</b> · 释放 <b>0.028s</b> · 命中 <b>0.021s</b>（帧对齐窗口）· 余韵 <b>0.133s</b> · 回收 <b>0.056s</b></p>
+          <table style="margin-top:16px">
+            <tr><th>阶段</th><th>占比</th><th>要点</th></tr>
+            <tr><td><b>ANTICIPATE</b> 预备</td><td><span class="num">25–40%</span></td><td>回拉/蓄势/收光；低频剪影先动，唯一的加速曲线从这里起</td></tr>
+            <tr><td><b>CAST</b> 释放</td><td><span class="num">8–15%</span></td><td>EXPO/QUINT 急缓出峰；只做一件主运动</td></tr>
+            <tr><td><b>IMPACT</b> 命中</td><td><span class="num">≤ 10%</span></td><td><span class="warn">对齐伤害判定帧</span>；信息量最大的一帧：白热核 + 单帧帧闪 ≤ 1 次</td></tr>
+            <tr><td><b>RECOVER</b> 余韵</td><td><span class="num">25–38%</span></td><td>消散边界、残留、烟尘沉降；整体透明度只管总包络</td></tr>
+            <tr><td><b>CLEANUP</b> 视觉回收</td><td><span class="num">10–20%</span></td><td>缓退到不可见，禁止 alpha 突变</td></tr>
+            <tr><td><b>CLEANUP</b> 资源回收</td><td>即刻</td><td>与视觉回收解耦：视觉缓退、节点立刻归还对象池，复位状态待复用</td></tr>
+          </table>
+          <div class="note">可打断是硬需求：任意阶段都要能 <b>cancel-to-recover</b>（直接跳余韵缓退），Tween 必须可 kill、粒子必须可停发。不能被打断的特效不是战斗特效。</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>③ 三类视觉层 × 性能预算</h2>
+        <p class="lead">每层只管一件事；预算按最坏叠加情形计数。形状层缺失时不要用发光层硬凑——发光没有剪影可发。</p>
+        <div class="panel">
+          <table>
+            <tr><th>层</th><th>职责</th><th>典型实现</th><th>预算要点</th></tr>
+            <tr><td><b>shape</b> 形状</td><td>低频剪影、尺度、方向</td><td>序列帧 / 贴图主体 / Line2D 刃光</td><td>关闭 Glow 后仍可读出形状与方向</td></tr>
+            <tr><td><b>energy</b> 能量</td><td>发光、流动、溶解、边缘</td><td>CanvasItem Shader（同形 ADD / 噪声溶解 / 极坐标）</td><td>片元采样 ≤ 6 次；加法渐变必须加抖动去色带</td></tr>
+            <tr><td><b>finish</b> 收尾</td><td>余韵、残留、屏震、色差</td><td>粒子 / Tween / 后处理</td><td>粒子只做少量方向性余韵；屏幕层效果全屏独占、逐帧重估</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>④ Godot 渲染器兼容矩阵</h2>
+        <p class="lead">技术路线先看这张表再动手。C = Compatibility（兼容/GLES3，覆盖最广），M = Mobile，F+ = Forward+。</p>
+        <div class="panel">
+          <table>
+            <tr><th>特性</th><th>F+</th><th>M</th><th>C</th><th>建议</th></tr>
+            <tr><td>hint_screen_texture（2D 折射/扭曲）</td><td>✓</td><td>✓</td><td>✓</td><td>可用但强制后台拷贝；<span class="warn">移动端控制实例数</span>，采样 filter 用 linear 勿配 mipmap（后台缓冲无 mip）</td></tr>
+            <tr><td>DEPTH_TEXTURE（2D）</td><td>—</td><td>—</td><td>—</td><td>canvas_item 拿不到深度，软粒子改用渐变遮罩近似</td></tr>
+            <tr><td>自定义 particles shader（shader_type particles）</td><td>✓</td><td>✓</td><td><span class="warn">⚠</span></td><td><span class="warn">实测 C 下编译自定义粒子 shader 会挂起驱动</span>；且内置表极简：无 NUMBER / INDEX / randf() / AMOUNT_RATIO。跨端项目用 ParticleProcessMaterial + CPU 补充或 CPU 粒子</td></tr>
+            <tr><td>生命周期函数</td><td colspan="3">start() / process()</td><td><span class="warn">spawn() 是 Godot 3 写法</span>；自定义函数体内内置量上下文受限，随机数写在 start() 里</td></tr>
+            <tr><td>instance uniform</td><td>✓</td><td>✓</td><td>部分</td><td>同一材质多实例免复制；C 下先验证再用</td></tr>
+            <tr><td>FBM / 常数次循环噪声</td><td>✓</td><td>✓</td><td>✓</td><td>循环次数写死（编译期展开），别用 uniform 当循环上限</td></tr>
+            <tr><td>discard（透明裁剪）</td><td>✓</td><td>慎用</td><td>✓</td><td>canvas_item 用 COLOR.a 控制；opaque spatial 在 M 上改 Alpha Scissor</td></tr>
+          </table>
+          <div class="note red">交付任何 .gdshader 时在文件头写注释矩阵（哪个渲染器可用、用了哪些平台相关特性）——多端项目的 shader 事故九成出在没写这张表。</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>⑤ 质量与合规门禁</h2>
+        <p class="lead">Gallery 全绿只是入场券。接入项目前把两组清单过完，任何一项不过就打回。</p>
+        <div class="grid2">
+          <div class="panel">
+            <ul class="check">
+              <li><b>0.25× 慢放</b>：逐段检查层次出入、边界溶解、注意力交接</li>
+              <li><b>剪影测试</b>：关闭 Glow / 去色后仍能读出形状、方向、阶段</li>
+              <li><b>边缘视野</b>：60° 斜角与拉远镜头下主体不糊、锚点不漂</li>
+              <li><b>循环接缝</b>：循环类看最后一帧 → 第一帧的轮廓与亮度连续</li>
+              <li><b>取消与目标消失</b>：任意阶段 cancel、目标提前死亡，均无残留或鬼影</li>
+              <li><b>多实例压力</b>：最坏叠加情形（多目标同帧命中）帧率达标</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <ul class="check danger">
+              <li><b>光敏合规</b>：全屏闪 ≤ 3 次/秒，单次亮闪 &lt; 0.3s，避开 10–20Hz 高对比条纹</li>
+              <li><b>纯白面积</b>：命中白闪不做全屏纯白；用色温偏移替代亮度硬冲</li>
+              <li><b>减闪开关</b>：接入项目时提供「减弱闪光」辅助选项的降级路径</li>
+              <li><b>渲染器回退</b>：Compatibility 受限特性必须有显式降级实现</li>
+              <li><b>资源回收</b>：对象池复位验证——复用第 N 次与第一次画面一致</li>
+              <li><b>预算对账</b>：交付物附最坏情形的粒子数 / 采样数 / 帧耗时记录</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>⑥ 生命周期骨架 v2：命中帧对齐 + 可打断 + 对象池</h2>
+        <p class="lead">把上面所有约束折进一个可直接抄的控制器。与站点首页旧骨架的区别：阶段配比参数化、支持 cancel-to-recover、池化复位、命中帧窗口断言。</p>
+        <div class="panel" style="padding:14px">
+<pre><span class="kw">extends</span> Node2D
+<span class="cm">## fx_controller v2 — 阶段配比 / 命中帧对齐 / 可打断 / 对象池友好</span>
+<span class="cm">## Renderer: 全渲染器可用（本骨架不依赖 SCREEN_TEXTURE / 自定义粒子 shader）</span>
+
+<span class="kw">signal</span> <span class="un">finished</span>
+
+<span class="kw">enum</span> Phase { ANTICIPATE, CAST, IMPACT, RECOVER, CLEANUP_VISUAL, DONE }
+
+<span class="cm"># 六阶段配比（合计 1.0）——按项目手感调校后冻结进常量</span>
+<span class="kw">const</span> STAGE_RATIO := { Phase.ANTICIPATE: 0.32, Phase.CAST: 0.08, Phase.IMPACT: 0.06,
+		Phase.RECOVER: 0.38, Phase.CLEANUP_VISUAL: 0.16 }
+<span class="kw">const</span> TOTAL_DURATION := <span class="un">0.35</span>      <span class="cm"># 打击类基准 0.20–0.45s</span>
+<span class="kw">const</span> IMPACT_FRAME_TOLERANCE := <span class="un">2</span> <span class="cm"># 命中帧对齐容差（帧）</span>
+
+<span class="kw">var</span> _phase: Phase = Phase.DONE
+<span class="kw">var</span> _elapsed := <span class="un">0.0</span>
+<span class="kw">var</span> _cancelled := <span class="un">false</span>
+<span class="kw">var</span> _tweens: Array[Tween] = []     <span class="cm"># 全部动画登记在册，cancel 时统一 kill</span>
+
+<span class="cm">## 由对象池调用：复位到与首次创建一致的状态（第 N 次复用 = 第一次画面）</span>
+<span class="kw">func</span> <span class="un">reset_for_pool</span>() -&gt; <span class="kw">void</span>:
+	_cancel_all_tweens()
+	_elapsed = 0.0
+	_cancelled = false
+	_phase = Phase.DONE
+	<span class="cm"># ... 子节点视觉状态复位（alpha/scale/emitting 等）</span>
+
+<span class="kw">func</span> <span class="un">play_fx</span>(impact_frame: <span class="kw">int</span> = -1) -&gt; <span class="kw">void</span>:
+	reset_for_pool()
+	_phase = Phase.ANTICIPATE
+	<span class="cm"># impact_frame &gt;= 0 时：把 IMPACT 段中心对齐到该游戏帧（±容差内微调总时长）</span>
+	<span class="cm"># var target_t := float(impact_frame) / Engine.get_frames_per_second()</span>
+	<span class="cm"># ... 调 TOTAL_DURATION 使 ANTICIPATE+CAST 结束点落在 target_t ± 容差</span>
+
+<span class="kw">func</span> <span class="un">cancel_to_recover</span>() -&gt; <span class="kw">void</span>:
+	<span class="cm">## 战斗可打断：任意阶段直接跳余韵，禁止视觉残留</span>
+	_cancelled = true
+	_cancel_all_tweens()
+	_phase = Phase.CLEANUP_VISUAL
+	_fade_out_fast()
+
+<span class="kw">func</span> <span class="un">_process</span>(delta: <span class="kw">float</span>) -&gt; <span class="kw">void</span>:
+	<span class="kw">if</span> _phase == Phase.DONE:
+		<span class="kw">return</span>
+	_elapsed += delta
+	<span class="cm"># ...按 STAGE_RATIO 推进阶段；IMPACT 进入即触发结算表现（伤害由游戏层判定）</span>
+	<span class="kw">if</span> _elapsed &gt;= TOTAL_DURATION <span class="kw">or</span> (_cancelled <span class="kw">and</span> _phase == Phase.CLEANUP_VISUAL):
+		_phase = Phase.DONE
+		<span class="un">finished</span>.emit()   <span class="cm"># 视觉缓退完成 → 节点归还对象池</span>
+
+<span class="kw">func</span> <span class="un">_cancel_all_tweens</span>() -&gt; <span class="kw">void</span>:
+	<span class="kw">for</span> t <span class="kw">in</span> _tweens:
+		<span class="kw">if</span> t <span class="kw">and</span> t.is_valid():
+			t.kill()
+	_tweens.clear()</pre>
+        </div>
+      </section>
+
+      <a class="wf-entry" href="./materials.html">资产贴图库 <span style="min-width:24px;padding:4px 6px;border-radius:999px;background:#5de4c7;color:#06211b;text-align:center;font-size:11px">715</span></a>
+
+      <a class="backtop" href="#" style="color:var(--muted);font-size:13px;text-decoration:none">返回顶部 ↑</a>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        完整工作流文档见仓库 <a href="https://github.com/zhuofupan/godot-fx-atlas/blob/main/docs/vfx-authoring-workflow.md">docs/vfx-authoring-workflow.md</a>
+        · 效果合同、节拍表与预算记录请随交付物归档 · 采用任何参考前仍请核对许可、价格与版本兼容性
+      </div>
+    </footer>
+  </body>
+</html>

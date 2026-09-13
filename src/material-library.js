@@ -73,6 +73,19 @@ ui.material_dialog.addEventListener("click", (event) => {
 
 render();
 
+// 深链：materials.html?item=<material_id> 直接打开该条目详情（未命中则回退为搜索词）
+const deepLink = initialQuery.get("item");
+if (deepLink) {
+  const target = entries.find((entry) => entry.material_id === deepLink);
+  if (target) {
+    openDetails(target);
+  } else {
+    state.query = deepLink;
+    ui.material_search.value = deepLink;
+    render();
+  }
+}
+
 function bindInput(control, key, eventName = "change") {
   control.addEventListener(eventName, () => {
     state[key] = control.value;
