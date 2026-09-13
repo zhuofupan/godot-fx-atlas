@@ -66,6 +66,6 @@ test("README puts the production workflow before the final credits section", () 
   const workflow = readme.indexOf("## 技能视觉导演与制作流程");
   const credits = readme.indexOf("## 鸣谢");
   assert.ok(workflow >= 0 && credits > workflow);
-  assert.equal(readme.trim().split("\n").filter((line) => line.startsWith("## ")).at(-1), "## 鸣谢");
+  assert.equal(readme.trim().split(/\r?\n/).filter((line) => line.startsWith("## ")).at(-1), "## 鸣谢");
   assert.match(readme, /不下载、不缓存、不重新分发原图/);
 });

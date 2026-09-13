@@ -10,6 +10,8 @@ const execFileAsync = promisify(execFile);
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const skillRoot = path.join(repoRoot, "skills", "godot-fx-atlas");
 const skillText = await readFile(path.join(skillRoot, "SKILL.md"), "utf8");
+const retrospectivePath = path.join(repoRoot, "docs", "vfx-production-retrospective.md");
+const retrospectiveText = await readFile(retrospectivePath, "utf8");
 
 test("Atlas skill connects the existing search engine to the material library", () => {
   assert.match(skillText, /mechanism-index\.json/);
@@ -29,6 +31,19 @@ test("all repository-relative resources referenced by the skill exist", async ()
   assert.equal((await stat(path.join(skillRoot, "agents", "openai.yaml"))).isFile(), true);
   assert.equal((await stat(path.join(skillRoot, "scripts", "resolve-atlas-root.mjs"))).isFile(), true);
   assert.equal((await stat(path.join(skillRoot, "scripts", "query-atlas.mjs"))).isFile(), true);
+  assert.equal((await stat(retrospectivePath)).isFile(), true);
+});
+
+test("Atlas skill preserves production gates and evidence states", () => {
+  assert.match(skillText, /vfx-production-retrospective\.md/);
+  assert.match(skillText, /forward-axis contract/);
+  for (const state of ["generated_candidate", "gpu_validated", "visual_approved", "project_integrated"]) {
+    assert.match(skillText, new RegExp(state));
+    assert.match(retrospectiveText, new RegExp(state));
+  }
+  assert.match(retrospectiveText, /严格生产流程：G0–G9/);
+  assert.match(retrospectiveText, /反馈处理协议/);
+  assert.match(retrospectiveText, /独立游戏生产级 Definition of Done/);
 });
 
 test("installed-skill resolver finds the Atlas repository root", async () => {

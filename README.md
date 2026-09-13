@@ -82,7 +82,7 @@ Atlas 不只是贴图下载页，也可以作为 AI 制作 Godot 2D/伪 3D 技�
 7. **特征化制作**：分别处理 `形状、运动、时序、材质/光感、生命周期`。先建立低频主轮廓和主运动，再叠加高频细节；根据需要组合序列帧、CanvasItem Shader、粒子、Tween、`Line2D`、`Polygon2D` 和程序绘制，而不是照搬某个演示效果。
 8. **接入并验收**：表现层只消费已提交事件或只读 ViewModel，不重新计算玩法结果。检查导入参数、Alpha、帧序、取消/中断、对象池、循环、复杂背景辨识度、关闭 Glow 时的可读性和真实显示尺寸；headless 检查之后仍需进行 GPU 实机预览和人工视觉验收。
 
-如果任务只要求方案或选材，流程可以在对应阶段停止；如果要求可交付特效，则应继续完成项目接入、真实场景验证与结果记录。更细的制作、序列帧和验收门禁见 [2D 技能特效创作工作流](./docs/vfx-authoring-workflow.md)，AI 检索接口见 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md)。
+如果任务只要求方案或选材，流程可以在对应阶段停止；如果要求可交付特效，则应继续完成项目接入、真实场景验证与结果记录。更细的制作、序列帧和验收门禁见 [2D 技能特效创作工作流](./docs/vfx-authoring-workflow.md)；多轮返工的根因、严格 G0–G9 门禁、证据状态和反馈归因协议见 [2D 特效失败复盘与生产门禁](./docs/vfx-production-retrospective.md)；AI 检索接口见 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md)。
 
 Atlas 只保存跨项目通用的方法、公开来源与审计信息，不保存任何消费项目的角色、编号、策划文本、私有素材或接入状态。
 
