@@ -69,6 +69,16 @@ npm run refresh:previews
 
 仓库内的 [`skills/godot-fx-atlas`](./skills/godot-fx-atlas/SKILL.md) 可让 AI 串联原站检索、实现思路提取、贴图选择、来源收据和 Godot 接入计划；它不会把某个消费项目的私有信息写回公开 Atlas。
 
+## 安装 AI Skill
+
+使用网页检索不要求安装 Skill；让 Codex 自动发现并执行 Atlas 检索、许可核对和制作规范前，需要克隆完整仓库并从仓库根目录运行：
+
+```bash
+node skills/godot-fx-atlas/scripts/install-skill.mjs
+```
+
+安装器不会复制第二份仓库，而是在 `$CODEX_HOME/skills/godot-fx-atlas`（未设置时为用户目录下的 `.codex/skills`）创建指向当前仓库 Skill 的目录链接。它会验证 Atlas 必需索引、制作文档、Skill 版本和 Git remote；已经指向正确位置时保持不变，目标是普通目录或文件时拒绝覆盖。升级时先更新本仓库，再重新运行安装器即可。可用 `--dry-run` 只检查计划，不修改安装位置。
+
 ## 技能视觉导演与制作流程
 
 Atlas 不只是贴图下载页，也可以作为 AI 制作 Godot 2D/伪 3D 技能特效时的参考检索层。推荐流程如下：

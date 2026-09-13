@@ -16,6 +16,18 @@ Use the Atlas as two connected but distinct layers:
 
 Do not treat a reference-index result as permission to copy its files. Only material records whose source is `direct_use` may be packaged from the local library.
 
+## Choose the operating mode
+
+Load only the guidance required by the request:
+
+| Mode | Read and do |
+| --- | --- |
+| Reference research | Query the Atlas and inspect selected public records; do not load the full production manuals merely to return references. |
+| Material selection/export | Read [catalog-contract.md](references/catalog-contract.md), then verify license, receipt, distribution policy, and SHA-256. |
+| Animation, direction, or production planning | Read `<atlas-root>/docs/vfx-authoring-workflow.md` completely before proposing the plan. |
+| Rejected, repeatedly revised, or production-grade effect | Read both workflow documents completely, including `<atlas-root>/docs/vfx-production-retrospective.md`, and apply its failure gates, evidence states, and review protocol. |
+| Full consuming-project implementation | Let `godot-vfx-factory` orchestrate project inspection, authoring, GPU QA, and integration. Supply it with the bounded Atlas evidence packet instead of running a competing production process. |
+
 ## Context and output budget
 
 Atlas research often touches large indexes and many images. These are conservative workflow budgets, not documented service limits or proof that payload size caused a transport error.
@@ -30,9 +42,8 @@ Atlas research often touches large indexes and many images. These are conservati
 
 ## Research the effect
 
-1. Read `<atlas-root>/docs/vfx-authoring-workflow.md` for the production and validation workflow. For a deliverable effect, a failed/rejected effect, or any request to improve production quality, also read `<atlas-root>/docs/vfx-production-retrospective.md` and apply its failure gates, evidence states, and review protocol.
-   For animated effects, apply its director/beat-sheet and temporal-coherence/exposure-sheet guidance: small adjacent deformation steps, authored frame durations, layered handoffs, and local alpha/dissolve instead of relying on whole-sprite fades.
-2. Translate the request into mechanism terms and visual-language terms. Freeze an effect contract, visual-direction card, real-scene primitive animatic, and explicit rejection list before expensive asset generation or multilayer implementation. Do not compensate for an unapproved silhouette or motion path with more particles, glow, flowers, rings, or noise.
+1. Select the operating mode above and read only its required documents.
+2. Translate the request into mechanism terms and visual-language terms. For production planning, freeze an effect contract, visual-direction card, real-scene primitive animatic, and explicit rejection list before expensive asset generation or multilayer implementation. Apply the workflow's director/beat-sheet and temporal-coherence/exposure-sheet guidance to animated effects. Do not compensate for an unapproved silhouette or motion path with more particles, glow, flowers, rings, or noise.
 3. Run `node scripts/query-atlas.mjs --query "<mechanism and visual terms>" --archetype <optional> --role <optional> --limit 12` to rank both reference effects and local materials. Treat the result as candidate discovery, not final artistic judgment.
 4. Cross-check candidates in `<atlas-root>/mechanism-index.json`, `<atlas-root>/visual-tag-index.json`, and `<atlas-root>/semantic-audit.json`, then inspect them in the Atlas website to read the complete record, source evidence, and implementation approach.
    For ShaderV results, `<atlas-root>/reference-sources/shaderv-godot4.json` is the locked Godot 4.x node manifest and source-license authority; each node record links to its exact file at the audited commit.

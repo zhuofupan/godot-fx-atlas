@@ -7,7 +7,10 @@ const REQUIRED_FILES = [
   "semantic-audit.json",
   "visual-tag-index.json",
   "materials/catalog.json",
-  "materials/sources.lock.json"
+  "materials/sources.lock.json",
+  "docs/vfx-authoring-workflow.md",
+  "docs/vfx-production-retrospective.md",
+  "skills/godot-fx-atlas/skill-manifest.json"
 ];
 
 export async function resolveAtlasRoot(skillDirectory = path.resolve(import.meta.dirname, "..")) {

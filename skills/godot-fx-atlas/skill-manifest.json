@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "skill_version": "1.1.0",
+  "repository_url": "https://github.com/zhuofupan/godot-fx-atlas.git",
+  "atlas_catalog_schema_version": 1,
+  "required_documents": [
+    "docs/vfx-authoring-workflow.md",
+    "docs/vfx-production-retrospective.md"
+  ]
+}
