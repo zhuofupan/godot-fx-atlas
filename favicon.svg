@@ -5,17 +5,18 @@
       <stop offset="1" stop-color="#b7ffeb"/>
     </linearGradient>
   </defs>
-  <!-- 菱形 = 旋转 45° 的圆角方块（选定的站点图标造型，logo 与 favicon 共用这一个文件）。
-       ⚠️ 站内旧样式里有 `.brand-mark{transform:rotate(45deg)}` —— site-shell.css 必须把它重置掉，
-       否则这里的菱形会被**再转一次、变成方块**。上一轮就是这么把它转没的。 -->
-  <rect x="5.25" y="5.25" width="13.5" height="13.5" rx="3.6"
+  <!-- 站点图标：圆角菱形 + 深色 FX（四页 favicon 与牌子图标共用这一个文件）。
+       - 圆角给得大（rx≈边长的 28%），小尺寸下才会呈现参考图那种饱满的花瓣轮廓；
+       - FX 用描边画、笔画粗，缩到 16px 仍读得出，也不依赖字体（写 <text> 会因缺字体变空白）；
+       - ⚠️ 图标自身是 45° 旋转。站内旧样式 `.brand-mark{transform:rotate(45deg)}` 会和它**叠加**，
+         净转 90° 就变回方块 —— site-shell.css 里必须 `transform:none` 把它重置掉。 -->
+  <rect x="4.4" y="4.4" width="15.2" height="15.2" rx="4.3"
         transform="rotate(45 12 12)" fill="url(#fx)"/>
-  <!-- FX 用描边画，不依赖字体：favicon 按 16px 渲染，字体缺失就成空白 -->
-  <g fill="none" stroke="#061017" stroke-width="2.05" stroke-linecap="square">
-    <path d="M8.2 8.1 V 15.9"/>
-    <path d="M8.2 8.1 H 11.9"/>
-    <path d="M8.2 12 H 10.9"/>
-    <path d="M12.6 8.1 L 16.2 15.9"/>
-    <path d="M16.2 8.1 L 12.6 15.9"/>
+  <g fill="none" stroke="#061017" stroke-width="2.6" stroke-linecap="square">
+    <path d="M8.1 7.9 V 16.1"/>
+    <path d="M8.1 7.9 H 12.4"/>
+    <path d="M8.1 12 H 11.1"/>
+    <path d="M12.8 7.9 L 16.4 16.1"/>
+    <path d="M16.4 7.9 L 12.8 16.1"/>
   </g>
 </svg>
