@@ -221,7 +221,23 @@ function renderPlan() {
     tr.append(td);
     t.append(tr);
   }
-  $("#wb-plan").replaceChildren(el("h2", "wb-h", "方案卡"), t);
+  $("#wb-plan").replaceChildren(el("h2", "wb-h", "方案卡"), t, drawEntry());
+}
+
+/**
+ * 「方案」页底部的手绘入口。
+ *
+ * 为什么需要：手绘板一直存在，但它躲在第 4 个 tab 里 —— 实测有人翻遍页面也没找到。
+ * 而"先画一版再生成"恰恰是它最有价值的用法，所以要在人**第一眼看到的那一页**给个入口。
+ */
+function drawEntry() {
+  const box = el("div", "wb-draw-entry");
+  box.append(el("span", "wb-hint", "心里已经有形状了？不用等生成 —— 直接画一版，作为生图参考。"));
+  const btn = el("button", "wb-primary", "✏️ 打开手绘板");
+  btn.id = "wb-goto-draw";
+  btn.onclick = () => selectTab("draw");
+  box.append(btn);
+  return box;
 }
 
 function tintNote(it) {
@@ -882,9 +898,14 @@ function renderDraw() {
     ctx.stroke();
     ctx.globalCompositeOperation = "source-over";
   }
+  // ⚠️ 必须按「位图 / 显示」比例换算指针坐标。
+  // 画布的内部像素宽是 geo.W，但显示宽会被 CSS 缩放（本站外壳用了 html{zoom:1.2}，
+  // 用户还可能自己按 Ctrl+加号）。只减 r.left 不换算的话，笔迹会整体偏移、越画越偏到画布外。
   const pos = (e) => {
     const r = cv.getBoundingClientRect();
-    return [e.clientX - r.left, e.clientY - r.top];
+    const sx = r.width ? cv.width / r.width : 1;
+    const sy = r.height ? cv.height / r.height : 1;
+    return [(e.clientX - r.left) * sx, (e.clientY - r.top) * sy];
   };
 
   cv.onpointerdown = (e) => {
@@ -1077,11 +1098,19 @@ function render() {
 
 /* ───────────────────────────── 事件绑定 ───────────────────────────── */
 
+/**
+ * 切到某个 tab。抽成函数是因为面板里也要能跳转 ——
+ * 例如「方案」页底部放一个去「✏️ 手绘参考」的入口（实测有人根本没注意到那个 tab）。
+ */
+function selectTab(name) {
+  for (const x of document.querySelectorAll(".wb-tabs button")) {
+    x.setAttribute("aria-selected", String(x.dataset.tab === name));
+  }
+  for (const p of document.querySelectorAll(".wb-panel")) p.classList.toggle("on", p.id === `wb-${name}`);
+}
+
 for (const b of document.querySelectorAll(".wb-tabs button")) {
-  b.onclick = () => {
-    for (const x of document.querySelectorAll(".wb-tabs button")) x.setAttribute("aria-selected", String(x === b));
-    for (const p of document.querySelectorAll(".wb-panel")) p.classList.toggle("on", p.id === `wb-${b.dataset.tab}`);
-  };
+  b.onclick = () => selectTab(b.dataset.tab);
 }
 
 $("#wb-download").onclick = () => {

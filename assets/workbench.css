@@ -154,6 +154,17 @@ textarea#wb-out {
 }
 
 /* ── ②b 外部素材库 ─────────────────────────────────── */
+/* ── 「方案」页底部的手绘入口（手绘板藏在第 4 个 tab，实测有人找不到）── */
+.wb-draw-entry {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap; margin-top: 18px; padding: 14px 16px;
+  border: 1px dashed var(--line); border-radius: 12px; background: rgba(15, 31, 28, .5);
+}
+.wb-draw-entry .wb-hint { margin: 0; max-width: none; }
+
+/* 手绘页：画布在卡片里再放大一档，笔触粗细的视觉感受才跟得上整站缩放 */
+.wb-draw-wrap { border-color: var(--jade); box-shadow: 0 0 0 1px rgba(93,228,199,.15), 0 12px 30px rgba(0,0,0,.35); }
+
 /* ── ✏️ 手绘参考 ───────────────────────────────────── */
 .wb-inline { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; }
 .wb-inline input[type="color"] {

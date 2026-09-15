@@ -1,0 +1,87 @@
+/* ============================================================================
+   站点外壳：顶栏 + 整站字号 —— **唯一出处**
+   ----------------------------------------------------------------------------
+   四个页面（参考案例库 / 资产贴图库 / 制作流程 / 预检工作台）都把它放在**最后**加载。
+
+   为什么单独抽这一份：
+   ① `.site-header / .brand / .top-nav` 原来在 workbench.css、material-library.css、
+      workflow.html 里各抄了一遍，而 index.html 根本没有 —— 于是"顶栏只在一部分页面存在"。
+      抄三份必然漂移，收进这里当唯一出处。
+   ② 各页字号散落在不同 CSS 里，且 index 的 CSS 是**构建产物（无法重建）**；
+      字号大多是硬编码 px，逐个覆盖不现实。用 `html { zoom }` 等比放大最可预期，
+      而且能同时照顾到无法重建的那一份。
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+  --ink: #eef8f2;
+  --muted: #a6bfbb;      /* 比原先亮一档，正文在深底上更读得清 */
+  --paper: #07110f;
+  --panel: rgba(15, 31, 28, 0.88);
+  --panel-solid: #0d1c19;
+  --line: rgba(184, 224, 207, 0.18);
+  --jade: #5de4c7;
+  --gold: #eec982;
+  --danger: #ffac84;
+  --violet: #b58cf0;
+  font-family: Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ── 整站等比放大 ────────────────────────────────────────────────
+   1.2 ≈ 13px→15.6px、11px→13.2px、10px→12px。
+   **全站字号只有这一个旋钮 `--ui-zoom`**（窄屏另给一个小值）。
+   ⚠️ 用了 zoom 之后，canvas 的**指针坐标必须按 display/bitmap 比例换算**
+      （见 src/workbench.js 的 pos），否则笔迹会偏。 */
+:root { --ui-zoom: 1.2; }
+html { zoom: var(--ui-zoom); }
+
+/* ── 顶栏（四页统一） ─────────────────────────────────────────── */
+.site-header,
+.shell { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
+.site-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: .02em;
+  font-size: 19px;
+}
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--jade);
+  transform: rotate(45deg);
+  border-radius: 8px;
+  box-shadow: inset 0 0 18px rgba(93, 228, 199, .28);
+}
+.top-nav { display: flex; gap: 28px; color: var(--muted); font-size: 17px; flex-wrap: wrap; }
+.top-nav a {
+  text-decoration: none;
+  padding: 4px 2px 6px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.top-nav a:hover { color: var(--ink); }
+.top-nav a[aria-current="page"] { color: var(--jade); border-bottom-color: var(--jade); }
+
+/* index.html 是 SPA 外壳：给它一个和别页等高的顶部留白，避免顶栏贴着 SPA 的内容 */
+body > .site-header + #root { display: block; }
+
+@media (max-width: 760px) {
+  .site-header,
+  .shell { width: calc(100% - 24px); }
+  .top-nav { gap: 16px; font-size: 15px; }
+  :root { --ui-zoom: 1.08; }
+}
