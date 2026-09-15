@@ -63,7 +63,7 @@ test("index 把导航并进 SPA 那条栏，不出现两条栏", async () => {
   }
 });
 
-test("站点图标只有一个来源，且画的是 FX 而非依赖字体", async () => {
+test("站点图标只有一个来源，且不会被旧样式二次变换", async () => {
   for (const page of PAGES) {
     const html = await load(page);
     assert.match(html, /<link rel="icon" href="\.\/favicon\.svg"/, `${page} 的图标没有指向 favicon.svg`);
@@ -73,8 +73,15 @@ test("站点图标只有一个来源，且画的是 FX 而非依赖字体", asyn
   assert.ok(!/<text/.test(svg), "favicon 不要用 <text>（字体缺失会渲染成空白）");
   const strokes = (svg.match(/<path/g) || []).length;
   assert.ok(strokes >= 4, `favicon 的 FX 笔画太少（${strokes}），可能画不出来`);
-  // 圆角方块造型：旋转过的矩形会被旧样式再转一次，看起来像菱形
-  assert.ok(!/rotate\(/.test(svg), "favicon 里不要旋转（站内 .brand-mark 皮肤会再叠一层，会变成菱形）");
+
+  // 图标本身是**旋转 45° 的圆角方块（菱形）**；而站内旧样式里也有一条
+  // `.brand-mark{transform:rotate(45deg)}`（三个文件各抄了一份）。若外壳不把它重置，
+  // 两者会叠成"转了 90°" —— 方块还是方块，菱形被吃掉。所以要钉住这个重置存在。
+  const css = await readFile(path.join(repoRoot, "assets", "site-shell.css"), "utf8");
+  const markRule = css.match(/\.site-header \.brand-mark\s*\{[^}]*\}/);
+  assert.ok(markRule, "外壳里找不到 .site-header .brand-mark 规则");
+  assert.match(markRule[0], /transform:\s*none/, "必须重置 transform，否则图标会被旧样式再转一次");
+  assert.match(markRule[0], /favicon\.svg/, "牌子图标应指向 favicon.svg（与站点图标同源）");
 });
 
 test("外壳里的字号旋钮只有一个", async () => {

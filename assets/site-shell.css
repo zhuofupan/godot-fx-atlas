@@ -53,6 +53,16 @@ html { zoom: var(--ui-zoom); }
 #root .topbar nav.top-nav a { color: #9fe9d6; }
 #root .topbar nav.top-nav a[aria-current="page"] { background: rgba(93, 228, 199, .16); }
 
+/* index 的牌子图标也是**同一个站点图标**（favicon.svg 的菱形）。
+   SPA 自带的 `.brand-mark` 是"青色圆角方块 + FX 文字"，这里换成图标本身并把文字藏掉，
+   否则同一个站在 index 上是方块、在别的页面上是菱形。 */
+#root .topbar .brand-mark {
+  background: url(../favicon.svg) center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  box-shadow: none;
+}
+
 /* ── 顶栏（四页统一） ───────────────────────────────────────────
    造型与站内 index 的 `.topbar` 保持一致：半透明 + 毛玻璃 + **顶部固定**。
 

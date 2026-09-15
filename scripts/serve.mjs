@@ -148,7 +148,13 @@ export function createWorkbenchServer() {
       if (filePath !== repoRoot && !filePath.startsWith(`${repoRoot}${path.sep}`)) throw new Error("unsafe_path");
       const fileInfo = await stat(filePath);
       if (!fileInfo.isFile()) throw new Error("not_file");
-      response.writeHead(200, { "Content-Type": contentTypes.get(path.extname(filePath)) || "application/octet-stream" });
+      const ext = path.extname(filePath);
+      const headers = { "Content-Type": contentTypes.get(ext) || "application/octet-stream" };
+      // 这是**开发服务器**：HTML/CSS/JS 一律不缓存。
+      // 否则改完样式刷新还是旧的，人会以为"没生效"（实测为这个浪费过一轮排查）。
+      // 图片/JSON 数据可以缓存，省重传。
+      if ([".html", ".css", ".js"].includes(ext)) headers["Cache-Control"] = "no-store, must-revalidate";
+      response.writeHead(200, headers);
       createReadStream(filePath).pipe(response);
     } catch {
       response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });

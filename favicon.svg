@@ -5,15 +5,17 @@
       <stop offset="1" stop-color="#b7ffeb"/>
     </linearGradient>
   </defs>
-  <!-- 造型对齐站内 .brand-mark：圆角方块 + 青色渐变 + 深色 FX。
-       站点图标与牌子图标共用这一个文件，两处不会画成两个样。 -->
-  <rect x="2" y="2" width="20" height="20" rx="6.4" fill="url(#fx)"/>
+  <!-- 菱形 = 旋转 45° 的圆角方块（选定的站点图标造型，logo 与 favicon 共用这一个文件）。
+       ⚠️ 站内旧样式里有 `.brand-mark{transform:rotate(45deg)}` —— site-shell.css 必须把它重置掉，
+       否则这里的菱形会被**再转一次、变成方块**。上一轮就是这么把它转没的。 -->
+  <rect x="5.25" y="5.25" width="13.5" height="13.5" rx="3.6"
+        transform="rotate(45 12 12)" fill="url(#fx)"/>
   <!-- FX 用描边画，不依赖字体：favicon 按 16px 渲染，字体缺失就成空白 -->
-  <g fill="none" stroke="#061017" stroke-width="2.1" stroke-linecap="square">
-    <path d="M8.4 7.7 V 16.3"/>
-    <path d="M8.4 7.7 H 14.4"/>
-    <path d="M8.4 12 H 12.4"/>
-    <path d="M12.5 7.7 L 17.4 16.3"/>
-    <path d="M17.4 7.7 L 12.5 16.3"/>
+  <g fill="none" stroke="#061017" stroke-width="2.05" stroke-linecap="square">
+    <path d="M8.2 8.1 V 15.9"/>
+    <path d="M8.2 8.1 H 11.9"/>
+    <path d="M8.2 12 H 10.9"/>
+    <path d="M12.6 8.1 L 16.2 15.9"/>
+    <path d="M16.2 8.1 L 12.6 15.9"/>
   </g>
 </svg>
