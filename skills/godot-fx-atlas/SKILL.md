@@ -25,6 +25,7 @@ Load only the guidance required by the request:
 | Reference research | Query the Atlas and inspect selected public records; do not load the full production manuals merely to return references. |
 | Material selection/export | Read [catalog-contract.md](references/catalog-contract.md), then verify license, receipt, distribution policy, and SHA-256. |
 | Animation, direction, or production planning | Read `<atlas-root>/docs/vfx-authoring-workflow.md` completely before proposing the plan. |
+| Pre-flight composition, selection, or sizing before engine work | Read `<atlas-root>/docs/workbench.md` and run the workbench (`workbench.html`). It is project-agnostic and fed by a consuming-project data pack under `project-data/` (gitignored). |
 | Rejected, repeatedly revised, or production-grade effect | Read both workflow documents completely, including `<atlas-root>/docs/vfx-production-retrospective.md`, and apply its failure gates, evidence states, and review protocol. |
 | Full consuming-project implementation | Let `godot-vfx-factory` orchestrate project inspection, authoring, GPU QA, and integration. Supply it with the bounded Atlas evidence packet instead of running a competing production process. |
 
@@ -51,6 +52,42 @@ Atlas research often touches large indexes and many images. These are conservati
 6. Adapt naming, color, symbols, event hooks, paths, and gameplay timing to the consuming project. Never write consuming-project details back into Atlas.
 
 For directional assets, require a forward-axis contract: canonical forward direction, pivot, tail and leading-edge landmarks, per-frame ambiguity notes, and the runtime rotation formula. Automated long-axis estimates may assist inspection but never decide head versus tail. Verify the asset in the target renderer with a one-layer probe before composing the full effect.
+
+## Pre-flight before implementation
+
+The usual feedback loop — implement, open the engine, probe/screenshot, look, rework — pays the most
+expensive medium first, before the plan itself is settled. Move the judgment earlier:
+
+1. Have the consuming project emit a **data pack** (`project-data/<bundle-id>/bundle.json`): carrier
+   geometry (card / cell / anchors / display coefficients / budget), items, candidates, target tint.
+   The workbench is project-agnostic; it only knows the pack.
+2. Compile it with `npm run build:workbench` (schema-validated; malformed packs fail loudly), then open
+   `workbench.html` via `npm run dev`.
+3. Walk the four steps with the human: **plan** (polarity / anchor / unique motif / unique motion /
+   target color) → **selection** (candidates compared at the real reading size, on both light and dark
+   backgrounds) → **placement** (size and offset, drag on canvas) → **export decisions**.
+4. The selection step also offers an **external library panel**: pick one local folder, and the whole
+   library becomes searchable in-page. Indexing happens entirely in the browser — nothing is uploaded,
+   and no external asset is ever written into this repository. The bundle supplies a name/tag/title
+   **index** (no images) so the right file can be found before the folder is chosen; that is why
+   external assets should be named `<category>_<seq>_<description>.png` (see `docs/workbench.md` §7).
+5. Apply only decisions carrying `confirmed: true` back into the project. The consuming project owns
+   that step: it should map `display_px` back to its own size units, write the anchor offset, switch
+   the asset reference when the decision names one of its own registered assets, and — for an external
+   selection — treat it as a licensing/import decision rather than copying silently.
+
+Requirements on the data pack that keep the workbench honest (see `docs/workbench.md` §4): supply a
+**tinted** variant of every candidate (brightness-entity textures are near-white and render as nothing
+on a light carrier), pick the **highest-alpha frame** as `best_frame` rather than frame 0, and keep
+thumbnails at a usable resolution.
+
+The workbench judges composition, size, placement, and material choice only. Browser blending, glow,
+and particle behavior differ from the engine, so its output is not engine acceptance and cannot raise an
+evidence state. Its size and placement numbers are trustworthy only if the pack's geometry matches the
+consuming engine.
+
+`project-data/` and the compiled `assets/workbench-data.js` are gitignored and must stay out of the
+public repository — a pack carries the consuming project's naming, asset paths, and screenshots.
 
 ## Select materials
 

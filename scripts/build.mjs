@@ -9,6 +9,7 @@ import {
   updateVisualTagIndex
 } from "../src/reference-supplement.js";
 import { getInjectedImplementationSource, fxSelfTestResult } from "../src/reference-implementation.js";
+import { buildWorkbenchData } from "./build-workbench.mjs";
 
 if (!fxSelfTestResult) throw new Error("Implementation engine self-test failed.");
 
@@ -20,7 +21,9 @@ const sourceFiles = [
   ["src/material-library-entry.css", "assets/material-library-entry.css"],
   ["src/site-footer-sources.js", "assets/site-footer-sources.js"],
   ["src/reference-card-previews.js", "assets/reference-card-previews.js"],
-  ["src/reference-card-previews.css", "assets/reference-card-previews.css"]
+  ["src/reference-card-previews.css", "assets/reference-card-previews.css"],
+  ["src/workbench.js", "assets/workbench.js"],
+  ["src/workbench.css", "assets/workbench.css"]
 ];
 
 for (const [sourceRelative, targetRelative] of sourceFiles) {
@@ -34,6 +37,12 @@ const catalog = JSON.parse(await readFile(path.join(repoRoot, "materials", "cata
 const previewManifest = JSON.parse(await readFile(path.join(repoRoot, "reference-previews.json"), "utf8"));
 const materialPage = await readFile(path.join(repoRoot, "materials.html"), "utf8");
 if (!materialPage.includes("./assets/material-library.js")) throw new Error("materials.html does not load the material library module.");
+const workbenchPage = await readFile(path.join(repoRoot, "workbench.html"), "utf8");
+if (!workbenchPage.includes("./assets/workbench.js")) throw new Error("workbench.html does not load the workbench module.");
+
+// 预检工作台的数据包：项目无关，数据来自 project-data/（已 gitignore）。
+// 没有数据包时也要能构建 —— 页面会显示导入指引，而不是报错。
+await buildWorkbenchData();
 if (catalog.entry_count !== catalog.entries.length) throw new Error("Material catalog entry_count is stale.");
 if (previewManifest.policy !== "remote_url_only" || previewManifest.entry_count !== previewManifest.entries.length) {
   throw new Error("Reference preview manifest is invalid.");
