@@ -65,7 +65,8 @@
             <button data-tab="plan" role="tab" aria-selected="true">① 方案</button>
             <button data-tab="pick" role="tab" aria-selected="false">② 选材</button>
             <button data-tab="scene" role="tab" aria-selected="false">③ 合成示意</button>
-            <button data-tab="export" role="tab" aria-selected="false">④ 导出决定</button>
+            <button data-tab="draw" role="tab" aria-selected="false">✏️ 手绘参考</button>
+            <button data-tab="export" role="tab" aria-selected="false">④ 交回工程</button>
           </div>
 
           <section id="wb-plan" class="wb-panel on" role="tabpanel"></section>
@@ -77,18 +78,22 @@
             <div id="wb-readout" class="wb-readout" hidden></div>
           </section>
 
+          <section id="wb-draw" class="wb-panel" role="tabpanel"></section>
+
           <section id="wb-export" class="wb-panel" role="tabpanel">
-            <h2 class="wb-h">导出决定</h2>
+            <h2 class="wb-h">交回工程</h2>
             <p class="wb-hint">
-              把这份 JSON 交回使用方工程，由它的生成器写进实现 —— <b>人认可以后，才进引擎</b>。
-              只有点过「确认本条采用此方案」的条目才带 <code>confirmed:true</code>；
-              其余条目是「调参预览过、未认可」。
+              改了任何设置都会<b>自动写回磁盘</b>（<code>project-data/&lt;bundle&gt;/workbench-state.json</code>），
+              手绘会写成 <code>drawings/&lt;条目&gt;.png</code> —— <b>你不需要下载任何文件</b>。
+              使用方的 AI 直接读磁盘就能知道你在网页上设了什么、画了什么。
+              下面这份内容与写回磁盘的完全一致，需要手工转述时可以复制。
             </p>
             <div class="wb-bar">
-              <button class="wb-primary" id="wb-download">下载决定 JSON</button>
-              <span id="wb-count" class="wb-hint"></span>
+              <button class="wb-primary" id="wb-download">另存为文件（可选）</button>
+              <button class="wb-ghost" id="wb-push">立刻写回磁盘</button>
+              <span id="wb-sync" class="wb-hint"></span>
             </div>
-            <textarea id="wb-out" spellcheck="false" aria-label="决定 JSON"></textarea>
+            <textarea id="wb-out" spellcheck="false" aria-label="状态 JSON"></textarea>
           </section>
         </div>
       </div>

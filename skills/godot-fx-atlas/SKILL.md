@@ -76,6 +76,13 @@ expensive medium first, before the plan itself is settled. Move the judgment ear
    the asset reference when the decision names one of its own registered assets, and — for an external
    selection — treat it as a licensing/import decision rather than copying silently.
 
+**Do not ask the human to download files to communicate.** When served through `npm run dev`, the page
+writes back on its own: every change is POSTed to `/__wb/state` (an `workbench-state.json` using the same
+decisions schema, inside the gitignored `project-data/`), and the ✏️ tab saves hand-drawings as
+`drawings/<item>.png` via `/__wb/drawing`. Read those from disk. The drawing is a **reference for asset
+generation**, not a finished asset — a human often knows the shape before anything is generated, so let
+them sketch it rather than describing it in words.
+
 Requirements on the data pack that keep the workbench honest (see `docs/workbench.md` §4): supply a
 **tinted** variant of every candidate (brightness-entity textures are near-white and render as nothing
 on a light carrier), pick the **highest-alpha frame** as `best_frame` rather than frame 0, and keep

@@ -154,6 +154,15 @@ textarea#wb-out {
 }
 
 /* ── ②b 外部素材库 ─────────────────────────────────── */
+/* ── ✏️ 手绘参考 ───────────────────────────────────── */
+.wb-inline { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; }
+.wb-inline input[type="color"] {
+  width: 38px; height: 26px; padding: 0; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--panel-solid); cursor: pointer;
+}
+.wb-inline input[type="range"] { width: 120px; }
+.wb-draw-wrap { display: inline-block; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+canvas#wb-draw-canvas { display: block; cursor: crosshair; touch-action: none; }
 .wb-lib { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); }
 .wb-lib .wb-bar { margin: 0 0 10px; }
 .wb-lib input[type="file"] {

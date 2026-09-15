@@ -720,6 +720,307 @@ function libSection() {
   return wrap;
 }
 
+/* ───────────────────── ✏️ 手绘参考（生成素材之前先给个版本） ───────────────────── */
+
+/**
+ * 为什么要有它：在"选素材"之前，人往往**心里已经有形状**了 —— 但现在只能靠嘴描述或
+ * 等生成出来再否掉。给一块画布，人可以直接画一版，作为生图参考（image1）交回工程。
+ *
+ * 语义要说清楚：**手绘是"参考"，不是"成品"**。它进的是生成素材的输入，不是最终素材。
+ *
+ * 画布约束与合成示意同源（卡面/棋格/锚点），所以画出来的位置和大小是**可对照**的，
+ * 底下还会垫一层当前实现（淡显），方便"照着我想要的改"。
+ */
+const bw = { tool: "brush", width: 6, history: [], dirty: false };
+
+function drawGeom() {
+  const cw = G.card.width, chh = G.card.height;
+  const cellW = G.cell ? G.cell.width : 0, cellD = G.cell ? G.cell.depth : 0;
+  const PAD = 34;
+  const refW = Math.max(cw, cellW) + PAD * 2;
+  const refH = chh + cellD + PAD * 2 + 18;
+  const S = Math.max(2, Math.min(4, 560 / refW));
+  return { cw, chh, cellW, cellD, refW, refH, S, W: Math.round(refW * S), H: Math.round(refH * S),
+           ox: (Math.max(cw, cellW) + PAD * 2) / 2 * S, oy: (PAD + chh / 2) * S };
+}
+
+function drawGuides(g, geo, bg) {
+  const { cw, chh, cellW, cellD, S, ox, oy } = geo;
+  const X = (x) => ox + x * S, Y = (y) => oy + y * S;
+  g.setTransform(1, 0, 0, 1, 0, 0);
+  g.fillStyle = bg;
+  g.fillRect(0, 0, geo.W, geo.H);
+  if (G.cell) {
+    const cy = chh / 2 + cellD / 2 - 4, wT = cellW * 0.88;
+    g.beginPath();
+    g.moveTo(X(-wT / 2), Y(cy - cellD / 2));
+    g.lineTo(X(wT / 2), Y(cy - cellD / 2));
+    g.lineTo(X(cellW / 2), Y(cy + cellD / 2));
+    g.lineTo(X(-cellW / 2), Y(cy + cellD / 2));
+    g.closePath();
+    g.fillStyle = "rgba(128,128,128,.12)"; g.fill();
+    g.strokeStyle = "rgba(128,128,128,.5)"; g.setLineDash([5, 4]); g.lineWidth = 1; g.stroke(); g.setLineDash([]);
+  }
+  const w = cw * S, h = chh * S, r = (G.card.radius || cw * 0.1) * S;
+  g.beginPath();
+  if (g.roundRect) g.roundRect(X(-cw / 2), Y(-chh / 2), w, h, r); else g.rect(X(-cw / 2), Y(-chh / 2), w, h);
+  g.fillStyle = "rgba(255,255,255,.85)"; g.fill();
+  g.strokeStyle = "rgba(0,0,0,.25)"; g.lineWidth = 1; g.stroke();
+}
+
+function renderDraw() {
+  const it = curItem();
+  if (!it) return;
+  const box = $("#wb-draw");
+  const geo = drawGeom();
+  box.replaceChildren();
+
+  box.append(el("h2", "wb-h", "✏️ 手绘参考 · 在生成素材之前，先把你要的形状画出来"));
+  const hint = el("p", "wb-hint");
+  hint.innerHTML = `画布用的是**和合成示意同一套载体几何**（卡面 / 棋格 / 锚点），所以你的笔画位置可以直接对照。
+    底下会淡显当前实现，方便"照着我想要的改"。<b>手绘是给生图的参考，不是成品素材。</b>
+    画完点「写回磁盘」即可 —— 会存成 <code>drawings/&lt;条目&gt;.png</code>，工程那边直接读，<b>你不用下载任何东西</b>。`;
+  box.append(hint);
+
+  const tint = it.tint || [1, 1, 1];
+  const bar = el("div", "wb-bar");
+  const mkSep = (label, node) => { const w = el("label", "wb-inline"); w.append(document.createTextNode(label), node); return w; };
+
+  const toolSel = el("select");
+  toolSel.id = "wb-draw-tool";
+  for (const [v, t] of [["brush", "画笔"], ["line", "直线"], ["eraser", "橡皮"]]) {
+    const o = el("option", null, t); o.value = v; toolSel.append(o);
+  }
+  toolSel.value = bw.tool;
+  toolSel.onchange = () => { bw.tool = toolSel.value; };
+
+  const colorIn = el("input"); colorIn.type = "color"; colorIn.id = "wb-draw-color";
+  colorIn.value = cssRgb(tint);
+  const widthIn = el("input"); widthIn.type = "range"; widthIn.min = "2"; widthIn.max = "28"; widthIn.step = "1";
+  widthIn.value = String(bw.width); widthIn.id = "wb-draw-width";
+  const widthVal = el("span", "wb-hint", String(bw.width));
+  widthIn.oninput = () => { bw.width = Number(widthIn.value); widthVal.textContent = widthIn.value; };
+
+  const under = el("input"); under.type = "checkbox"; under.id = "wb-draw-under"; under.checked = true;
+
+  const undoBtn = el("button", "wb-ghost", "撤销");
+  const clearBtn = el("button", "wb-ghost", "清空");
+  const pushBtn = el("button", "wb-primary", "写回磁盘");
+
+  bar.append(toolSel, mkSep("粗细", widthIn), widthVal, mkSep("颜色", colorIn), mkSep("垫底图", under),
+             undoBtn, clearBtn, pushBtn);
+  box.append(bar);
+
+  const wrap = el("div", "wb-draw-wrap");
+  const cv = document.createElement("canvas");
+  cv.id = "wb-draw-canvas";
+  cv.width = geo.W; cv.height = geo.H;
+  cv.style.width = geo.W + "px"; cv.style.height = geo.H + "px";
+  wrap.append(cv);
+  box.append(wrap);
+  const tip = el("p", "wb-hint", "");
+  tip.id = "wb-draw-stat";
+  box.append(tip);
+
+  const g = cv.getContext("2d");
+  const bg = "#171514";
+  drawGuides(g, geo, bg);
+
+  // 垫底：当前实现的候选图淡显
+  const cands = it.candidates || [];
+  const dec = decOf(it.id);
+  const ci = dec.cand !== undefined ? dec.cand : 0;
+  const cand = cands[ci] || null;
+  if (cand) {
+    const img = new Image();
+    img.onload = () => {
+      const underlay = document.createElement("canvas");
+      underlay.width = cv.width; underlay.height = cv.height;
+      const ug = underlay.getContext("2d");
+      const px = dec.display_px || defaultDisplayPx(it);
+      const w = px * geo.S, h = w / (cand.aspect || 1);
+      const a = anchorRect(it.anchor) || { x: 0, y: 0, w: 0, h: 0 };
+      const cx = geo.ox + (a.x + a.w / 2 - geo.cw / 2) * geo.S + (dec.offset?.[0] || 0) * geo.S;
+      const cy = geo.oy + (a.y + a.h / 2 - geo.chh / 2) * geo.S + (dec.offset?.[1] || 0) * geo.S;
+      ug.globalAlpha = 0.3;
+      try { ug.drawImage(img, cx - w / 2, cy - h / 2, w, h); } catch { /* 忽略 */ }
+      cv.__underlay = underlay;
+      repaint(loadStrokes());
+    };
+    img.src = coverImage(it, cand);
+  }
+
+  /** 笔画存成矢量，重绘时"垫底 → 笔画"顺序才对（否则垫底会盖住笔画）。 */
+  let strokes = [];
+  let drawing = false, last = null, lineStart = null, preview = null;
+  const strokesKey = `wb-draw-${it.id}`;
+  try { strokes = JSON.parse(sessionStorage.getItem(strokesKey) || "[]"); } catch { strokes = []; }
+  function saveStrokes() {
+    try { sessionStorage.setItem(strokesKey, JSON.stringify(strokes.slice(-400))); } catch { /* 满了就算了 */ }
+  }
+  function loadStrokes() { return strokes; }
+
+  function repaint(list) {
+    drawGuides(g, geo, bg);
+    if (cv.__underlay && under.checked) {
+      g.globalAlpha = 1;
+      g.drawImage(cv.__underlay, 0, 0);
+    }
+    g.lineCap = "round"; g.lineJoin = "round";
+    for (const st of list) paintStroke(g, st);
+    if (preview) paintStroke(g, preview);
+  }
+  function paintStroke(ctx, st) {
+    const pts = st.pts;
+    if (!pts || pts.length < 2) return;
+    ctx.globalCompositeOperation = st.tool === "eraser" ? "destination-out" : "source-over";
+    ctx.strokeStyle = st.color;
+    ctx.lineWidth = st.width;
+    ctx.beginPath();
+    ctx.moveTo(pts[0][0], pts[0][1]);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+    ctx.stroke();
+    ctx.globalCompositeOperation = "source-over";
+  }
+  const pos = (e) => {
+    const r = cv.getBoundingClientRect();
+    return [e.clientX - r.left, e.clientY - r.top];
+  };
+
+  cv.onpointerdown = (e) => {
+    drawing = true;
+    last = pos(e);
+    lineStart = last;
+    cv.setPointerCapture?.(e.pointerId);
+    if (bw.tool === "line") {
+      preview = { tool: "brush", color: colorIn.value, width: bw.width, pts: [last, last] };
+      repaint(strokes);
+    } else {
+      strokes.push({ tool: bw.tool, color: colorIn.value, width: bw.width, pts: [last] });
+      repaint(strokes);
+    }
+    e.preventDefault();
+  };
+  cv.onpointermove = (e) => {
+    if (!drawing) return;
+    const p = pos(e);
+    if (bw.tool === "line") {
+      preview.pts = [lineStart, p];
+    } else {
+      strokes[strokes.length - 1].pts.push(p);
+    }
+    repaint(strokes);
+  };
+  cv.onpointerup = (e) => {
+    if (!drawing) return;
+    drawing = false;
+    const p = pos(e);
+    if (bw.tool === "line") {
+      strokes.push({ tool: "brush", color: colorIn.value, width: bw.width, pts: [lineStart, p] });
+      preview = null;
+    }
+    saveStrokes();
+    repaint(strokes);
+    bw.dirty = true;
+    scheduleStatePush(true);
+    try { cv.releasePointerCapture?.(e.pointerId); } catch { /* noop */ }
+  };
+  cv.onpointercancel = () => { drawing = false; };
+
+  under.onchange = () => repaint(strokes);
+  undoBtn.onclick = () => { strokes.pop(); saveStrokes(); repaint(strokes); scheduleStatePush(true); };
+  clearBtn.onclick = () => { strokes = []; saveStrokes(); repaint(strokes); scheduleStatePush(true); };
+  pushBtn.onclick = () => pushDrawing(it, cv, true);
+
+  tip.textContent = strokes.length
+    ? `已画 ${strokes.length} 笔（本地暂存，重启浏览器会丢；点「写回磁盘」才落到工程里）`
+    : "还没画。左键画，Shift 不用按 —— 选「直线」就是画直线。";
+  repaint(strokes);
+}
+
+/* ─────────────────── 回写磁盘（代替"下载文件"） ─────────────────── */
+
+let stateTimer = null;
+
+function statePayload() {
+  const base = exportPayload();
+  const drawings = {};
+  for (const [id, d] of state.decisions) {
+    if (d.drawing_file) drawings[id] = { file: d.drawing_file, updated_at: d.drawing_updated_at || null };
+  }
+  return {
+    ...base,
+    source: "workbench-live",
+    saved_at: new Date().toISOString(),
+    collection: state.bundle?.bundle_id || null,
+    current_item: state.item,
+    drawings,
+    ui_note: "由预检工作台自动写回；settings 与人手绘都在这里，工程侧直接读本文件，无需人工下载。"
+  };
+}
+
+function scheduleStatePush(soon) {
+  if (stateTimer) clearTimeout(stateTimer);
+  stateTimer = setTimeout(pushState, soon ? 700 : 1600);
+}
+
+async function pushState() {
+  const sync = $("#wb-sync");
+  const payload = statePayload();
+  try {
+    const res = await fetch("/__wb/state", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const body = await res.json();
+    if (body.ok) {
+      if (sync) sync.innerHTML = `<span class="flag-ok">已写回</span> ${body.file} · ${new Date().toLocaleTimeString()}`;
+    } else if (sync) {
+      sync.innerHTML = `<span class="flag-warn">写回被拒：${body.error}</span>`;
+    }
+  } catch {
+    if (sync) {
+      sync.innerHTML = '<span class="flag-warn">写回不可用</span> —— 需要经 <code>npm run dev</code> 打开本页'
+        + '（直接双击文件时浏览器不允许写盘）。此时可用下面的「另存为文件」。';
+    }
+  }
+}
+
+async function pushDrawing(it, canvas, manual) {
+  const dec = decOf(it.id);
+  const file = `drawings/${it.id}.png`;
+  const stat = $("#wb-draw-stat");
+  const dataUrl = canvas.toDataURL("image/png");
+  try {
+    const res = await fetch("/__wb/drawing", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ bundle_id: state.bundle?.bundle_id, file, png: dataUrl })
+    });
+    const body = await res.json();
+    if (body.ok) {
+      dec.drawing_file = body.file;
+      dec.drawing_updated_at = new Date().toISOString();
+      if (stat) stat.innerHTML = `<span class="flag-ok">手绘已写回 ${body.file}</span>（${Math.round(body.bytes / 1024)} KB）`;
+      scheduleStatePush(true);
+    } else if (stat) {
+      stat.innerHTML = `<span class="flag-warn">写回被拒：${body.error}</span>`;
+    }
+  } catch {
+    if (stat) {
+      stat.innerHTML = '<span class="flag-warn">写回不可用</span> —— 请用 <code>npm run dev</code> 打开本页；'
+        + '直接双击文件时浏览器不允许写盘。';
+    }
+    if (manual) {
+      const a = document.createElement("a");
+      a.href = dataUrl;
+      a.download = `${it.id}-handdraw.png`;
+      a.click();
+    }
+  }
+}
+
 /* ───────────────────────────── ④ 导出 ───────────────────────────── */
 
 function exportPayload() {
@@ -756,6 +1057,8 @@ function refreshExport() {
   const nConf = Object.values(exportPayload().decisions).filter((d) => d.confirmed).length;
   const cnt = $("#wb-count");
   if (cnt) cnt.textContent = `已确认 ${nConf} 条 / 预览过 ${state.decisions.size} 条`;
+  // 任何设置变化都自动写回磁盘 —— 人不用为"告诉 AI 我设了什么"做任何动作。
+  scheduleStatePush(false);
   return txt;
 }
 
@@ -768,6 +1071,7 @@ function render() {
   renderPlan();
   renderPick();
   renderScene();
+  renderDraw();
   refreshExport();
 }
 
@@ -788,5 +1092,11 @@ $("#wb-download").onclick = () => {
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 };
+
+const pushButton = $("#wb-push");
+if (pushButton) pushButton.onclick = () => pushState();
+
+// 打开页面就先写一次，让工程侧立刻能看到「人在看哪一条」；之后每次改动自动跟随。
+setTimeout(pushState, 400);
 
 boot();
