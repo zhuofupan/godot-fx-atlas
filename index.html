@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./assets/reference-card-previews.css">
     <!-- 站点外壳（顶栏 + 整站字号）必须**最后**加载：它是这四个页面唯一的顶栏来源 -->
     <link rel="stylesheet" href="./assets/site-shell.css">
+    <!-- 把本站导航并进 SPA 自带的 .topbar，避免出现两条顶栏 -->
+    <script defer src="./assets/index-shell-merge.js"></script>
   </head>
   <body>
     <header class="site-header">

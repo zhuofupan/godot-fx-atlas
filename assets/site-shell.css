@@ -37,19 +37,49 @@
 :root { --ui-zoom: 1.2; }
 html { zoom: var(--ui-zoom); }
 
-/* ── 顶栏（四页统一） ─────────────────────────────────────────── */
-.site-header,
+/* ── 一条栏要装得下两组导航 ──────────────────────────────────────
+   index 把本站导航并进了 SPA 的 .topbar，于是同一行里有 6 + 4 个链接。
+   再加上整站 zoom 1.2（1440 的窗口实际只有 1200 CSS px 可用），不收紧就会换行 ——
+   实测会出现「机制索 / 引」这种把一个词拆两行的样子。 */
+#root .topbar > .brand { min-width: 0; }
+#root .topbar nav { flex: 0 0 auto; }
+#root .topbar nav a {
+  white-space: nowrap;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+/* 第二组（本站导航）在视觉上独立一档，别和页内导航混成一片 */
+#root .topbar nav.top-nav { margin-left: 6px; }
+#root .topbar nav.top-nav a { color: #9fe9d6; }
+#root .topbar nav.top-nav a[aria-current="page"] { background: rgba(93, 228, 199, .16); }
+
+/* ── 顶栏（四页统一） ───────────────────────────────────────────
+   造型与站内 index 的 `.topbar` 保持一致：半透明 + 毛玻璃 + **顶部固定**。
+
+   ⚠️ 选择器一律挂在 `.site-header` 下 —— index 的 SPA 里也有 `.brand` / `.brand-mark`，
+   不加限定会把它的 logo 一起改掉（这正是"不要多加一栏"要避免的连带伤害）。 */
 .shell { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
 .site-header {
-  min-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
+  min-height: 76px;
+  padding: 0 4.5vw;
   border-bottom: 1px solid var(--line);
+  background: rgba(7, 11, 21, .86);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
   flex-wrap: wrap;
-  gap: 10px;
 }
-.brand {
+/* index 只有一条栏：把本站导航并进 SPA 自带的 .topbar（见 assets/index-shell-merge.js），
+   所以这一条要隐藏，否则就是两条栏。 */
+body.is-spa .site-header { display: none; }
+
+.site-header .brand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -58,30 +88,48 @@ html { zoom: var(--ui-zoom); }
   letter-spacing: .02em;
   font-size: 19px;
 }
-.brand-mark {
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--jade);
-  transform: rotate(45deg);
-  border-radius: 8px;
-  box-shadow: inset 0 0 18px rgba(93, 228, 199, .28);
+/* 站点图标（favicon.svg）同时用作牌子图标 —— 一个文件两处用，不会画歪成两个样。
+   ⚠️ 必须把旧样式重置干净：workbench.css / material-library.css / workflow.html 里
+   各自抄过一份 `.brand-mark{... border:1px solid; transform:rotate(45deg); box-shadow:inset...}`，
+   那些规则在 site-shell.css 之前，只设 background 会被它们把图标**转成菱形**再加一圈边。 */
+.site-header .brand-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  background: url(../favicon.svg) center / contain no-repeat;
+  border: 0;
+  border-radius: 0;
+  transform: none;
+  box-shadow: none;
 }
-.top-nav { display: flex; gap: 28px; color: var(--muted); font-size: 17px; flex-wrap: wrap; }
-.top-nav a {
+.site-header .top-nav {
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .024);
+}
+.site-header .top-nav a {
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 9px 16px;
   text-decoration: none;
-  padding: 4px 2px 6px;
-  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  transition: all .2s;
   white-space: nowrap;
 }
-.top-nav a:hover { color: var(--ink); }
-.top-nav a[aria-current="page"] { color: var(--jade); border-bottom-color: var(--jade); }
+.site-header .top-nav a:hover { color: var(--ink); background: rgba(99, 243, 255, .09); }
+.site-header .top-nav a[aria-current="page"] { color: var(--jade); background: rgba(93, 228, 199, .12); }
 
 /* index.html 是 SPA 外壳：给它一个和别页等高的顶部留白，避免顶栏贴着 SPA 的内容 */
 body > .site-header + #root { display: block; }
 
 @media (max-width: 760px) {
-  .site-header,
   .shell { width: calc(100% - 24px); }
-  .top-nav { gap: 16px; font-size: 15px; }
+  .site-header { min-height: 66px; padding: 8px 4vw; gap: 12px; }
+  .site-header .brand { font-size: 16px; }
+  .site-header .brand-mark { width: 34px; height: 34px; }
+  .site-header .top-nav a { padding: 7px 12px; font-size: 14px; }
   :root { --ui-zoom: 1.08; }
 }

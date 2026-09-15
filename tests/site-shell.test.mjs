@@ -54,6 +54,29 @@ test("每个页面恰好一个 aria-current", async () => {
   }
 });
 
+test("index 把导航并进 SPA 那条栏，不出现两条栏", async () => {
+  const html = await load("index.html");
+  assert.ok(html.includes("index-shell-merge.js"), "index 缺少合并脚本，会出现两条顶栏");
+  for (const page of ["materials.html", "workflow.html", "workbench.html"]) {
+    const other = await load(page);
+    assert.ok(!other.includes("index-shell-merge.js"), `${page} 没有 SPA，不该加载合并脚本`);
+  }
+});
+
+test("站点图标只有一个来源，且画的是 FX 而非依赖字体", async () => {
+  for (const page of PAGES) {
+    const html = await load(page);
+    assert.match(html, /<link rel="icon" href="\.\/favicon\.svg"/, `${page} 的图标没有指向 favicon.svg`);
+  }
+  const svg = await readFile(path.join(repoRoot, "favicon.svg"), "utf8");
+  // 字母用描边画出来，不写 <text>：favicon 按 16px 渲染，字体缺失就成空白方块
+  assert.ok(!/<text/.test(svg), "favicon 不要用 <text>（字体缺失会渲染成空白）");
+  const strokes = (svg.match(/<path/g) || []).length;
+  assert.ok(strokes >= 4, `favicon 的 FX 笔画太少（${strokes}），可能画不出来`);
+  // 圆角方块造型：旋转过的矩形会被旧样式再转一次，看起来像菱形
+  assert.ok(!/rotate\(/.test(svg), "favicon 里不要旋转（站内 .brand-mark 皮肤会再叠一层，会变成菱形）");
+});
+
 test("外壳里的字号旋钮只有一个", async () => {
   const css = await readFile(path.join(repoRoot, "assets", "site-shell.css"), "utf8");
   // 只有一个地方真正声明 zoom，值走变量 —— 改字号只改一处
