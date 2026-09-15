@@ -26,27 +26,19 @@
          · rotate(180) 整体转半圈 —— **会把 F 甩到右边**，但参考图里 F 仍在左；
          · 垂直翻转 + 斜 15° —— 结构对了但仍不是最终要求。
        最终就是 rotate(45)（顺时针）。 -->
-  <!-- 笔画加粗到 2.15（描边随外层 scale 一起缩放）。
-       四层变换，**顺序即从外到内**，每一层都在它该在的坐标系里：
-       ① translate  = 屏幕方向的"往左下挪"（必须在旋转之外，否则会被转歪）
-       ② scale(.9 .76) = 整体缩 10% + 字高压到 76%（"扁一点"同样要是屏幕方向）
-       ③ rotate(49)  = 顺时针；45° 对齐菱形 + 用户要求的再加 4°
-       ④ 字内各自的微缩（F 5% / X 15%）
+  <!-- 字形用**真字体** Times New Roman（非斜体、加粗），不再用描边手画。
+       之前手画是为了防"字体缺失→只剩空白"，但需求明确要这个字体，
+       而 Times New Roman 是 Windows 自带、必然存在，所以改用 <text>。
+       仍保留 `serif` 兜底：万一字体缺失，退化成衬线体而不是无衬线。
+
+       四层变换（顺序即从外到内，每层都在它该在的坐标系里）：
+         ① translate  = 屏幕方向的"往左下挪"（必须在旋转之外）
+         ② scale(.9 .76) = 整体缩 10% + 字高压到 76%（"扁"同样要是屏幕方向）
+         ③ rotate(49)  = 顺时针；45° 对齐菱形 + 额外的 4°
        ⚠️ 若把 ② 放进 rotate 里面，"压扁"就变成沿 49° 方向压，字会歪。 -->
   <g transform="translate(-0.45 0.55)"><g transform="translate(12 12) scale(.9 .76) translate(-12 -12)"><g transform="rotate(49 12 12)">
-    <g fill="none" stroke="#061017" stroke-width="2.15" stroke-linecap="square">
-      <!-- F：略缩 5%（绕自身中心 10.05,12.15） -->
-      <g transform="translate(10.05 12.15) scale(.95) translate(-10.05 -12.15)">
-        <!-- 竖笔**不通高**（下端比 X 收得早），否则在菱形收窄处会顶出边界 -->
-        <path d="M7.2 8.8 V 15.5"/>
-        <path d="M7.2 8.8 H 12.9"/>
-        <path d="M7.2 12.05 H 11.2"/>
-      </g>
-      <!-- X：缩 15%（绕自身中心 14.4,12.1）—— 它原本比 F 高一截，占了大半视觉重量 -->
-      <g transform="translate(14.4 12.1) scale(.85) translate(-14.4 -12.1)">
-        <path d="M12.4 7.8 L 16.4 16.4"/>
-        <path d="M16.4 7.8 L 12.4 16.4"/>
-      </g>
-    </g>
+    <text x="12" y="12" text-anchor="middle" dominant-baseline="central"
+          font-family="'Times New Roman', Times, serif" font-size="7"
+          font-weight="700" font-style="normal" fill="#061017">FX</text>
   </g></g></g>
 </svg>

@@ -72,10 +72,16 @@ test("站点图标只有一个来源，且不会被旧样式二次变换", async
   // 先剥掉注释再判断：注释里为了说明原因会写出 `<text>` 这类字面量，
   // 直接子串匹配会把「解释为什么不能用」当成「用了」（实测误报过一次）。
   const svg = svgRaw.replace(/<!--[\s\S]*?-->/g, "");
-  // 字母用描边画出来，不写 <text>：favicon 按 16px 渲染，字体缺失就成空白方块
-  assert.ok(!/<text[\s>]/.test(svg), "favicon 不要用 <text>（字体缺失会渲染成空白）");
-  const strokes = (svg.match(/<path/g) || []).length;
-  assert.ok(strokes >= 4, `favicon 的 FX 笔画太少（${strokes}），可能画不出来`);
+  // 字形用真字体（Times New Roman）。钉住三件事：
+  //   ① 声明了字体族且有 serif 兜底（字体缺失时退化成衬线体，不是无衬线/空白）
+  //   ② 显式 font-style="normal"（非斜体）
+  //   ③ 没有 font-style="italic"
+  const text = svg.match(/<text[\s\S]*?<\/text>/);
+  assert.ok(text, "favicon 里没有 <text> 字形");
+  assert.match(text[0], /font-family="[^"]*Times New Roman[^"]*"/, "没有声明 Times New Roman");
+  assert.match(text[0], /,\s*serif/, "字体族缺少 serif 兜底");
+  assert.match(text[0], /font-style="normal"/, '应显式声明非斜体 font-style="normal"');
+  assert.ok(!/italic/i.test(text[0]), "不应出现斜体");
 
   // 图标本身是**旋转 45° 的圆角方块（菱形）**；而站内旧样式里也有一条
   // `.brand-mark{transform:rotate(45deg)}`（三个文件各抄了一份）。若外壳不把它重置，
