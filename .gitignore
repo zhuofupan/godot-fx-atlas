@@ -14,3 +14,7 @@ assets/workbench-data.js
 node_modules/
 .DS_Store
 Thumbs.db
+
+# 探针脚本的临时产物
+__*.html
+__*.png
