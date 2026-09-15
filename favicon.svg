@@ -5,18 +5,26 @@
       <stop offset="1" stop-color="#b7ffeb"/>
     </linearGradient>
   </defs>
-  <!-- 站点图标：圆角菱形 + 深色 FX（四页 favicon 与牌子图标共用这一个文件）。
-       - 圆角给得大（rx≈边长的 28%），小尺寸下才会呈现参考图那种饱满的花瓣轮廓；
-       - FX 用描边画、笔画粗，缩到 16px 仍读得出，也不依赖字体（写 <text> 会因缺字体变空白）；
-       - ⚠️ 图标自身是 45° 旋转。站内旧样式 `.brand-mark{transform:rotate(45deg)}` 会和它**叠加**，
-         净转 90° 就变回方块 —— site-shell.css 里必须 `transform:none` 把它重置掉。 -->
+  <!-- 站点图标：圆角菱形 + 深色 FX（favicon 与牌子图标共用这一个文件）。
+
+       以下是**照着参考图量出来的**，不是估的（量的是菱形竖直中心行）：
+         · 菱形对角 ≈ 21.5/24，圆角 rx ≈ 边长的 28%（小尺寸下轮廓才呈饱满花瓣状）；
+         · 笔画宽 ≈ 菱形宽的 0.083；
+         · 字母左右青色余量 ≈ 0.17 / 0.36（字母略偏左）。
+       前两版分别错在：FX 只占 40% 显得又小又空；以及笔画粗到 0.13 直接把菱形盖住。
+
+       FX 全部用描边画：写 <text> 的话 favicon 在 16px 下缺字体就成了空白。
+       ⚠️ 图标自身是 45° 旋转；站内旧样式里的 `.brand-mark` 也带 45° 旋转，
+          两者**叠加**会变成净转 90°（菱形变回方块）—— site-shell.css 必须 `transform:none` 重置。 -->
   <rect x="4.4" y="4.4" width="15.2" height="15.2" rx="4.3"
         transform="rotate(45 12 12)" fill="url(#fx)"/>
-  <g fill="none" stroke="#061017" stroke-width="2.6" stroke-linecap="square">
-    <path d="M8.1 7.9 V 16.1"/>
-    <path d="M8.1 7.9 H 12.4"/>
-    <path d="M8.1 12 H 11.1"/>
-    <path d="M12.8 7.9 L 16.4 16.1"/>
-    <path d="M16.4 7.9 L 12.8 16.1"/>
+  <g fill="none" stroke="#061017" stroke-width="1.85" stroke-linecap="square">
+    <!-- F：竖笔**不通高**（下端比 X 收得早），否则在菱形收窄处会顶出边界 -->
+    <path d="M7.2 8.8 V 15.5"/>
+    <path d="M7.2 8.8 H 12.9"/>
+    <path d="M7.2 12.05 H 11.2"/>
+    <!-- X：左上臂与 F 的顶横交叠，形成咬合 -->
+    <path d="M12.4 7.8 L 16.4 16.4"/>
+    <path d="M16.4 7.8 L 12.4 16.4"/>
   </g>
 </svg>
