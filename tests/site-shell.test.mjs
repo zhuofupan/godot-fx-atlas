@@ -68,9 +68,12 @@ test("站点图标只有一个来源，且不会被旧样式二次变换", async
     const html = await load(page);
     assert.match(html, /<link rel="icon" href="\.\/favicon\.svg"/, `${page} 的图标没有指向 favicon.svg`);
   }
-  const svg = await readFile(path.join(repoRoot, "favicon.svg"), "utf8");
+  const svgRaw = await readFile(path.join(repoRoot, "favicon.svg"), "utf8");
+  // 先剥掉注释再判断：注释里为了说明原因会写出 `<text>` 这类字面量，
+  // 直接子串匹配会把「解释为什么不能用」当成「用了」（实测误报过一次）。
+  const svg = svgRaw.replace(/<!--[\s\S]*?-->/g, "");
   // 字母用描边画出来，不写 <text>：favicon 按 16px 渲染，字体缺失就成空白方块
-  assert.ok(!/<text/.test(svg), "favicon 不要用 <text>（字体缺失会渲染成空白）");
+  assert.ok(!/<text[\s>]/.test(svg), "favicon 不要用 <text>（字体缺失会渲染成空白）");
   const strokes = (svg.match(/<path/g) || []).length;
   assert.ok(strokes >= 4, `favicon 的 FX 笔画太少（${strokes}），可能画不出来`);
 
