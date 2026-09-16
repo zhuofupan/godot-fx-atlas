@@ -1,11 +1,11 @@
 /* ============================================================================
    站点外壳：顶栏 + 整站字号 —— **唯一出处**
    ----------------------------------------------------------------------------
-   四个页面（参考案例库 / 资产贴图库 / 制作流程 / 预检工作台）都把它放在**最后**加载。
+   三个页面（参考案例库 / 资产贴图库 / 制作流程）都把它放在**最后**加载。
 
    为什么单独抽这一份：
-   ① `.site-header / .brand / .top-nav` 原来在 workbench.css、material-library.css、
-      workflow.html 里各抄了一遍，而 index.html 根本没有 —— 于是"顶栏只在一部分页面存在"。
+   ① `.site-header / .brand / .top-nav` 原来在 material-library.css 与 workflow.html
+      里各抄了一遍，而 index.html 根本没有 —— 于是"顶栏只在一部分页面存在"。
       抄三份必然漂移，收进这里当唯一出处。
    ② 各页字号散落在不同 CSS 里，且 index 的 CSS 是**构建产物（无法重建）**；
       字号大多是硬编码 px，逐个覆盖不现实。用 `html { zoom }` 等比放大最可预期，
@@ -31,9 +31,7 @@
 
 /* ── 整站等比放大 ────────────────────────────────────────────────
    1.2 ≈ 13px→15.6px、11px→13.2px、10px→12px。
-   **全站字号只有这一个旋钮 `--ui-zoom`**（窄屏另给一个小值）。
-   ⚠️ 用了 zoom 之后，canvas 的**指针坐标必须按 display/bitmap 比例换算**
-      （见 src/workbench.js 的 pos），否则笔迹会偏。 */
+   **全站字号只有这一个旋钮 `--ui-zoom`**（窄屏另给一个小值）。 */
 :root { --ui-zoom: 1.2; }
 html { zoom: var(--ui-zoom); }
 
@@ -105,8 +103,8 @@ body.is-spa .site-header { display: none; }
   font-size: 19px;
 }
 /* 站点图标（favicon.svg）同时用作牌子图标 —— 一个文件两处用，不会画歪成两个样。
-   ⚠️ 必须把旧样式重置干净：workbench.css / material-library.css / workflow.html 里
-   各自抄过一份 `.brand-mark{... border:1px solid; transform:rotate(45deg); box-shadow:inset...}`，
+   ⚠️ 必须把旧样式重置干净：material-library.css / workflow.html 里抄过一份
+   `.brand-mark{... border:1px solid; transform:rotate(45deg); box-shadow:inset...}`，
    那些规则在 site-shell.css 之前，只设 background 会被它们把图标**转成菱形**再加一圈边。 */
 .site-header .brand-mark {
   width: 42px;
